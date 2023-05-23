@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="45px" viewBox="0 0 34 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 11</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Frame-Work" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="電腦版海報試驗(滿·版)" transform="translate(-1047.000000, -173.000000)">
+            <g id="Group-11" transform="translate(1067.762883, 193.010021) rotate(-72.000000) translate(-1067.762883, -193.010021) translate(1046.262883, 175.010021)">
+                <path d="M14.0938549,28.7549569 L34.097887,21.618034" id="Line-11" stroke-opacity="0.3" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square"></path>
+                <path d="M18,8 L37.190063,20.9516683" id="Line-10" stroke-opacity="0.3" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square"></path>
+                <circle id="Oval" fill-opacity="0.3" fill="#FFFFFF" cx="13" cy="5" r="5"></circle>
+                <circle id="Oval" fill-opacity="0.3" fill="#FFFFFF" cx="7.5" cy="28.5" r="7.5"></circle>
+                <path d="M11,10 L8,20.5" id="Line-9" stroke-opacity="0.3" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square"></path>
+                <circle id="Oval" fill-opacity="0.3" fill="#D8D8D8" cx="39.5" cy="20.5" r="3.5"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,1330 @@
+$colorRed: #C53029
+$colorBlack: #0D051F
+$colorGrey: #EFF1F4
+$break_width_mobile: 576px
+$break_width_pad: 768px
+$break_width_laptop: 1024px
+
+
+@mixin size($w,$h:$w)
+  width: $w
+  height: $h
+  
+@mixin flexCenter
+  display: flex
+  justify-content: center
+  align-items: center
+
+*
+  // border: solid 0.3px #555
+  font-family: Ubuntu Mono,Noto Sans TC,serif
+  position: relative
+  transition-duration: .6s
+  transition-timing-function: ease
+  
+html,body
+  +size(100%, auto)
+  margin: 0
+  padding: 0
+  
+#exchange_frame .col-md-9
+  padding-left: 0px !important
+  
+.container, .row
+  max-width: 1080px
+  
+nav.navbar
+  background-color: transparent
+  
+.navbar-top
+  background-color: $colorBlack !important
+  
+.navbar-brand img
+  width: 80px
+  min-width: 30%
+  height: auto
+  
+.fa-ellipsis-h
+  color: #fff
+  font-size: 30px
+  
+h1
+  font-size: 3em
+  color: $colorBlack
+  font-weight: 600
+  line-height: 30px
+  letter-spacing: 6px
+  margin: 0
+  padding: 5px
+  
+h2
+  font-size: 35px
+  font-weight: 700
+  letter-spacing: 3px
+
+a
+  text-decoration: none !important
+  
+#fixed-laptop, #back-to-top
+  display: none
+
+// #fixed-laptop  
+#fixed-laptop
+  position: fixed
+  left: 20px
+  top: 40%
+  z-index: 10
+  
+  & .follow    
+    transform: rotate(-90deg) 
+    font-size: 20px
+    line-height: 45px
+    display: inline-block
+    padding: 25px 0px
+    color: #F9BF45
+
+  & a
+    transition: 0.4s ease-in-out
+    &:hover
+      .coat
+        background-color: transparent
+      i
+        color: #F9BF45    
+    
+  & .socials
+    margin-top: 20%
+    
+.coat
+  +size(45px)
+  +flexCenter
+  border-radius: 100%
+  margin: 10px 27%
+  background-color: #F9BF45
+    
+  & i
+    font-size: 30px
+    color: #000000
+    
+// #back-to-top  
+#back-to-top
+  position: fixed
+  right: 20px
+  top: 45%
+  z-index: 10
+  
+  & .top
+    height: 100px
+    transform: rotate(-90deg) 
+    font-size: 20px
+    line-height: 35px
+    display: inline-block
+    // padding: 25px 0px
+    color: #F9BF45
+    
+  & .coat
+    margin: 0
+    margin-top: 20px
+    
+  & a
+    transition: 0.4s ease-in-out
+    &:hover
+      .coat
+        background-color: transparent
+      i 
+        color: #F9BF45
+    
+        
+// theme
+header#theme 
+  color: #fff
+  +size(100%,800px)
+  overflow: hidden
+   
+  &::after
+    content: ""
+    +size(100%,800px)
+    background-color: rgba(13,5,31,0.7)
+    position: absolute
+    top: 0
+    left: 0
+    z-index: -1 
+  
+img.background
+    z-index: -1
+    +size(100%)
+    position: absolute
+    left: 0
+    top: 0
+    -webkit-filter: opacity(85%) /* Safari 6.0 - 9.0 */
+    filter: opacity(85%)
+           
+#theme .top    
+  .decor-bgc
+    +size(500px, 300px)
+    position: absolute
+    top: 40%
+    left: 5%
+    background-image: linear-gradient(-42deg, rgba(255,255,255,0) 40%, rgba(255,255,255,0.10) )
+    z-index: 1
+     
+  .topic
+    background: transparent
+    margin: 0
+    padding: 0
+    width: 528px
+    margin-top: 33%
+    margin-left: 10%
+      
+    .topic-en
+      font-size: 20px
+      letter-spacing: 1.8px
+      font-weight: regular
+      text-align: left
+      padding: 10px 5px
+      z-index: 3
+  
+    .topic-tw
+      color: #fff 
+      margin: 0
+      z-index: 3
+      line-height: 65px
+         
+      .small-text
+        font-size: 24px
+        font-family: Noto Sans TC
+      
+      .highlight
+        +size(280px,20px)
+        background-color: $colorRed
+        position: absolute
+        top: 43px
+        left: -3%
+        z-index: -1
+           
+      
+  .text-block
+    font-size: 16px
+    letter-spacing: 2px
+    line-height: 25px
+    text-align: center
+    width: 80%
+    margin: auto
+    margin-top: 5%
+
+.map
+  background-image: url(https://i.imgur.com/vOuT1sY.png)
+  +size(600px,305px)
+  background-size: cover
+  z-index: 0
+  position: absolute
+  left: 20%
+  top: 30%
+      
+img.taiwan
+  position: absolute
+  top: 21%
+  right: calc(6% + 2px)
+  width: 16%
+  
+img.bear
+  z-index: 3
+  width: 36%
+  position: absolute
+  bottom: 1%
+  left: -2%
+  
+img.bull
+  z-index: 3
+  width: 45%
+  position: absolute
+  bottom: 0
+  right: -6%
+  
+img.wave
+  z-index: 3
+  width: 20%
+  position: absolute
+  bottom: 23%
+  left: 40% 
+  
+.bear,.bull,.wave
+  -webkit-filter: brightness(200%) /* Safari 6.0 - 9.0 */
+  filter: brightness(150%)
+  
+#mc_embed_signup
+  z-index: 10
+  margin-top: 5%
+  // position: absolute
+  // left: 18%
+  // top: 50%
+  
+#mc-embedded-subscribe-form
+  display: flex
+  justify-content: flex-start
+  align-items: flex-end
+  flex-direction: row
+     
+#mce-EMAIL
+  +size(350px,45px)
+  background-color: rgba(0,0,0,0.2)
+  border: none
+  border-bottom: solid 2px #fff
+  padding: 5px
+  color: #fff
+    
+.clear
+  margin-left: 15px
+  
+  & #mc-embedded-subscribe
+    cursor: pointer
+    background-color: #73EFD2
+    border: none
+    border-radius: 2px
+    font-weight: 700
+    font-size: 18px
+    letter-spacing: 2px
+    padding: 5px 10px
+    transition-duration: 0.4s
+    &:hover
+      border: solid 1px #73EFD2
+      background-color: transparent
+      color: #73EFD2    
+    
+  
+@keyframes scroll
+  0%
+    transform: translate(-25%,0)
+  50% 
+    transform: translate(-25%,-30%)
+  100%
+    transform: translate(-25%,0)
+  
+.arrow-down
+  width: 30px
+  position: absolute
+  bottom: 30px
+  left: 50%
+  transform: translate(-25%,0)
+  cursor: pointer
+  animation: scroll 0.6s infinite alternate both linear
+  
+  // &:hover
+  //   animation: ani 2s 2s infinite alternate both linear
+  
+  
+    
+// section introduction  
+#introduction
+  background-color: #EFF1F4
+  height: auto
+  
+
+#introduction .row
+  +flexCenter
+  
+.headline
+  margin-right: auto
+  margin-left: auto
+  margin-top: 3%
+  
+  & h2
+    display: inline-block
+    padding: 60px 0px
+    padding-bottom: 0
+    margin: 0
+    
+  & .order
+    font-size: 45px
+    font-weight: 400
+    display: inline-block
+    transform: rotate(-90deg) 
+    position: absolute
+    bottom: 0%
+    left: -15%
+      
+  & .cube
+    +size(12px)
+    background-color: $colorRed
+    position: absolute
+    top: 40%
+    left: 4%
+    
+.headline2
+  padding: 0
+  padding-bottom: 5px
+  margin-top: -1%
+  
+  & p
+    padding: 10px 0px  
+   
+    
+#introduction .description
+  width: 600px
+  padding: 20px 0 50px 0
+  
+  & hr
+    border: 1px solid $colorBlack
+    
+  & p
+    letter-spacing: 1.53px
+    line-height: 22px
+    
+// section#contributors  
+    
+#contributors
+  background-image: url("https://i.imgur.com/GqeBDL5.png")
+  background-size: cover
+  height: auto
+  
+#contributors::after
+  content: ""
+  background-image: url("http://cryptoshiba168.com/wp-content/uploads/2018/12/背景插圖.png") 
+  background-position: 80% 5%
+  +size(100%,450px)
+  position: absolute
+  left: 0
+  top: -3%
+  opacity: 0.13
+  z-index: -1
+      
+.roww-1
+  +size(100%,auto)
+  margin-top: 65px
+  
+.heading-tw, .heading-en
+  color: $colorRed
+  font-weight: 700
+  margin-left: 60px
+  
+.heading-en
+  display: inline-block
+  width: 65%
+  margin-top: 15px
+  
+.heading-tw
+  // font-size: 35px
+  margin-top: 15px
+  letter-spacing: 3px
+  
+.roww-2, .roww-3, .roww-4, .roww-5
+  width: 100%
+  margin-left: auto
+  margin-right: auto
+  
+#contributors .card
+  height: 330px
+  width: 90%
+  border: none
+  transition: 0.6s
+  border-radius: 3px
+   
+.flip-container,.flipper,.front,.back
+  +size(100%)
+  
+/* entire container, keeps perspective */
+.flip-container 
+  perspective: 1000
+  &:hover 
+    .flipper
+      transform: rotateY(180deg)
+      -webkit-transform: rotateY(180deg) 
+      -moz-transform: rotateY(180deg)
+      -o-transform: rotateY(180deg)
+    
+/* flip speed goes here */
+.flipper 
+  transition: 0.9s
+  transform-style: preserve-3d
+  position: relative
+  
+/* hide back of pane during swap */
+.front, .back 
+  width: 100%
+  backface-visibility: hidden
+  -webkit-backface-visibility: hidden
+  -moz-backface-visibility: hidden
+  -o-backface-visibility: hidden
+  position: absolute
+  top: 0
+  left: 0
+  
+.front 
+  z-index: 2
+
+/* back, initially hidden pane */
+.back 
+  transform: rotateY(180deg)
+  -webkit-transform: rotateY(180deg) 
+  -moz-transform: rotateY(180deg)
+  -o-transform: rotateY(180deg)
+  +flexCenter
+  flex-direction: column
+
+ 
+#contributors .card-top
+  +size(100%,60%)
+  position: absolute
+  left: 0
+  top: 0
+  background-image: url(http://cryptoshiba168.com/wp-content/uploads/2018/12/alex-max-ceo.jpg)
+  background-size: cover
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.3)
+  transition: 0.5s
+  
+  .logo
+    +size(50px)
+    border-radius: 100%
+    position: absolute
+    left: 5%
+    bottom: -10%
+    background-image: url(http://cryptoshiba168.com/wp-content/uploads/2018/12/maicoin.png)
+    background-size: cover
+    
+  img.tag
+    max-width: 20px
+    position: absolute
+    top: 0
+    right: 5%
+    
+#contributors .card-bottom
+  +size(90%,40%)
+  position: absolute
+  left: 0
+  bottom: 0
+  
+  .name
+    display: block
+    font-size: 1.3em
+    padding: 20px 0px 10px 20px
+    margin-top: 2%
+    color: #9B9B9B
+    letter-spacing: 3px
+    
+  .brand
+    color: #0D051F
+    padding: 10px 20px 10px 20px
+    font-size: 1em
+    
+#contributors .back
+  background-color: #f4f4f4 
+  & .title
+    font-size: 1.3em
+    line-height: 28px
+    color: $colorBlack
+    padding: 30px 30px
+    transition: width .35s ease-in-out
+    margin-top: 0
+    margin-bottom: -12%
+   
+    &:hover
+      color: #C53029
+  
+  & a
+    text-decoration: initial
+    letter-spacing: 3px
+    line-height: 8px
+    
+  & .desc
+    font-size: 14px
+    padding: 30px
+    line-height: 22px
+    color: #777777
+    
+  & button
+    padding: 0
+    
+  & .btn
+      background: lighten($colorRed, 5%)
+      box-shadow: 0px 2px 0 darken(#f4f4f4, 5%), 2px 4px 6px darken(#f4f4f4, 2%)
+      color: #fff
+      font-weight: 400
+      letter-spacing: 3px
+      border-radius: 3px
+      margin-right: 20px
+      margin-bottom: 15%
+      transition: all 130ms linear
+      
+  & .btn:hover
+      background: darken($colorRed, 1%)
+      border: 1px solid rgba(#000, .05)
+      box-shadow: 1px 1px 2px rgba(#fff, .2)
+      color: lighten($colorRed, 50%)
+      text-decoration: none
+      text-shadow: -1px -1px 0 darken($colorRed, 9.5%)
+      transition: all 250ms linear
+          
+  & .btn1, .btn2   
+    padding: 5px 10px
+        
+      
+#contributors .card11, #contributors .card12
+  visibility: hidden
+  
+// #community
+
+#community
+  color: #fff
+  +size(100%,auto)
+  overflow: hidden
+  
+  &::after
+    content: ""
+    +size(100%,100%)
+    background-color: rgba(13,5,31,0.7)
+    position: absolute
+    top: 0
+    left: 0
+    z-index: -1
+  
+  & .row
+    +flexCenter
+    margin-top: 20px
+    
+    
+#community .roww-1
+  margin: 0
+  +size(100%,auto)
+  // transform: translate(-16%,0)  
+  margin-right: 16%
+    
+.b_card
+  +size(100%,auto)
+  +flexCenter
+  flex-direction: column
+  
+  &:hover
+    background: linear-gradient(transparent 0%,black 100%)
+    .action
+      +flexCenter
+      flex-direction: column      
+    
+    .b_card_top
+      filter: brightness(50%)
+      transition: 0.1s
+    
+  & a
+    color: #fff
+    
+.b_card_top
+  +size(160px)
+  background-size: cover
+  border-radius: 100%
+  margin-top: 6%
+  
+.b_card .action
+  width: 100%
+  position: absolute
+  top: 25%
+  left: 0%
+  display: none
+    
+.b_card .btn
+  background-color: transparent
+  width: 100px
+  color: #fff
+  border: solid 1px #fff
+  padding: 3px 10px
+    
+.b_card .btn1
+  margin-bottom: 10px
+    
+  & .btn2
+    margin-top: 5px
+  
+  
+.b_card1 .b_card_top
+  background-image: url(https://i.imgur.com/Py571VA.png)
+ 
+.b_card2 .b_card_top
+  background-image: url(https://i.imgur.com/KmUPSa4.jpg)
+  
+.b_card3 .b_card_top
+  background-image: url(https://i.imgur.com/m4zM09j.png)
+  
+.b_card4 .b_card_top
+  background-image: url(https://i.imgur.com/1Y1Ugu1.png)
+  
+.b_card5 .b_card_top
+  background-image: url(https://i.imgur.com/1nKW2ha.jpg)
+  
+.b_card_bottom  
+  .point
+    background: #fff
+    padding: 5px 10px
+    color: $colorBlack
+    font-weight: 700
+    border-radius: 3px
+    box-sizing: border-box
+    margin-top: 20px
+    
+    
+  .name
+    text-align: center
+    margin-top: 16px
+    letter-spacing: 2px
+      
+.b_card4, .b_card5
+  margin-bottom: 50px
+  margin-top: -10px
+  
+  // #statup_frame
+  
+#statup_frame .row, #exchange_frame .row, #oldschool_frame .row, #group_frame .row
+  margin-top: 3%
+  border-radius: 6px
+  
+#statup_frame .row
+  background-color: #323A4D
+  
+#oldschool_frame .row
+  background-color: #947A6D
+  
+.content
+  display: flex
+  justify-content: flex-start
+  flex-wrap: wrap  
+
+  
+#exchange_frame .content1
+  background-color: #5A90B0
+  border-radius: 5px
+   
+#exchange_frame .content2
+  background-color: #8DC1DB
+  border-radius: 5px
+
+  
+#group_frame .content1
+  background-color: #323A4D
+  border-radius: 5px
+   
+#group_frame .content2, #group_frame .content3
+  background-color: #5A90B0
+  border-radius: 5px
+   
+.cat
+  width: 100%
+  font-size: 24px
+  color: #fff
+  letter-spacing: 5px
+  margin: 0
+  padding: 20px 20px
+  
+.startup,.exchange,.vc,.oldschool,.group,.acce,.gov
+  display: flex
+  align-items: flex-start
+  box-sizing: border-box
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  width: 250px
+  padding: 0 20px
+  margin: 15px 0px
+  cursor: pointer
+  transition-duration: 0.4s
+    
+  &:hover
+    background: rgba(0,0,0,0.3)
+ 
+.vc,.acce,.gov, .group
+  width: 230px
+  padding-bottom: 5%
+  
+.group
+  width: 48%
+     
+.logo
+  +size(50px)
+  // width: 50px
+  border: solid 1px #fff
+  border-radius: 3px
+  padding: 5px
+    
+.infos 
+  padding-left: 15px
+  padding-top: 3px
+  color: #fff
+            
+.name
+  font-size: 16px
+  letter-spacing: 0.8px
+  line-height: 20px
+  margin: 0
+  padding-bottom: 5px
+  font-weight: 500
+    
+.desc
+  margin: 0
+  line-height: 16px
+  font-size: 12px
+  opacity: 0.8  
+  
+#app
+  background-color: rgba(252,250,242,0.6)
+  padding-bottom: 5%
+  padding-top: 5%
+  
+footer
+  border-top: solid 1px #D0CECE
+  padding: 30px
+  background-color: #0D051F
+  color: #fff
+ 
+    
+  & span
+    opacity: 0.6
+    letter-spacing: 1.5px
+    line-height: 15px   
+  
+  & a
+    color: #fff
+    opacity: 0.6
+    text-decoration: initial
+    transition: 0.01s
+    &:hover
+      color: $colorRed
+      text-decoration: none  
+    
+  & .our-logo
+    display: block
+    width: 45%
+    padding-bottom: 15px
+    
+  & .share-btn-kit
+    margin-top: 2%
+    
+  & .fab,.fas
+    font-size: 40px
+    padding: 5px
+    
+  & .fa-facebook-square
+    padding-left: 0 
+    
+  & .title
+    display: inline-block
+    color: $colorRed
+    font-weight: 700
+    letter-spacing: 2px
+    padding-top: 10px
+    padding-bottom: 8%
+    
+  & ul
+    padding: 0
+    list-style-type: none
+    
+    & li
+      padding: 5px 10px 5px 0px     
+        
+  & .left
+    margin-right: 15%
+    
+  & .copyright   
+    text-align: right
+    
+  & hr
+    background-color: #fff
+    opacity: 0.5
+    margin-top: 5%
+    width: 100%    
+    
+  h6
+    font-size: 16px
+    
+  .banner .bgc
+    background-color: #fff
+    padding: 10px
+    border-radius: 3px
+        
+  img
+    width: 100%
+    border-radius: 3px
+    
+  .meet
+    margin-top: 10%
+ 
+// Modal 
+.modal-content
+  background-color: #EFF1F4
+  color: #B2ABAB
+  font-size: 14px
+
+.modal-header 
+  border-bottom: none
+  
+.modal-footer
+  border-top: none
+  
+.close
+  position: absolute
+  top: 15px
+  right: 20px
+  
+  display: flex
+  justify-content: flex-start
+  align-items: center
+  
+.modal-row-2
+  display: flex
+  justify-content: center
+  align-items: center
+  padding-bottom: 15px
+  margin-top: 20px
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.09)
+  
+.modal-intro
+  display: flex
+  justify-content: flex-start
+  align-items: center
+  flex-direction: column
+  
+.modal-title 
+  padding-left: 20px
+  font-size: 16px
+  color: #555
+  
+.modal-logo img
+  width: 150px
+  padding-left: 30px
+  box-sizing: border-box
+  border-radius: 50%
+  
+.company-name
+  display: block
+  color: #555
+  font-size: 20px
+ 
+  
+.modal-content hr
+  border-top: solid 1px #d8d8d8
+  
+.data
+  font-size: 22px
+  color: #555
+  text-align: center
+  padding-bottom: 5px
+  display: block
+
+.modal-content .num
+  +flexCenter
+  flex-direction: column
+  
+.modal-content .tag
+  text-align: center 
+  
+.modal-content .about
+  padding-left: 30px
+  width: 90%
+  
+.modal-content .title
+  font-size: 16px
+  color: #555
+  padding-top: 20px
+  padding-bottom: 20px
+  
+.modal-content .desc
+  font-size: 14px
+  letter-spacing: 2px
+  line-height: 24px
+  
+.modal-content .leader
+  width: 100px
+  border-radius: 50%
+  
+  
+.modal-row-4
+  padding-top: 15px
+  display: flex
+  align-items: center
+  
+.website
+  display: flex
+  align-items: center
+  justify-content: center
+  padding-top: 60px 
+  
+  
+// RWD
+
+@media screen and (max-width: $break_width_mobile)   
+
+  h1
+    font-size: 2.2em
+    font-weight: 600
+    line-height: 20px
+    letter-spacing: 5px
+    
+  h2
+    font-size: 28px
+  
+  #theme img.background
+    height: 110%
+    
+  #theme .top .decor-bgc
+    width: 220px
+    height: 160px
+    left: 15%
+    top: 38%
+    
+  #theme .top .topic
+    margin: 0
+    padding: 0
+    width: 350px
+    margin-top: 40%
+    margin-left: 5%
+  
+    .topic-tw
+      line-height: 45px
+  
+      .highlight
+        +size(210px,15px)
+        top: 28px
+        
+  #theme .map
+    +size(500px,253px)
+    left: -30%
+    top: 48%
+    
+  img.taiwan
+    display: none
+  
+  img.bear
+    width: 50%
+    bottom: 0%
+    left: -15%
+  
+  img.bull  
+    width: 65%  
+    right: -25%
+  
+  // #introduction 
+  .headline h2
+    display: inline-block
+    padding: 0px 20px 0px 20px
+    margin: 0
+    margin-top: 30px
+    text-align: center 
+    margin-right: auto
+  
+  
+  .headline h2 .cube
+    top: -5%
+    left: 3%
+    
+  .headline2 p
+    padding: 20px 20px 0px 20px
+
+  // #contributors      
+  .roww-2
+    margin-top: 15%
+    
+    
+  // #community
+  .b_card .action
+    display: none
+    top: 25%
+        
+  .b_card5
+    margin-top: 0
+    
+  // 產業地圖
+  #statup_frame .row, #exchange_frame .row, #oldschool_frame .row, #group_frame .row
+    margin-top: 10%  
+    
+  .cat
+    width: 100%
+    font-size: 24px
+    color: #fff
+    letter-spacing: 5px
+    margin: 0
+    padding: 20px 20px
+    
+  .startup,.exchange,.vc,.oldschool,.group,.acce,.gov
+    display: inline-block
+    width: 50%
+    padding-left: 0
+    
+  #group_frame .content1
+    height: 100%
+  
+  #group_frame .content2
+    +size(100%,90%)
+    transform: translate(0,0)
+    margin-top: 12%
+
+  #group_frame .content3
+    +size(100%,90%)
+    margin-top: 12%
+    
+  #exchange_frame .content2
+    margin-top: 10%
+    
+  .img-border
+    +flexCenter
+    
+  .logo
+    +size(65px)
+        
+  .infos 
+    padding-left: 0
+    padding-top: 3px
+    color: #fff
+    text-align: center
+            
+  .name
+    font-size: 18px
+    margin-top: 5px
+    padding-bottom: 10px
+        
+  .founder
+    font-size: 14px
+    letter-spacing: 1px
+    margin-bottom: 3px
+    opacity: 0.8
+    
+  .desc
+    font-size: 14px
+    line-height: 20px
+    padding: 5px 10px
+    
+  // footer
+  .blocktempo
+    +flexCenter
+    flex-direction: column
+    
+  .category
+    padding: 30px
+    
+ 
+    
+    
+    
+// Mobile P+L 共用  
+@media screen and (max-width: 767.98px )
+  .container
+    width: 100%
+    margin-right: auto
+    margin-left: auto
+      
+  .navbar-brand    
+    margin-right: auto
+    margin-left: auto
+    transform: translate(36%,0)
+      
+  header#theme
+    height: 530px 
+  
+    &::after
+      +size(100%,530px)
+    
+  img.wave
+    width: 25%
+    bottom: 12%
+    left: 38%
+    
+  #mc_embed_signup
+    width: 100%
+      
+  // #introduction       
+  .order
+    display: none !important
+        
+  #introduction .description
+    width: 100%
+    padding: 20px 15px 50px 15px
+
+    & hr
+      border: 1px solid $colorBlack
+      width: 3%
+      margin: 0
+      margin-right: auto
+      margin-left: auto
+      margin-bottom: 10%
+      
+    & p
+      letter-spacing: 1.53px
+      line-height: 22px
+      
+  // #contributors      
+  .roww-1
+    margin-top: 50px
+    +size(100%,auto)
+  
+    // roww-2 start   
+    
+  .roww-2, .roww-3, .roww-4, .roww-5
+    +flexCenter
+        
+  .heading-tw, .heading-en  
+    margin-left: 20px
+
+  .heading-en
+    width: 100%
+    margin-top: 0
+
+  .heading-tw
+    margin-top: 10px   
+    
+  #contributors .card
+    margin-bottom: 45px
+    width: 380px
+    height: 300px
+
+  #contributors .card-top   
+    img.tag
+      max-width: 30px
+
+  #contributors .card-bottom
+    .name 
+      margin-top: 3%
+
+  #contributors .back   
+    & .title
+      font-size: 1.3em
+
+  #contributors .card11, #contributors .card12
+    visibility: visible
+    display: none
+    
+  .b_card
+    margin-top: 10%
+    &:hover
+      .action
+        +flexCenter
+        flex-direction: column 
+      
+  #mc_embed_signup
+    +flexCenter
+      
+  #mc-embedded-subscribe-form
+    width: 100%
+    justify-content: center
+    flex-direction: row
+     
+  #mce-EMAIL
+    +size(210px,45px)
+    background-color: rgba(0,0,0,0.2)
+    border: none
+    border-bottom: solid 2px #fff
+    padding: 5px
+    color: #fff
+    
+  .clear
+    margin-left: 15px
+    margin-top: 5%
+  
+    & #mc-embedded-subscribe
+      cursor: pointer
+      background-color: #73EFD2
+      border: none
+      border-radius: 2px
+      font-weight: 700
+      font-size: 18px
+      letter-spacing: 2px
+      padding: 5px 10px
+      transition-duration: 0.4s
+      &:hover
+        border: solid 1px #73EFD2
+        background-color: transparent
+        color: #73EFD2
+    
+    
+    
+// Mobile L
+@media (min-width: 577px) and (max-width: 767.98px)
+  .container
+    padding: 20px 20px
+    
+  h1
+    font-size: 2.5em
+    
+  #theme img.background
+    height: 115%
+    
+  #theme .top .decor-bgc
+    width: 250px
+    height: 180px
+    left: 12%
+    top: 38%
+    
+  #theme .top .topic
+    margin: 0
+    padding: 0
+    width: 400px
+    margin-top: 18%
+    margin-left: 5%
+  
+    .topic-tw
+      line-height: 45px
+  
+      .highlight
+        +size(210px,15px)
+        top: 28px
+   
+  img.taiwan
+    right: 7%
+    top: 22%
+    
+  // #contributors
+  .headline
+    +flexCenter
+    flex-direction: column
+    
+  .headline .cube
+    top: -10%
+    left: -3%
+    
+  .headline2   
+    width: 90%
+
+  .headline h2
+    padding: 0px
+    margin: 0
+    margin-top: 30px
+    
+  .headline2 p
+    width: 90%
+    padding: 20px 25px 0px 25px
+    
+  #introduction .description hr
+    margin-bottom: 5%
+    
+  // roww-2 start   
+  .roww-2
+    margin-top: 10%
+  
+  // #community
+  .b_card
+    margin-top: 3%
+    
+  // 產業地圖   
+  
+  .content
+    justify-content: center
+    
+    
+  .content2, .content3
+    margin-top: 10%
+    
+ 
+
+// Laptop
+@media screen and (min-width: $break_width_laptop)
+  #fixed-laptop, #back-to-top
+    display: initial
+   
+  .roww-2, .roww-3, .roww-4, .roww-5
+    margin-bottom: 20px
+    
+  .roww-2
+    margin-top: 5%
+    
+  #group_frame .content2
+    transform: translate(15px,0)
+
+  #group_frame .content3
+    transform: translate(15px,0)
+  
+  #group_frame .grid
+    width: 95%
+    
+    
+ 

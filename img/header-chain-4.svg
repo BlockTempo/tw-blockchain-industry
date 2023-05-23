@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="147px" height="107px" viewBox="0 0 147 107" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>鏈</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Frame-Work" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="電腦版海報試驗(滿·版)" transform="translate(-587.000000, -113.000000)">
+            <g id="鏈" transform="translate(587.000000, 113.000000)">
+                <path d="M119,28.5 L140,21" id="Line-11" stroke-opacity="0.3" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square"></path>
+                <path d="M122,8 L140,20.5" id="Line-10" stroke-opacity="0.3" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square"></path>
+                <circle id="Oval" fill-opacity="0.3" fill="#FFFFFF" cx="117" cy="5" r="5"></circle>
+                <circle id="Oval" fill-opacity="0.3" fill="#FFFFFF" cx="111.5" cy="28.5" r="7.5"></circle>
+                <circle id="Oval" fill-opacity="0.3" fill="#FFFFFF" cx="40.5" cy="81.5" r="7.5"></circle>
+                <path d="M115,10 L112,20.5" id="Line-9" stroke-opacity="0.3" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square"></path>
+                <circle id="Oval" fill-opacity="0.3" fill="#D8D8D8" cx="143.5" cy="20.5" r="3.5"></circle>
+                <path d="M8.52275866,101 L33,84" id="Line-11" stroke-opacity="0.3" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square"></path>
+                <path d="M11,77 L31,88" id="Line-10" stroke-opacity="0.3" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" transform="translate(20.500000, 82.500000) rotate(-30.000000) translate(-20.500000, -82.500000) "></path>
+                <circle id="Oval" fill-opacity="0.3" fill="#FFFFFF" cx="5" cy="102" r="5"></circle>
+                <circle id="Oval" fill-opacity="0.3" fill="#D8D8D8" cx="6.5" cy="81.5" r="3.5"></circle>
+                <path d="M106.5,33.5 L70,68" id="Line-12" stroke-opacity="0.3" stroke="#FFFFFF" stroke-linecap="square"></path>
+                <path d="M67,70.5 L48,79.5" id="Line-12" stroke-opacity="0.3" stroke="#FFFFFF" stroke-linecap="square"></path>
+                <circle id="Oval" fill-opacity="0.3" fill="#D8D8D8" cx="68.5" cy="69.5" r="2.5"></circle>
+            </g>
+        </g>
+    </g>
+</svg>
