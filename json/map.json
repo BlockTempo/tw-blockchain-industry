@@ -1,0 +1,277 @@
+{
+    "groups": [
+        {
+            "id": "nft",
+            "title": "NFT",
+            "children": [
+                {
+                    "id": "application",
+                    "title": "應用程式"
+                },
+                {
+                    "id": "trading",
+                    "title": "交易市場"
+                }
+            ]
+        },
+        {
+            "id": "applications",
+            "title": "應用 Applications"
+        },
+        {
+            "id": "defi",
+            "title": "DeFi"
+        },
+        {
+            "id": "investment",
+            "title": "投資"
+        },
+        {
+            "id": "walletsafe",
+            "title": "錢包 / 安全方案",
+            "children": [
+                {
+                    "id": "safe",
+                    "title": "區塊鏈安全方案"
+                },
+                {
+                    "id": "wallet",
+                    "title": "加密貨幣錢包"
+                }
+            ]
+        },
+        {
+            "id": "exchange",
+            "title": "交易所 Exchange",
+            "children": [
+                {
+                    "id": "domestic",
+                    "title": "本土交易所"
+                },
+                {
+                    "id": "oversea",
+                    "title": "海外交易所"
+                }
+            ]
+        }
+    ],
+    "items": [
+        {
+            "id": "captureapp",
+            "group": "nft-application",
+            "title": "Capture App",
+            "logo_banner": "https://image.blocktempo.com/2023/05/capture-c.webp",
+            "logo_icon": "https://image.blocktempo.com/2023/05/capture-c.webp",
+            "briefly": "去中心化 Web3 相機",
+            "description": "Capture 是首款去中心化的 Web3 相機 App，可讓用戶可以輕鬆創建和分享 Web3.0 數位影像，同時可透過 NFT 鑄造功能來位數位資產創造更多價值。",
+            "website": "https://captureapp.xyz/",
+            "twitter": "https://twitter.com/captureapp_xyz"
+        },
+        {
+            "id": "captureclub",
+            "group": "nft-trading",
+            "title": "CaptureClub",
+            "logo_banner": "https://image.blocktempo.com/2023/05/captrueclub-h.png",
+            "logo_icon": "https://image.blocktempo.com/2023/05/captureclub-c.jpg",
+            "briefly": "NFT 交易市場",
+            "description": "CaptureClub 希望能創建一個協助創作者從其內容中獲利的市場，目標是打破第三方平台的藩籬，消除創作者將創作資產化的障礙。",
+            "website": "https://captureclub.cc/",
+            "twitter": "https://twitter.com/numbersprotocol"
+        },						
+        {
+            "id": "oursong",
+            "group": "nft-trading",
+            "title": "Oursong",
+            "logo_banner": "https://image.blocktempo.com/2023/05/oursong-h-black.png",
+            "logo_icon": "https://image.blocktempo.com/2023/05/oursong-c.jpeg",
+            "briefly": "NFT 交易市場",
+            "description": "OurSong 是一個基於區塊鏈技術的半中心化治理音樂共創平台。創作者們可以在這裡找到夥伴、共同創作、分享靈感、互相激勵並打造屬於你們的暢銷金曲。在這個自由開放的空間，你能藉由全新的 OurSong 接軌全球的音樂社群，激發潛藏的創作能量。",
+            "website": "https://www.oursong.com/",
+            "twitter": "https://twitter.com/oursong"
+        },				
+        {
+            "id": "matters",
+            "group": "applications",
+            "title": "Matters",
+            "logo_banner": "https://image.blocktempo.com/2023/05/matters-h.png",
+            "logo_icon": "https://image.blocktempo.com/2023/05/matters-h.jpeg",
+            "briefly": "去中心化創作平台",
+            "description": "Matters 是一個以分佈式網路為基礎、加密貨幣驅動的公共討論平台。所有在 Matters 上發佈的文章，皆會上載到星際文件系統（IPFS）的節點上，實現文章內容的分佈式存儲，完成將數據回歸創作者的第一步。",
+            "website": "https://matters.town/",
+            "twitter": "https://twitter.com/MattersLab"
+        },
+        {
+            "id": "bsos",
+            "group": "applications",
+            "title": "BSOS",
+            "logo_banner": "https://image.blocktempo.com/2023/05/bsos-h.png",
+            "logo_icon": "https://image.blocktempo.com/2023/05/bsos-c.png",
+            "briefly": "區塊鏈解決方案",
+            "description": "BSOS (Blockchain for Supply chain Operation System) 專精於研發「企業區塊鏈」應用技術，協助企業接軌區塊鏈，探索全新商業價值。BSOS 為國際三大聯盟鏈 J.P. Morgan Quorum 台灣唯一官方技術大使及 R3 Corda 官方技術合作夥伴，其核心產品 BridgeX 已獲國內外大型金融機構及企業採用。",
+            "website": "https://www.bsos.co/zh-TW",
+            "twitter": "https://twitter.com/bsostech"
+        },
+        {
+            "id": "dodoker",
+            "group": "applications",
+            "title": "度度客",
+            "logo_banner": "https://image.blocktempo.com/2023/05/dodoker-h.png",
+            "logo_icon": "https://image.blocktempo.com/2023/05/dodoker-c.png",
+            "briefly": "區塊鏈募資平台",
+            "description": "度度客致力於結合群眾力量及區塊鏈技術，讓資金流向透明化且專款專用，發揮社會影響力。這是探索區塊鏈應用在全球永續發展目標（SDGs）的一小步，相信隨著科技的進展，區塊鏈能為世界帶來更多無限的可能。",
+            "website": "https://dodoker.com/"
+        },
+        {
+            "id": "cream",
+            "group": "defi",
+            "title": "C.R.E.A.M.",
+            "logo_banner": "https://image.blocktempo.com/2023/05/cream-h.png",
+            "logo_icon": "https://image.blocktempo.com/2023/05/cream-c.png",
+            "briefly": "去中心化借貸平台",
+            "description": "C.R.E.A.M. Finance 是一種去中心化點對點 (P2P) DeFi 平台，提供借貸、交換、支付與數位資産代幣化等服務。",
+            "website": "https://app.cream.finance/"
+        },
+        {
+            "id": "furucombo",
+            "group": "defi",
+            "title": "Furucombo",
+            "logo_banner": "https://image.blocktempo.com/2023/05/furucombo-h.jpeg",
+            "logo_icon": "https://image.blocktempo.com/2023/05/furucombo-c.png",
+            "briefly": "DeFi 聚合平台",
+            "description": "Furucombo 是 DeFi 協議聚合平台，將不同 DeFi 項目的介面統一視覺化，讓用戶能像是在組樂高般，將不同協議納入個人策略組合，輕鬆操作並取得更高的獲利。",
+            "website": "https://furucombo.app/",
+            "twitter": "https://twitter.com/furucombo"
+        },
+        {
+            "id": "perp",
+            "group": "defi",
+            "title": "Perpetual Protocol",
+            "logo_banner": "https://image.blocktempo.com/2023/05/perpetual-h.png",
+            "logo_icon": "https://image.blocktempo.com/2023/05/perpetual-c.png",
+            "briefly": "DeFi 衍伸品交易所",
+            "description": "Perpetual Protocol 為現今全球最大的 Defi 衍生品服務協議之一，為台灣的新創項目，首創永續合約專用的自動做市（AMM）智慧合約，提供流動性給虛擬貨幣衍生性金融市場。",
+            "website": "https://perp.com/",
+            "twitter": "https://twitter.com/perpprotocol"
+        },
+        {
+            "id": "crypto-arsenal",
+            "group": "investment",
+            "title": "Crypto Arsenal",
+            "logo_banner": "https://image.blocktempo.com/2023/05/Crypto-Arsenal-h.png",
+            "logo_icon": "https://image.blocktempo.com/2023/05/Crypto-Arsenal-c.png",
+            "briefly": "量化交易平台",
+            "description": "Crypto-Arsenal 致力於建構開放式加密貨幣量化程式交易平台，打造新一代智能交易機器人開發、串接、媒合與自動跟投的雲端服務，對接各大中心化與去中心化加密貨幣交易所（CEX ＆ DEX），支援雲端或本地端策略開發環境、即時回測、實時模擬與實盤交易...等資料。",
+            "website": "https://crypto-arsenal.io/"
+        },
+        {
+            "id": "bincentive",
+            "group": "investment",
+            "title": "Bincentive",
+            "logo_banner": "https://image.blocktempo.com/2023/05/Bincentive-h.png",
+            "logo_icon": "https://image.blocktempo.com/2023/05/Bincentive-c.png",
+            "briefly": "數位資產管理平台",
+            "description": "Bincentive 是加密資產投資服務平台，透過媒合交易專家與個人投資者，連接頂尖投資能力與不同風險的投資需求，提供最專業多樣的量化投資策略選擇。",
+            "website": "https://www.bincentive.com/"
+        },
+        {
+            "id": "coinomo",
+            "group": "investment",
+            "title": "Coinomo",
+            "logo_banner": "https://image.blocktempo.com/2023/05/coinomo-h.png",
+            "logo_icon": "https://image.blocktempo.com/2023/05/coinomo-c.png",
+            "briefly": "數位資產管理平台",
+            "description": "Coinomo 提供代幣交易和精選 DeFi & CeFi 產品等加密投資，提供用戶一站式投資平台、簡化了購買 DeFi 的複雜流程。",
+            "website": "https://coinomo.com/zh"
+        },
+        {
+            "id": "amis",
+            "group": "walletsafe-save",
+            "title": "AMIS",
+            "logo_banner": "https://image.blocktempo.com/2023/05/AMIS-c.png",
+            "logo_icon": "https://image.blocktempo.com/2023/05/AMIS-c.png",
+            "briefly": "區塊鏈安全解決方案",
+            "description": "AMIS 為一區塊鏈底層技術的公司成立於2016年，是MaiCoin集團旗下姐妹公司，並且為企業以太坊聯盟的創始成員之一。2017年，JP Morgan的以太坊平台 - Quorum 宣佈其採用 AMIS 的伊斯坦堡拜占庭共識演算法。",
+            "website": "https://www.amis.com/"
+        },
+        {
+            "id": "aegiscustody",
+            "group": "walletsafe-save",
+            "title": "Aegis Custody",
+            "logo_banner": "https://image.blocktempo.com/2023/05/aegis-custody-h.png",
+            "logo_icon": "https://image.blocktempo.com/2023/05/aegis-custody-h.png",
+            "briefly": "數位資產託管平台",
+            "description": "Aegis Custody 致力於推動資產數位化，並以所持有的信託牌照進行數位資產的保管、確保數位資產的安全性。\n\n旗下有三個開發中的產品：用於數位資產管理的多簽硬體冷錢包Aegis Pen、協助中小企業將應收帳款數位化成固定收益商品的線上平台FactorQuick、提供投資人進行固定收益商品之數位憑證投資的線上平台Optimi。",
+            "website": "https://www.aegiscustody.com/"
+        },
+        {
+            "id": "cybavo",
+            "group": "walletsafe-save",
+            "title": "CYBAVO",
+            "logo_banner": "https://image.blocktempo.com/2023/05/CYBAVO-h.png",
+            "logo_icon": "https://image.blocktempo.com/2023/05/CYBAVO-c.png",
+            "briefly": "區塊鏈安全公司",
+            "description": "CYBAVO - 加密貨幣安全領域的專家：區塊鏈安全解決方案供應商，成員來自區塊鏈、加密貨幣、資訊安全等各領域專家組成，採用最高規格的安全標準，提供最完整的資產保護解決方案。",
+            "website": "https://www.cybavo.com/zh-tw/"
+        },
+        {
+            "id": "blocto",
+            "group": "walletsafe-wallet",
+            "title": "Blocto",
+            "logo_banner": "https://image.blocktempo.com/2023/05/blocto-h.png",
+            "logo_icon": "https://image.blocktempo.com/2023/05/blocto-c.png",
+            "briefly": "加密貨幣錢包",
+            "description": "由台灣新創公司「門戶科技 Portto」所推出的跨鏈錢包，致力於改進區塊鏈應用的使用體驗，降低技術門檻與進入障礙，成為使用者進入去中心化世界的入口。",
+            "website": "https://blocto.app/"
+        },
+        {
+            "id": "coolbitx",
+            "group": "walletsafe-wallet",
+            "title": "CoolBitX",
+            "logo_banner": "https://image.blocktempo.com/2023/05/coolbitx-h.png",
+            "logo_icon": "https://image.blocktempo.com/2023/05/coolbitx-c.png",
+            "briefly": "冷錢包製造商",
+            "description": "庫幣科技成立於 2014 年，是一家台灣金融科技公司，專門製造安全的加密貨幣冷錢包，為數百萬用戶開發智能合約平台。\n\n我們的設計師和工程師來自網路安全、學術界和硬體開發領域，致力於讓區塊鏈社區為日常用戶和交易者提供更好的環境。",
+            "website": "https://coolbitx.com/"
+        },
+        {
+            "id": "qubic",
+            "group": "walletsafe-wallet",
+            "title": "Qubic",
+            "logo_banner": "https://image.blocktempo.com/2023/05/qbic-h.jpeg",
+            "logo_icon": "https://image.blocktempo.com/2023/05/qbic-c.jpeg",
+            "briefly": "加密貨幣錢包",
+            "description": "Qubic 錢包是 AMIS 帳聯網路科技公司為 NFT 打造的去中心化錢包，旨在降低消費者收藏 NFT 的門檻，簡單上手，用戶能在多個平台上透過信用卡輕鬆購買數位收藏品，不需要任何虛擬貨幣。",
+            "website": "https://www.qubic.app/"
+        },
+        {
+            "id": "ace",
+            "group": "exchange-domestic",
+            "title": "Ace Exchange",
+            "logo_banner": "https://image.blocktempo.com/2023/05/ACE-h.png",
+            "logo_icon": "https://image.blocktempo.com/2023/05/ACE-c.jpeg",
+            "briefly": "加密貨幣交易所",
+            "description": "ACE 王牌虛擬貨幣交易，所提供新台幣購買虛擬貨幣，例如比特幣（BTC）、以太幣（ETH）、USDT（泰達幣）等主流幣種，24 小時隨時可以買賣，並與凱基銀行合作建構「新台幣資金信託保管」。",
+            "website": "https://ace.io/"
+        },
+        {
+            "id": "bitopro",
+            "group": "exchange-domestic",
+            "title": "BitoPro",
+            "logo_banner": "https://image.blocktempo.com/2023/05/bitopro-h.jpeg",
+            "logo_icon": "https://image.blocktempo.com/2023/05/bitopro-c.png",
+            "briefly": "加密貨幣交易所",
+            "description": "BitoPro 是由幣託集團於 2018 年推出，致力於推廣數位貨幣，為台灣用戶提供全方位的加密服務。期許能讓數位貨幣的交易更容易、使用更方便、應用更全面。",
+            "website": "https://www.bitopro.com/"
+        },
+        {
+            "id": "bitgin",
+            "group": "exchange-domestic",
+            "title": "BITGIN",
+            "logo_banner": "https://image.blocktempo.com/2023/05/bitgin-h.png",
+            "logo_icon": "https://image.blocktempo.com/2023/05/bitgin.jpeg",
+            "briefly": "加密貨幣交易所",
+            "description": "台灣本土虛擬貨幣交易所，致力讓用戶以新台幣購買最貼近匯率的泰達幣、比特幣、以太幣，由凱基銀行信託保障新台幣資金。",
+            "website": "https://www.bitgin.net/"
+        }
+    ]
+}

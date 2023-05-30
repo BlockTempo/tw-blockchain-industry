@@ -152,33 +152,69 @@ swiper.on('slideChangeTransitionEnd', function () {
 });
 // end: slider
 
+function mapping(html, pairs) {
+  for (const [key, value] of Object.entries(pairs)) {
+    var reg = new RegExp("{{" + key + "}}", "ig");
+    html = html.replace(reg, value);
+  }
+  return html;
+}
 
-var vm = new Vue({
-  el: "#app",
-  data: {
-    bcoms: [],
-    modals: [],
-  },
-  mounted: function () {
-    $.ajax({
-      type: 'get',
-      url: 'https://api.jsonbin.io/b/5c41a1cb2c87fa273071bb08/29',
-      success: function (data) {
-        console.log(data);
-        vm.bcoms = data;
-      },
-      error: function (error) {
-        console.log(error);
-      }
+var itemsPromise = fetch("/json/map.json").then(res => res.json());
+
+itemsPromise.then(data => {
+  const gridWrap = $("#map .grid");
+  const groupWrap = $("#map .list-group");
+  const itemTemp = $("#map div[item-template]").html().trim();
+  const groups = data.groups;
+  const items = data.items;
+  
+  groups.forEach(g => {
+    groupWrap.append(
+      '<label class="list-group-item">' + 
+        `<input type="radio" name="group-item" value="${g.id}"> ${g.title}` + 
+      '</label>'
+    );
+  });
+
+  groupWrap.find(".list-group-item input").on('click', function(){
+    gridWrap.empty();
+    var selectedOption = $(this).val();
+
+    var targets = items.filter(t => {
+      return t.group.indexOf(selectedOption) === 0;
+    });
+    
+    targets.forEach(item => {
+      gridWrap.append( mapping(itemTemp, item) );
     });
 
-  }
+    gridWrap.find('[data-toggle="tooltip"]').tooltip({
+      trigger: "hover"
+    });
+  });
 });
 
+$(document).ready(function() {
+  // Handle menu item click event
+  $('input[name="menu-option"]').on('click', function() {
+    var selectedOption = $(this).val();
+    // Generate grid items based on selected option
+    generateGridItems(selectedOption);
+  });
 
-// 測試
-// $(function () {
-//   $('[data-toggle="tooltip"]').tooltip();
-//   $('.board1').tooltip(options);
-// })
+  // Function to generate grid items
+  function generateGridItems(option) {
+    // Clear existing grid items
+    $('#grid').empty();
 
+    // Generate new grid items based on selected option
+    for (var i = 1; i <= 8; i++) {
+      var card = $('<div class="col-md-3"><div class="card"><div class="card-body">Item ' + i + ' (' + option + ')</div></div></div>');
+      $('#grid').append(card);
+    }
+  }
+
+  // Initialize with default option
+  generateGridItems('option1');
+});
