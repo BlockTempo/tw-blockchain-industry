@@ -185,7 +185,7 @@
         },
         {
             "id": "amis",
-            "group": "walletsafe-save",
+            "group": "walletsafe-safe",
             "title": "AMIS",
             "logo_banner": "https://image.blocktempo.com/2023/05/AMIS-c.png",
             "logo_icon": "https://image.blocktempo.com/2023/05/AMIS-c.png",
@@ -195,7 +195,7 @@
         },
         {
             "id": "aegiscustody",
-            "group": "walletsafe-save",
+            "group": "walletsafe-safe",
             "title": "Aegis Custody",
             "logo_banner": "https://image.blocktempo.com/2023/05/aegis-custody-h.png",
             "logo_icon": "https://image.blocktempo.com/2023/05/aegis-custody-h.png",
@@ -205,7 +205,7 @@
         },
         {
             "id": "cybavo",
-            "group": "walletsafe-save",
+            "group": "walletsafe-safe",
             "title": "CYBAVO",
             "logo_banner": "https://image.blocktempo.com/2023/05/CYBAVO-h.png",
             "logo_icon": "https://image.blocktempo.com/2023/05/CYBAVO-c.png",
