@@ -2242,6 +2242,10 @@ footer .meet {
   }
 }
 
+#map .btn-light:focus {
+  box-shadow: none;
+}
+
 /* override onenav */
 .btn-arrow i{
   right: 0.3rem;
@@ -2249,4 +2253,12 @@ footer .meet {
 .btn-arrow:hover i,
 .btn-arrow:focus i{
   right: -0.1rem;
+}
+
+#map .sidebar-menu-inner a{
+  color: inherit;
+}
+
+#map .sidebar-item > a:hover {
+  color: inherit;
 }

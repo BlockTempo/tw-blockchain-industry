@@ -160,31 +160,39 @@ function mapping(html, pairs) {
   return html;
 }
 
-var itemsPromise = fetch("/json/map.json").then(res => res.json());
+var itemsPromise = fetch("json/map.json").then(res => res.json());
 
 itemsPromise.then(data => {
   const gridWrap = $("#map .grid");
-  const groupWrap = $("#map .list-group");
+  const groupWrap = $("#map .sidebar-menu ul");
   const itemTemp = $("#map div[item-template]").html().trim();
   const groups = data.groups;
   const items = data.items;
   
   groups.forEach(g => {
     groupWrap.append(
-      '<label class="list-group-item">' + 
-        `<input type="radio" name="group-item" value="${g.id}"> ${g.title}` + 
-      '</label>'
+      `<li class="sidebar-item" data-id="${g.id}">` + 
+        '<a href="" class="smooth">' + 
+          '<i class="io io-caozuoshili icon-fw icon-lg"></i>' + 
+          `<span>${g.title}</span>` + 
+        '</a>' + 
+      '</li>'
     );
   });
 
-  groupWrap.find(".list-group-item input").on('click', function(){
+  groupWrap.find(".sidebar-item").on('click', function(e){
+    e.preventDefault();
     gridWrap.empty();
-    var selectedOption = $(this).val();
+    var selectedOption = $(this).data("id");
 
     var targets = items.filter(t => {
       return t.group.indexOf(selectedOption) === 0;
     });
     
+    // style
+    groupWrap.find("a").removeClass("btn-light");
+    $(this).find("a").addClass("btn-light");
+
     targets.forEach(item => {
       gridWrap.append( mapping(itemTemp, item) );
     });
