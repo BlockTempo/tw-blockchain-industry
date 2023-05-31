@@ -165,7 +165,7 @@ var itemsPromise = fetch("json/map.json").then(res => res.json());
 itemsPromise.then(data => {
   const gridWrap = $("#map .grid");
   const groupWrap = $("#map .sidebar-menu ul");
-  const itemTemp = $("#map div[item-template]").html().trim();
+  const itemTemp = $("#map template[item]").html().trim();
   const groups = data.groups;
   const items = data.items;
   

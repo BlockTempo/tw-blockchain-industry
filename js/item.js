@@ -7,6 +7,7 @@ function mapping(html, pairs) {
     return html;
 }
 
+var initialTitle = document.querySelector("head > title").textContent;
 var itemsPromise = fetch("json/map.json").then(res => res.json());
 
 itemsPromise.then(data => {
@@ -18,18 +19,13 @@ itemsPromise.then(data => {
 
     let target;
     if ( id && (target = items.find(t => t.id === id)) ) {
-        if ( !target.twitter ) {
-            $("div[detail-template] span[twitter-link]").remove();
-        }
-
+        const title = target.title;
         const gs = target.group.split('-');
-        
-        if ( gs.length == 1 ) {
-            $("div[detail-template] span[group-minor]").remove();
-        }
-
         const groupMajorId = gs[0];
         
+        // set title
+        document.querySelector("head > title").textContent = title + "｜" + initialTitle;
+
         groups.find(g => {
             if ( g.id === groupMajorId ) {
                 target.group_major = g.title;
@@ -45,10 +41,20 @@ itemsPromise.then(data => {
             return target.id !== t.id && t.group.indexOf(groupMajorId) === 0;
         });
 
-        const detailTemp = $("div[detail-template]").html().trim();
-        const itemTemp = $("div[item-template]").html().trim();
+        const detailTemp = $("template[detail]").html().trim();
+        const itemTemp = $("template[item]").html().trim();
 
-        $(document.body).append(mapping(detailTemp, target))
+        const detailDom = $(mapping(detailTemp, target));
+
+        if ( !target.twitter ) {
+            detailDom.find("span[twitter-link]").remove();
+        }
+
+        if ( gs.length == 1 ) {
+            detailDom.find("span[group-minor]").remove();
+        }
+
+        $(document.body).append(detailDom);
         
         const itemsWrap = $("main div[related-items]");
 
@@ -60,7 +66,4 @@ itemsPromise.then(data => {
             trigger: "hover"
         });
     }
-
-    $("div[detail-template]").remove();
-    $("div[item-template]").remove();
 });

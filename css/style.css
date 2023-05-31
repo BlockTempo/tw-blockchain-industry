@@ -49,11 +49,6 @@ html, body {
   padding: 30px 0;
 }
 
-div[item-template],
-div[detail-template] {
-  display: none;
-}
-
 /* 整體stytle */
 h1 {
   font-size: 3.3em;
