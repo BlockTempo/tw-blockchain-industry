@@ -204,25 +204,16 @@ itemsPromise.then(data => {
 });
 
 $(document).ready(function() {
-  // Handle menu item click event
-  $('input[name="menu-option"]').on('click', function() {
-    var selectedOption = $(this).val();
-    // Generate grid items based on selected option
-    generateGridItems(selectedOption);
+  $("#map button[data-layout]").click(function(){
+    if ( !$(this).hasClass("active") ) {
+      $("#map div[layout]").hide();
+      $("#map button[data-layout]").removeClass("active");
+
+      var layoutType = $(this).data("layout");
+      $(`#map div[layout=${layoutType}]`).show();
+      $(this).addClass("active");
+    }
   });
 
-  // Function to generate grid items
-  function generateGridItems(option) {
-    // Clear existing grid items
-    $('#grid').empty();
-
-    // Generate new grid items based on selected option
-    for (var i = 1; i <= 8; i++) {
-      var card = $('<div class="col-md-3"><div class="card"><div class="card-body">Item ' + i + ' (' + option + ')</div></div></div>');
-      $('#grid').append(card);
-    }
-  }
-
-  // Initialize with default option
-  generateGridItems('option1');
+  $("#map button[data-layout='list']").trigger('click');
 });
