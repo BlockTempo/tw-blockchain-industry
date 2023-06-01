@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>2023 台灣區塊鏈產業指南｜動區動趨 BlockTempo</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=yes' />
+  <meta property="og:image" content="https://image.blocktempo.com/2019/01/blockchain-guide-cover-v2.png" />
+
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Noto+Sans+TC'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.6.0/css/all.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css'>
+  <link rel="apple-touch-icon" sizes="32x32" href="./favicon.ico">
+  <link rel="shortcut icon" href="./favicon.ico" />
+  <link rel="icon" href="./favicon.ico">
+
+  <link rel="stylesheet" href="vendors/onenav/css/iconfont.css">
+  <link rel="stylesheet" href="vendors/onenav/css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110951572-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-110951572-1');
+  </script> -->
+</head>
+
+<body>
+    <template detail>
+        <div id="content" class="container my-4 my-md-5" style="transform: none;">
+            <div class="row site-content py-4 py-md-5 mb-xl-5 mb-0 mx-xxl-n5">
+                <div class="background-fx">
+                    <img src="https://0xbase.io/wp-content/themes/onenav/images/fx/shape-01.svg" class="shape-01">
+                    <img src="https://0xbase.io/wp-content/themes/onenav/images/fx/shape-02.svg" class="shape-02">
+                    <img src="https://0xbase.io/wp-content/themes/onenav/images/fx/shape-03.svg" class="shape-03">
+                    <img src="https://0xbase.io/wp-content/themes/onenav/images/fx/shape-04.svg" class="shape-04">
+                    <img src="https://0xbase.io/wp-content/themes/onenav/images/fx/shape-05.svg" class="shape-05">
+                    <img src="https://0xbase.io/wp-content/themes/onenav/images/fx/shape-06.svg" class="shape-06">
+                    <img src="https://0xbase.io/wp-content/themes/onenav/images/fx/shape-07.svg" class="shape-07">
+                    <img src="https://0xbase.io/wp-content/themes/onenav/images/fx/shape-08.svg" class="shape-08">
+                    <img src="https://0xbase.io/wp-content/themes/onenav/images/fx/shape-09.svg" class="shape-09">
+                    <img src="https://0xbase.io/wp-content/themes/onenav/images/fx/shape-10.svg" class="shape-10">
+                    <img src="https://0xbase.io/wp-content/themes/onenav/images/fx/shape-11.svg" class="shape-11">
+                </div>
+                <div class="col-12 col-sm-5 col-md-4 col-lg-3">
+                    <div class="siteico">
+                        <div class="blur blur-layer" style="background: transparent url({{logo_icon}}) no-repeat center center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;animation: rotate 30s linear infinite;"></div>
+                        <img class="img-cover lazy unfancybox loaded" src="{{logo_icon}}" data-src="{{logo_icon}}" height="auto" alt="Sketch App Sources" data-was-processed="true">
+                    </div>
+                </div>
+                <div class="col mt-4 mt-sm-0">
+                    <div class="site-body text-sm">
+                        <a class="btn-cat custom_btn-d mb-2">{{group_major}}</a>
+                        
+                        <span group-minor>
+                            <i class="iconfont icon-arrow-r-m custom-piece_c" style="font-size:50%;color:#f1404b;vertical-align:0.075rem"></i>
+                            <a class="btn-cat custom_btn-d mb-2">{{group_minor}}</a>
+                        </span>
+                        
+                        <h1 class="site-name h3 my-3">{{title}}</h1>
+                        <div class="mt-2">
+                            <p class="mb-2">{{briefly}}</p> 
+                                                                                    
+                            <div class="site-go mt-3">
+                                <div id="security_check_img"></div>
+                                <span class="site-go-url">
+                                    <a style="margin-right: 10px;" href="{{website}}" title="{{title}}" target="_blank" class="btn btn-arrow">
+                                        <span>官網<i class="iconfont icon-arrow-r-m"></i></span>
+                                    </a>
+                                </span>
+                                <span class="site-go-url" twitter-link>
+                                    <a style="margin-right: 10px;" href="{{twitter}}" title="{{title}}" target="_blank" class="btn btn-arrow">
+                                        <span>Twitter<i class="iconfont icon-arrow-r-m"></i></span>
+                                    </a>
+                                </span>
+                            </div>
+                                                                
+                            <p id="check_s" class="text-sm" style="display:none"><i class="iconfont icon-loading icon-spin"></i></p> 
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <main class="content" role="main" style="transform: none;">
+                <div class="content-wrap">
+                    <div class="content-layout">
+                        <div class="panel site-content card transparent"> 
+                            <div class="card-body p-0">
+                                <div class="apd-bg"></div> 
+                                <div class="panel-body single my-4 ">{{description}}</div>
+                            </div>
+                        </div>
+                        
+                        <h2 class="text-gray text-lg my-4"><i class="site-tag iconfont icon-tag icon-lg mr-1"></i>相關產業</h2>
+                        <div related-items class="row mb-n4"> 
+                        </div>
+                    </div><!-- content-layout end -->
+                </div><!-- content-wrap end -->
+                <div class="sidebar sidebar-tools d-none d-lg-block" style="position: relative; overflow: visible; box-sizing: border-box; min-height: 1px;"></div>
+            </main>
+            <div class="main-footer footer-stick p-4 footer-type-def">
+                <div class="footer-inner ">
+                    <div class="footer-text">
+                        <div class="footer-copyright text-xs">
+                            動區動趨 BlockTempo © All Rights Reserved.&nbsp;&nbsp;
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+    
+    <template item>
+        <div class="url-card col-sm-6 col-md-3">
+            <div class="url-body default">
+                <a href="/item.html?id={{id}}" class="card no-c mb-4" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="{{description}}">
+                    <div class="card-body url-content d-flex align-items-center"> 
+                        <div class="url-img rounded-circle mr-2 d-flex align-items-center justify-content-center">
+                            <img class="lazy unfancybox loaded" src="{{logo_icon}}" data-src="{{logo_icon}}" height="auto" width="auto" alt="{{title}}" data-was-processed="true"> 
+                        </div>
+                        <div class="url-info flex-fill">
+                            <div class="text-sm overflowClip_1">
+                                <strong>{{title}}</strong>
+                            </div>
+                            <p class="overflowClip_1 m-0 text-muted text-xs">{{briefly}}</p>
+                        </div>
+                    </div> 
+                </a>
+                <a href="{{website}}" target="_blank" rel="external nofollow" title="" class="togo text-center text-muted is-views" data-toggle="tooltip" data-placement="right" data-original-title="直達">
+                    <i class="iconfont icon-goto"></i>
+                </a>
+            </div>
+        </div>
+    </template>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js'></script>
+    <script src="js/item.js"></script>
+</body>
+</html>

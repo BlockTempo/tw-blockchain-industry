@@ -152,33 +152,68 @@ swiper.on('slideChangeTransitionEnd', function () {
 });
 // end: slider
 
+function mapping(html, pairs) {
+  for (const [key, value] of Object.entries(pairs)) {
+    var reg = new RegExp("{{" + key + "}}", "ig");
+    html = html.replace(reg, value);
+  }
+  return html;
+}
 
-var vm = new Vue({
-  el: "#app",
-  data: {
-    bcoms: [],
-    modals: [],
-  },
-  mounted: function () {
-    $.ajax({
-      type: 'get',
-      url: 'https://api.jsonbin.io/b/5c41a1cb2c87fa273071bb08/29',
-      success: function (data) {
-        console.log(data);
-        vm.bcoms = data;
-      },
-      error: function (error) {
-        console.log(error);
-      }
+var itemsPromise = fetch("json/map.json").then(res => res.json());
+
+itemsPromise.then(data => {
+  const gridWrap = $("#map .grid");
+  const groupWrap = $("#map .sidebar-menu ul");
+  const itemTemp = $("#map template[item]").html().trim();
+  const groups = data.groups;
+  const items = data.items;
+  
+  groups.forEach(g => {
+    groupWrap.append(
+      `<li class="sidebar-item" data-id="${g.id}">` + 
+        '<a href="" class="smooth">' + 
+          '<i class="io io-caozuoshili icon-fw icon-lg"></i>' + 
+          `<span>${g.title}</span>` + 
+        '</a>' + 
+      '</li>'
+    );
+  });
+
+  groupWrap.find(".sidebar-item").on('click', function(e){
+    e.preventDefault();
+    gridWrap.empty();
+    var selectedOption = $(this).data("id");
+
+    var targets = items.filter(t => {
+      return t.group.indexOf(selectedOption) === 0;
+    });
+    
+    // style
+    groupWrap.find("a").removeClass("btn-light");
+    $(this).find("a").addClass("btn-light");
+
+    targets.forEach(item => {
+      gridWrap.append( mapping(itemTemp, item) );
     });
 
-  }
+    gridWrap.find('[data-toggle="tooltip"]').tooltip({
+      trigger: "hover"
+    });
+  });
 });
 
+$(document).ready(function() {
+  $("#map button[data-layout]").click(function(){
+    if ( !$(this).hasClass("active") ) {
+      $("#map div[layout]").hide();
+      $("#map button[data-layout]").removeClass("active");
 
-// 測試
-// $(function () {
-//   $('[data-toggle="tooltip"]').tooltip();
-//   $('.board1').tooltip(options);
-// })
+      var layoutType = $(this).data("layout");
+      $(`#map div[layout=${layoutType}]`).show();
+      $(this).addClass("active");
+    }
+  });
 
+  $("#map button[data-layout='list']").trigger('click');
+});
