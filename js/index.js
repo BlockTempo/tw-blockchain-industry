@@ -26,6 +26,8 @@ $(window).scroll(function(evt){
 
 // });
 
+let swiper;
+
 // slider
 var bg = document.querySelector('.item-bg');
 var items = document.querySelectorAll('.news__item');
@@ -66,90 +68,97 @@ if ($(window).width() > 800) {
   });
 }
 
+function clearSlider() {
+  swiper && swiper.destroy();
+  $("#news-slider .swiper-wrapper").empty();
+  $("#news-slider .news-slider__pagination").empty();
+}
 
-var swiper = new Swiper('.news-slider', {
-  effect: 'coverflow',
-  grabCursor: true,
-  loop: true,
-  centeredSlides: true,
-  keyboard: true,
-  spaceBetween: 0,
-  slidesPerView: 'auto',
-  speed: 300,
-  coverflowEffect: {
-    rotate: 0,
-    stretch: 0,
-    depth: 0,
-    modifier: 3,
-    slideShadows: false
-  },
-  breakpoints: {
-    480: {
-      spaceBetween: 0,
-      centeredSlides: true
+function refreshSlider() {
+  swiper = new Swiper('.news-slider', {
+    effect: 'coverflow',
+    grabCursor: true,
+    loop: true,
+    centeredSlides: true,
+    keyboard: true,
+    spaceBetween: 0,
+    slidesPerView: 'auto',
+    speed: 300,
+    coverflowEffect: {
+      rotate: 0,
+      stretch: 0,
+      depth: 0,
+      modifier: 3,
+      slideShadows: false
+    },
+    breakpoints: {
+      480: {
+        spaceBetween: 0,
+        centeredSlides: true
+      }
+    },
+    simulateTouch: true,
+    navigation: {
+      nextEl: '.news-slider-next',
+      prevEl: '.news-slider-prev'
+    },
+    pagination: {
+      el: '.news-slider__pagination',
+      clickable: true
+    },
+    on: {
+      init: function () {
+        var activeItem = document.querySelector('.swiper-slide-active');
+
+        var sliderItem = activeItem.querySelector('.news__item');
+
+        $('.swiper-slide-active .news__item').addClass('active');
+
+        var x = sliderItem.getBoundingClientRect().left;
+        var y = sliderItem.getBoundingClientRect().top;
+        var width = sliderItem.getBoundingClientRect().width;
+        var height = sliderItem.getBoundingClientRect().height;
+
+
+        $('.item-bg').addClass('active');
+
+        bg.style.width = width + 'px';
+        bg.style.height = height + 'px';
+        bg.style.transform = 'translateX(' + x + 'px ) translateY(' + y + 'px)';
+      }
     }
-  },
-  simulateTouch: true,
-  navigation: {
-    nextEl: '.news-slider-next',
-    prevEl: '.news-slider-prev'
-  },
-  pagination: {
-    el: '.news-slider__pagination',
-    clickable: true
-  },
-  on: {
-    init: function () {
-      var activeItem = document.querySelector('.swiper-slide-active');
+  });
 
-      var sliderItem = activeItem.querySelector('.news__item');
+  swiper.on('touchEnd', function () {
+    $('.news__item').removeClass('active');
+    $('.swiper-slide-active .news__item').addClass('active');
+  });
 
-      $('.swiper-slide-active .news__item').addClass('active');
+  swiper.on('slideChange', function () {
+    $('.news__item').removeClass('active');
+  });
 
-      var x = sliderItem.getBoundingClientRect().left;
-      var y = sliderItem.getBoundingClientRect().top;
-      var width = sliderItem.getBoundingClientRect().width;
-      var height = sliderItem.getBoundingClientRect().height;
+  swiper.on('slideChangeTransitionEnd', function () {
+    $('.news__item').removeClass('active');
+    var activeItem = document.querySelector('.swiper-slide-active');
 
+    var sliderItem = activeItem.querySelector('.news__item');
 
-      $('.item-bg').addClass('active');
+    $('.swiper-slide-active .news__item').addClass('active');
 
-      bg.style.width = width + 'px';
-      bg.style.height = height + 'px';
-      bg.style.transform = 'translateX(' + x + 'px ) translateY(' + y + 'px)';
-    }
-  }
-});
-
-swiper.on('touchEnd', function () {
-  $('.news__item').removeClass('active');
-  $('.swiper-slide-active .news__item').addClass('active');
-});
-
-swiper.on('slideChange', function () {
-  $('.news__item').removeClass('active');
-});
-
-swiper.on('slideChangeTransitionEnd', function () {
-  $('.news__item').removeClass('active');
-  var activeItem = document.querySelector('.swiper-slide-active');
-
-  var sliderItem = activeItem.querySelector('.news__item');
-
-  $('.swiper-slide-active .news__item').addClass('active');
-
-  var x = sliderItem.getBoundingClientRect().left;
-  var y = sliderItem.getBoundingClientRect().top;
-  var width = sliderItem.getBoundingClientRect().width;
-  var height = sliderItem.getBoundingClientRect().height;
+    var x = sliderItem.getBoundingClientRect().left;
+    var y = sliderItem.getBoundingClientRect().top;
+    var width = sliderItem.getBoundingClientRect().width;
+    var height = sliderItem.getBoundingClientRect().height;
 
 
-  $('.item-bg').addClass('active');
+    $('.item-bg').addClass('active');
 
-  bg.style.width = width + 'px';
-  bg.style.height = height + 'px';
-  bg.style.transform = 'translateX(' + x + 'px ) translateY(' + y + 'px)';
-});
+    bg.style.width = width + 'px';
+    bg.style.height = height + 'px';
+    bg.style.transform = 'translateX(' + x + 'px ) translateY(' + y + 'px)';
+  });
+}
 // end: slider
 
 function mapping(html, pairs) {
@@ -159,6 +168,9 @@ function mapping(html, pairs) {
   }
   return html;
 }
+
+var domloaded = false;
+var jsonloaded = false;
 
 var itemsPromise = fetch("json/map.json").then(res => res.json());
 
@@ -201,6 +213,12 @@ itemsPromise.then(data => {
       trigger: "hover"
     });
   });
+
+  jsonloaded = true;
+
+  if ( domloaded ) {
+    groupWrap.find(".sidebar-item").first().trigger('click');
+  }
 });
 
 $(document).ready(function() {
@@ -216,4 +234,63 @@ $(document).ready(function() {
   });
 
   $("#map button[data-layout='list']").trigger('click');
+
+  domloaded = true;
+
+  if ( jsonloaded ) {
+    const groupWrap = $("#map .sidebar-menu ul");
+    groupWrap.find(".sidebar-item").first().trigger('click');
+  }
 });
+
+// rss feeds
+const rssFeeds = [
+  "https://www.blocktempo.com/category/business/feed/",
+  "https://www.blocktempo.com/category/cryptocurrency-market/feed/",
+  "https://www.blocktempo.com/category/exclusive-interview/feed/",
+  "https://www.blocktempo.com/category/insight/feed/",
+  "https://www.blocktempo.com/category/crypto-guide/feed/"
+];
+
+const sliderLinks = $("#news-slider .tab .nav-link");
+
+sliderLinks.on('click', function(e){
+  e.preventDefault();
+  sliderLinks.removeClass('active');
+  $(this).addClass('active');
+
+  const feedUrl = rssFeeds[ parseInt($(this).data("feed")) ];
+  
+  fetch(feedUrl).then(response => response.text())
+    .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
+    .then(res => {
+      clearSlider();
+      const sliderWrap = $("#news-slider .swiper-wrapper");
+      const newsTemp = $("#news-slider template[newspost]").html().trim();
+      const items = res.querySelectorAll("item");
+      Array.from(items).forEach(dom => {
+        const $dom = $(dom);
+        let applyObj = {
+          link: $dom.find('link').text(),
+          title: $dom.find('title').text(),
+          description: $($dom.find('description').text()).first().text()
+        };
+        
+        Array.from(dom.children)
+          .forEach(a => {
+            if ( a.tagName === "dc:creator" ) {
+              applyObj.author = a.textContent;
+            } else if ( a.tagName === "media:content" ) {
+              applyObj.imgurl = a.getAttribute('url');
+            }
+          });
+
+        const news = mapping( newsTemp, applyObj );
+        sliderWrap.append(news);
+      });
+
+      refreshSlider();
+    });
+});
+
+sliderLinks.first().trigger('click');
