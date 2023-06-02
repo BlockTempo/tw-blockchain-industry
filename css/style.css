@@ -1798,11 +1798,28 @@ ul{
 /* news-slider */
 #news-slider{
   position: initial;
-  background-color: #1D1E2C;
+  background-color: #122162;
   height: auto;
 }
 #news-slider .headline{
   color: #fff;
+  margin-bottom: 15px;
+}
+#news-slider .tab .nav-tabs{
+  justify-content: inherit;
+}
+
+#news-slider .tab .nav-link{
+  color: white;
+  opacity: .5;
+}
+
+#news-slider .tab .nav-link:hover{
+  opacity: 1;
+}
+
+#news-slider .tab .nav-link.active {
+  opacity: 1;
 }
 .icon {
   display: inline-block;
@@ -1939,18 +1956,53 @@ ul{
   }
 }
 .news__item {
-  padding: 40px;
+  padding: 30px 40px;
   color: #fff;
   border-radius: 10px;
   display: block;
   transition: all .3s;
 }
+
+.news-slider__item.swiper-loading .news-date{ 
+  padding-bottom: 5px;
+  opacity: 1;
+  width: 35%;
+}
+
+.news-slider__item.swiper-loading .news__title{
+  opacity: 1;
+}
+
+.news-slider__item.swiper-loading .ghost-title {
+  height: 26px;
+  display: block;
+  margin: 4px 0 10px;
+}
+
+.news-slider__item.swiper-loading .ghost-title-last{
+  height: 26px;
+  display: block;
+  margin: 4px 0 6px;
+  width: 65%;
+}
+
+.news-slider__item.swiper-loading .ghost-desc,
+.news-slider__item.swiper-loading .ghost-desc-last{
+  height: 18px;
+  display: block;
+  margin: 4px 0 8px;
+}
+
+.news-slider__item.swiper-loading .ghost-desc-last{
+  width: 65%;
+}
+
 @media screen and (min-width: 800px) {
   .news__item:hover {
     color: #fff;
     transition-delay: .1s;
   }
-  .news__item:hover .news-date, .news__item:hover .news__title, .news__item:hover .news__txt {
+  .news__item:hover .news-date, .news__item:hover .news__title {
     opacity: 1;
     transition-delay: .1s;
   }
@@ -1958,7 +2010,7 @@ ul{
     box-shadow: none;
   }
 }
-.news__item.active .news-date, .news__item.active .news__title, .news__item.active .news__txt {
+.news__item.active .news-date, .news__item.active .news__title {
   opacity: 1;
 }
 .news__item.active .news__img {
@@ -2025,6 +2077,7 @@ ul{
   font-size: 15px;
   opacity: .7;
   transition: opacity .3s;
+  color: #fff;
 }
 .news__img {
   border-radius: 10px;
@@ -2374,4 +2427,25 @@ footer .meet {
 
 #map .sidebar-item > a:hover {
   color: inherit;
+}
+
+/**
+ * Loading Animation Snippet
+ */
+
+ .loading {
+  color: transparent;
+  background: linear-gradient(100deg, #6c757d 30%, rgba(108,117,125,0.6) 50%, #6c757d 70%);
+  /* background: linear-gradient(100deg, #eceff1 30%, #f6f7f8 50%, #eceff1 70%); */
+  background-size: 400%;
+  animation: loading 1.2s ease-in-out infinite;
+}
+
+@keyframes loading {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
 }
