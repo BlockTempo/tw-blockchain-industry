@@ -264,15 +264,29 @@ const rssFeeds = [
 
 const sliderLinks = $("#news-slider .tab .nav-link");
 
+const minInterval = 850;
+
 sliderLinks.on('click', function(e){
   e.preventDefault();
   sliderLinks.removeClass('active');
   $(this).addClass('active');
 
+  loadingSlider();
+
+  const startStamp = (new Date()).getTime();
   const feedUrl = rssFeeds[ parseInt($(this).data("feed")) ];
   
   fetch(feedUrl).then(response => response.text())
     .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
+    .then(res => {
+      const nowStamp = (new Date()).getTime();
+      const returnInterval = nowStamp - startStamp;
+      if ( returnInterval < minInterval ) {
+        return new Promise((rs, rj) => {
+          setTimeout(() => { rs(res); }, minInterval - returnInterval);
+        });
+      } else return res;
+    })
     .then(res => {
       clearSlider();
       const sliderWrap = $("#news-slider .swiper-wrapper");
@@ -302,7 +316,5 @@ sliderLinks.on('click', function(e){
       refreshSlider();
     });
 });
-
-loadingSlider();
 
 sliderLinks.first().trigger('click');
