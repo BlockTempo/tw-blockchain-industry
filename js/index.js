@@ -921,7 +921,7 @@ function loadMap(groups, items) {
 var domloaded = false;
 var jsonloaded = false;
 
-var itemsPromise = fetch("json/map.json").then(res => res.json());
+var itemsPromise = fetch("json/map.json?t=4").then(res => res.json());
 
 itemsPromise.then(data => {
   const gridWrap = $("#map .grid");
