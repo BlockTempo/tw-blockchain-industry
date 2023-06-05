@@ -75,14 +75,17 @@ function clearSlider() {
 }
 
 function refreshSlider() {
+  var useSixPerView = $(window).width() > 800;
   swiper = new Swiper('.news-slider', {
     effect: 'coverflow',
     grabCursor: true,
     loop: true,
-    centeredSlides: true,
+    centeredSlides: useSixPerView ? false : true,
     keyboard: true,
     spaceBetween: 0,
-    slidesPerView: 'auto',
+    slidesPerView: useSixPerView ? 6 : 'auto',
+    // initialSlide: 6,
+    // slidesPerView: 6,
     speed: 300,
     coverflowEffect: {
       rotate: 0,
@@ -91,12 +94,13 @@ function refreshSlider() {
       modifier: 3,
       slideShadows: false
     },
-    breakpoints: {
-      480: {
-        spaceBetween: 0,
-        centeredSlides: true
-      }
-    },
+    // breakpoints: {
+    //   768: {
+    //     slidesPerView: 6,
+    //     spaceBetween: 0
+    //     // centeredSlides: true
+    //   }
+    // },
     simulateTouch: true,
     navigation: {
       nextEl: '.news-slider-next',
@@ -125,6 +129,9 @@ function refreshSlider() {
         bg.style.width = width + 'px';
         bg.style.height = height + 'px';
         bg.style.transform = 'translateX(' + x + 'px ) translateY(' + y + 'px)';
+
+        $('.swiper-slide-active').addClass('active');
+        $('.swiper-slide-active').nextAll("*:lt(5)").addClass('active');
       }
     }
   });
@@ -132,10 +139,15 @@ function refreshSlider() {
   swiper.on('touchEnd', function () {
     $('.news__item').removeClass('active');
     $('.swiper-slide-active .news__item').addClass('active');
+    
+    $('.news-slider__item').removeClass('active');
+    $('.swiper-slide-active').addClass('active');
+    $('.swiper-slide-active').nextAll("*:lt(5)").addClass('active');
   });
 
   swiper.on('slideChange', function () {
     $('.news__item').removeClass('active');
+    // $('.news-slider__item').removeClass('active');
   });
 
   swiper.on('slideChangeTransitionEnd', function () {
@@ -157,6 +169,11 @@ function refreshSlider() {
     bg.style.width = width + 'px';
     bg.style.height = height + 'px';
     bg.style.transform = 'translateX(' + x + 'px ) translateY(' + y + 'px)';
+    
+    $('.news-slider__item').removeClass('active');
+
+    $('.swiper-slide-active').addClass('active');
+    $('.swiper-slide-active').nextAll("*:lt(5)").addClass('active');
   });
 }
 
@@ -904,7 +921,7 @@ function loadMap(groups, items) {
 var domloaded = false;
 var jsonloaded = false;
 
-var itemsPromise = fetch("json/map.json").then(res => res.json());
+var itemsPromise = fetch("json/map.json?t=4").then(res => res.json());
 
 itemsPromise.then(data => {
   const gridWrap = $("#map .grid");
