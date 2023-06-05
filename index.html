@@ -285,42 +285,24 @@
     <template newspost>
       <div class="news-slider__item swiper-slide">
         <a href="{{link}}" class="news__item" target="_blank">
-          <div class="news-date">
-            <i class="far fa-user-circle"></i>
-            <span class="news-date__txt">{{author}}</span>
-          </div>
           <div class="news__img">
             <img src="{{imgurl}}" alt="news">
           </div>
           <div class="news__title">
             {{title}}
           </div>
-
-          <p class="news__txt">
-            {{description}}
-          </p>
         </a>
       </div>
     </template>
     <template newloading>
       <div class="news-slider__item swiper-slide swiper-loading">
         <a href="" class="news__item">
-          <div class="news-date loading">
-            <i class="far fa-user-circle"></i>
-            <span class="news-date__txt"></span>
-          </div>
           <div class="news__img loading"></div>
           <div class="news__title">
             <span class="ghost-title loading"></span>
             <span class="ghost-title loading"></span>
             <span class="ghost-title-last loading"></span>
           </div>
-  
-          <p class="news__txt">
-            <span class="ghost-desc loading"></span>
-            <span class="ghost-desc loading"></span>
-            <span class="ghost-desc-last loading"></span>
-          </p>
         </a>
       </div>
     </template>
