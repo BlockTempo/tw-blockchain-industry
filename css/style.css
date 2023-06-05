@@ -2449,3 +2449,108 @@ footer .meet {
     background-position: 0 50%;
   }
 }
+
+/* highcharts */
+.highcharts-figure,
+.highcharts-data-table table {
+    min-width: 320px;
+    max-width: 100%;
+    margin: 1em auto;
+}
+
+.highcharts-data-table table {
+    font-family: Verdana, sans-serif;
+    border-collapse: collapse;
+    border: 1px solid #ebebeb;
+    margin: 10px auto;
+    text-align: center;
+    width: 100%;
+    /* max-width: 500px; */
+}
+
+.highcharts-data-table caption {
+    padding: 1em 0;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.highcharts-data-table th {
+    font-weight: 600;
+    padding: 0.5em;
+}
+
+.highcharts-data-table td,
+.highcharts-data-table th,
+.highcharts-data-table caption {
+    padding: 0.5em;
+}
+
+.highcharts-data-table thead tr,
+.highcharts-data-table tr:nth-child(even) {
+    background: #f8f8f8;
+}
+
+.highcharts-data-table tr:hover {
+    background: #f1f7ff;
+}
+
+.map-tooltip {
+  width:200px;
+ white-space:pre-wrap;
+}
+
+.map-item-link img{
+  width: 100%;
+}
+
+#map div[layout="map"] .category-header{
+  text-align: center;
+  color: #0D2382;
+}
+
+#map div[layout="map"] .category-row{
+  padding: 2px 10px 20px;
+}
+
+#map div[layout="map"] .category-block {
+  border: 5px solid #293C8F;
+  border-bottom-width: 20px;
+  background-color: white;
+  border-top-right-radius: 10px;
+}
+
+#map div[layout="map"] .category-block.with-child{
+  border-bottom-width: 15px;
+}
+
+#map div[layout="map"] .subcategory-header{
+  text-align: center;
+  color: #fff;
+  display: flex;
+}
+
+#map div[layout="map"] .subcategory-split{
+  border-bottom: 5px solid #293C8F;
+}
+
+#map div[layout="map"] .subcategory-header h6{
+  background-color: #293C8F;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px 20px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+#map div[layout="map"] .subcategory-header-dot{
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #FFFFFF;
+  border-radius: 2px;
+  transform: rotate(-45deg);
+}
+
+#map div[layout="map"] img{
+  border-radius: 10px;
+}
