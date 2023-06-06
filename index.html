@@ -16,6 +16,8 @@
   <link rel="shortcut icon" href="./favicon.ico" />
   <link rel="icon" href="./favicon.ico">
 
+  <link rel="stylesheet" href="vendors/david/style-landing.css">
+
   <link rel="stylesheet" href="vendors/onenav/css/iconfont.css">
   <link rel="stylesheet" href="vendors/onenav/css/style.min.css">
   <link rel="stylesheet" href="css/style.css?t=1685955501793">
@@ -192,7 +194,7 @@
         </div>
 
         <template category>
-          <div class="col-md-4">
+          <div class="col-xs-6 col-md-4">
             <h4 class="category-header">{{title}}</h4>
             <div class="category-row">
               <div class="row category-block"></div>
@@ -201,7 +203,7 @@
         </template>
 
         <template subcategory>
-          <div class="col-md-12 subcategory-split">
+          <div class="col-12 col-md-12 subcategory-split">
             <div class="subcategory-header">
               <h6>
                 <span class="subcategory-header-dot"></span>
@@ -214,7 +216,7 @@
         </template>
 
         <template item>
-          <div class="col-md-4 mt-1 mb-2">
+          <div class="col-4 col-md-4 mt-1 mb-2">
             <a href="/item.html?id={{id}}" class="m-2 d-flex align-items-center justify-content-center map-item-link" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="{{description}}" target="_blank">
               <img class="lazy unfancybox loaded" src="{{logo_icon}}" data-src="{{logo_icon}}" height="auto" width="auto" alt="{{title}}" data-was-processed="true"> 
             </a>
@@ -308,6 +310,37 @@
     </template>
   </div>
 
+  <!-- Viewpoints  -->
+  <div id="viewpoints" class="landing-page">
+    <section class="comments gray-section" style="margin-top: 0">
+      <div class="container">
+          <div class="headline col-xs-12 col-md-12">
+            <div class="order"></div>
+            <div class="title">
+              <h2 class="title-tw">產業前瞻觀點</h2>
+              <h4 class="title-en">Industry Foresight Viewpoint</h4>
+            </div>
+          </div>
+          <div class="row features-block">  
+          </div>
+      </div>
+    </section>  
+    <template item>
+      <div class="col-lg-4">
+          <div class="bubble">{{quote}}</div>
+          <div class="comments-avatar">
+              <a href="" class="pull-left">
+                  <img alt="image" src="{{icon}}">
+              </a>
+              <div class="media-body">
+                  <div class="commens-name">{{name}}</div>
+                  <small class="text-muted">{{title}}</small>
+              </div>
+          </div>
+      </div>
+    </template>
+  </div>
+  
   <svg hidden="hidden">
     <defs>
       <symbol id="icon-arrow-left" viewBox="0 0 32 32">

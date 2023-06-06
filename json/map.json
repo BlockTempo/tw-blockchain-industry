@@ -1163,7 +1163,6 @@
           "twitter": ""
         },
         {
-          "分類(大)": "交易所",
           "title": "Ace Exchange",
           "group": "exchange-domestic",
           "logo_icon": "https://image.blocktempo.com/2023/06/ACE-new.jpeg",
@@ -1174,7 +1173,6 @@
           "id": "ace-exchange"
         },
         {
-          "分類(大)": "交易所",
           "title": "BitoPro",
           "group": "exchange-domestic",
           "logo_icon": "https://image.blocktempo.com/2023/05/bitopro-c.png",
@@ -1185,7 +1183,6 @@
           "id": "bitopro"
         },
         {
-          "分類(大)": "交易所",
           "title": "BITGIN",
           "group": "exchange-domestic",
           "logo_icon": "https://image.blocktempo.com/2023/05/bitgin.jpeg",
@@ -1196,7 +1193,6 @@
           "id": "bitgin"
         },
         {
-          "分類(大)": "交易所",
           "title": "HOYA BIT",
           "group": "exchange-domestic",
           "logo_icon": "https://image.blocktempo.com/2023/05/HOYA-BIT-c.png",
@@ -1207,7 +1203,6 @@
           "id": "hoya-bit"
         },
         {
-          "分類(大)": "交易所",
           "title": "MAX",
           "group": "exchange-domestic",
           "logo_icon": "https://image.blocktempo.com/2023/05/MAX-c.png",
@@ -1218,7 +1213,6 @@
           "id": "max"
         },
         {
-          "分類(大)": "交易所",
           "title": "Rybit",
           "group": "exchange-domestic",
           "logo_icon": "https://image.blocktempo.com/2023/06/Rybit-logo.jpeg",
@@ -1229,7 +1223,6 @@
           "id": "rybit"
         },
         {
-          "分類(大)": "交易所",
           "title": "WOO X",
           "group": "exchange-oversea",
           "logo_icon": "https://image.blocktempo.com/2023/06/woox.webp",
@@ -1240,7 +1233,6 @@
           "id": "woo-x"
         },
         {
-          "分類(大)": "交易所",
           "title": "Binance",
           "group": "exchange-oversea",
           "logo_icon": "https://image.blocktempo.com/2023/06/binance.png",
@@ -1251,7 +1243,6 @@
           "id": "binance"
         },
         {
-          "分類(大)": "交易所",
           "title": "Coinbase",
           "group": "exchange-oversea",
           "logo_icon": "https://image.blocktempo.com/2023/06/coinbase.jpeg",
@@ -1262,7 +1253,6 @@
           "id": "coinbase"
         },
         {
-          "分類(大)": "交易所",
           "title": "Kraken",
           "group": "exchange-oversea",
           "logo_icon": "https://image.blocktempo.com/2023/06/kraken.jpeg",
@@ -1273,7 +1263,6 @@
           "id": "kraken"
         },
         {
-          "分類(大)": "交易所",
           "title": "Bybit",
           "group": "exchange-oversea",
           "logo_icon": "https://image.blocktempo.com/2023/06/bybit.png",
@@ -1284,7 +1273,6 @@
           "id": "bybit"
         },
         {
-          "分類(大)": "交易所",
           "title": "OKX",
           "group": "exchange-oversea",
           "logo_icon": "https://image.blocktempo.com/2023/06/okx.png",
@@ -1295,7 +1283,6 @@
           "id": "okx"
         },
         {
-          "分類(大)": "交易所",
           "title": "kikitrade",
           "group": "exchange-oversea",
           "logo_icon": "https://image.blocktempo.com/2023/06/kikitrade.png",
@@ -1306,7 +1293,6 @@
           "id": "kikitrade"
         },
         {
-          "分類(大)": "交易所",
           "title": "Pionex",
           "group": "exchange-oversea",
           "logo_icon": "https://image.blocktempo.com/2023/06/pionex.png",
