@@ -2554,3 +2554,11 @@ footer .meet {
 #map div[layout="map"] img{
   border-radius: 10px;
 }
+
+#viewpoints .comments-avatar{
+  display: flex;
+}
+
+#viewpoints .bubble{
+  height: auto;
+}

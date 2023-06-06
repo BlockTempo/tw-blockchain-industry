@@ -918,6 +918,15 @@ function loadMap(groups, items) {
   });
 }
 
+var viewpointPromise = fetch("json/viewpoint.json").then(res => res.json());
+viewpointPromise.then(data => {
+  const gridWrap = $("#viewpoints .features-block");
+  const itemTemp = $("#viewpoints template[item]").html().trim();
+  data.forEach(it => {
+    gridWrap.append(mapping( itemTemp, it ));
+  });
+});
+
 var domloaded = false;
 var jsonloaded = false;
 
