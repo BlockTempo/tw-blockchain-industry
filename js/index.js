@@ -966,7 +966,11 @@ itemsPromise.then(data => {
 
   groupWrap.find(".sidebar-item").on('click', function(e){
     e.preventDefault();
+    
+    // reset
     gridWrap.empty();
+    gridWrap.css("height", "" );
+    
     var selectedOption = $(this).data("id");
 
     var targets = items.filter(t => {
@@ -980,6 +984,11 @@ itemsPromise.then(data => {
     targets.forEach(item => {
       gridWrap.append( mapping(itemTemp, item) );
     });
+
+    const fitHeight = groupWrap.height() + 15;    
+    if ( gridWrap.get(0).scrollHeight > fitHeight ) {
+      gridWrap.css("height", fitHeight + "px" );
+    } 
 
     gridWrap.find('[data-toggle="tooltip"]').tooltip({
       trigger: "hover"

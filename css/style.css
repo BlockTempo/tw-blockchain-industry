@@ -2397,6 +2397,10 @@ footer .meet {
   display: none;
 }
 
+#map div[layout="list"] .grid{
+  overflow-y: scroll;
+}
+
 #map .headerwrap{
   margin-bottom: 30px;
 }
