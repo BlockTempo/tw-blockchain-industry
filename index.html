@@ -284,29 +284,33 @@
 
       </div>
     </div>
+
     <template newspost>
-      <div class="news-slider__item swiper-slide">
-        <a href="{{link}}" class="news__item" target="_blank">
-          <div class="news__img">
-            <img src="{{imgurl}}" alt="news">
-          </div>
-          <div class="news__title">
-            {{title}}
-          </div>
-        </a>
-      </div>
+      <div class="news-slider__item swiper-slide"></div>
     </template>
+    <template newspost-item>
+      <a href="{{link}}" class="news__item" target="_blank" title="{{title}}">
+        <div class="news__img">
+          <img src="{{imgurl}}" alt="news">
+        </div>
+        <div class="news__title">
+          {{title}}
+        </div>
+      </a>
+    </template>
+
     <template newloading>
-      <div class="news-slider__item swiper-slide swiper-loading">
-        <a href="" class="news__item">
-          <div class="news__img loading"></div>
-          <div class="news__title">
-            <span class="ghost-title loading"></span>
-            <span class="ghost-title loading"></span>
-            <span class="ghost-title-last loading"></span>
-          </div>
-        </a>
-      </div>
+      <div class="news-slider__item swiper-slide swiper-loading"></div>
+    </template>
+    <template newloading-item>
+      <a href="" class="news__item">
+        <div class="news__img loading"></div>
+        <div class="news__title">
+          <span class="ghost-title loading"></span>
+          <span class="ghost-title loading"></span>
+          <span class="ghost-title-last loading"></span>
+        </div>
+      </a>
     </template>
   </div>
 
