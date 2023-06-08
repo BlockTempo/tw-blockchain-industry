@@ -1957,7 +1957,7 @@ ul{
   }
 }
 .news__item {
-  padding: 0px 40px 15px;
+  padding: 0px 10px 15px;
   color: #fff;
   border-radius: 10px;
   display: block;
@@ -2059,7 +2059,7 @@ ul{
 }
 .news__title {
   height: 100px;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   opacity: .7;
   margin-top: 20px;
