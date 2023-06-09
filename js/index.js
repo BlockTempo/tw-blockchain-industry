@@ -29,7 +29,7 @@ $(window).scroll(function(evt){
 let swiper;
 
 // slider
-var bg = document.querySelector('.item-bg');
+// var bg = document.querySelector('.item-bg');
 var items = document.querySelectorAll('.news__item');
 var item = document.querySelector('.news__item');
 
@@ -50,14 +50,14 @@ if ( widthOver800 ) {
         var width = this.getBoundingClientRect().width;
         var height = this.getBoundingClientRect().height;
 
-        $('.item-bg').addClass('active');
+        // $('.item-bg').addClass('active');
         $('.news__item').removeClass('active');
         // $('.news__item').removeClass('active');
 
 
-        bg.style.width = width + 'px';
-        bg.style.height = height + 'px';
-        bg.style.transform = 'translateX(' + x + 'px ) translateY(' + y + 'px)';
+        // bg.style.width = width + 'px';
+        // bg.style.height = height + 'px';
+        // bg.style.transform = 'translateX(' + x + 'px ) translateY(' + y + 'px)';
       });
 
       element.addEventListener('mouseleave', function () {
@@ -125,11 +125,11 @@ function refreshSlider() {
         var height = sliderItem.getBoundingClientRect().height;
 
 
-        $('.item-bg').addClass('active');
+        // $('.item-bg').addClass('active');
 
-        bg.style.width = width + 'px';
-        bg.style.height = height + 'px';
-        bg.style.transform = 'translateX(' + x + 'px ) translateY(' + y + 'px)';
+        // bg.style.width = width + 'px';
+        // bg.style.height = height + 'px';
+        // bg.style.transform = 'translateX(' + x + 'px ) translateY(' + y + 'px)';
 
         // $('.swiper-slide-active').addClass('active');
         // $('.swiper-slide-active').nextAll("*:lt(5)").addClass('active');
@@ -165,11 +165,11 @@ function refreshSlider() {
     var height = sliderItem.getBoundingClientRect().height;
 
 
-    $('.item-bg').addClass('active');
+    // $('.item-bg').addClass('active');
 
-    bg.style.width = width + 'px';
-    bg.style.height = height + 'px';
-    bg.style.transform = 'translateX(' + x + 'px ) translateY(' + y + 'px)';
+    // bg.style.width = width + 'px';
+    // bg.style.height = height + 'px';
+    // bg.style.transform = 'translateX(' + x + 'px ) translateY(' + y + 'px)';
     
     // $('.news-slider__item').removeClass('active');
 
@@ -1216,3 +1216,74 @@ sliderLinks.on('click', function(e){
 });
 
 sliderLinks.first().trigger('click');
+
+/* auto convertions */
+/*
+var toConvertPromise = fetch("json/converted.json?t=1").then(res => res.json());
+toConvertPromise.then(data => {
+  const groupsCollection = [];
+  const itemsCollection = [];
+  data.forEach(it => {
+    let applyGroups = [];
+    let targetGroup = groupsCollection.find(g => g.id == it.group_major);
+    if ( !targetGroup ) {
+      targetGroup = {
+        id: it.group_major,
+        title: it.group_major,
+        order: groupsCollection.length + 1,
+        cols: 4,
+        itemCols: 3,
+        children: []
+      };
+      groupsCollection.push( targetGroup );
+    }
+    
+    applyGroups.push( it.group_major );
+
+    if ( it.group_minor ) {
+      let childGroup = targetGroup.children.find(gc => gc.id == it.group_minor);
+      if ( !childGroup ) {
+        childGroup = {
+          id: it.group_minor,
+          title: it.group_minor,
+          order: targetGroup.children.length + 1,
+          cols: 4,
+          itemCols: 3
+        };
+        targetGroup.children.push(childGroup);
+      }
+
+      applyGroups.push( it.group_minor );
+    }
+
+    itemsCollection.push({
+      group: applyGroups.join("-"),
+      title: it.title,
+      logo_icon: it.logo_icon,
+      logo_banner: it.logo_banner,
+      briefly: it.briefly,
+      description: it.description,
+      website: it.website,
+      twitter: it.twitter,
+      id: it.title.replaceAll(" ", "-").toLowerCase()
+    });
+  });
+
+  let finalobj = {
+    groups: groupsCollection,
+    items: itemsCollection
+  };
+
+  // trigger download
+  var element = document.createElement('a');
+  element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent( JSON.stringify(finalobj) ));
+  element.setAttribute('download', "map.json");
+
+  element.style.display = 'none';
+  document.body.appendChild(element);
+
+  element.click();
+
+  document.body.removeChild(element);
+});
+*/
