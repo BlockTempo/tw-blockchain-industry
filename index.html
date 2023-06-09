@@ -194,33 +194,44 @@
         </div>
 
         <template category>
-          <div class="col-xs-6 col-md-4">
-            <h4 class="category-header">{{title}}</h4>
-            <div class="category-row">
+          <div class="col col-12 bt-col bt-col-{{cols}} p-1">
+            <div class="category-wrap">
+              <h4 class="category-header">{{title}}</h4>
               <div class="row category-block"></div>
             </div>
           </div>
         </template>
 
         <template subcategory>
-          <div class="col-12 col-md-12 subcategory-split">
-            <div class="subcategory-header">
-              <h6>
-                <span class="subcategory-header-dot"></span>
-                {{title}}
-                <span class="subcategory-header-dot"></span>
-              </h6>
+          <div class="col col-12 bt-col bt-col-{{cols}}">
+            <div class="subcategory-split">
+              <div class="subcategory-header">
+                <h6>{{title}}</h6>
+              </div>
+              <div class="row subcategory-block"></div>
             </div>
-            <div class="row subcategory-block"></div>
+          </div>
+        </template>
+
+        <template emptycategory>
+          <div class="col col-12 bt-col bt-col-{{cols}}">
+            <div class="subcategory-split">
+              <div class="subcategory-header opacity-0"><h6>無</h6></div>
+              <div class="row subcategory-block"></div>
+            </div>
           </div>
         </template>
 
         <template item>
-          <div class="col-4 col-md-4 mt-1 mb-2">
-            <a href="/item.html?id={{id}}" class="m-2 d-flex align-items-center justify-content-center map-item-link" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="{{description}}" target="_blank">
-              <img class="lazy unfancybox loaded" src="{{logo_icon}}" data-src="{{logo_icon}}" height="auto" width="auto" alt="{{title}}" data-was-processed="true"> 
+          <div class="col col-4 col-md-{{itemCols}} mt-1 mb-2">
+            <a href="/item.html?id={{id}}" class="d-flex align-items-center justify-content-center map-item-link" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="{{description}}" target="_blank">
+              <img class="lazy unfancybox loaded" src="{{logo_banner}}" data-src="{{logo_banner}}" height="auto" width="auto" alt="{{title}}" data-was-processed="true"> 
             </a>
           </div>
+        </template>
+
+        <template fillitem>
+          <div class="col-md-12"><div style="height: {{height}}px;"></div></div>
         </template>
       </div>
     </div>

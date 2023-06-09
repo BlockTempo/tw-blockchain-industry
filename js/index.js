@@ -886,33 +886,55 @@ function mapping(html, pairs) {
 // }
 
 function loadMap(groups, items) {
-
   const wrap = $("#map .mapwrap");
   const cateTemp = $("#map div[layout=map] template[category]").html().trim();
   const subcateTemp = $("#map div[layout=map] template[subcategory]").html().trim();
+  const emptySubcateTemp = $("#map div[layout=map] template[emptycategory]").html().trim();
   const itemTemp = $("#map div[layout=map] template[item]").html().trim();
 
-  groups.forEach(g => {
-    const cateWrap = $( mapping( cateTemp, { title: g.title } ) );
+  const groupsClone = groups.slice(0);
+
+  groupsClone.sort((a, b) => {
+    return a.order < b.order ? -1 : 1;
+  });
+
+  groupsClone.forEach(g => {
+    const cateWrap = $( mapping( cateTemp, { title: g.title, cols: g.cols } ) );
     const cateItemWrap = cateWrap.find(".category-block");
+
+    const emptySubcateWrap = $( mapping( emptySubcateTemp, { cols: g.selfcols } ) );
+    const emptySubcateItemWrap = emptySubcateWrap.find(".row");
 
     items.filter(it => it.group === g.id)
       .forEach(it => {
-        cateItemWrap.append(
-          mapping( itemTemp, it )
-        );
+        const itClone = { ...it, itemCols: g.itemCols };
+        emptySubcateItemWrap.append(
+          mapping( itemTemp, itClone )
+        )
       });
+    
+    if ( emptySubcateItemWrap.children().length ) {
+      cateItemWrap.append(emptySubcateWrap);
+    }
 
     if ( g.children && g.children.length > 0 ) {
       cateItemWrap.addClass("with-child");
-      g.children.forEach(gc => {
-        const subcateWrap = $( mapping( subcateTemp, { title: gc.title } ) );
+      const gChildClone = g.children.slice(0);
+      
+      gChildClone.sort((a, b) => {
+        return a.order < b.order ? -1 : 1;
+      });
+
+      gChildClone.forEach(gc => {
+        const nestedGroup = [g.id, gc.id].join('-');
+        const subcateWrap = $( mapping( subcateTemp, { title: gc.title, cols: gc.cols } ) );
         const subcateItemWrap = subcateWrap.find(".row");
         
-        items.filter(it => it.group === [g.id, gc.id].join('-'))
+        items.filter(it => it.group === nestedGroup)
           .forEach(it => {
+            const itClone = { ...it, itemCols: gc.itemCols };
             subcateItemWrap.append(
-              mapping( itemTemp, it )
+              mapping( itemTemp, itClone )
             );
           });
 
@@ -925,6 +947,54 @@ function loadMap(groups, items) {
 
   wrap.find('[data-toggle="tooltip"]').tooltip({
     trigger: "hover"
+  });
+}
+
+function tuneMap() {
+  const fillItemTemp = $("#map div[layout=map] template[fillitem]").html().trim();
+  let heightTick = 0;
+  let theRow = [];
+  $(".mapwrap > .bt-col").each((idx, o) => {
+    const maxHeight = parseInt( $(o).css("max-width") );
+    heightTick += maxHeight;
+    theRow.push(o);
+    if ( heightTick >= 100 ) {
+      const maxh = theRow
+        .map(el => el.firstElementChild.clientHeight)
+        .reduce((a,b) => Math.max(a,b), 0);
+        
+      theRow.forEach(el => {
+        const diff = maxh - el.firstElementChild.clientHeight;
+        if ( diff > 0 ) {
+          // find last bt-col
+          let subHeightTick = 0;
+          let tuneItems = [];
+          const subitems = Array.from($(el.firstElementChild).find(".bt-col"));
+          while(subitems.length) {
+            const item = subitems.pop();
+            const subMaxHeight = parseFloat( $(item).css("max-width") );
+            subHeightTick += subMaxHeight;
+            tuneItems.push(item);
+            if ( 100 - subHeightTick < 0.1 ) {
+              break;
+            }
+          }
+          const tuneItemMax = tuneItems
+            .map(el => el.firstElementChild.clientHeight)
+            .reduce((a,b) => Math.max(a,b), 0);
+          
+          tuneItems.forEach(el => {
+            $(el).find(".row")
+              .append(
+                mapping( fillItemTemp, { height: diff + ( tuneItemMax - el.firstElementChild.clientHeight ) } )
+              );
+          });
+        }
+      });
+      // reset
+      theRow = [];
+      heightTick = 0;
+    }
   });
 }
 
@@ -967,7 +1037,7 @@ viewpointPromise.then(data => {
 var domloaded = false;
 var jsonloaded = false;
 
-var itemsPromise = fetch("json/map.json?t=4").then(res => res.json());
+var itemsPromise = fetch("json/map.json?t=6").then(res => res.json());
 
 itemsPromise.then(data => {
   const gridWrap = $("#map .grid");
@@ -1038,6 +1108,14 @@ $(document).ready(function() {
       var layoutType = $(this).data("layout");
       $(`#map div[layout=${layoutType}]`).show();
       $(this).addClass("active");
+
+      if ( layoutType == "map" ) {
+        var ratio = 35 / 135;
+        $("#map .mapwrap img").each((idx, o) => {
+          o.height = o.width * ratio;
+        });
+        tuneMap();
+      }
     }
   });
 
