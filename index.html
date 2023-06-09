@@ -317,7 +317,7 @@
   <!-- Viewpoints  -->
   <div id="viewpoints" class="landing-page">
     <section class="comments gray-section" style="margin-top: 0">
-      <div class="container">
+      <div class="container view-swiper-container">
           <div class="headline col-xs-12 col-md-12">
             <div class="order"></div>
             <div class="title">
@@ -325,22 +325,27 @@
               <h4 class="title-en">Industry Foresight Viewpoint</h4>
             </div>
           </div>
-          <div class="row features-block">  
+          <div class="swiper-wrapper features-block">
           </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
       </div>
     </section>  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
     <template item>
-      <div class="col-lg-4">
-          <div class="bubble">{{quote}}</div>
-          <div class="comments-avatar">
-              <a href="" class="pull-left">
-                  <img alt="image" src="{{icon}}">
-              </a>
-              <div class="media-body">
-                  <div class="commens-name">{{name}}</div>
-                  <small class="text-muted">{{title}}</small>
-              </div>
-          </div>
+      <div class="swiper-slide col-md-4">
+        <div class="bubble">{{quote}}</div>
+        <div class="comments-avatar">
+            <a href="" class="pull-left">
+                <img alt="image" src="{{icon}}">
+            </a>
+            <div class="media-body">
+                <div class="commens-name">{{name}}</div>
+                <small class="text-muted">{{title}}</small>
+            </div>
+        </div>
       </div>
     </template>
   </div>

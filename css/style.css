@@ -2568,3 +2568,17 @@ footer .meet {
 #viewpoints .bubble{
   height: auto;
 }
+
+#viewpoints .swiper-pagination{
+  position: initial;
+  margin-top: 20px;
+}
+
+#viewpoints .swiper-button-prev{
+  left: 5%;
+}
+
+#viewpoints .swiper-button-next{
+  right: 5%;
+}
+

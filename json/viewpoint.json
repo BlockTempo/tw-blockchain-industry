@@ -16,5 +16,29 @@
         "title": "JZ Invest 創辦人",
         "icon": "https://image.blocktempo.com/2023/06/jz.jpg",
         "quote": "期許台灣區塊鏈產業不滿足於台灣的存量市場，而是一起團結拿下全球增量市場。"
-    }
+    },
+    {
+        "name": "coocolab",
+        "title": "酷可實驗室",
+        "icon": "https://image.blocktempo.com/2023/06/coocolab.jpeg",
+        "quote": "看得出來台灣在過去這幾年下，不管是加密團體以及越來越多的加密相關項目蓬勃發展。有跨足Web2轉型到Web3的公司，也有利用加密科技的創新公司。希望這個列表在未來能夠為台灣爭取到角逐世界的一席之地。"
+    },
+    {
+        "name": "Dr.Awesome Doge",
+        "title": "TON Contributor、Founder of TonX Studio",
+        "icon": "https://image.blocktempo.com/2023/06/awesome-doge.jpeg",
+        "quote": "台灣是一個法治、自由、隱私為基石的小島，孕育出許多人才。Taiwan is the Best Place for Crypto."
+    },
+    {
+        "name": "IAN",
+        "title": "EM3 DAO Founder",
+        "icon": "https://image.blocktempo.com/2023/06/IAN.png",
+        "quote": "隨著行業過去兩年的應用爆發，台灣區塊鏈新創發展也蓬勃發展，同時有許多優秀的開發人員深耕貢獻，讓國際看到更多台灣區塊鏈發展潛力！期待在下一次牛市看到獨角獸的誕生！"
+    },
+    {
+        "name": "高崎鈞",
+        "title": "臺灣區塊鏈愛好者協會 理事長",
+        "icon": "https://image.blocktempo.com/2023/06/TAKA.jpg",
+        "quote": "身為區塊鏈愛好者，我們致力於讓更多 Web2 產業理解區塊鏈應用，掌握加密貨幣與通證特性。目前我們努力推廣 ESG 永續發展並讓更多用戶習慣零信任無密碼的體驗，認為這是 銜接 Web3 出圈最快的方式。"
+    }			
 ]

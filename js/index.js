@@ -928,12 +928,39 @@ function loadMap(groups, items) {
   });
 }
 
-var viewpointPromise = fetch("json/viewpoint.json").then(res => res.json());
+var viewpointPromise = fetch("json/viewpoint.json?t=1").then(res => res.json());
 viewpointPromise.then(data => {
   const gridWrap = $("#viewpoints .features-block");
   const itemTemp = $("#viewpoints template[item]").html().trim();
   data.forEach(it => {
     gridWrap.append(mapping( itemTemp, it ));
+  });
+
+  const viewsSwiper = new Swiper('.view-swiper-container', {
+    effect: 'coverflow',
+    grabCursor: true,
+    loop: true,
+    centeredSlides: true,
+    keyboard: true,
+    spaceBetween: 0,
+    slidesPerView: 'auto',
+    speed: 100,
+    coverflowEffect: {
+      rotate: 0,
+      stretch: 0,
+      depth: 0,
+      modifier: 3,
+      slideShadows: false
+    },
+    simulateTouch: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true
+    }
   });
 });
 
