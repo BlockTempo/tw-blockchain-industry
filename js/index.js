@@ -29,7 +29,7 @@ $(window).scroll(function(evt){
 let swiper;
 
 // slider
-var bg = document.querySelector('.item-bg');
+// var bg = document.querySelector('.item-bg');
 var items = document.querySelectorAll('.news__item');
 var item = document.querySelector('.news__item');
 
@@ -50,14 +50,14 @@ if ( widthOver800 ) {
         var width = this.getBoundingClientRect().width;
         var height = this.getBoundingClientRect().height;
 
-        $('.item-bg').addClass('active');
+        // $('.item-bg').addClass('active');
         $('.news__item').removeClass('active');
         // $('.news__item').removeClass('active');
 
 
-        bg.style.width = width + 'px';
-        bg.style.height = height + 'px';
-        bg.style.transform = 'translateX(' + x + 'px ) translateY(' + y + 'px)';
+        // bg.style.width = width + 'px';
+        // bg.style.height = height + 'px';
+        // bg.style.transform = 'translateX(' + x + 'px ) translateY(' + y + 'px)';
       });
 
       element.addEventListener('mouseleave', function () {
@@ -125,11 +125,11 @@ function refreshSlider() {
         var height = sliderItem.getBoundingClientRect().height;
 
 
-        $('.item-bg').addClass('active');
+        // $('.item-bg').addClass('active');
 
-        bg.style.width = width + 'px';
-        bg.style.height = height + 'px';
-        bg.style.transform = 'translateX(' + x + 'px ) translateY(' + y + 'px)';
+        // bg.style.width = width + 'px';
+        // bg.style.height = height + 'px';
+        // bg.style.transform = 'translateX(' + x + 'px ) translateY(' + y + 'px)';
 
         // $('.swiper-slide-active').addClass('active');
         // $('.swiper-slide-active').nextAll("*:lt(5)").addClass('active');
@@ -165,11 +165,11 @@ function refreshSlider() {
     var height = sliderItem.getBoundingClientRect().height;
 
 
-    $('.item-bg').addClass('active');
+    // $('.item-bg').addClass('active');
 
-    bg.style.width = width + 'px';
-    bg.style.height = height + 'px';
-    bg.style.transform = 'translateX(' + x + 'px ) translateY(' + y + 'px)';
+    // bg.style.width = width + 'px';
+    // bg.style.height = height + 'px';
+    // bg.style.transform = 'translateX(' + x + 'px ) translateY(' + y + 'px)';
     
     // $('.news-slider__item').removeClass('active');
 
@@ -886,33 +886,55 @@ function mapping(html, pairs) {
 // }
 
 function loadMap(groups, items) {
-
   const wrap = $("#map .mapwrap");
   const cateTemp = $("#map div[layout=map] template[category]").html().trim();
   const subcateTemp = $("#map div[layout=map] template[subcategory]").html().trim();
+  const emptySubcateTemp = $("#map div[layout=map] template[emptycategory]").html().trim();
   const itemTemp = $("#map div[layout=map] template[item]").html().trim();
 
-  groups.forEach(g => {
-    const cateWrap = $( mapping( cateTemp, { title: g.title } ) );
+  const groupsClone = groups.slice(0);
+
+  groupsClone.sort((a, b) => {
+    return a.order < b.order ? -1 : 1;
+  });
+
+  groupsClone.forEach(g => {
+    const cateWrap = $( mapping( cateTemp, { title: g.title, cols: g.cols } ) );
     const cateItemWrap = cateWrap.find(".category-block");
+
+    const emptySubcateWrap = $( mapping( emptySubcateTemp, { cols: g.selfcols } ) );
+    const emptySubcateItemWrap = emptySubcateWrap.find(".row");
 
     items.filter(it => it.group === g.id)
       .forEach(it => {
-        cateItemWrap.append(
-          mapping( itemTemp, it )
-        );
+        const itClone = { ...it, itemCols: g.itemCols };
+        emptySubcateItemWrap.append(
+          mapping( itemTemp, itClone )
+        )
       });
+    
+    if ( emptySubcateItemWrap.children().length ) {
+      cateItemWrap.append(emptySubcateWrap);
+    }
 
     if ( g.children && g.children.length > 0 ) {
       cateItemWrap.addClass("with-child");
-      g.children.forEach(gc => {
-        const subcateWrap = $( mapping( subcateTemp, { title: gc.title } ) );
+      const gChildClone = g.children.slice(0);
+      
+      gChildClone.sort((a, b) => {
+        return a.order < b.order ? -1 : 1;
+      });
+
+      gChildClone.forEach(gc => {
+        const nestedGroup = [g.id, gc.id].join('-');
+        const subcateWrap = $( mapping( subcateTemp, { title: gc.title, cols: gc.cols } ) );
         const subcateItemWrap = subcateWrap.find(".row");
         
-        items.filter(it => it.group === [g.id, gc.id].join('-'))
+        items.filter(it => it.group === nestedGroup)
           .forEach(it => {
+            const itClone = { ...it, itemCols: gc.itemCols };
             subcateItemWrap.append(
-              mapping( itemTemp, it )
+              mapping( itemTemp, itClone )
             );
           });
 
@@ -928,19 +950,94 @@ function loadMap(groups, items) {
   });
 }
 
-var viewpointPromise = fetch("json/viewpoint.json").then(res => res.json());
+function tuneMap() {
+  const fillItemTemp = $("#map div[layout=map] template[fillitem]").html().trim();
+  let heightTick = 0;
+  let theRow = [];
+  $(".mapwrap > .bt-col").each((idx, o) => {
+    const maxHeight = parseInt( $(o).css("max-width") );
+    heightTick += maxHeight;
+    theRow.push(o);
+    if ( heightTick >= 100 ) {
+      const maxh = theRow
+        .map(el => el.firstElementChild.clientHeight)
+        .reduce((a,b) => Math.max(a,b), 0);
+        
+      theRow.forEach(el => {
+        const diff = maxh - el.firstElementChild.clientHeight;
+        if ( diff > 0 ) {
+          // find last bt-col
+          let subHeightTick = 0;
+          let tuneItems = [];
+          const subitems = Array.from($(el.firstElementChild).find(".bt-col"));
+          while(subitems.length) {
+            const item = subitems.pop();
+            const subMaxHeight = parseFloat( $(item).css("max-width") );
+            subHeightTick += subMaxHeight;
+            tuneItems.push(item);
+            if ( 100 - subHeightTick < 0.1 ) {
+              break;
+            }
+          }
+          const tuneItemMax = tuneItems
+            .map(el => el.firstElementChild.clientHeight)
+            .reduce((a,b) => Math.max(a,b), 0);
+          
+          tuneItems.forEach(el => {
+            $(el).find(".row")
+              .append(
+                mapping( fillItemTemp, { height: diff + ( tuneItemMax - el.firstElementChild.clientHeight ) } )
+              );
+          });
+        }
+      });
+      // reset
+      theRow = [];
+      heightTick = 0;
+    }
+  });
+}
+
+var viewpointPromise = fetch("json/viewpoint.json?t=1").then(res => res.json());
 viewpointPromise.then(data => {
   const gridWrap = $("#viewpoints .features-block");
   const itemTemp = $("#viewpoints template[item]").html().trim();
   data.forEach(it => {
     gridWrap.append(mapping( itemTemp, it ));
   });
+
+  const viewsSwiper = new Swiper('.view-swiper-container', {
+    effect: 'coverflow',
+    grabCursor: true,
+    loop: true,
+    centeredSlides: true,
+    keyboard: true,
+    spaceBetween: 0,
+    slidesPerView: 'auto',
+    speed: 100,
+    coverflowEffect: {
+      rotate: 0,
+      stretch: 0,
+      depth: 0,
+      modifier: 3,
+      slideShadows: false
+    },
+    simulateTouch: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true
+    }
+  });
 });
 
 var domloaded = false;
 var jsonloaded = false;
 
-var itemsPromise = fetch("json/map.json?t=4").then(res => res.json());
+var itemsPromise = fetch("json/map.json?t=6").then(res => res.json());
 
 itemsPromise.then(data => {
   const gridWrap = $("#map .grid");
@@ -1011,6 +1108,14 @@ $(document).ready(function() {
       var layoutType = $(this).data("layout");
       $(`#map div[layout=${layoutType}]`).show();
       $(this).addClass("active");
+
+      if ( layoutType == "map" ) {
+        var ratio = 35 / 135;
+        $("#map .mapwrap img").each((idx, o) => {
+          o.height = o.width * ratio;
+        });
+        tuneMap();
+      }
     }
   });
 
@@ -1111,3 +1216,74 @@ sliderLinks.on('click', function(e){
 });
 
 sliderLinks.first().trigger('click');
+
+/* auto convertions */
+/*
+var toConvertPromise = fetch("json/converted.json?t=1").then(res => res.json());
+toConvertPromise.then(data => {
+  const groupsCollection = [];
+  const itemsCollection = [];
+  data.forEach(it => {
+    let applyGroups = [];
+    let targetGroup = groupsCollection.find(g => g.id == it.group_major);
+    if ( !targetGroup ) {
+      targetGroup = {
+        id: it.group_major,
+        title: it.group_major,
+        order: groupsCollection.length + 1,
+        cols: 4,
+        itemCols: 3,
+        children: []
+      };
+      groupsCollection.push( targetGroup );
+    }
+    
+    applyGroups.push( it.group_major );
+
+    if ( it.group_minor ) {
+      let childGroup = targetGroup.children.find(gc => gc.id == it.group_minor);
+      if ( !childGroup ) {
+        childGroup = {
+          id: it.group_minor,
+          title: it.group_minor,
+          order: targetGroup.children.length + 1,
+          cols: 4,
+          itemCols: 3
+        };
+        targetGroup.children.push(childGroup);
+      }
+
+      applyGroups.push( it.group_minor );
+    }
+
+    itemsCollection.push({
+      group: applyGroups.join("-"),
+      title: it.title,
+      logo_icon: it.logo_icon,
+      logo_banner: it.logo_banner,
+      briefly: it.briefly,
+      description: it.description,
+      website: it.website,
+      twitter: it.twitter,
+      id: it.title.replaceAll(" ", "-").toLowerCase()
+    });
+  });
+
+  let finalobj = {
+    groups: groupsCollection,
+    items: itemsCollection
+  };
+
+  // trigger download
+  var element = document.createElement('a');
+  element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent( JSON.stringify(finalobj) ));
+  element.setAttribute('download', "map.json");
+
+  element.style.display = 'none';
+  document.body.appendChild(element);
+
+  element.click();
+
+  document.body.removeChild(element);
+});
+*/

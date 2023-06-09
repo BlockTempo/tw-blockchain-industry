@@ -41,12 +41,26 @@ html, body {
 }
 @media (min-width: 1200px){
   .container {
-    max-width: 1080px !important;
+    max-width: 88vw !important;
   }
 }
 
 #map .container{
   padding: 30px 0;
+}
+
+/* #map .container.list{
+  max-width: ;
+} */
+
+#map {
+  background: linear-gradient(180deg, #EBF5FF 0%, #D9DDF3 100%);
+}
+
+#map .mapwrap {
+  padding: 1%;
+  margin-left: -40px;
+  margin-right: -40px;
 }
 
 /* 整體stytle */
@@ -274,7 +288,7 @@ nav.navbar {
 header#theme {
   color: #fff;
   width: 100%;
-  height: 780px;
+  height: 84vh;
   overflow: hidden;
   /* background-image: url(../img/header-background.png); */
   background-image: url(../img/0531WebDesign_BG.png);
@@ -1957,7 +1971,7 @@ ul{
   }
 }
 .news__item {
-  padding: 0px 40px 15px;
+  padding: 0px 10px 15px;
   color: #fff;
   border-radius: 10px;
   display: block;
@@ -2059,7 +2073,7 @@ ul{
 }
 .news__title {
   height: 100px;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   opacity: .7;
   margin-top: 20px;
@@ -2511,22 +2525,32 @@ footer .meet {
 
 #map div[layout="map"] .category-header{
   text-align: center;
-  color: #0D2382;
+  color: #293C8F;
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1em;
+  line-height: 1.2em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
-#map div[layout="map"] .category-row{
-  padding: 2px 10px 20px;
+#map div[layout="map"] .category-wrap{
+  padding: 2px 10px 0px;
+  background: #D8E7FF;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px 0px #1B40A099;
 }
 
 #map div[layout="map"] .category-block {
-  border: 5px solid #293C8F;
-  border-bottom-width: 20px;
-  background-color: white;
-  border-top-right-radius: 10px;
+  /* border: 5px solid #293C8F;
+  border-bottom-width: 20px; */
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 #map div[layout="map"] .category-block.with-child{
-  border-bottom-width: 15px;
+  /* border-bottom-width: 15px; */
 }
 
 #map div[layout="map"] .subcategory-header{
@@ -2536,16 +2560,27 @@ footer .meet {
 }
 
 #map div[layout="map"] .subcategory-split{
-  border-bottom: 5px solid #293C8F;
+  /* border-bottom: 5px solid #293C8F; */
+  border: 1px solid #C6CFEF;
+  border-radius: .7em;
+  background-color: #fff;
+  margin-bottom: 1em;
+  padding: 0 10px;
 }
 
 #map div[layout="map"] .subcategory-header h6{
-  background-color: #293C8F;
+  background: #C6CFEF;
   margin-left: auto;
+  color: #fff;
   margin-right: auto;
-  padding: 5px 20px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  padding: 4px 22px;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  font-size: .8em;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0.14em;
 }
 
 #map div[layout="map"] .subcategory-header-dot{
@@ -2567,4 +2602,89 @@ footer .meet {
 
 #viewpoints .bubble{
   height: auto;
+}
+
+#viewpoints .swiper-pagination{
+  position: initial;
+  margin-top: 20px;
+}
+
+#viewpoints .swiper-button-prev{
+  left: 5%;
+}
+
+#viewpoints .swiper-button-next{
+  right: 5%;
+}
+
+/* bt custom ratio */
+@media (min-width: 768px) {
+  .bt-col{
+    padding-left: .2em;
+    padding-right: .2em;
+  }
+
+  .bt-col-1-8,
+  .col-md-1-8 {
+    -ms-flex: 0 0 12.5%;
+    flex: 0 0 12.5%;
+    max-width: 12.5%;
+  }
+  .bt-col-2-8 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .bt-col-3-8 {
+    -ms-flex: 0 0 37.5%;
+    flex: 0 0 37.5%;
+    max-width: 37.5%;
+  }
+  .bt-col-4-8 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .bt-col-5-8 {
+    -ms-flex: 0 0 62.5%;
+    flex: 0 0 62.5%;
+    max-width: 62.5%;
+  }
+  .bt-col-6-8 {
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  .bt-col-7-8 {
+    -ms-flex: 0 0 87.5%;
+    flex: 0 0 87.5%;
+    max-width: 87.5%;
+  }
+  .bt-col-8-8 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .bt-col-1-3 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+
+  .bt-col-2-3 {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+  }
+
+  .col-md-1-5 {
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+
+.opacity-0 {
+  opacity: 0;
 }
