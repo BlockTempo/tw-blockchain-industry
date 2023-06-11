@@ -965,31 +965,29 @@ function tuneMap() {
         
       theRow.forEach(el => {
         const diff = maxh - el.firstElementChild.clientHeight;
-        if ( diff > 0 ) {
-          // find last bt-col
-          let subHeightTick = 0;
-          let tuneItems = [];
-          const subitems = Array.from($(el.firstElementChild).find(".bt-col"));
-          while(subitems.length) {
-            const item = subitems.pop();
-            const subMaxHeight = parseFloat( $(item).css("max-width") );
-            subHeightTick += subMaxHeight;
-            tuneItems.push(item);
-            if ( 100 - subHeightTick < 0.1 ) {
-              break;
-            }
+        // find last bt-col
+        let subHeightTick = 0;
+        let tuneItems = [];
+        const subitems = Array.from($(el.firstElementChild).find(".bt-col"));
+        while(subitems.length) {
+          const item = subitems.pop();
+          const subMaxHeight = parseFloat( $(item).css("max-width") );
+          subHeightTick += subMaxHeight;
+          tuneItems.push(item);
+          if ( 100 - subHeightTick < 0.1 ) {
+            break;
           }
-          const tuneItemMax = tuneItems
-            .map(el => el.firstElementChild.clientHeight)
-            .reduce((a,b) => Math.max(a,b), 0);
-          
-          tuneItems.forEach(el => {
-            $(el).find(".row")
-              .append(
-                mapping( fillItemTemp, { height: diff + ( tuneItemMax - el.firstElementChild.clientHeight ) } )
-              );
-          });
         }
+        const tuneItemMax = tuneItems
+          .map(el => el.firstElementChild.clientHeight)
+          .reduce((a,b) => Math.max(a,b), 0);
+        
+        tuneItems.forEach(el => {
+          $(el).find(".row")
+            .append(
+              mapping( fillItemTemp, { height: diff + ( tuneItemMax - el.firstElementChild.clientHeight ) } )
+            );
+        });
       });
       // reset
       theRow = [];
@@ -1099,6 +1097,8 @@ itemsPromise.then(data => {
   }
 });
 
+let mapHasTuned = false;
+
 $(document).ready(function() {
   $("#map button[data-layout]").click(function(){
     if ( !$(this).hasClass("active") ) {
@@ -1109,12 +1109,13 @@ $(document).ready(function() {
       $(`#map div[layout=${layoutType}]`).show();
       $(this).addClass("active");
 
-      if ( layoutType == "map" ) {
+      if ( widthOver800 && layoutType == "map" && !mapHasTuned ) {
         var ratio = 35 / 135;
         $("#map .mapwrap img").each((idx, o) => {
           o.height = o.width * ratio;
         });
         tuneMap();
+        mapHasTuned = true;
       }
     }
   });
