@@ -2,8 +2,8 @@
 * {
   font-family: Roboto, Noto Sans TC, serif;
   position: relative;
-  transition-duration: 0.6s;
-  transition-timing-function: ease;
+  /* transition-duration: 0.6s;
+  transition-timing-function: ease; */
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -83,8 +83,9 @@ h1 {
 }
 
 h1.main-topic{
-  font-size: 3.2em;
+  font-size: 3rem;
   letter-spacing: 4px;
+  line-height: 3.8rem;
 }
 
 h2 {
@@ -308,7 +309,7 @@ header#theme {
   background-position: 55% 58%;
 }
 #theme .topic{
-  margin-top: 15%;
+  margin-top: 10%;
 }
 img.big19 {
   position: absolute;
@@ -363,12 +364,13 @@ img.bull{
 .chains-m{
   display: none;
 }
-.taiwan-2019{
+.taiwan-2023{
   width: auto;
   display: inline-block;
-  font-size: 30px;
+  font-size: 2rem;
   letter-spacing: 3px;
   padding: 0;
+  font-weight: 800;
   /* border: solid 2px #fff; */
 }
 .mark, mark{
@@ -379,13 +381,13 @@ img.bull{
   text-shadow: 0 0 25px #02BAE9;
 }
 .main-topic{
-  margin-top: 5px;
+  /* margin-top: 5px; */
   /* margin-bottom: 2%;  */
 }
 
 .main-topic-en{
   color: white;
-
+  line-height: 2rem;
 }
 
 .main-topic span{
@@ -448,6 +450,14 @@ img.bull{
   max-width: 160px;
   height: 45px;
   font-size: 1em;
+}
+
+.powerby {
+  margin-top: 8%;
+}
+
+.powerby img {
+  max-height: 1.8rem;
 }
 
 #mc-embedded-subscribe-form {
@@ -520,7 +530,7 @@ img.bull{
     width: 23%;
     left: -14%;
   }
-  .taiwan-2019{
+  .taiwan-2023{
     font-size: 20px;
   }
   img.bear{
