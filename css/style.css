@@ -63,6 +63,13 @@ html, body {
   margin-right: -40px;
 }
 
+@media screen and (max-width: 576px){
+  #map .mapwrap {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
 /* 整體stytle */
 h1 {
   font-size: 3.3em;
@@ -203,6 +210,7 @@ a:hover{
 nav.navbar {
   background-color: transparent; 
   padding: 15px 0;
+  height: 70px;
 }
 .navbar-top{
   background-image: linear-gradient(90deg, rgb(41 63 150) 0%, rgb(61 88 180) 100%);
@@ -231,7 +239,7 @@ nav.navbar {
 }
 @media (min-width: 768px) {
   .navbar-expand-md .navbar-nav .nav-link {
-    padding-top: 2px;
+    padding-bottom: 2px;
   }
 }
 
@@ -239,7 +247,7 @@ nav.navbar {
   border-top: 5px solid #63EDFC;
   width: 36px;
   display: block;
-  margin-bottom: 5px;
+  /* margin-top: 5px; */
   margin-left: auto;
   margin-right: auto;
   opacity: 0;
@@ -273,15 +281,19 @@ nav.navbar {
     width: 160px;
   }
 }
-@media screen and (min-width: 768px){
-  .navbar-top {
-    height: 70px;
-  }
-}
+
 @media screen and (max-width: 767px){
   .navbar-collapse {
     background-color: #273d93;
   }
+}
+
+#navigation .navbar-brand{
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+#navigation .navbar-brand img{
+  max-height: 73px;
 }
 
 /* header */
