@@ -320,7 +320,7 @@ function tuneMap() {
   });
 }
 
-var viewpointPromise = fetch("json/viewpoint.json?t=1").then(res => res.json());
+var viewpointPromise = fetch("json/viewpoint.json?t=2").then(res => res.json());
 viewpointPromise.then(data => {
   const gridWrap = $("#viewpoints .features-block");
   const itemTemp = $("#viewpoints template[item]").html().trim();
@@ -359,7 +359,7 @@ viewpointPromise.then(data => {
 var domloaded = false;
 var jsonloaded = false;
 
-var itemsPromise = fetch("json/map.json?t=6").then(res => res.json());
+var itemsPromise = fetch("json/map.json?t=7").then(res => res.json());
 
 itemsPromise.then(data => {
   const gridWrap = $("#map .grid");
