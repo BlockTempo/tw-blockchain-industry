@@ -2511,11 +2511,47 @@ footer .links .fab{
 
 #map .headline {
   padding-left: 20px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 
 #map .btn-light:focus {
   box-shadow: none;
+}
+
+#map .switcher-wrap {
+  background: #D6DCE5;
+  border-radius: 30px;
+  box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.4);
+  font-weight: 800;
+}
+
+#map .switcher{
+  border: 0;
+  background: transparent;
+  color: #fff;
+}
+
+#map .switcher.active {
+  background: #41AAF3;
+  color: #293C8F;
+  border-radius: 30px;
+  box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.4);
+}
+
+.fa-circle{
+  display: none;
+}
+
+#map .switcher.active .fa-circle{
+  color: #fff;
+  font-size: 8px;
+  margin-right: 4px;
+  display: inline-block;
+}
+
+#map .download {
+  box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.4);
+  border-radius: 30px;
 }
 
 /* override onenav */
