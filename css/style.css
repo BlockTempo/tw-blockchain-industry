@@ -2,8 +2,8 @@
 * {
   font-family: Roboto, Noto Sans TC, serif;
   position: relative;
-  transition-duration: 0.6s;
-  transition-timing-function: ease;
+  /* transition-duration: 0.6s;
+  transition-timing-function: ease; */
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -22,6 +22,7 @@ html, body {
   background-color: #efeef1;
   z-index: -9999;
   color: #0D051F;
+  scroll-behavior: smooth;
 }
 #exchange_frame .col-md-9 {
   padding-left: 0px !important;
@@ -46,7 +47,7 @@ html, body {
 }
 
 #map .container{
-  padding: 30px 0;
+  padding: 0px 0 30px;
 }
 
 /* #map .container.list{
@@ -63,6 +64,13 @@ html, body {
   margin-right: -40px;
 }
 
+@media screen and (max-width: 576px){
+  #map .mapwrap {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
 /* 整體stytle */
 h1 {
   font-size: 3.3em;
@@ -76,8 +84,9 @@ h1 {
 }
 
 h1.main-topic{
-  font-size: 3.2em;
+  font-size: 3rem;
   letter-spacing: 4px;
+  line-height: 3.8rem;
 }
 
 h2 {
@@ -104,7 +113,7 @@ a:hover{
 .headline {
   display: flex;
   align-items: center;
-  padding-top: 30px;
+  padding-top: 40px;
 }
 .headline h2 {
   padding: 0;
@@ -117,6 +126,14 @@ a:hover{
   opacity: 0.7;
   font-weight: 400;
   z-index: 3;
+}
+.headline h6{
+  color: #0D051F;
+  opacity: 0.7;
+}
+.headline .title-tw,
+.headline .title-en{
+  display: inline-block;
 }
 .headline .order {
   opacity: 0.1;
@@ -203,6 +220,7 @@ a:hover{
 nav.navbar {
   background-color: transparent; 
   padding: 15px 0;
+  height: 70px;
 }
 .navbar-top{
   background-image: linear-gradient(90deg, rgb(41 63 150) 0%, rgb(61 88 180) 100%);
@@ -231,7 +249,7 @@ nav.navbar {
 }
 @media (min-width: 768px) {
   .navbar-expand-md .navbar-nav .nav-link {
-    padding-top: 2px;
+    padding-bottom: 2px;
   }
 }
 
@@ -239,7 +257,7 @@ nav.navbar {
   border-top: 5px solid #63EDFC;
   width: 36px;
   display: block;
-  margin-bottom: 5px;
+  /* margin-top: 5px; */
   margin-left: auto;
   margin-right: auto;
   opacity: 0;
@@ -273,15 +291,19 @@ nav.navbar {
     width: 160px;
   }
 }
-@media screen and (min-width: 768px){
-  .navbar-top {
-    height: 70px;
-  }
-}
+
 @media screen and (max-width: 767px){
   .navbar-collapse {
     background-color: #273d93;
   }
+}
+
+#navigation .navbar-brand{
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+#navigation .navbar-brand img{
+  max-height: 73px;
 }
 
 /* header */
@@ -296,7 +318,7 @@ header#theme {
   background-position: 55% 58%;
 }
 #theme .topic{
-  margin-top: 15%;
+  margin-top: 10%;
 }
 img.big19 {
   position: absolute;
@@ -323,7 +345,7 @@ img.falling{
   width: 35%;
   max-width: 700px;
   position: absolute;
-  bottom: 15%;
+  bottom: 10%;
   right: 14%;
 }
 
@@ -351,12 +373,13 @@ img.bull{
 .chains-m{
   display: none;
 }
-.taiwan-2019{
+.taiwan-2023{
   width: auto;
   display: inline-block;
-  font-size: 30px;
+  font-size: 2rem;
   letter-spacing: 3px;
   padding: 0;
+  font-weight: 800;
   /* border: solid 2px #fff; */
 }
 .mark, mark{
@@ -367,13 +390,13 @@ img.bull{
   text-shadow: 0 0 25px #02BAE9;
 }
 .main-topic{
-  margin-top: 5px;
+  /* margin-top: 5px; */
   /* margin-bottom: 2%;  */
 }
 
 .main-topic-en{
   color: white;
-
+  line-height: 2rem;
 }
 
 .main-topic span{
@@ -436,6 +459,14 @@ img.bull{
   max-width: 160px;
   height: 45px;
   font-size: 1em;
+}
+
+.powerby {
+  margin-top: 8%;
+}
+
+.powerby img {
+  max-height: 1.8rem;
 }
 
 #mc-embedded-subscribe-form {
@@ -508,7 +539,7 @@ img.bull{
     width: 23%;
     left: -14%;
   }
-  .taiwan-2019{
+  .taiwan-2023{
     font-size: 20px;
   }
   img.bear{
@@ -2124,19 +2155,26 @@ ul{
 }
 /* edm */
 #edm{
-  display: flex;
+  /* display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 100px 30px;
   background-image: url(../img/edm-background.png);
-  background-size: cover;
+  background-size: cover; */
+  background-color: #95a0c4;
+  color: #fff;
+}
+
+#edm .container{
+  max-width: 72vw !important;
+  padding: 40px 10px;
 }
 #edm .cube {
-  width: 10px;
+  /* width: 10px;
   height: 10px;
   background-color: #C53029;
-  margin-bottom: 50px;
+  margin-bottom: 50px; */
 }
 #edm h2{
   color: #fff;
@@ -2146,28 +2184,54 @@ ul{
   font-weight: 400;
   max-width: 600px;
 }
+#edm #mc_embed_signup{
+  margin: 1.2%;
+}
 #edm #mce-EMAIL {
-  border-bottom: solid 1px #fff;
-  background-color: transparent;
+  /* border-bottom: solid 1px #fff; */
+  background-color: #fff;
+  border-radius: 15px;
 }
+
+#edm .prefix {
+  font-size: .8rem;
+}
+
+#edm .header {
+  font-size: 2rem;
+}
+
 #edm .clear {
-  margin-top: 10%;
+  /* margin-top: 10%; */
 }
+
+#edm .form-row {
+  width: 100%;
+  padding: 4px;
+  border-radius: 15px;
+  background-color: white;
+}
+
 #edm ::-webkit-input-placeholder { 
   color: #fff;
   font-weight: 200;
 }
-#edm .clear #mc-embedded-subscribe {
-  background-color: #fff;
-  color: #0D051F;
+
+#edm #mce-EMAIL{
+  height: 35px;
+}
+
+#edm #mc-embedded-subscribe {
+  background-color: #45c9ee;
+  color: #fff;
   border: none;
-  padding: 10px 35px;
-  border-radius: 40px;
+  padding: 5px 25px;
+  border-radius: 15px;
   font-size: 18px;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 20px 40px 0px;
   transition: all 0.3s ease-in-out 0s; 
 }
-#edm .clear #mc-embedded-subscribe:hover{
+#edm #mc-embedded-subscribe:hover{
   box-shadow: rgba(0, 0, 0, 0) 0px 20px 40px 0px;
   color: #00A2EA;
   background-color: rgb(248, 248, 249);
@@ -2184,6 +2248,11 @@ ul{
 }
 
 /* footer */
+.fa-linktr{
+  background: url("../img/linktree-logo-icon.svg") no-repeat;
+  width: 1.25rem;
+  height: 1.25rem;
+}
 footer {
   padding: 30px;
   /* background-color: #EAE7EB; */
@@ -2191,6 +2260,10 @@ footer {
   background-image: url(../img/0531WebDesign_footBG.png);
   background-size: cover;
   background-position: 55% 58%;
+}
+
+footer .container{
+  max-width: 90vw !important;
 }
 
 footer span {
@@ -2201,14 +2274,21 @@ footer a {
   color: #f8f8f8;
   text-decoration: initial;
   transition: 0.01s;
+  font-size: 0.85rem;
 }
+
+footer a.about {
+  display: block;
+  margin: 20px 0;
+}
+
 footer a:hover {
   color: #63C5FC;
   text-decoration: none;
 }
 footer .our-logo {
   display: block;
-  width: 50%;
+  width: 65%;
   padding-top: 10px;
   padding-bottom: 8%;
   margin-bottom: 0.5rem;
@@ -2217,36 +2297,41 @@ footer .share-btn-kit {
   margin-top: 2%;
 }
 footer .fab, footer .fas {
-  font-size: 40px;
-  padding: 5px;
+  font-size: 1.5rem;
+  padding: 4px;
 }
 footer .fa-facebook-square {
   padding-left: 0;
 }
 footer .title {
   display: inline-block;
-  color: #63EDFC;
+  color: inherit;
   font-weight: 700;
   letter-spacing: 2px;
   padding-top: 10px;
   padding-bottom: 8%;
 }
+footer .title .fas{
+  font-size: 1.2rem;
+}
 footer ul {
   padding: 0;
   list-style-type: none;
 }
-footer ul li {
+/* footer ul li {
   padding: 5px 10px 5px 0px;
-}
+} */
 footer .left {
   margin-right: 15%;
 }
 footer .copyright {
   text-align: right;
+  font-size: 0.8rem;
 }
 footer hr {
+  opacity: 0;
   background-color: #fdfdfd;
-  margin-top: 5%;
+  margin: 1%;
   width: 100%;
 }
 footer h6 {
@@ -2263,6 +2348,10 @@ footer img {
 }
 footer .meet {
   margin-top: 10%;
+}
+
+footer .links .fab{
+  font-size: 1.2rem;
 }
 
 /* modal */
@@ -2530,9 +2619,16 @@ footer .meet {
   font-style: normal;
   font-weight: 900;
   font-size: 1em;
-  line-height: 1.2em;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
+  margin-top: 0.7em;
+  margin-bottom: 0.1em;
+  line-height: initial;
+}
+
+#map div[layout="map"] .category-header-en{
+  font-size: 10px;
+  display: block;
+  font-weight: 400;
+  letter-spacing: 0.08em;
 }
 
 #map div[layout="map"] .category-wrap{
@@ -2573,7 +2669,7 @@ footer .meet {
   margin-left: auto;
   color: #fff;
   margin-right: auto;
-  padding: 4px 22px;
+  padding: 2px 2.4em;
   border-bottom-left-radius: 100px;
   border-bottom-right-radius: 100px;
   font-size: .8em;
@@ -2581,6 +2677,13 @@ footer .meet {
   font-style: normal;
   font-weight: 600;
   letter-spacing: 0.14em;
+}
+
+#map div[layout="map"] .subcategory-header-en {
+  display: block;
+  font-size: .5em;
+  font-weight: 100;
+  letter-spacing: 0.05em;
 }
 
 #map div[layout="map"] .subcategory-header-dot{
