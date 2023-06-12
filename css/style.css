@@ -2155,19 +2155,26 @@ ul{
 }
 /* edm */
 #edm{
-  display: flex;
+  /* display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 100px 30px;
   background-image: url(../img/edm-background.png);
-  background-size: cover;
+  background-size: cover; */
+  background-color: #95a0c4;
+  color: #fff;
+}
+
+#edm .container{
+  max-width: 72vw !important;
+  padding: 40px 10px;
 }
 #edm .cube {
-  width: 10px;
+  /* width: 10px;
   height: 10px;
   background-color: #C53029;
-  margin-bottom: 50px;
+  margin-bottom: 50px; */
 }
 #edm h2{
   color: #fff;
@@ -2177,28 +2184,54 @@ ul{
   font-weight: 400;
   max-width: 600px;
 }
+#edm #mc_embed_signup{
+  margin: 1.2%;
+}
 #edm #mce-EMAIL {
-  border-bottom: solid 1px #fff;
-  background-color: transparent;
+  /* border-bottom: solid 1px #fff; */
+  background-color: #fff;
+  border-radius: 15px;
 }
+
+#edm .prefix {
+  font-size: .8rem;
+}
+
+#edm .header {
+  font-size: 2rem;
+}
+
 #edm .clear {
-  margin-top: 10%;
+  /* margin-top: 10%; */
 }
+
+#edm .form-row {
+  width: 100%;
+  padding: 4px;
+  border-radius: 15px;
+  background-color: white;
+}
+
 #edm ::-webkit-input-placeholder { 
   color: #fff;
   font-weight: 200;
 }
-#edm .clear #mc-embedded-subscribe {
-  background-color: #fff;
-  color: #0D051F;
+
+#edm #mce-EMAIL{
+  height: 35px;
+}
+
+#edm #mc-embedded-subscribe {
+  background-color: #45c9ee;
+  color: #fff;
   border: none;
-  padding: 10px 35px;
-  border-radius: 40px;
+  padding: 5px 25px;
+  border-radius: 15px;
   font-size: 18px;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 20px 40px 0px;
   transition: all 0.3s ease-in-out 0s; 
 }
-#edm .clear #mc-embedded-subscribe:hover{
+#edm #mc-embedded-subscribe:hover{
   box-shadow: rgba(0, 0, 0, 0) 0px 20px 40px 0px;
   color: #00A2EA;
   background-color: rgb(248, 248, 249);
@@ -2215,6 +2248,11 @@ ul{
 }
 
 /* footer */
+.fa-linktr{
+  background: url("../img/linktree-logo-icon.svg") no-repeat;
+  width: 1.25rem;
+  height: 1.25rem;
+}
 footer {
   padding: 30px;
   /* background-color: #EAE7EB; */
@@ -2222,6 +2260,10 @@ footer {
   background-image: url(../img/0531WebDesign_footBG.png);
   background-size: cover;
   background-position: 55% 58%;
+}
+
+footer .container{
+  max-width: 90vw !important;
 }
 
 footer span {
@@ -2232,14 +2274,21 @@ footer a {
   color: #f8f8f8;
   text-decoration: initial;
   transition: 0.01s;
+  font-size: 0.85rem;
 }
+
+footer a.about {
+  display: block;
+  margin: 20px 0;
+}
+
 footer a:hover {
   color: #63C5FC;
   text-decoration: none;
 }
 footer .our-logo {
   display: block;
-  width: 50%;
+  width: 65%;
   padding-top: 10px;
   padding-bottom: 8%;
   margin-bottom: 0.5rem;
@@ -2248,36 +2297,41 @@ footer .share-btn-kit {
   margin-top: 2%;
 }
 footer .fab, footer .fas {
-  font-size: 40px;
-  padding: 5px;
+  font-size: 1.5rem;
+  padding: 4px;
 }
 footer .fa-facebook-square {
   padding-left: 0;
 }
 footer .title {
   display: inline-block;
-  color: #63EDFC;
+  color: inherit;
   font-weight: 700;
   letter-spacing: 2px;
   padding-top: 10px;
   padding-bottom: 8%;
 }
+footer .title .fas{
+  font-size: 1.2rem;
+}
 footer ul {
   padding: 0;
   list-style-type: none;
 }
-footer ul li {
+/* footer ul li {
   padding: 5px 10px 5px 0px;
-}
+} */
 footer .left {
   margin-right: 15%;
 }
 footer .copyright {
   text-align: right;
+  font-size: 0.8rem;
 }
 footer hr {
+  opacity: 0;
   background-color: #fdfdfd;
-  margin-top: 5%;
+  margin: 1%;
   width: 100%;
 }
 footer h6 {
@@ -2294,6 +2348,10 @@ footer img {
 }
 footer .meet {
   margin-top: 10%;
+}
+
+footer .links .fab{
+  font-size: 1.2rem;
 }
 
 /* modal */

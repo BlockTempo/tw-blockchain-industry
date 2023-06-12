@@ -456,6 +456,7 @@ $(document).ready(function() {
 
 // rss feeds
 const rssFeeds = [
+  "https://www.blocktempo.com/search/tag/%E5%8F%B0%E7%81%A3%E5%8A%A0%E5%AF%86%E8%B2%A8%E5%B9%A3%E6%B3%95%E8%A6%8F/feed/",
   "https://www.blocktempo.com/category/business/feed/",
   "https://www.blocktempo.com/category/cryptocurrency-market/feed/",
   "https://www.blocktempo.com/category/exclusive-interview/feed/",
