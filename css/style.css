@@ -2213,8 +2213,9 @@ ul{
 }
 
 #edm ::-webkit-input-placeholder { 
-  color: #fff;
+  /* color: #fff; */
   font-weight: 200;
+  color: #a0a0a0;
 }
 
 #edm #mce-EMAIL{
