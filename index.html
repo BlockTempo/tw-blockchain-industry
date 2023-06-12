@@ -206,7 +206,9 @@
         <template category>
           <div class="col col-12 bt-col bt-col-{{cols}} p-2">
             <div class="category-wrap">
-              <h4 class="category-header">{{title}}</h4>
+              <h4 class="category-header">{{title}}
+                <span class="category-header-en">{{title_en}}</span>
+              </h4>
               <div class="row category-block"></div>
             </div>
           </div>
@@ -216,7 +218,9 @@
           <div class="col col-12 bt-col bt-col-{{cols}}">
             <div class="subcategory-split">
               <div class="subcategory-header">
-                <h6>{{title}}</h6>
+                <h6>{{title}}
+                  <span class="subcategory-header-en">{{title_en}}</span>
+                </h6>
               </div>
               <div class="row subcategory-block"></div>
             </div>
@@ -226,7 +230,11 @@
         <template emptycategory>
           <div class="col col-12 bt-col bt-col-{{cols}}">
             <div class="subcategory-split">
-              <div class="subcategory-header opacity-0"><h6>無</h6></div>
+              <div class="subcategory-header opacity-0">
+                <h6>無
+                  <span class="subcategory-header-en">No</span>
+                </h6>
+              </div>
               <div class="row subcategory-block"></div>
             </div>
           </div>

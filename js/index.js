@@ -899,8 +899,12 @@ function loadMap(groups, items) {
   });
 
   groupsClone.forEach(g => {
-    const cateWrap = $( mapping( cateTemp, { title: g.title, cols: g.cols } ) );
+    const cateWrap = $( mapping( cateTemp, g ) );
     const cateItemWrap = cateWrap.find(".category-block");
+
+    if ( !g.title_en ) {
+      cateWrap.find(".category-header-en").addClass("opacity-0");
+    }
 
     const emptySubcateWrap = $( mapping( emptySubcateTemp, { cols: g.selfcols } ) );
     const emptySubcateItemWrap = emptySubcateWrap.find(".row");
@@ -927,9 +931,13 @@ function loadMap(groups, items) {
 
       gChildClone.forEach(gc => {
         const nestedGroup = [g.id, gc.id].join('-');
-        const subcateWrap = $( mapping( subcateTemp, { title: gc.title, cols: gc.cols } ) );
+        const subcateWrap = $( mapping( subcateTemp, gc ) );
         const subcateItemWrap = subcateWrap.find(".row");
         
+        if ( !gc.title_en ) {
+          subcateWrap.find(".subcategory-header-en").addClass("opacity-0");
+        }
+
         items.filter(it => it.group === nestedGroup)
           .forEach(it => {
             const itClone = { ...it, itemCols: gc.itemCols };
