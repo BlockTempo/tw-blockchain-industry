@@ -359,7 +359,7 @@ viewpointPromise.then(data => {
 var domloaded = false;
 var jsonloaded = false;
 
-var itemsPromise = fetch("json/map.json?t=8").then(res => res.json());
+var itemsPromise = fetch("json/map.json?t=9").then(res => res.json());
 
 itemsPromise.then(data => {
   const gridWrap = $("#map .grid");

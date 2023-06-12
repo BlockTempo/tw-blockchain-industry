@@ -54,7 +54,7 @@
             "id": "基礎設施",
             "title": "基礎設施",
             "title_en": "Infrastructure",
-            "order": 1,
+            "order": 2,
             "cols": "2-8",
             "itemCols": 3,
             "children": [
@@ -123,7 +123,7 @@
         {
             "id": "CeFi",
             "title": "CeFi",
-            "order": 3,
+            "order": 1,
             "cols": "4-8",
             "itemCols": 3,
             "children": [
@@ -183,7 +183,7 @@
             "id": "VC / 加速器",
             "title": "VC / 加速器",
             "title_en": "VC / Accelerator",
-            "order": 2,
+            "order": 3,
             "cols": "2-8",
             "itemCols": 3,
             "children": [
