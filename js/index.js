@@ -1020,7 +1020,7 @@ viewpointPromise.then(data => {
     keyboard: true,
     spaceBetween: 0,
     slidesPerView: 'auto',
-    speed: 100,
+    speed: 300,
     coverflowEffect: {
       rotate: 0,
       stretch: 0,
