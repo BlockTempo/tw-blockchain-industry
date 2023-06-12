@@ -282,7 +282,7 @@ function tuneMap() {
     const maxHeight = parseInt( $(o).css("max-width") );
     heightTick += maxHeight;
     theRow.push(o);
-    if ( heightTick >= 100 ) {
+    if ( 100 - heightTick <= 1 ) {
       const maxh = theRow
         .map(el => el.firstElementChild.clientHeight)
         .reduce((a,b) => Math.max(a,b), 0);
@@ -359,7 +359,7 @@ viewpointPromise.then(data => {
 var domloaded = false;
 var jsonloaded = false;
 
-var itemsPromise = fetch("json/map.json?t=7").then(res => res.json());
+var itemsPromise = fetch("json/map.json?t=8").then(res => res.json());
 
 itemsPromise.then(data => {
   const gridWrap = $("#map .grid");

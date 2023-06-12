@@ -45,16 +45,16 @@
             "id": "策略顧問 / 策展公司",
             "title": "策略顧問 / 策展公司",
             "title_en": "Consultant",
-            "order": 7,
-            "cols": "2-8",
-            "itemCols": 6,
+            "order": 8,
+            "cols": "4-8",
+            "itemCols": 3,
             "children": []
         },
         {
             "id": "基礎設施",
             "title": "基礎設施",
             "title_en": "Infrastructure",
-            "order": 4,
+            "order": 1,
             "cols": "2-8",
             "itemCols": 3,
             "children": [
@@ -88,8 +88,8 @@
             "id": "區塊鏈應用",
             "title": "區塊鏈應用",
             "title_en": "Application",
-            "order": 6,
-            "cols": "6-8",
+            "order": 9,
+            "cols": "8-8",
             "selfcols": "1-3",
             "itemCols": 6,
             "children": [
@@ -98,7 +98,7 @@
                     "title": "生活應用",
                     "title_en": "Daily Application",
                     "order": 1,
-                    "cols": "1-3",
+                    "cols": "2-8",
                     "itemCols": 6
                 },
                 {
@@ -106,15 +106,15 @@
                     "title": "解決方案",
                     "title_en": "Solution",
                     "order": 2,
-                    "cols": "2-3",
-                    "itemCols": 3
+                    "cols": "6-8",
+                    "itemCols": 2
                 }
             ]
         },
         {
             "id": "DeFi",
             "title": "DeFi",
-            "order": 1,
+            "order": 5,
             "cols": "4-8",
             "selfcols": "8-8",
             "itemCols": 3,
@@ -123,8 +123,8 @@
         {
             "id": "CeFi",
             "title": "CeFi",
-            "order": 5,
-            "cols": "6-8",
+            "order": 3,
+            "cols": "4-8",
             "itemCols": 3,
             "children": [
                 {
@@ -132,15 +132,15 @@
                     "title": "交易所",
                     "title_en": "Exchange",
                     "order": 1,
-                    "cols": "1-3",
-                    "itemCols": 6
+                    "cols": "8-8",
+                    "itemCols": 3
                 },
                 {
                     "id": "量化交易平台",
                     "title": "量化交易平台",
                     "title_en": "Quantitative Trading",
                     "order": 2,
-                    "cols": "1-3",
+                    "cols": "4-8",
                     "itemCols": 6
                 },
                 {
@@ -148,7 +148,7 @@
                     "title": "資產管理平台",
                     "title_en": "Asset Management",
                     "order": 3,
-                    "cols": "1-3",
+                    "cols": "4-8",
                     "itemCols": 6
                 }
             ]
@@ -157,8 +157,8 @@
             "id": "錢包 / 安全方案",
             "title": "錢包 / 安全方案",
             "title_en": "Wallet / Security",
-            "order": 9,
-            "cols": "6-8",
+            "order": 6,
+            "cols": "4-8",
             "itemCols": 3,
             "children": [
                 {
@@ -166,14 +166,7 @@
                     "title": "區塊鏈安全方案",
                     "title_en": "Security",
                     "order": 1,
-                    "cols": "1-3",
-                    "itemCols": 6
-                },
-                {
-                    "id": "區塊鏈解決方案",
-                    "title": "區塊鏈解決方案",
-                    "order": 2,
-                    "cols": "1-3",
+                    "cols": "4-8",
                     "itemCols": 6
                 },
                 {
@@ -181,7 +174,7 @@
                     "title": "加密貨幣錢包",
                     "title_en": "Wallet",
                     "order": 3,
-                    "cols": "1-3",
+                    "cols": "4-8",
                     "itemCols": 6
                 }
             ]
@@ -241,9 +234,9 @@
             "id": "政府 / 利益團體",
             "title": "政府 / 利益團體",
             "title_en": "Government  / Interest Groups",
-            "order": 3,
-            "cols": "2-8",
-            "itemCols": 6,
+            "order": 5,
+            "cols": "3-8",
+            "itemCols": 4,
             "children": [
                 {
                     "id": "政府",
@@ -251,7 +244,7 @@
                     "title_en": "Government",
                     "order": 1,
                     "cols": "8-8",
-                    "itemCols": 6
+                    "itemCols": 4
                 },
                 {
                     "id": "利益團體",
@@ -259,17 +252,17 @@
                     "title_en": "Interest Groups",
                     "order": 2,
                     "cols": "8-8",
-                    "itemCols": 6
+                    "itemCols": 4
                 }
             ]
         },
         {
             "id": "GameFi",
             "title": "GameFi",
-            "order": 8,
-            "cols": "2-8",
+            "order": 4,
+            "cols": "1-8",
             "selfcols": "8-8",
-            "itemCols": 6,
+            "itemCols": 12,
             "children": []
         }
     ],
@@ -1694,7 +1687,7 @@
             "id": "baasid"
         },
         {
-            "group": "錢包 / 安全方案-區塊鏈解決方案",
+            "group": "錢包 / 安全方案-區塊鏈安全方案",
             "title": "Chainsight",
             "logo_icon": "https://image.blocktempo.com/2023/05/chainsight-c.png",
             "logo_banner": "https://image.blocktempo.com/2023/06/Wallet-7.png",
@@ -2222,7 +2215,7 @@
             "id": "台灣區塊鏈大學聯盟"
         },
         {
-            "group": "政府 / 利益團體",
+            "group": "政府 / 利益團體-利益團體",
             "title": "台灣區塊鏈大聯盟",
             "logo_icon": "https://image.blocktempo.com/2023/06/tba-c.jpg",
             "logo_banner": "https://image.blocktempo.com/2023/06/TBA-H.png",
@@ -2233,7 +2226,7 @@
             "id": "台灣區塊鏈大聯盟"
         },
         {
-            "group": "政府 / 利益團體",
+            "group": "政府 / 利益團體-利益團體",
             "title": "台灣NFT協會（NADA）",
             "logo_icon": "https://image.blocktempo.com/2023/06/NADA-C.jpg",
             "logo_banner": "https://image.blocktempo.com/2023/06/GOV-3.png",
@@ -2244,7 +2237,7 @@
             "id": "台灣nft協會（nada）"
         },
         {
-            "group": "政府 / 利益團體",
+            "group": "政府 / 利益團體-利益團體",
             "title": "臺灣區塊鏈愛好者協會",
             "logo_icon": "https://image.blocktempo.com/2023/06/taiwan-asociation-for-blockchain-ecosystem-innovation-h.jpeg",
             "logo_banner": "https://image.blocktempo.com/2023/06/GOV-4.png",
@@ -2255,7 +2248,7 @@
             "id": "臺灣區塊鏈愛好者協會"
         },
         {
-            "group": "政府 / 利益團體",
+            "group": "政府 / 利益團體-利益團體",
             "title": "比特幣及虛擬通貨發展協會",
             "logo_icon": "https://image.blocktempo.com/2023/06/BCCDA-C.png",
             "logo_banner": "https://image.blocktempo.com/2023/06/GOV-5.png",
@@ -2266,7 +2259,7 @@
             "id": "比特幣及虛擬通貨發展協會"
         },
         {
-            "group": "政府 / 利益團體",
+            "group": "政府 / 利益團體-利益團體",
             "title": "台灣虛擬通貨反洗錢協會",
             "logo_icon": "https://image.blocktempo.com/2023/06/MONEY-LAUNDRY-C.png",
             "logo_banner": "https://image.blocktempo.com/2023/06/GOV-6.png",
@@ -2277,7 +2270,7 @@
             "id": "台灣虛擬通貨反洗錢協會"
         },
         {
-            "group": "政府 / 利益團體",
+            "group": "政府 / 利益團體-利益團體",
             "title": "臺灣金融科技協會",
             "logo_icon": "https://image.blocktempo.com/2023/06/TFTA-C.png",
             "logo_banner": "https://image.blocktempo.com/2023/06/GOV-7.png",

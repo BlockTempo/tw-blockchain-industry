@@ -2696,7 +2696,7 @@ footer .links .fab{
 }
 
 #map div[layout="map"] img{
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
 
 #viewpoints .comments-avatar{
