@@ -418,6 +418,7 @@ itemsPromise.then(data => {
 
   if ( domloaded ) {
     groupWrap.find(".sidebar-item").first().trigger('click');
+    $("#map button[data-layout='map']").trigger('click');
   }
 });
 
@@ -444,13 +445,12 @@ $(document).ready(function() {
     }
   });
 
-  $("#map button[data-layout='list']").trigger('click');
-
   domloaded = true;
 
   if ( jsonloaded ) {
     const groupWrap = $("#map .sidebar-menu ul");
     groupWrap.find(".sidebar-item").first().trigger('click');
+    $("#map button[data-layout='map']").trigger('click');
   }
 });
 
