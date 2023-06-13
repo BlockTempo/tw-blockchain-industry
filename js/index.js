@@ -352,6 +352,9 @@ viewpointPromise.then(data => {
     pagination: {
       el: '.swiper-pagination',
       clickable: true
+    },
+    autoplay: {
+      delay: 3000,
     }
   });
 });

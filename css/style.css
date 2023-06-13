@@ -2761,15 +2761,24 @@ footer .links .fab{
 
 #viewpoints .swiper-pagination{
   position: initial;
-  margin-top: 20px;
+  margin: 10px auto;
+}
+
+#viewpoints .swiper-button-prev,
+#viewpoints .swiper-button-next{
+  background: none;
+  font-size: 2.5rem;
+  color: rgba(128,128,128,0.4);
+  top: auto;
+  bottom: 1%;
 }
 
 #viewpoints .swiper-button-prev{
-  left: 5%;
+  left: 20%;
 }
 
 #viewpoints .swiper-button-next{
-  right: 5%;
+  right: 20%;
 }
 
 /* bt custom ratio */
