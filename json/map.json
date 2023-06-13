@@ -239,8 +239,8 @@
             "itemCols": 4,
             "children": [
                 {
-                    "id": "政府",
-                    "title": "政府",
+                    "id": "政府部門",
+                    "title": "政府部門",
                     "title_en": "Government",
                     "order": 1,
                     "cols": "8-8",
@@ -269,14 +269,14 @@
     "items": [
         {
             "group": "NFT / Metaverse-交易市場",
-            "title": "CaptureClub",
-            "logo_icon": "https://image.blocktempo.com/2023/06/captureclub-new.png",
-            "logo_banner": "https://image.blocktempo.com/2023/05/captrueclub-h.png",
+            "title": "Lootex",
+            "logo_icon": "https://image.blocktempo.com/2023/05/lootex-c.png",
+            "logo_banner": "https://image.blocktempo.com/2023/06/NFT-3.png",
             "briefly": "NFT 交易市場",
-            "description": "CaptureClub 希望能創建一個協助創作者從其內容中獲利的市場，目標是打破第三方平台的藩籬，消除創作者將創作資產化的障礙。",
-            "website": "https://captureclub.cc/",
-            "twitter": "https://twitter.com/numbersprotocol",
-            "id": "captureclub"
+            "description": "Lootex 虛擬寶物拍賣場，是運用區塊鏈技術打造點對點的交易平台。在這裡你可以找到來自跨國際、跨領域、稀奇古怪的數位收藏品，並且不需擔心交易詐騙及跨境付款的問題。",
+            "website": "https://lootex.io/zh-TW",
+            "twitter": "https://twitter.com/LootexIO",
+            "id": "lootex"
         },
         {
             "group": "NFT / Metaverse-交易市場",
@@ -284,7 +284,7 @@
             "logo_icon": "https://image.blocktempo.com/2023/05/oursong-c.jpeg",
             "logo_banner": "https://image.blocktempo.com/2023/06/NFT-1.png",
             "briefly": "NFT 交易市場",
-            "description": "OurSong 是一個基於區塊鏈技術的半中心化治理音樂共創平台。創作者們可以在這裡找到夥伴、共同創作、分享靈感、互相激勵並打造屬於你們的暢銷金曲。在這個自由開放的空間，你能藉由全新的 OurSong 接軌全球的音樂社群，激發潛藏的創作能量。",
+            "description": "OurSong 是一個基於區塊鏈技術的半中心化治理音樂共創平台。創作者們可以在這裡找到夥伴、共同創作、分享靈感、互相激勵並打造屬於你們的暢銷金曲。",
             "website": "https://www.oursong.com/",
             "twitter": "https://twitter.com/oursong",
             "id": "oursong"
@@ -295,21 +295,21 @@
             "logo_icon": "https://image.blocktempo.com/2023/05/fansi-c.png",
             "logo_banner": "https://image.blocktempo.com/2023/06/NFT-2.png",
             "briefly": "NFT 交易市場",
-            "description": "Fansi 是一個新型態的亞洲音樂NFT發行及實驗平台，透過NFT及特有的收藏體驗設計，讓具有粉絲基礎的歌手或音樂人能夠透過販售音樂NFT商品獲得營運資金，粉絲也能參與音樂創作者的成長。",
+            "description": "Fansi 是一個新型態的亞洲音樂 NFT 發行及實驗平台，透過 NFT 及特有的收藏體驗設計，讓歌手或音樂人能夠透過販售音樂 NFT 獲得營運資金，粉絲也能參與音樂創作者成長。",
             "website": "https://www.fansi.me/",
             "twitter": "https://twitter.com/metaboom_nft",
             "id": "fansi"
         },
         {
             "group": "NFT / Metaverse-交易市場",
-            "title": "Lootex",
-            "logo_icon": "https://image.blocktempo.com/2023/05/lootex-c.png",
-            "logo_banner": "https://image.blocktempo.com/2023/06/NFT-3.png",
+            "title": "CaptureClub",
+            "logo_icon": "https://image.blocktempo.com/2023/06/captureclub-new.png",
+            "logo_banner": "https://image.blocktempo.com/2023/05/captrueclub-h.png",
             "briefly": "NFT 交易市場",
-            "description": "Lootex 虛擬寶物拍賣場，是運用區塊鏈技術打造點對點的交易平台。在這裡你可以找到來自跨國際、跨領域、稀奇古怪的數位收藏品，並且不需擔心交易詐騙及跨境付款的問題。",
-            "website": "https://lootex.io/zh-TW",
-            "twitter": "https://twitter.com/LootexIO",
-            "id": "lootex"
+            "description": "CaptureClub 希望能創建一個協助創作者從其內容中獲利的市場，目標是打破第三方平台的藩籬，消除創作者將創作資產化的障礙。",
+            "website": "https://captureclub.cc/",
+            "twitter": "https://twitter.com/numbersprotocol",
+            "id": "captureclub"
         },
         {
             "group": "NFT / Metaverse-交易市場",
@@ -339,7 +339,7 @@
             "logo_icon": "https://image.blocktempo.com/2023/06/BOXTRADE.png",
             "logo_banner": "https://image.blocktempo.com/2023/06/NFT-6.png",
             "briefly": "NFT 交易市場",
-            "description": "BOXTradEx 致力於建立一個安全並創新的WEB3元宇宙遊戲入口",
+            "description": "BOXTradEx 致力於建立一個安全並創新的 WEB3 元宇宙遊戲入口",
             "website": "https://www.boxtradex.io/",
             "twitter": "https://twitter.com/box_trad",
             "id": "boxtradex"
@@ -350,7 +350,7 @@
             "logo_icon": "https://image.blocktempo.com/2023/06/soyl-c.jpeg",
             "logo_banner": "https://image.blocktempo.com/2023/06/NFT-7.png",
             "briefly": "NFT 交易市場",
-            "description": "亞洲第一，集策展、交易、媒體、管理功能於一的NFT平台，呈獻高水平作品與藏家個人化服務。",
+            "description": "集策展、交易、媒體、管理功能於一的 NFT 平台，呈獻高水平作品與藏家個人化服務。",
             "website": "https://www.soyl.one/",
             "twitter": "https://twitter.com/soylofficialtw",
             "id": "soyl所有"
@@ -361,7 +361,7 @@
             "logo_icon": "https://image.blocktempo.com/2023/05/capture-c.webp",
             "logo_banner": "https://image.blocktempo.com/2023/06/NFT-8.png",
             "briefly": "去中心化 Web3 相機",
-            "description": "Capture 是首款去中心化的 Web3 相機 App，可讓用戶可以輕鬆創建和分享 Web3.0 數位影像，同時可透過 NFT 鑄造功能來位數位資產創造更多價值。",
+            "description": "Capture 是一款去中心化的 Web3 相機 App，可讓用戶可以輕鬆創建和分享 Web3.0 數位影像，同時可透過 NFT 鑄造功能來位數位資產創造更多價值。",
             "website": "https://captureapp.xyz/",
             "twitter": "https://twitter.com/captureapp_xyz",
             "id": "capture-app"
@@ -393,8 +393,8 @@
             "title": "Unibridge",
             "logo_icon": "https://image.blocktempo.com/2023/06/Xrl_3tS0_400x400.jpeg",
             "logo_banner": "https://image.blocktempo.com/2023/06/NFT-10.png",
-            "briefly": "NFT 借貸平台",
-            "description": "RangerX 專注於支付和 NFT 協議。 我們相信未來金融科技是去中心化的，所以我們正在積極建設相關的基礎設施和產品。",
+            "briefly": "NFT 租賃平台",
+            "description": "UniBridge 平台提供以租代買的共享 NFT 模式，更有彈性交易 NFT 的同時，同時能大幅度增加市場流通性。",
             "website": "https://unibridge.io/",
             "twitter": "https://twitter.com/UniBridgeio",
             "id": "unibridge"
@@ -436,9 +436,9 @@
             "group": "NFT / Metaverse-元宇宙",
             "title": "Arcade",
             "logo_icon": "https://image.blocktempo.com/2023/06/arcade-c.png",
-            "logo_banner": "https://image.blocktempo.com/2023/06/arcade-c.png",
+            "logo_banner": "https://image.blocktempo.com/2023/06/arcade-h.png",
             "briefly": "GameFi+元宇宙",
-            "description": "Arcade 是一個結合社群與 GameFi 元素的元宇宙，用戶可以操作自己的 NFT 進行各式活動（聊天互動、打造家園），在遊戲的過程中還可以賺取代幣獎勵。",
+            "description": "Arcade 是一個結合社群與 GameFi 元素的元宇宙，用戶可以操作自己的 NFT 進行各式活動（聊天互動、打造家園），在遊戲的過程中可以賺取代幣獎勵。",
             "website": "https://arcade.inc/",
             "twitter": "https://twitter.com/arcadedotinc",
             "id": "arcade"
@@ -459,8 +459,8 @@
             "title": "YOLO-Cat",
             "logo_icon": "https://image.blocktempo.com/2023/06/YOLO-Cat.jpg",
             "logo_banner": "https://image.blocktempo.com/2023/06/NFT-15.png",
-            "briefly": "由藝人陳零九所發行",
-            "description": "由藝人陳零九所發行的 NFT「YOLO Cat」共有 999 枚。持有者每週在群內會有一些語音聚會，包含陳零九會上來分享不管是在創業、加密貨幣、或是演藝上的經驗，可以近距離接觸零九。",
+            "briefly": "藝人陳零九所發行",
+            "description": "由藝人陳零九所發行的 NFT「YOLO Cat」共有 999 枚。持有者每週在群內會有一些語音聚會，包含陳零九會上來分享不管是在創業、加密貨幣、或是演藝上的經驗。",
             "website": "https://portaly.cc/yolocatclub",
             "twitter": "",
             "id": "yolo-cat"
@@ -491,7 +491,7 @@
             "group": "NFT / Metaverse-發行項目",
             "title": "師園鹽酥雞",
             "logo_icon": "https://image.blocktempo.com/2023/06/師園.jpeg",
-            "logo_banner": "https://image.blocktempo.com/2023/06/師園.jpeg",
+            "logo_banner": "https://image.blocktempo.com/2023/06/師園橫.jpg",
             "briefly": "全球第一家 NFT 台式炸雞店",
             "description": "坐落於師大夜市的師園鹹酥雞擁有超過 33 年的歷史，廣受消費者喜愛。2021 年底正式在 NFT 平台 Oursong 上開張、持有者可以兌換對應的實體餐點。",
             "website": "https://www.oursong.com/@Jimmy123?tab=creations",
@@ -511,25 +511,25 @@
         },
         {
             "group": "NFT / Metaverse-發行項目",
-            "title": "Lion Heart（久未更新）",
+            "title": "Lion Heart",
             "logo_icon": "https://image.blocktempo.com/2023/06/LION-HEART.jpg",
             "logo_banner": "https://image.blocktempo.com/2023/06/lion-heart.png",
             "briefly": "歌手羅志祥背書項目",
-            "description": "由藝人羅志祥親自擔任藝術總監的 LION HEART。根據官方路線圖，該項目的第一階段是推出包含鞋子、精品、潮流玩物的特定稀有品項的 NFT 以及實體產品的合作、發行與販售；第二階段是推出 DeFi 的 P2P 質押複利商品；第三階段將規劃 GameFi、IP 投資包含影視音等。",
+            "description": "由藝人羅志祥親自擔任藝術總監的 LION HEART。官方表示該項目的第一階段是推出包含鞋子、精品、潮流玩物的特定稀有品項的 NFT 以及實體產品的合作、發行與販售；第二階段是推出 DeFi 的 P2P 質押複利商品；第三階段將規劃 GameFi、IP 投資包含影視音等。",
             "website": "https://lionheart.vip/",
             "twitter": "https://twitter.com/NFTlionheart",
-            "id": "lion-heart（久未更新）"
+            "id": "lion-heart"
         },
         {
             "group": "NFT / Metaverse-發行項目",
-            "title": "Innocent Cats（久未更新）",
+            "title": "Innocent Cats",
             "logo_icon": "https://image.blocktempo.com/2023/06/Innocent-Cats.jpg",
             "logo_banner": "https://image.blocktempo.com/2023/06/innocent-cats.png",
             "briefly": "歌手潘瑋柏背書項目",
-            "description": "該項目曾獲歌手潘瑋柏背書，呼籲粉絲支持；據官網資料顯示，無辜貓系列 NFT 可作俱樂部會員卡，未來可以解鎖和激活更多福利，並有機會獲得免費演唱會門票空投。",
+            "description": "該項目獲歌手潘瑋柏背書。官方表示無辜貓系列 NFT 可作俱樂部會員卡，未來可以解鎖和激活更多福利，並有機會獲得免費演唱會門票空投。",
             "website": "https://www.innocentcats.io/",
             "twitter": "",
-            "id": "innocent-cats（久未更新）"
+            "id": "innocent-cats"
         },
         {
             "group": "NFT / Metaverse-發行項目",
@@ -559,7 +559,7 @@
             "logo_icon": "https://image.blocktempo.com/2023/06/zombieclub.jpg",
             "logo_banner": "https://image.blocktempo.com/2023/06/NFT-16.png",
             "briefly": "社群型 NFT",
-            "description": "ZombieClub 一共有 6,666 個 PFP，旨在匯集群眾智慧成為一個去中心化智庫。持續產出不同的產品、體驗、平台，以探索 Web3 世界的發展。",
+            "description": "ZombieClub 一共有 6,666 個 PFP，旨在匯集群眾智慧成為一個去中心化智庫。透過持續產出不同的產品、體驗、平台，以探索 Web3 世界的發展。",
             "website": "https://zombieclub.io/",
             "twitter": "https://twitter.com/get_turned",
             "id": "zoombieclub"
@@ -625,7 +625,7 @@
             "logo_icon": "https://image.blocktempo.com/2023/05/echox-c.png",
             "logo_banner": "https://image.blocktempo.com/2023/06/consultant.png",
             "briefly": "Web3 策略顧問",
-            "description": "EchoX 致力於協助各產業的品牌企業，將線上線下的價值透過Web3的賦能應用與社群能量拉近與會員之間的距離，開啟全新的互動想像。",
+            "description": "EchoX 致力於協助各產業品牌，將線上線下的價值透過 Web3 的賦能應用與社群能量拉近與會員之間的距離，開啟全新的互動想像。",
             "website": "https://www.echox.app/",
             "twitter": "https://twitter.com/Echoxio",
             "id": "echox"
@@ -667,7 +667,7 @@
             "group": "策略顧問 / 策展公司",
             "title": "ReBorno",
             "logo_icon": "https://image.blocktempo.com/2023/06/NFT-ReBorno-c.png",
-            "logo_banner": "https://image.blocktempo.com/2023/06/Reborno-h.png",
+            "logo_banner": "https://image.blocktempo.com/2023/06/reborno-h-1.png",
             "briefly": "Web3 策略顧問",
             "description": "ReBorno 提供Web3 、區塊鏈、NFT、元宇宙相關項目服務，協助企業轉型邁向商務新藍海！",
             "website": "https://reborno.co/",
@@ -678,7 +678,7 @@
             "group": "策略顧問 / 策展公司",
             "title": "Good People Consulting",
             "logo_icon": "https://image.blocktempo.com/2023/06/Xnip2023-06-02_16-49-01.jpg",
-            "logo_banner": "https://image.blocktempo.com/2023/06/good-people.jpg",
+            "logo_banner": "https://image.blocktempo.com/2023/06/good-people.png",
             "briefly": "Web3 策略顧問",
             "description": "Good People Consulting 是 web3 社群行銷及區塊鏈商業應用顧問公司，專注於協助企業客戶進入 web3 領域以及提供社群行銷的專業建議。",
             "website": "https://goodpeople.gg/",
@@ -689,9 +689,9 @@
             "group": "策略顧問 / 策展公司",
             "title": "POMO Network",
             "logo_icon": "https://image.blocktempo.com/2023/06/pomo-c.jpg",
-            "logo_banner": "https://image.blocktempo.com/2023/06/pomp.jpg",
+            "logo_banner": "https://image.blocktempo.com/2023/06/pomo.png",
             "briefly": "Web3 策略顧問",
-            "description": "POMO Network 專門提供品牌發行 NFT、核銷賦能合約化等一站式服務。曾與美髮龍頭曼都、桃園永豐雲豹、燒肉霸主胡同...等企業合作，帶領品牌感受全新商模的魅力。",
+            "description": "POMO Network 專門提供品牌發行 NFT、核銷賦能合約化等一站式服務。曾與美髮龍頭曼都、桃園永豐雲豹、燒肉霸主胡同...等企業合作。",
             "website": "https://pomo.network/",
             "twitter": "",
             "id": "pomo-network"
@@ -720,11 +720,22 @@
         },
         {
             "group": "策略顧問 / 策展公司",
+            "title": "閎旺科技",
+            "logo_icon": "https://image.blocktempo.com/2023/06/hongwang.png",
+            "logo_banner": "https://image.blocktempo.com/2023/06/hongwang-h.png",
+            "briefly": "Web3 策略顧問",
+            "description": "閎旺科技是一家以協助 Web2 公司轉型進入 Web3 的顧問公司，專注於協助企業開發區塊鏈產品，包含NFT、加密貨幣、Defi 等，同時也擁有著許多年的智能合約開發經驗。",
+            "website": "https://www.hongwangtec.com/",
+            "twitter": "",
+            "id": "閎旺科技"
+        },
+        {
+            "group": "策略顧問 / 策展公司",
             "title": "OneOffs",
             "logo_icon": "https://image.blocktempo.com/2023/05/oneoffs-c.jpeg",
             "logo_banner": "https://image.blocktempo.com/2023/06/consultant-2.png",
             "briefly": "NFT 策展團隊",
-            "description": "Oneoffs 是國際型的策展團隊，連續兩年於台北 W Hotel 舉辦橫跨藝術、區塊鏈、 VR 的 OneOffs NFT 國際藝術博覽會，共締造 7 萬多人次觀展熱潮。",
+            "description": "Oneoffs 是國際型的策展團隊，連續兩年於台北 W Hotel 舉辦橫跨藝術、區塊鏈、 VR 的 OneOffs NFT 國際藝術博覽會，締造了近十萬人次觀展熱潮。",
             "website": "https://nft.oneoffs.art/",
             "twitter": "https://twitter.com/oneoffsnft",
             "id": "oneoffs"
@@ -768,7 +779,7 @@
             "logo_icon": "https://image.blocktempo.com/2023/06/linpartners.jpeg",
             "logo_banner": "https://image.blocktempo.com/2023/06/consultant-5.png",
             "briefly": "律師事務所",
-            "description": "恆業法律事務所自 2009 年起，連續獲全球知名律師評鑒機構Chambers Asia Pacific 評選為臺灣地區最佳之銀行金融、資本市場、公司與並購、爭端解決、勞工法之法律事務所之一。",
+            "description": "恆業法律事務所曾連續獲全球知名律師評鑒機構 Chambers Asia Pacific 評選為臺灣地區最佳之銀行金融、資本市場、公司與並購、爭端解決、勞工法之法律事務所之一。",
             "website": "https://www.linandpartners.com.tw/index.php",
             "twitter": "",
             "id": "恆業法律事務所"
@@ -812,9 +823,9 @@
             "logo_icon": "https://image.blocktempo.com/2023/05/2909.png",
             "logo_banner": "https://image.blocktempo.com/2023/06/instruction-2.png",
             "briefly": "區塊鏈內容生態",
-            "description": "LikeCoin的藍圖是應用區塊鏈技術創造出全新創作生態系。創作者產出圖文內容，並在文中嵌入 LikeCoin 按鍵，註冊過後的讀者即可透過按讚，使創作者獲利。創作生態系中所有按讚跟獲利，都以加密貨幣 LikeCoin 進行，但是讀者不需要了解區塊鏈技術，只需要下載 APP 閱讀器 Liker Land，即可自由閱讀並支持創作者。\n 另外，LikeCoin也是創作內容的資訊系統，用以登錄文章的作者、內容、字數，以及最重要的文章檢索資訊，讓所有內容都能快速查詢並提供網上內容溯源的服務。",
+            "description": "LikeCoin的藍圖是應用區塊鏈技術創造出全新創作生態系。創作者產出圖文內容，並在文中嵌入 LikeCoin 按鍵，註冊過後的讀者即可透過按讚，使創作者獲利，打造更完善的創作生態系。",
             "website": "https://like.co/",
-            "twitter": "",
+            "twitter": "https://twitter.com/likecoin",
             "id": "likecoin"
         },
         {
@@ -823,7 +834,7 @@
             "logo_icon": "https://image.blocktempo.com/2023/06/LPeihpMr_400x400.jpeg",
             "logo_banner": "https://image.blocktempo.com/2023/06/instruction-3.png",
             "briefly": "區塊鏈解決方案",
-            "description": "PUNDIX 致力於部署基於區塊鏈的銷售點 (POS) 解決方案，並鞏固與政府、支付公司和零售商的合作夥伴關係。 我們將共同實現快速增長。",
+            "description": "PUNDIX 致力於部署基於區塊鏈的銷售點 (POS) 解決方案，並鞏固與政府、支付公司和零售商的合作夥伴關係，共同實現快速增長。",
             "website": "https://pundix.com/",
             "twitter": "https://twitter.com/PundiXLabs",
             "id": "pundix"
@@ -833,7 +844,7 @@
             "title": "貝殼支付",
             "logo_icon": "https://image.blocktempo.com/2023/05/backerpay-c.jpg",
             "logo_banner": "https://image.blocktempo.com/2023/06/instruction-5.png",
-            "briefly": "第三方加密支付",
+            "briefly": "第三方加密貨幣支付",
             "description": "「貝殼支付」是由 SaltLab 推出的加密貨幣第三方支付通道，遵守法規且支援廠商新台幣出金，用戶可透過 Polygon 鏈上的 USDT、USDC、MATIC 消費，而無需負擔 Gas Fee。",
             "website": "https://www.backerpay.com/",
             "twitter": "",
@@ -888,8 +899,8 @@
             "title": "Whalechip",
             "logo_icon": "https://image.blocktempo.com/2023/05/whalechip-c.png",
             "logo_banner": "https://image.blocktempo.com/2023/06/instruction-9.png",
-            "briefly": "ASIC晶片設計",
-            "description": "鯨鏈科技 ( WHALECHIP ) 提供完整的 ASIC 設計服務，能夠依據客戶的需求處理從架構/概念到製造的整體設計流程步驟。\n\n透過與半導體產業上下游公司密切的技術合作與夥伴關係，加速了我們在加密演算法算力晶片和 3DIC 堆疊晶片的先進技術開發。",
+            "briefly": "ASIC 晶片設計",
+            "description": "鯨鏈科技 ( WHALECHIP ) 提供完整的 ASIC 設計服務，能夠依據客戶的需求處理從架構/概念到製造的整體設計流程步驟。",
             "website": "https://zh.whalechip.com/",
             "twitter": "",
             "id": "whalechip"
@@ -922,7 +933,7 @@
             "logo_icon": "https://image.blocktempo.com/2023/05/BMFGfEgJ_400x400.png",
             "logo_banner": "https://image.blocktempo.com/2023/06/application-1.png",
             "briefly": "加密貨幣預付卡",
-            "description": "我們的使命是讓每位加密貨幣用戶的日常消費快速、簡單，沒有任何阻礙；WageCan 自 2015 年起一直是領先的國際預付卡提供商，並自 2016 年起支持愛沙尼亞在歐盟的e-residency計劃。",
+            "description": "我們的使命是讓每位加密貨幣用戶的日常消費快速、簡單，沒有任何阻礙，致力於通過提供錢包和預付卡來解決數位資產薪資、交易和支付問題",
             "website": "https://wagecan.com/",
             "twitter": "https://twitter.com/WageCan?s=20",
             "id": "wagecan"
@@ -955,7 +966,7 @@
             "logo_icon": "https://image.blocktempo.com/2023/05/selftoken-c.jpeg",
             "logo_banner": "https://image.blocktempo.com/2023/06/application-5.png",
             "briefly": "區塊鏈娛樂應用",
-            "description": "SELF TOKEN 結合 SELF ENTERTAINMENT 的娛樂實業，透過「故事」創造入口、「區塊鏈科技」作為協作工具，建立起可以共創價值與故事的沉浸式娛樂社群，並在現實的都市中留下屬於我們的「實景娛樂基地」，最終形成一個可以鏈接虛擬與現實的次世代娛樂生活型態。",
+            "description": "SELF TOKEN 結合 SELF ENTERTAINMENT 的娛樂實業，透過「故事」創造入口、「區塊鏈科技」作為協作工具，建立起可以共創價值與故事的沉浸式娛樂社群，並在現實的都市中留下屬於我們的「實景娛樂基地」，形成一個可以鏈接虛擬與現實的次世代娛樂生活型態。",
             "website": "https://selftoken.co/",
             "twitter": "",
             "id": "self-token（久未更新）"
@@ -1039,17 +1050,6 @@
         },
         {
             "group": "區塊鏈應用-解決方案",
-            "title": "秘銀(暫停營運)",
-            "logo_icon": "https://image.blocktempo.com/2023/06/mith.jpeg",
-            "logo_banner": "https://image.blocktempo.com/2023/06/application-11.png",
-            "briefly": "社交挖礦",
-            "description": "秘銀（MITH）旨在建立一個新的 Web3 生態系，用戶可以透過在社群軟體上的互動而獲得一定數量的秘銀幣，並將之用於投資或消費。",
-            "website": "",
-            "twitter": "",
-            "id": "秘銀(暫停營運)"
-        },
-        {
-            "group": "區塊鏈應用-解決方案",
             "title": "Bitmark",
             "logo_icon": "https://image.blocktempo.com/2023/05/bitmark.jpeg",
             "logo_banner": "https://image.blocktempo.com/2023/06/application-12.png",
@@ -1091,6 +1091,17 @@
             "website": "https://biilabs.io/",
             "twitter": "",
             "id": "biilabs（久未更新）"
+        },
+        {
+            "group": "區塊鏈應用-解決方案",
+            "title": "秘銀（暫停營運)",
+            "logo_icon": "https://image.blocktempo.com/2023/06/mith.jpeg",
+            "logo_banner": "https://image.blocktempo.com/2023/06/application-11.png",
+            "briefly": "社交挖礦",
+            "description": "秘銀（MITH）旨在建立一個新的 Web3 生態系，用戶可以透過在社群軟體上的互動而獲得一定數量的秘銀幣，並將之用於投資或消費。",
+            "website": "https://www.facebook.com/MITdaoOfficial/",
+            "twitter": "",
+            "id": "秘銀（暫停營運)"
         },
         {
             "group": "區塊鏈應用-解決方案",
@@ -1138,12 +1149,23 @@
         },
         {
             "group": "區塊鏈應用-解決方案",
+            "title": "Poseidon Network",
+            "logo_icon": "https://image.blocktempo.com/2023/06/application-poseidon-c.png",
+            "logo_banner": "https://image.blocktempo.com/2023/06/Poseidon-Network.png",
+            "briefly": "CDN 混合區塊鏈應用",
+            "description": "POSEIDON NETWORK 產品定位是多中心化的 CDN 結合分散式儲存，旨在透過區塊鏈科技，搭配強而有力的 IoT Device ，以及合理的通證經濟解決 CDN 的問題。",
+            "website": "https://www.poseidon.network/",
+            "twitter": "",
+            "id": "poseidon-network"
+        },
+        {
+            "group": "區塊鏈應用-解決方案",
             "title": "國泰金控數數發中心",
             "logo_icon": "https://image.blocktempo.com/2023/06/Cathay-Bank.png",
             "logo_banner": "https://image.blocktempo.com/2023/06/application-18.png",
             "briefly": "區塊鏈解決方案",
             "description": "爲積極投入金融科技創新應用領域、推動集團數位轉型。國泰金控設立數位暨數據發展中心（數數發中心），以數據驅動為理念，結合子公司的力量與基礎，協助打造數位數據生態圈。",
-            "website": "",
+            "website": "http://2020.datacon.tw/sponsor/cathay-financial-holdings/",
             "twitter": "",
             "id": "國泰金控數數發中心"
         },
@@ -1175,21 +1197,21 @@
             "logo_icon": "https://image.blocktempo.com/2023/06/TonRun-logo-c.png",
             "logo_banner": "https://image.blocktempo.com/2023/06/application-21.png",
             "briefly": "TON 區塊鏈生態搜尋",
-            "description": "一站式瀏覽所有 TON 區塊鏈網路的應用程式。",
+            "description": "一站式瀏覽所有 TON 區塊鏈網路已開發的應用程式。",
             "website": "https://ton.run/",
             "twitter": "",
             "id": "tonrun"
         },
         {
-            "group": "DeFi",
-            "title": "Cream Finance",
-            "logo_icon": "https://image.blocktempo.com/2023/05/cream-c.png",
-            "logo_banner": "https://image.blocktempo.com/2023/06/defi.png",
-            "briefly": "去中心化借貸平台",
-            "description": "C.R.E.A.M. Finance 是一種去中心化點對點 (P2P) DeFi 平台，提供借貸、交換、支付與數位資産代幣化等服務。",
-            "website": "https://app.cream.finance/",
-            "twitter": "",
-            "id": "cream-finance"
+            "group": "區塊鏈應用-解決方案",
+            "title": "SupraOracles",
+            "logo_icon": "https://image.blocktempo.com/2023/06/SupraOracles-正方.png",
+            "logo_banner": "https://image.blocktempo.com/2023/06/supra-oracles.png",
+            "briefly": "跨鏈預言機解決方案",
+            "description": "連接真實世界數據以簡化和保護金融市場的智能合約服務。",
+            "website": "https://supraoracles.com/",
+            "twitter": "https://twitter.com/SupraOracles",
+            "id": "supraoracles"
         },
         {
             "group": "DeFi",
@@ -1208,7 +1230,7 @@
             "logo_icon": "https://image.blocktempo.com/2023/05/perpetual-c.png",
             "logo_banner": "https://image.blocktempo.com/2023/06/defi-2.png",
             "briefly": "DeFi 衍伸品交易所",
-            "description": "Perpetual Protocol 為現今全球最大的 Defi 衍生品服務協議之一，為台灣的新創項目，首創永續合約專用的自動做市（AMM）智慧合約，提供流動性給虛擬貨幣衍生性金融市場。",
+            "description": "Perpetual Protocol 為台灣的新創項目，是現今全球最大的 Defi 衍生品服務協議之一，首創永續合約專用的自動做市（AMM）智慧合約，提供流動性給虛擬貨幣衍生性金融市場。",
             "website": "https://perp.com/",
             "twitter": "https://twitter.com/perpprotocol",
             "id": "perpetual-protocol"
@@ -1219,7 +1241,7 @@
             "logo_icon": "https://image.blocktempo.com/2023/05/zomma-c.jpeg",
             "logo_banner": "https://image.blocktempo.com/2023/06/defi-3.png",
             "briefly": "DeFi 衍伸品交易所",
-            "description": "Zomma Protocol 旨在成為所有鏈上金融產品的底層基礎，專注於 DeFi 期權。\n\n團隊致力於通過構建一系列創新和多元化的產品為 DeFi 世界做出貢獻，包括質押、流動性挖掘、歐式期權...等。",
+            "description": "Zomma Protocol 旨在成為所有鏈上金融產品的底層基礎，專注於 DeFi 期權的衍生產品。",
             "website": "https://zomma.pro/",
             "twitter": "",
             "id": "zomma-protocol"
@@ -1229,8 +1251,8 @@
             "title": "Orderly Network",
             "logo_icon": "https://image.blocktempo.com/2023/05/orderly-c.jpeg",
             "logo_banner": "https://image.blocktempo.com/2023/06/defi-4.png",
-            "briefly": "去中心化交易基礎設施",
-            "description": "Orderly Network 是一種去中心化的交易基礎設施協議，允許項目構建 DeFi 應用程式，並為其帶來高吞吐量、低延遲、低費用、緊密的點差和可組合性。",
+            "briefly": "DeFi 基礎設施",
+            "description": "Orderly Network 是一種去中心化的交易基礎設施協議，允許項目方構建 DeFi 應用程式，並為其帶來高吞吐量、低延遲、低費用、緊密的點差和可組合性。",
             "website": "https://orderly.network/",
             "twitter": "https://twitter.com/OrderlyNetwork",
             "id": "orderly-network"
@@ -1242,8 +1264,8 @@
             "logo_banner": "https://image.blocktempo.com/2023/06/defi-5.png",
             "briefly": "跨鏈聚合器",
             "description": "XY Finance 是一個去中心化的跨鏈聚合器，旨在以最優惠的價格為用戶提供高效的跨鏈交換服務、目前有 X Swap 和 Y Pool 兩個項目。",
-            "website": "",
-            "twitter": "",
+            "website": "https://xy.finance/",
+            "twitter": "https://twitter.com/xyfinance",
             "id": "xy-finance"
         },
         {
@@ -1251,7 +1273,7 @@
             "title": "Hakka Finance",
             "logo_icon": "https://image.blocktempo.com/2023/05/hakka-c.jpeg",
             "logo_banner": "https://image.blocktempo.com/2023/06/defi-6.png",
-            "briefly": "DeFi 應用整壺平台",
+            "briefly": "DeFi 應用整合平台",
             "description": "Hakka Finance 由多個 DeFi 應用程式組成，構成了一個包羅萬象的生態系統，並與平台原生貨幣 HAKKA 緊密集成在一起。",
             "website": "https://hakka.finance/",
             "twitter": "https://twitter.com/HakkaFinance",
@@ -1274,7 +1296,7 @@
             "logo_icon": "https://image.blocktempo.com/2023/06/defi-teahouse-c.png",
             "logo_banner": "https://image.blocktempo.com/2023/06/defi-8.png",
             "briefly": "DeFi 資產管理平台",
-            "description": "Teahouse Finance 是一個 DeFi 資產管理平台，由智能合約驅動，致力於安全和靈活的資產管理。\n\nHighTable NFTs 作為 Teahouse 使用策略的通行證，HighTable NFTs 持有人可以根據自己的風險承受能力從各種低、中、高風險策略中選擇。",
+            "description": "Teahouse Finance 是一個 DeFi 資產管理平台，由智能合約驅動，致力於安全和靈活的資產管理。HighTable NFTs 持有人可以根據自己的風險承受能力從各種低、中、高風險策略中選擇。",
             "website": "https://teahouse.finance/",
             "twitter": "https://twitter.com/TeahouseFinance",
             "id": "teahouse-finance"
@@ -1307,7 +1329,7 @@
             "logo_icon": "https://image.blocktempo.com/2023/06/scallop.jpg",
             "logo_banner": "https://image.blocktempo.com/2023/06/Scallop.png",
             "briefly": "去中心化借貸平台",
-            "description": "Scallop是第一批獲得Sui基金會開發者資助的DeFi協議，致力於在Sui上構建一個用戶友好型貨幣市場，提供高收益率Lending、低手續費Borrowing和優質債券。",
+            "description": "Scallop 是第一批獲得 Sui 基金會開發者資助的 DeFi 協議，致力於在 Sui 上構建一個用戶友好型貨幣市場，提供高收益率 Lending、低手續費 Borrowing 和優質債券。",
             "website": "https://scallop.io/",
             "twitter": "https://twitter.com/Scallop_io",
             "id": "scallop"
@@ -1347,6 +1369,17 @@
         },
         {
             "group": "DeFi",
+            "title": "Cream Finance",
+            "logo_icon": "https://image.blocktempo.com/2023/05/cream-c.png",
+            "logo_banner": "https://image.blocktempo.com/2023/06/defi.png",
+            "briefly": "去中心化借貸平台",
+            "description": "C.R.E.A.M. Finance 是一種去中心化點對點 (P2P) DeFi 平台，提供借貸、交換、支付與數位資産代幣化等服務。",
+            "website": "https://app.cream.finance/",
+            "twitter": "",
+            "id": "cream-finance"
+        },
+        {
+            "group": "DeFi",
             "title": "TonStake",
             "logo_icon": "https://image.blocktempo.com/2023/06/TonStake-c.png",
             "logo_banner": "https://image.blocktempo.com/2023/06/defi-10.png",
@@ -1373,7 +1406,7 @@
             "logo_icon": "https://image.blocktempo.com/2023/06/ACE-new.jpeg",
             "logo_banner": "https://image.blocktempo.com/2023/06/CeFi.png",
             "briefly": "加密貨幣交易所",
-            "description": "ACE 王牌虛擬貨幣交易，所提供新台幣購買虛擬貨幣，例如比特幣（BTC）、以太幣（ETH）、USDT（泰達幣）等主流幣種，24 小時隨時可以買賣，並與凱基銀行合作建構「新台幣資金信託保管」。",
+            "description": "ACE 王牌虛擬貨幣交易所，提供新台幣購買虛擬貨幣，例如比特幣（BTC）、以太幣（ETH）、USDT（泰達幣）等主流幣種，24 小時隨時可以買賣，並與凱基銀行合作建構「新台幣資金信託保管」。",
             "website": "https://ace.io/",
             "twitter": "",
             "id": "ace-exchange"
@@ -1425,11 +1458,11 @@
         {
             "group": "CeFi-交易所",
             "title": "MaiCoin",
-            "logo_icon": "",
+            "logo_icon": "https://image.blocktempo.com/2023/06/max-c.jpg",
             "logo_banner": "https://image.blocktempo.com/2023/06/CeFi-4.png",
             "briefly": "加密貨幣交易所",
-            "description": "",
-            "website": "",
+            "description": "MaiCoin 數位資產交易集團，成立於 2014 年，提供加密貨幣的交易服務，業務包含 MaiCoin 平台、AMIS 帳聯網公司、MAX 交易所、香港 MaiCapital。",
+            "website": "https://www.maicoin.com/",
             "twitter": "",
             "id": "maicoin"
         },
@@ -1439,7 +1472,7 @@
             "logo_icon": "https://image.blocktempo.com/2023/06/Rybit-logo.jpeg",
             "logo_banner": "https://image.blocktempo.com/2023/06/CeFi-5.png",
             "briefly": "加密貨幣交易所",
-            "description": "Rybit 的目標是做一個讓廣大用戶省心、放心、安心的交易平台。\n\n期待透過多樣化的產業合作，為台灣的新一代打造一個創新、成長、有前瞻性的區塊鏈生態系統。",
+            "description": "Rybit 的目標是做一個讓廣大用戶省心、放心、安心的交易平台。期待透過多樣化的產業合作，為台灣的新一代打造一個創新、成長、有前瞻性的區塊鏈生態系統。",
             "website": "https://www.rybit.com/zh-TW/",
             "twitter": "",
             "id": "rybit"
@@ -1483,7 +1516,7 @@
             "logo_icon": "https://image.blocktempo.com/2023/05/Crypto-Arsenal-c.png",
             "logo_banner": "https://image.blocktempo.com/2023/06/橫LOGO模板-1.png",
             "briefly": "量化交易平台",
-            "description": "Crypto-Arsenal 致力於建構開放式加密貨幣量化程式交易平台，打造新一代智能交易機器人開發、串接、媒合與自動跟投的雲端服務，對接各大中心化與去中心化加密貨幣交易所（CEX ＆ DEX），支援雲端或本地端策略開發環境、即時回測、實時模擬與實盤交易...等資料。",
+            "description": "Crypto-Arsenal 致力於建構開放式加密貨幣量化程式交易平台，打造新一代智能交易機器人開發、串接、媒合與自動跟投的雲端服務，對接各大加密貨幣交易所（CEX ＆ DEX），支援雲端或本地端策略開發環境、即時回測、實時模擬與實盤交易...等資料。",
             "website": "https://crypto-arsenal.io/",
             "twitter": "",
             "id": "crypto-arsenal"
@@ -1494,7 +1527,7 @@
             "logo_icon": "https://image.blocktempo.com/2023/05/quantrend-c.jpeg",
             "logo_banner": "https://image.blocktempo.com/2023/06/CeFi-9.png",
             "briefly": "量化交易平台",
-            "description": "量趨科技由專業的AI深度學習工程師與量化交易團隊組成，策略類型包含高頻交易, 高頻造市商以及中低頻方向性策略等，旨在為投資者提供可靠的加密貨幣資產增長解決方案。",
+            "description": "量趨科技由專業的 AI 深度學習工程師與量化交易團隊組成，策略類型包含高頻交易、高頻造市商以及中低頻方向性策略等，旨在為投資者提供可靠的加密貨幣資產增長解決方案。",
             "website": "https://quantrend.ai/",
             "twitter": "",
             "id": "quantrend"
@@ -1505,7 +1538,7 @@
             "logo_icon": "https://image.blocktempo.com/2023/05/307099318_474721421338047_196616616160554047_n.jpeg",
             "logo_banner": "https://image.blocktempo.com/2023/06/CeFi-10.png",
             "briefly": "量化交易平台",
-            "description": "Kronos Research 是領先的加密貨幣交易、做市商和風險投資公司。",
+            "description": "Kronos Research 是知名的加密貨幣量化交易團隊，憑藉團隊過去於紐約華爾街、芝加哥量化對沖基金巨頭 Citadel 的工作經驗，以及結合人工智慧、機器學習推出的高頻交易策略，讓 Kronos 在短短兩年內便登上各大加密貨幣交易所的交易量排行榜，更創下「單日百億美金交易量」的優秀成績。",
             "website": "https://kronosresearch.com/",
             "twitter": "https://twitter.com/researchkronos",
             "id": "kronos-research"
@@ -1522,10 +1555,21 @@
             "id": "defits"
         },
         {
+            "group": "CeFi-量化交易平台",
+            "title": "SuDo",
+            "logo_icon": "https://image.blocktempo.com/2023/06/sudo.jpeg",
+            "logo_banner": "https://image.blocktempo.com/2023/06/sudo-h.png",
+            "briefly": "量化交易平台",
+            "description": "SuDo Research Labs（蘇度科技有限公司）源於一群區塊鏈（Blockchain）研究室成員在 2017 年創設的 SuDo Research，成員群共同研發之低風險（市場中性）量化交易策略已取得卓越的成果",
+            "website": "https://www.linkedin.com/company/sudoresearch/?originalSubdomain=tw",
+            "twitter": "",
+            "id": "sudo"
+        },
+        {
             "group": "CeFi-資產管理平台",
             "title": "Bincentive",
             "logo_icon": "https://image.blocktempo.com/2023/05/Bincentive-c.png",
-            "logo_banner": "https://image.blocktempo.com/2023/05/Bincentive-h.png",
+            "logo_banner": "https://image.blocktempo.com/2023/06/Bincentive-h.png",
             "briefly": "數位資產管理平台",
             "description": "Bincentive 是加密資產投資服務平台，透過媒合交易專家與個人投資者，連接頂尖投資能力與不同風險的投資需求，提供最專業多樣的量化投資策略選擇。",
             "website": "https://www.bincentive.com/",
@@ -1534,36 +1578,14 @@
         },
         {
             "group": "CeFi-資產管理平台",
-            "title": "Coinomo(久未更新)",
-            "logo_icon": "https://image.blocktempo.com/2023/05/coinomo-c.png",
-            "logo_banner": "https://image.blocktempo.com/2023/06/CeFi-12.png",
-            "briefly": "數位資產管理平台",
-            "description": "Coinomo 提供代幣交易和精選 DeFi & CeFi 產品等加密投資，提供用戶一站式投資平台、簡化了購買 DeFi 的複雜流程。",
-            "website": "https://coinomo.com/zh",
-            "twitter": "",
-            "id": "coinomo(久未更新)"
-        },
-        {
-            "group": "CeFi-資產管理平台",
             "title": "FULY.AI",
             "logo_icon": "https://image.blocktempo.com/2023/05/338306928_1234675707461654_6796730751067386473_n.jpeg",
             "logo_banner": "https://image.blocktempo.com/2023/06/fulyai.png",
             "briefly": "數位資產管理平台",
-            "description": "FULY.AI 是專為 「Bitfinex 保證金融資交易」設計的「複利AI投資策略機器人」，幫助你用最簡單的方式，完全不需人為盯盤與手動掛單，即可用最佳即時利率自動放款，24小時收息不中斷！",
+            "description": "FULY.AI 是專為 「Bitfinex 保證金融資交易」設計的「複利 AI 投資策略機器人」，幫助用戶以即時利率自動放款，24小時收息不中斷！",
             "website": "https://fuly.ai/",
             "twitter": "",
             "id": "fuly.ai"
-        },
-        {
-            "group": "CeFi-資產管理平台",
-            "title": "優利理財(久未更新)",
-            "logo_icon": "https://image.blocktempo.com/2023/05/348235029_270270535494348_7019613905307627188_n.png",
-            "logo_banner": "https://image.blocktempo.com/2023/06/CeFi-13.png",
-            "briefly": "數位資產管理平台",
-            "description": "提供新時代投資人，有趣好懂的理財思維+佛系理財規劃工具，協助理財新手達到短中長期的財務目標，過上理想生活。",
-            "website": "https://nicelend.tw/",
-            "twitter": "",
-            "id": "優利理財(久未更新)"
         },
         {
             "group": "CeFi-資產管理平台",
@@ -1582,7 +1604,7 @@
             "logo_icon": "https://image.blocktempo.com/2023/05/240114936_100548632355225_8204153442875911290_n.jpeg",
             "logo_banner": "https://image.blocktempo.com/2023/06/CeFi-14.png",
             "briefly": "數位資產管理平台",
-            "description": "Amber Group 成立於 2017 年，是最早面向全球大型機構和家族基金並成功提供一站式數位資產服務的先驅者之一。",
+            "description": "Amber Group 成立於 2017 年，是最早面向全球大型機構和家族基金並成功提供一站式數位資產服務的先驅者之一。作為一家綜合的加密金融服務提供商，幫助客戶獲得流動性，賺取收益並管理各種加密資產的風險。 目標通過提供投資靈活性和最大化回報來優化長期價值。",
             "website": "https://www.ambergroup.io/",
             "twitter": "https://twitter.com/ambergroup_io",
             "id": "amber-group"
@@ -1597,6 +1619,28 @@
             "website": "https://www.bitshine.app/",
             "twitter": "",
             "id": "bitshine"
+        },
+        {
+            "group": "CeFi-資產管理平台",
+            "title": "Coinomo(久未更新)",
+            "logo_icon": "https://image.blocktempo.com/2023/05/coinomo-c.png",
+            "logo_banner": "https://image.blocktempo.com/2023/06/CeFi-12.png",
+            "briefly": "數位資產管理平台",
+            "description": "Coinomo 提供代幣交易和精選 DeFi & CeFi 產品等加密投資，提供用戶一站式投資平台、簡化了購買 DeFi 的複雜流程。",
+            "website": "https://coinomo.com/zh",
+            "twitter": "",
+            "id": "coinomo(久未更新)"
+        },
+        {
+            "group": "CeFi-資產管理平台",
+            "title": "優利理財(久未更新)",
+            "logo_icon": "https://image.blocktempo.com/2023/05/348235029_270270535494348_7019613905307627188_n.png",
+            "logo_banner": "https://image.blocktempo.com/2023/05/logo-white.png",
+            "briefly": "數位資產管理平台",
+            "description": "提供新時代投資人，有趣好懂的理財思維+佛系理財規劃工具，協助理財新手達到短中長期的財務目標，過上理想生活。",
+            "website": "https://nicelend.tw/",
+            "twitter": "",
+            "id": "優利理財(久未更新)"
         },
         {
             "group": "CeFi-資產管理平台",
@@ -1615,7 +1659,7 @@
             "logo_icon": "https://image.blocktempo.com/2023/05/AMIS-c.png",
             "logo_banner": "https://image.blocktempo.com/2023/06/Wallet.png",
             "briefly": "區塊鏈安全解決方案",
-            "description": "AMIS 為一區塊鏈底層技術的公司成立於2016年，是MaiCoin集團旗下姐妹公司，並且為企業以太坊聯盟的創始成員之一。2017年，JP Morgan的以太坊平台 - Quorum 宣佈其採用 AMIS 的伊斯坦堡拜占庭共識演算法。",
+            "description": "AMIS 為一區塊鏈底層技術的公司成立於 2016 年，是 MaiCoin 集團旗下姐妹公司，並且為企業以太坊聯盟的創始成員之一。2017年，JP Morgan的以太坊平台 - Quorum 宣佈其採用 AMIS 的伊斯坦堡拜占庭共識演算法。",
             "website": "https://www.amis.com/",
             "twitter": "",
             "id": "amis"
@@ -1626,7 +1670,7 @@
             "logo_icon": "https://image.blocktempo.com/2023/06/aegis-custody-c.jpg",
             "logo_banner": "https://image.blocktempo.com/2023/06/Wallet-1.png",
             "briefly": "數位資產託管平台",
-            "description": "Aegis Custody 致力於推動資產數位化，並以所持有的信託牌照進行數位資產的保管、確保數位資產的安全性。\n\n旗下有三個開發中的產品：用於數位資產管理的多簽硬體冷錢包Aegis Pen、協助中小企業將應收帳款數位化成固定收益商品的線上平台FactorQuick、提供投資人進行固定收益商品之數位憑證投資的線上平台Optimi。",
+            "description": "Aegis Custody 致力於推動資產數位化，並以所持有的信託牌照進行數位資產的保管、確保數位資產的安全性。",
             "website": "https://www.aegiscustody.com/",
             "twitter": "",
             "id": "aegis-custody"
@@ -1736,7 +1780,7 @@
             "logo_icon": "https://image.blocktempo.com/2023/06/secux-c.jpeg",
             "logo_banner": "https://image.blocktempo.com/2023/06/Wallet-11.png",
             "briefly": "冷錢包製造商",
-            "description": "SecuX 是一家區塊鏈安全公司，提供最先進的加密貨幣硬體錢包及加密貨幣支付解決方案，具備金庫等級的安全，擁有堅強的供應鏈管理及多功能的設計能力。",
+            "description": "SecuX 是一家區塊鏈安全公司，提供先進的加密貨幣硬體錢包及加密貨幣支付解決方案，具備金庫等級的安全，擁有堅強的供應鏈管理及多功能的設計能力。",
             "website": "https://tw.shop.secuxtech.com/",
             "twitter": "",
             "id": "secux"
@@ -1791,7 +1835,7 @@
             "logo_icon": "https://image.blocktempo.com/2023/06/appworks-new.png",
             "logo_banner": "https://image.blocktempo.com/2023/06/VC-1.png",
             "briefly": "新創加速器",
-            "description": "AppWorks 總部位於台灣，成立於 2009 年，是一家領先的風險投資公司，另也設有為期 6 個月的免費加速器計劃  AppWorks Accelerator。",
+            "description": "2010 年成立 AppWorks Accelerator，現為大東南亞地區最大的創業加速器，每半年嚴選 30 - 40 支本區域最具潛力 AI 與 Blockchain 新創進駐。輔導新創尋找 PMF、幫助成長期團隊建立 Highly Scalable Business Models。",
             "website": "https://appworks.tw/",
             "twitter": "https://twitter.com/AppWorks",
             "id": "appworks"
@@ -1813,7 +1857,7 @@
             "logo_icon": "https://image.blocktempo.com/2023/05/310084650_543838620955000_4905284661344449937_n.png",
             "logo_banner": "https://image.blocktempo.com/2023/06/VC-2.png",
             "briefly": "新創加速器",
-            "description": "TTA是由國家科學技術委員會於2018年推出的台灣旗艦創業生態系統建設計劃。我們的願景是在台灣建立一個充滿活力的國際創業生態系統。 我們通過連接技術、人才、市場和資本的平台來促進創業和創新。",
+            "description": "TTA 是由國家科學技術委員會於 18 年推出的台灣旗艦創業生態系統建設計劃。我們的願景是在台灣建立一個充滿活力的國際創業生態系統。 我們通過連接技術、人才、市場和資本的平台來促進創業和創新。",
             "website": "https://www.taiwanarena.tech/",
             "twitter": "https://twitter.com/TaiwanTechArena",
             "id": "tta"
@@ -1824,7 +1868,7 @@
             "logo_icon": "https://drive.google.com/drive/u/3/folders/187QBe5ug2JUkhZhnp0J8BgG98tqEg2CW",
             "logo_banner": "https://image.blocktempo.com/2023/06/VC-3.png",
             "briefly": "TON 區塊鏈加速器",
-            "description": "TonX Studio, formed by the early TON contributors, aims to build infrastructures on TON.",
+            "description": "TonX Studio 由早期的 TON 貢獻者組成，旨在協助 TON 上基礎設施的孵化與加速。",
             "website": "https://www.tonx.studio/",
             "twitter": "https://twitter.com/TonX_Studio",
             "id": "tonx-studio"
@@ -1912,7 +1956,7 @@
             "logo_icon": "https://image.blocktempo.com/2023/06/OUTLIERS-c.jpeg",
             "logo_banner": "https://image.blocktempo.com/2023/06/VC-11.png",
             "briefly": "加密貨幣風險投資",
-            "description": "通過科學研究和集體智慧支持科學家主導的企業。",
+            "description": "通過科學研究和集體智慧支持由科學家主導的企業。",
             "website": "https://outliers.fund/",
             "twitter": "https://twitter.com/OutliersFund",
             "id": "outliers-fund"
@@ -1920,11 +1964,11 @@
         {
             "group": "VC / 加速器-加密創投",
             "title": "lead capital",
-            "logo_icon": "",
+            "logo_icon": "https://image.blocktempo.com/2023/06/lead-capital-c.jpeg",
             "logo_banner": "https://image.blocktempo.com/2023/06/VC-12.png",
             "briefly": "加密貨幣風險投資",
             "description": "領先資本為專注於區塊鏈金融市場的風險投資公司，我們擁有獨創的整合技術、量化分析以及專業的市場研究。",
-            "website": "",
+            "website": "https://lead-capital.com/",
             "twitter": "",
             "id": "lead-capital"
         },
@@ -1938,17 +1982,6 @@
             "website": "https://www.gen3.network/",
             "twitter": "",
             "id": "gen3"
-        },
-        {
-            "group": "DAO / 社群生態-社群",
-            "title": "Buckchaf",
-            "logo_icon": "https://image.blocktempo.com/2023/06/buckchaf.jpeg",
-            "logo_banner": "https://image.blocktempo.com/2023/06/community-1.png",
-            "briefly": "區塊鏈教育",
-            "description": "CBA 亞洲區塊鏈學院致力於推動完整區塊鏈培訓課程，紮實訓練成為頂尖「區塊鏈商業應用規劃師」與「區塊鏈技術專家」。",
-            "website": "https://cbaofficial.com/",
-            "twitter": "",
-            "id": "buckchaf"
         },
         {
             "group": "DAO / 社群生態-社群",
@@ -1967,14 +2000,14 @@
             "logo_icon": "https://image.blocktempo.com/2023/06/292725515_421751069967074_4148086833869084219_n.jpeg",
             "logo_banner": "https://image.blocktempo.com/2023/06/community-3.png",
             "briefly": "區塊鏈社群",
-            "description": "由《動區動趨BlockTempo - 由社群而生的區塊鏈媒體》發起，凝聚起台灣區塊鏈。",
-            "website": "",
+            "description": "由動區動趨 BlockTempo 發起，凝聚起台灣區塊鏈及加密貨幣產業，結合線上平台與線下活動，提供社群一個分享交流的平台，推動最精準的區塊鏈新知與教育。",
+            "website": "https://www.facebook.com/BlockMeet/?locale=zh_TW",
             "twitter": "",
             "id": "blockmeet"
         },
         {
             "group": "DAO / 社群生態-社群",
-            "title": "cypherpunks Taiwan",
+            "title": "Cypherpunks Taiwan",
             "logo_icon": "https://image.blocktempo.com/2023/06/303307922_569201625000115_660266897966103943_n.png",
             "logo_banner": "https://image.blocktempo.com/2023/06/cypherpunks-Taiwan.png",
             "briefly": "區塊鏈社群",
@@ -1989,7 +2022,7 @@
             "logo_icon": "https://image.blocktempo.com/2023/06/Taipei-Bitcoin-Meetupc.png",
             "logo_banner": "https://image.blocktempo.com/2023/06/Taipei-Bitcoin-Meetuph.png",
             "briefly": "區塊鏈社群",
-            "description": "台北比特幣聚會是世界上第一個去中心化數字貨幣比特幣的台北愛好者而設的。",
+            "description": "台北比特幣聚會，專門為台北的比特幣愛好者而創立，舉辦、分享各種關於比特幣、區塊鏈的活動與知識。",
             "website": "https://www.meetup.com/taipei-bitcoin-meetup-group/",
             "twitter": "",
             "id": "台北比特幣聚會｜taipei-bitcoin-meetup"
@@ -2000,8 +2033,8 @@
             "logo_icon": "https://image.blocktempo.com/2023/06/Bitcoin-比特幣中文社團c.png",
             "logo_banner": "https://image.blocktempo.com/2023/06/community9.png",
             "briefly": "區塊鏈社群",
-            "description": "",
-            "website": "",
+            "description": "一起討論、研究 Bitcoin 的社團，帶領社群即時追蹤 Bitcoin 發展進度，Facebook 上有近 16 萬名社團成員。",
+            "website": "https://www.facebook.com/groups/bitcoin.tw/",
             "twitter": "",
             "id": "bitcoin-比特幣中文社團"
         },
@@ -2009,9 +2042,9 @@
             "group": "DAO / 社群生態-社群",
             "title": "J Club",
             "logo_icon": "https://image.blocktempo.com/2023/06/TxhddzxZ_400x400.jpeg",
-            "logo_banner": "https://image.blocktempo.com/2023/06/1500x500-3.jpeg",
+            "logo_banner": "https://image.blocktempo.com/2023/06/jclub-h.png",
             "briefly": "區塊鏈社群",
-            "description": "J club 是一群來自 2017 年的 blockchain / DEFI / NFT / GAMEFI 的台灣加密社區。",
+            "description": "J club 是一群來自 2017 年的 Blockchain / DEFI / NFT / GAMEFI 團隊所打造的台灣加密社區。",
             "website": "",
             "twitter": "https://twitter.com/Jclub888",
             "id": "j-club"
@@ -2022,10 +2055,21 @@
             "logo_icon": "https://image.blocktempo.com/2023/06/E27Y_ZnX_400x400.jpeg",
             "logo_banner": "https://image.blocktempo.com/2023/06/community-5.png",
             "briefly": "區塊鏈整合行銷",
-            "description": "手榴彈是深耕中文市場的整合公關行銷公司，同時擁有多樣化內容的自媒體。",
+            "description": "手榴彈成立於 2019 年初，立志成為區塊鏈產業最活躍的公關行銷公司，提供區塊鏈相關一站式服務。",
             "website": "https://www.grenade.tw/",
             "twitter": "https://twitter.com/GrenadeTw",
             "id": "grenade-手榴彈"
+        },
+        {
+            "group": "DAO / 社群生態-社群",
+            "title": "Buckchaf",
+            "logo_icon": "https://image.blocktempo.com/2023/06/buckchaf.jpeg",
+            "logo_banner": "https://image.blocktempo.com/2023/06/community-1.png",
+            "briefly": "區塊鏈教育",
+            "description": "CBA 亞洲區塊鏈學院致力於推動完整區塊鏈培訓課程，紮實訓練成為頂尖「區塊鏈商業應用規劃師」與「區塊鏈技術專家」。",
+            "website": "https://cbaofficial.com/",
+            "twitter": "",
+            "id": "buckchaf"
         },
         {
             "group": "DAO / 社群生態-社群",
@@ -2040,14 +2084,14 @@
         },
         {
             "group": "DAO / 社群生態-社群",
-            "title": "Alex與交易的本質",
+            "title": "Alex 與交易的本質",
             "logo_icon": "https://image.blocktempo.com/2023/06/alex.jpg",
             "logo_banner": "https://image.blocktempo.com/2023/06/alex-bitcoin.png",
             "briefly": "區塊鏈社群",
-            "description": "交易技術分析社群的指標",
+            "description": "只在研究、討論交易分析技術指標的活躍社群",
             "website": "https://t.me/+SRis864HBMLlziXm",
             "twitter": "",
-            "id": "alex與交易的本質"
+            "id": "alex-與交易的本質"
         },
         {
             "group": "DAO / 社群生態-社群",
@@ -2055,7 +2099,7 @@
             "logo_icon": "https://image.blocktempo.com/2023/06/TxhddzxZ_400x400.jpeg",
             "logo_banner": "https://image.blocktempo.com/2023/06/bing.png",
             "briefly": "區塊鏈社群",
-            "description": "專注在 DeFi 的討論群",
+            "description": "專注研究、討論 DeFi 領域的活躍社群",
             "website": "https://t.me/bingDefiNoteChat",
             "twitter": "",
             "id": "bing‘s-defi-note"
@@ -2064,7 +2108,7 @@
             "group": "DAO / 社群生態-社群",
             "title": "JZ Invest",
             "logo_icon": "https://image.blocktempo.com/2023/05/279032449_111219061572011_3884631378682026134_n.png",
-            "logo_banner": "https://image.blocktempo.com/2023/05/307575329_161120353248548_5817201544607491474_n.png",
+            "logo_banner": "https://image.blocktempo.com/2023/06/jz-invest-h.png",
             "briefly": "投資和交易策略分享",
             "description": "曾在全球前 10 大加密貨幣機構管理數千萬美元，也待過傳統金融 3 大券商交易室，持有 CFA 美國特許金融分析師證照、BAYC #407，目前致力於分享加密貨幣投資理念，解析宏觀金融投資策略。",
             "website": "https://jzinvest.xyz/",
@@ -2078,9 +2122,75 @@
             "logo_banner": "https://image.blocktempo.com/2023/06/community-7.png",
             "briefly": "社群型 DAO",
             "description": "呢喃貓投資由幾位具有法人投資經歷的交易員組成，專注於加密貨幣投資研究，成員包含美國私募基金分析師、傳統股票基金操盤人及全職加密貨幣投資人等。",
-            "website": "",
+            "website": "https://murmurcats.com/",
             "twitter": "",
             "id": "呢喃貓投資"
+        },
+        {
+            "group": "DAO / 社群生態-社群",
+            "title": "2140 加密社群",
+            "logo_icon": "https://image.blocktempo.com/2023/06/2140加密社群.jpeg",
+            "logo_banner": "https://image.blocktempo.com/2023/06/2140加密社群橫式.png",
+            "briefly": "區塊鏈社群",
+            "description": "致力於推廣及維護健康發展的加密貨幣生態圈，提供訂閱制的會員服務。",
+            "website": "https://www.facebook.com/groups/2140groups/",
+            "twitter": "",
+            "id": "2140-加密社群"
+        },
+        {
+            "group": "DAO / 社群生態-社群",
+            "title": "工具王阿彰",
+            "logo_icon": "https://image.blocktempo.com/2023/06/工具王阿璋正方.webp",
+            "logo_banner": "https://image.blocktempo.com/2023/06/工具王阿璋橫式.png",
+            "briefly": "區塊鏈社群",
+            "description": "知名知識內容創作者、熱愛分享各領域實用資訊",
+            "website": "https://www.johntool.com/",
+            "twitter": "",
+            "id": "工具王阿彰"
+        },
+        {
+            "group": "DAO / 社群生態-社群",
+            "title": "DA 交易者聯盟",
+            "logo_icon": "https://image.blocktempo.com/2023/06/DA-交易者聯盟正方.jpeg",
+            "logo_banner": "https://image.blocktempo.com/2023/06/DA-交易者聯盟橫式.png",
+            "briefly": "區塊鏈社群",
+            "description": "DA 交易者聯盟（DATA）為 DA Capital 旗下品牌，由職業交易員、美國頂尖商學院畢業生、全球百大收益員所創立，提供給對投資/交易、區塊鏈/加密貨幣有興趣的朋友一個能系統化、簡單學習的環境。",
+            "website": "https://datatw.io/",
+            "twitter": "",
+            "id": "da-交易者聯盟"
+        },
+        {
+            "group": "DAO / 社群生態-社群",
+            "title": "腦哥の幣圈投資小圈圈",
+            "logo_icon": "https://image.blocktempo.com/2023/06/腦哥正方.png",
+            "logo_banner": "https://image.blocktempo.com/2023/06/腦哥橫式.png",
+            "briefly": "區塊鏈社群",
+            "description": "由台灣知名加密貨幣領域 Youtuber 腦哥營運的官方社群，歡迎大家一起來交流幣圈新知 / 消息。",
+            "website": "https://line.me/ti/g2/eJQ1l2xyQIL7LT0ERirAww?utm_source=invitation&utm_medium=link_copy&utm_campaign=default",
+            "twitter": "",
+            "id": "腦哥の幣圈投資小圈圈"
+        },
+        {
+            "group": "DAO / 社群生態-社群",
+            "title": "古亭區塊鏈遊戲公會",
+            "logo_icon": "https://image.blocktempo.com/2023/06/古亭鏈遊公會.png",
+            "logo_banner": "https://image.blocktempo.com/2023/06/古亭鏈遊公會橫式.png",
+            "briefly": "GameFi社群",
+            "description": "古亭區塊鏈遊戲公會致力於區塊鏈遊戲議題，挖掘高潛力發展項目，帶領公會成員跨越區塊鏈門檻，提供珍貴的先驅研究與實戰經驗值，加入公會Discord一起探索區塊鏈元宇宙",
+            "website": "https://discord.gg/Vy7ceVaC",
+            "twitter": "",
+            "id": "古亭區塊鏈遊戲公會"
+        },
+        {
+            "group": "DAO / 社群生態-社群",
+            "title": "Crypto Paul 幣圈保羅",
+            "logo_icon": "https://image.blocktempo.com/2023/06/幣圈保羅正方.jpeg",
+            "logo_banner": "https://image.blocktempo.com/2023/06/幣圈保羅橫式.png",
+            "briefly": "區塊鏈社群",
+            "description": "分享、討論各種關於加密貨幣、NFT 項目介紹、投資資訊分享",
+            "website": "https://cryptopaul.net/",
+            "twitter": "",
+            "id": "crypto-paul-幣圈保羅"
         },
         {
             "group": "DAO / 社群生態-DAO",
@@ -2095,14 +2205,14 @@
         },
         {
             "group": "DAO / 社群生態-DAO",
-            "title": "TaiwanDao",
+            "title": "Ape 101 Taiwan Club",
             "logo_icon": "https://image.blocktempo.com/2023/05/taiwanda0-c.jpeg",
             "logo_banner": "https://image.blocktempo.com/2023/06/taiwandao.png",
             "briefly": "社群型 DAO",
             "description": "由一群 BAYC 持有者組成，旨在為台灣提供更廣泛、公平的 NFT 資訊空間，因志同道合而聚集、產生的組織。",
-            "website": "",
-            "twitter": "",
-            "id": "taiwandao"
+            "website": "https://www.facebook.com/twdao/",
+            "twitter": "https://twitter.com/BaycTaiwan",
+            "id": "ape-101-taiwan-club"
         },
         {
             "group": "DAO / 社群生態-DAO",
@@ -2128,6 +2238,17 @@
         },
         {
             "group": "DAO / 社群生態-DAO",
+            "title": "EM3DAO",
+            "logo_icon": "https://image.blocktempo.com/2023/06/EM3DAOc2.jpeg",
+            "logo_banner": "https://image.blocktempo.com/2023/06/EM3DAOh.png",
+            "briefly": "社群型 DAO",
+            "description": "我們是一個充滿活力的加密貨幣愛好者、研究人員和區塊鏈開發者社群。",
+            "website": "https://t.co/rVd2ZgVSFO",
+            "twitter": "https://twitter.com/em3_dao",
+            "id": "em3dao"
+        },
+        {
+            "group": "DAO / 社群生態-DAO",
             "title": "FAB DAO",
             "logo_icon": "https://image.blocktempo.com/2023/05/fab-dao.png",
             "logo_banner": "https://image.blocktempo.com/2023/06/FAB-DAO-1.png",
@@ -2144,7 +2265,7 @@
             "logo_banner": "https://image.blocktempo.com/2023/06/Volume-DAO.png",
             "briefly": "藝術型 DAO",
             "description": "VolumeDAO 眾聲道，成立於 2021 年底，由藏家、藝術家、策展人、評論人和行動主義者組成，並以 Tezos 鏈為基地，積極推動區塊鏈及人工智慧藝術，希望和創作者及藏家共創 Web3.0 時代的藝術生態系。",
-            "website": "",
+            "website": "https://www.volumedao.xyz/",
             "twitter": "",
             "id": "volume-dao"
         },
@@ -2166,34 +2287,34 @@
             "logo_banner": "https://image.blocktempo.com/2023/06/PleasrDAO-.png",
             "briefly": "藝術型 DAO",
             "description": "PleasrDAO 是由 DeFi 領袖、早期 NFT 收藏家及數位藝術家組成的去中心化自治組織，主要透過以慈善的方式收購有文化意義或是網路歷史片段的藝術作品 (主要以 NFT 為主)。",
-            "website": "",
+            "website": "https://pleasr.org/",
             "twitter": "",
             "id": "pleasrdao"
         },
         {
-            "group": "政府 / 利益團體-政府",
+            "group": "政府 / 利益團體-政府部門",
             "title": "工研院",
             "logo_icon": "https://image.blocktempo.com/2023/06/itri_c.png",
             "logo_banner": "https://image.blocktempo.com/2023/06/GOV.png",
             "briefly": "技術研究機構",
-            "description": "工業技術研究院是台灣國際級的應用研究機構，擁有六千位研發尖兵，以科技研發，帶動產業發展，創造經濟價值，增進社會福祉為任務。",
+            "description": "工業技術研究院是台灣國際級的應用研究機構，擁有數千位研發尖兵，以科技研發，帶動產業發展，創造經濟價值，增進社會福祉為任務。",
             "website": "https://www.itri.org.tw/",
             "twitter": "",
             "id": "工研院"
         },
         {
-            "group": "政府 / 利益團體-政府",
+            "group": "政府 / 利益團體-政府部門",
             "title": "資策會",
             "logo_icon": "https://image.blocktempo.com/2023/06/mic.jpeg",
             "logo_banner": "https://image.blocktempo.com/2023/06/GOV-1.png",
             "briefly": "技術推廣機構",
-            "description": "策進中華民國資通訊科技之創新與應用，協助發展數位經濟為宗旨",
+            "description": "策進中華民國資通訊科技之創新與應用，協助發展數位經濟為宗旨。",
             "website": "https://www.iii.org.tw/",
             "twitter": "",
             "id": "資策會"
         },
         {
-            "group": "政府 / 利益團體-政府",
+            "group": "政府 / 利益團體-政府部門",
             "title": "數發部",
             "logo_icon": "https://image.blocktempo.com/2023/06/moda-c.png",
             "logo_banner": "https://image.blocktempo.com/2023/06/GOV-2.png",
@@ -2210,7 +2331,7 @@
             "logo_banner": "https://image.blocktempo.com/2023/06/TBA.png",
             "briefly": "社團協會",
             "description": "台灣區塊鏈大學聯盟連結 30 幾所院校區塊鏈社團及聯盟組織，提供學生多方向資源，如職涯規劃、知識教育及幹部訓練等，共同研究區塊鏈技術、原理與應用，及鏈結各領域科技。",
-            "website": "https://tballiance.org.tw/",
+            "website": "https://www.facebook.com/TaiwanBlockchainAcademia/?locale=zh_TW",
             "twitter": "",
             "id": "台灣區塊鏈大學聯盟"
         },
@@ -2229,7 +2350,7 @@
             "group": "政府 / 利益團體-利益團體",
             "title": "台灣NFT協會（NADA）",
             "logo_icon": "https://image.blocktempo.com/2023/06/NADA-C.jpg",
-            "logo_banner": "https://image.blocktempo.com/2023/06/GOV-3.png",
+            "logo_banner": "https://image.blocktempo.com/2023/06/nada-h.png",
             "briefly": "社團協會",
             "description": "台灣 NFT 協會是由台灣數間 NFT 應用相關公司作為核心成員，涵蓋 NFT 發行、交易、行銷、商業應用、遊戲、創作、藝術、音樂等多元領域等業者所組成，以推廣 NFT 產業應用、技術發展及加速產業普及為宗旨，致力推動 Web2 產業升級與 Web3 連結，期許帶動不同產業的資源共享整合，協助台灣 NFT 生態圈和全世界接軌。",
             "website": "",
@@ -2242,7 +2363,7 @@
             "logo_icon": "https://image.blocktempo.com/2023/06/taiwan-asociation-for-blockchain-ecosystem-innovation-h.jpeg",
             "logo_banner": "https://image.blocktempo.com/2023/06/GOV-4.png",
             "briefly": "社團協會",
-            "description": "臺灣區塊鏈愛好者年會歷年皆由行政院科技會報辦公室的指導，以提升民眾對區塊鏈認知理解，以及協助公部門、企業釐清合適的區塊鏈應用導入場景為使命。自2016年起，四屆累積了超過百位產政學研講者和2000位與會者。",
+            "description": "臺灣區塊鏈愛好者年會歷年皆由行政院科技會報辦公室的指導，以提升民眾對區塊鏈認知理解，以及協助公部門、企業釐清合適的區塊鏈應用導入場景為使命。",
             "website": "https://www.chain.tw/",
             "twitter": "",
             "id": "臺灣區塊鏈愛好者協會"
@@ -2308,7 +2429,7 @@
             "logo_icon": "https://image.blocktempo.com/2023/06/World-of-Slavesc.jpeg",
             "logo_banner": "https://image.blocktempo.com/2023/06/Gamefi-2.png",
             "briefly": "NFT 遊戲",
-            "description": "《奴隸世界》以古羅馬時代的奴隸社會為背景，讓玩家透過配置與管理自己的奴隸莊園，來獲取最大的代幣收益。每一張美女奴隸的卡片，都可鑄造為 NFT，在二級市場上進行交易。",
+            "description": "《奴隸世界》以古羅馬時代的奴隸社會為背景，讓玩家透過配置與管理自己的奴隸莊園，來獲取最大的代幣收益。每一張美女奴隸的卡片，都可鑄造為 NFT 在二級市場上進行交易。",
             "website": "https://worldofslaves.io/",
             "twitter": "https://twitter.com/worldofslaves",
             "id": "world-of-slaves"
@@ -2340,8 +2461,8 @@
             "title": "Petarush",
             "logo_icon": "https://image.blocktempo.com/2023/06/Petarushc.png",
             "logo_banner": "https://image.blocktempo.com/2023/06/Gamefi-4.png",
-            "briefly": "",
-            "description": "PetaRush 是一款以 NFT 角色為主的賽跑遊戲，跑者以獅子、貓咪、鴿子、狐狸等賽博龐克的風格形象呈現，並融入了其他項目的 IP。競賽地點則是在充滿科幻風的火星場景，星球上的沙丘、亞湖、火山等地形，在賽道上都有精緻的呈現。現在，玩家僅需四個步驟，便能輕鬆參與到 Web3 的遊戲世界中。",
+            "briefly": "NFT 遊戲",
+            "description": "PetaRush 是一款以 NFT 角色為主的賽跑遊戲，跑者以獅子、貓咪、鴿子、狐狸等賽博龐克的風格形象呈現，並融入了其他項目的 IP。競賽地點則是在充滿科幻風的火星場景，星球上的沙丘、亞湖、火山等地形，在賽道上都有精緻的呈現。",
             "website": "https://petarush.metasens.com/",
             "twitter": "https://twitter.com/PetaRush",
             "id": "petarush"
