@@ -29,6 +29,7 @@ itemsPromise.then(data => {
         groups.find(g => {
             if ( g.id === groupMajorId ) {
                 target.group_major = g.title;
+                target.group_major_id = g.id;
                 if ( gs.length > 1 ) {
                     const minor = g.children.find(gc => gc.id === gs[1]);
                     target.group_minor = minor.title;
@@ -54,6 +55,10 @@ itemsPromise.then(data => {
             detailDom.find("span[group-minor]").remove();
         }
 
+        detailDom.find("a[data-target-group]").click((e) => {
+            sessionStorage.setItem('_active_group', $(e.target).data("target-group"));
+        });
+        
         $(document.body).append(detailDom);
         
         const itemsWrap = $("main div[related-items]");
