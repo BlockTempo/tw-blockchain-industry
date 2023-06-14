@@ -2398,7 +2398,7 @@ footer .our-logo {
   margin-bottom: 0.5rem;
 }
 footer .share-btn-kit {
-  margin-top: 10%;
+  /* margin-top: 10%; */
   width: 100%;
 }
 footer .fab, footer .fas {
@@ -2414,7 +2414,7 @@ footer .title {
   font-weight: 700;
   letter-spacing: 2px;
   padding-top: 10px;
-  padding-bottom: 8%;
+  padding-bottom: 4%;
 }
 footer .title .fas{
   font-size: 1.2rem;
@@ -2429,10 +2429,18 @@ footer ul {
 footer .left {
   margin-right: 15%;
 }
-footer .copyright {
+footer .share-btn-kit-wrap {
   text-align: right;
   font-size: 0.5rem;
 }
+
+footer .copyright{
+  position: absolute;
+  bottom: 1.2rem;
+  font-size: .7rem;
+  margin-left: -15px;
+}
+
 footer hr {
   opacity: 0;
   background-color: #fdfdfd;
@@ -2457,6 +2465,10 @@ footer .meet {
 
 footer .links .fab{
   font-size: 1.2rem;
+}
+
+footer .links li {
+  line-height: 1.8rem;
 }
 
 /* modal */

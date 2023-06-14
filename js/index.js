@@ -368,11 +368,12 @@ function handleMapShows() {
   var ag = sessionStorage.getItem('_active_group');
   if ( ag ) {
     sessionStorage.removeItem('_active_group');
-    groupWrap.find(".sidebar-item[data-id='" + ag + "']").trigger('click');
     $("#map button[data-layout='list']").trigger('click');
+    haveClicked = true;
+    groupWrap.find(".sidebar-item[data-id='" + ag + "']").trigger('click');
   } else {
-    groupWrap.find(".sidebar-item").first().trigger('click');
-  $("#map button[data-layout='map']").trigger('click');
+    // groupWrap.find(".sidebar-item").first().trigger('click');
+    $("#map button[data-layout='map']").trigger('click');
   }
 }
 
@@ -392,6 +393,15 @@ itemsPromise.then(data => {
   // loadAmTreemapChart( groups, items );
   loadMap( groups, items );
   
+  groupWrap.append(
+    `<li class="sidebar-item" data-id="__all">` + 
+      '<a href="" class="smooth">' + 
+        '<i class="io io-caozuoshili icon-fw icon-lg"></i>' + 
+        `<span>All</span>` + 
+      '</a>' + 
+    '</li>'
+  )
+
   groups.forEach(g => {
     groupWrap.append(
       `<li class="sidebar-item" data-id="${g.id}">` + 
@@ -413,7 +423,7 @@ itemsPromise.then(data => {
     var selectedOption = $(this).data("id");
 
     var targets = items.filter(t => {
-      return t.group.indexOf(selectedOption) === 0;
+      return selectedOption === "__all" || t.group.indexOf(selectedOption) === 0;
     });
     
     // style
@@ -440,6 +450,7 @@ itemsPromise.then(data => {
   if ( domloaded ) handleMapShows();
 });
 
+let haveClicked = false;
 let mapHasTuned = false;
 
 $(document).ready(function() {
@@ -459,6 +470,11 @@ $(document).ready(function() {
         });
         tuneMap();
         mapHasTuned = true;
+      }
+      if ( layoutType == "list" && !haveClicked ) {
+        const groupWrap = $("#map .sidebar-menu ul");
+        groupWrap.find(".sidebar-item").first().trigger('click');
+        haveClicked = true;
       }
     }
   });
