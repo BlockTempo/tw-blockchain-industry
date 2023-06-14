@@ -46,6 +46,63 @@ html, body {
   }
 }
 
+#theme .container{
+  position: relative;
+}
+
+#theme #mce-EMAIL {
+  /* border-bottom: solid 1px #fff; */
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+#theme .prefix {
+  font-size: .8rem;
+}
+
+#theme .header {
+  font-size: 2rem;
+}
+
+#theme .clear {
+  /* margin-top: 10%; */
+}
+
+#theme .form-row {
+  width: 60%;
+  padding: 4px;
+  border-radius: 15px;
+  background-color: white;
+}
+
+#theme ::-webkit-input-placeholder { 
+  /* color: #fff; */
+  font-weight: 200;
+  color: #a0a0a0;
+}
+
+#theme #mce-EMAIL{
+  height: 35px;
+}
+
+#theme #mc-embedded-subscribe {
+  background-color: #45c9ee;
+  color: #110340;
+  border: none;
+  padding: 5px 25px;
+  border-radius: 15px;
+  font-size: 18px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 20px 40px 0px;
+  transition: all 0.3s ease-in-out 0s; 
+  cursor: pointer;
+}
+#theme #mc-embedded-subscribe:hover{
+  box-shadow: rgba(0, 0, 0, 0) 0px 20px 40px 0px;
+  color: #00A2EA;
+  background-color: rgb(248, 248, 249);
+}
+
+
 #map .container{
   padding: 0px 0 30px;
 }
@@ -318,7 +375,7 @@ header#theme {
   background-position: 55% 58%;
 }
 #theme .topic{
-  margin-top: 10%;
+  margin-top: 12%;
 }
 img.big19 {
   position: absolute;
@@ -405,7 +462,7 @@ img.bull{
 }
 
 .guide-bar{
-  border-top: 5px solid #63EDFC;
+  border-top: 5px solid #FFFFFF;
   width: 100px;
   margin: 4% 0;
 }
@@ -451,7 +508,7 @@ img.bull{
 }
 #mc_embed_signup {
   z-index: 10;
-  margin-top: 10%;
+  margin-top: 8%;
 }
 #mc_embed_signup .subscribe{
   background-color: #63EDFC;
@@ -461,12 +518,15 @@ img.bull{
   font-size: 1em;
 }
 
-.powerby {
-  margin-top: 8%;
+.powerby {  
+  opacity: .8;
+  bottom: -20%;
+  position: absolute;
+  font-size: .7rem;
 }
 
 .powerby img {
-  max-height: 1.8rem;
+  max-height: 1.4rem;
 }
 
 #mc-embedded-subscribe-form {
@@ -1848,7 +1908,7 @@ ul{
 /* news-slider */
 #news-slider{
   position: initial;
-  background-color: #122162;
+  background-color: #5369B5;
   height: auto;
 }
 #news-slider .headline{
@@ -2172,8 +2232,9 @@ ul{
 }
 
 #edm .container{
-  max-width: 72vw !important;
+  max-width: 60vw !important;
   padding: 40px 10px;
+  text-align: right;
 }
 #edm .cube {
   /* width: 10px;
@@ -2229,13 +2290,14 @@ ul{
 
 #edm #mc-embedded-subscribe {
   background-color: #45c9ee;
-  color: #fff;
+  color: #110340;
   border: none;
   padding: 5px 25px;
   border-radius: 15px;
   font-size: 18px;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 20px 40px 0px;
   transition: all 0.3s ease-in-out 0s; 
+  cursor: pointer;
 }
 #edm #mc-embedded-subscribe:hover{
   box-shadow: rgba(0, 0, 0, 0) 0px 20px 40px 0px;
