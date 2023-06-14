@@ -271,7 +271,8 @@ function loadMap(groups, items) {
   });
 
   wrap.find('[data-toggle="tooltip"]').tooltip({
-    trigger: "hover"
+    trigger: "hover",
+    html: true
   });
 }
 
@@ -378,7 +379,7 @@ function handleMapShows() {
 var domloaded = false;
 var jsonloaded = false;
 
-var itemsPromise = fetch("json/map.json?t=10").then(res => res.json());
+var itemsPromise = fetch("json/map.json?t=11").then(res => res.json());
 
 itemsPromise.then(data => {
   const gridWrap = $("#map .grid");
@@ -429,7 +430,8 @@ itemsPromise.then(data => {
     } 
 
     gridWrap.find('[data-toggle="tooltip"]').tooltip({
-      trigger: "hover"
+      trigger: "hover",
+      html: true
     });
   });
 
@@ -557,7 +559,7 @@ sliderLinks.first().trigger('click');
 
 /* auto convertions */
 /*
-var toConvertPromise = fetch("json/converted.json?t=1").then(res => res.json());
+var toConvertPromise = fetch("json/converted.json?t=2").then(res => res.json());
 toConvertPromise.then(data => {
   const groupsCollection = [];
   const itemsCollection = [];

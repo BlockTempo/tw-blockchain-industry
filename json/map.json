@@ -555,14 +555,14 @@
         },
         {
             "group": "NFT / Metaverse-發行項目",
-            "title": "ZoombieClub",
+            "title": "ZombieClub",
             "logo_icon": "https://image.blocktempo.com/2023/06/zombieclub.jpg",
             "logo_banner": "https://image.blocktempo.com/2023/06/NFT-16.png",
             "briefly": "社群型 NFT",
             "description": "ZombieClub 一共有 6,666 個 PFP，旨在匯集群眾智慧成為一個去中心化智庫。透過持續產出不同的產品、體驗、平台，以探索 Web3 世界的發展。",
             "website": "https://zombieclub.io/",
             "twitter": "https://twitter.com/get_turned",
-            "id": "zoombieclub"
+            "id": "zombieclub"
         },
         {
             "group": "NFT / Metaverse-發行項目",
@@ -838,6 +838,17 @@
             "website": "https://pundix.com/",
             "twitter": "https://twitter.com/PundiXLabs",
             "id": "pundix"
+        },
+        {
+            "group": "基礎設施-公鏈",
+            "title": "BTQ",
+            "logo_icon": "https://image.blocktempo.com/2023/05/BTQ-c.png",
+            "logo_banner": "https://image.blocktempo.com/2023/06/Wallet-5.png",
+            "briefly": "數位資產安全公司",
+            "description": "BTQ 是由一群後量子密碼學家所組成的團隊。我們的使命是持續提供先進的量子安全科技，保障數位資產的長期安全性。",
+            "website": "https://www.btq.com/",
+            "twitter": "",
+            "id": "btq"
         },
         {
             "group": "基礎設施-支付",
@@ -1710,14 +1721,14 @@
         },
         {
             "group": "錢包 / 安全方案-區塊鏈安全方案",
-            "title": "BTQ",
-            "logo_icon": "https://image.blocktempo.com/2023/05/BTQ-c.png",
-            "logo_banner": "https://image.blocktempo.com/2023/06/Wallet-5.png",
-            "briefly": "數位資產安全公司",
-            "description": "BTQ 是由一群後量子密碼學家所組成的團隊。我們的使命是持續提供先進的量子安全科技，保障數位資產的長期安全性。",
-            "website": "https://www.btq.com/",
+            "title": "趨勢科技",
+            "logo_icon": "https://image.blocktempo.com/2023/06/trend-micro-c.png",
+            "logo_banner": "https://image.blocktempo.com/2023/06/trend-micro-h.png",
+            "briefly": "區塊鏈安全解決方案",
+            "description": "由趨勢科技打造的 ChainSafer，可以透過 AI 算法、以及網路安全數據庫，可主動檢測可疑活動並發出警報，加強用戶鏈上交易安全性。",
+            "website": "https://www.nexone.io/zh-tw/product/chainsafer",
             "twitter": "",
-            "id": "btq"
+            "id": "趨勢科技"
         },
         {
             "group": "錢包 / 安全方案-區塊鏈安全方案",
@@ -2191,6 +2202,17 @@
             "website": "https://cryptopaul.net/",
             "twitter": "",
             "id": "crypto-paul-幣圈保羅"
+        },
+        {
+            "group": "DAO / 社群生態-社群",
+            "title": "虛擬通貨流動吧 X CryptoBar",
+            "logo_icon": "https://image.blocktempo.com/2023/06/cryptobarc.jpeg",
+            "logo_banner": "https://image.blocktempo.com/2023/06/cryptobarh.png",
+            "briefly": "區塊鏈社群",
+            "description": "討論範圍 Crytpo 和金融：新知、新聞、技術、法規、奇技淫巧、有趣事物",
+            "website": "https://t.me/cryptobarnospam",
+            "twitter": "",
+            "id": "虛擬通貨流動吧-x-cryptobar"
         },
         {
             "group": "DAO / 社群生態-DAO",

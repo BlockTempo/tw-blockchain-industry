@@ -254,7 +254,7 @@ nav.navbar {
 }
 
 .nav-link .highlight {
-  border-top: 5px solid #63EDFC;
+  border-top: 5px solid #4087DA;
   width: 36px;
   display: block;
   /* margin-top: 5px; */
@@ -2255,10 +2255,16 @@ ul{
 
 /* footer */
 .fa-linktr{
-  background: url("../img/linktree-logo-icon.svg") no-repeat;
+  /* background: url("../img/linktree.png") cover no-repeat; */
   width: 1.25rem;
   height: 1.25rem;
+  display: inline-block;
 }
+
+.fa-linktr img{
+  margin-bottom: 12px;
+}
+
 footer {
   padding: 30px;
   /* background-color: #EAE7EB; */
@@ -2300,7 +2306,7 @@ footer .our-logo {
   margin-bottom: 0.5rem;
 }
 footer .share-btn-kit {
-  margin-top: 2%;
+  margin-top: 10%;
 }
 footer .fab, footer .fas {
   font-size: 1.5rem;
@@ -2332,7 +2338,7 @@ footer .left {
 }
 footer .copyright {
   text-align: right;
-  font-size: 0.8rem;
+  font-size: 0.5rem;
 }
 footer hr {
   opacity: 0;
@@ -2519,12 +2525,12 @@ footer .links .fab{
   padding-bottom: 20px;
 }
 
-#map .headline .title {
+.headline .title {
   margin: 0 auto;
 }
 
-#map .headline .title .title-tw,
-#map .headline .title .title-en{
+.headline .title .title-tw,
+.headline .title .title-en{
   text-align: center;
   display: block;
 }
@@ -2565,8 +2571,10 @@ footer .links .fab{
 }
 
 #map .download {
-  box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.4);
-  border-radius: 30px;
+  background-color: #FAFAFA;
+  color: #4087DA;
+  border: 2px solid #4087DA;
+  border-radius: 25px; 
 }
 
 /* override onenav */
@@ -2717,7 +2725,7 @@ footer .links .fab{
 }
 
 #map div[layout="map"] .subcategory-header h6{
-  background: #C6CFEF;
+  background: #4087DA;
   margin-left: auto;
   color: #fff;
   margin-right: auto;
