@@ -490,7 +490,7 @@ img.bull{
   display: block;
   /* margin-bottom: 10%; */
   color: #fff;
-  font-size: 20px;
+  font-size: 1rem;
   font-weight: 400;
 }
 .remind{
@@ -2401,7 +2401,7 @@ footer .share-btn-kit {
   /* margin-top: 10%; */
   width: 100%;
   position: absolute;
-  bottom: 5%;
+  bottom: 6%;
 }
 footer .fab, footer .fas {
   font-size: 1.5rem;
@@ -2469,7 +2469,7 @@ footer .links .fab{
 }
 
 footer .links li {
-  line-height: 1.8rem;
+  line-height: 1.9rem;
 }
 
 /* modal */
