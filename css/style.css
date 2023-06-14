@@ -46,8 +46,24 @@ html, body {
   }
 }
 
+#theme{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
 #theme .container{
   position: relative;
+}
+
+#theme .mask{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .25;
+  background-color: #222;
 }
 
 #theme #mce-EMAIL {
@@ -520,13 +536,15 @@ img.bull{
 
 .powerby {  
   opacity: .8;
-  bottom: -35%;
-  position: absolute;
+  /* bottom: -35%;
+  position: absolute; */
   font-size: .7rem;
+  width: 86vw;
+  margin: 0 auto;
 }
 
 .powerby img {
-  max-height: 2rem;
+  max-height: 2.5rem;
 }
 
 #mc-embedded-subscribe-form {
@@ -1777,6 +1795,20 @@ img.bull{
   margin-left: 8px;
   max-width: 160px;
 }
+
+.nav-item .bt-website{
+  background: transparent;
+  color: #63EDFC;
+  margin-left: 6px;
+  margin-right: 6px;
+  max-width: 160px;
+}
+
+.nav-item .bt-website:hover{
+  /* color: #a0a0a0; */
+  border-color: inherit;  
+}
+
 
 hr{
   width: 100%;
