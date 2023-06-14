@@ -82,14 +82,14 @@ html, body {
 }
 
 #theme #mce-EMAIL{
-  height: 35px;
+  height: 30px;
 }
 
 #theme #mc-embedded-subscribe {
   background-color: #45c9ee;
   color: #110340;
   border: none;
-  padding: 5px 25px;
+  /* padding: 5px 25px; */
   border-radius: 15px;
   font-size: 18px;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 20px 40px 0px;
@@ -453,7 +453,7 @@ img.bull{
 
 .main-topic-en{
   color: white;
-  line-height: 2rem;
+  /* line-height: 2rem; */
 }
 
 .main-topic span{
@@ -464,7 +464,7 @@ img.bull{
 .guide-bar{
   border-top: 5px solid #FFFFFF;
   width: 100px;
-  margin: 4% 0;
+  margin: 2% 0;
 }
 
 .topic-en{
@@ -508,7 +508,7 @@ img.bull{
 }
 #mc_embed_signup {
   z-index: 10;
-  margin-top: 8%;
+  margin-top: 6%;
 }
 #mc_embed_signup .subscribe{
   background-color: #63EDFC;
@@ -520,13 +520,13 @@ img.bull{
 
 .powerby {  
   opacity: .8;
-  bottom: -20%;
+  bottom: -35%;
   position: absolute;
   font-size: .7rem;
 }
 
 .powerby img {
-  max-height: 1.4rem;
+  max-height: 2rem;
 }
 
 #mc-embedded-subscribe-form {
@@ -2392,7 +2392,7 @@ footer a:hover {
 }
 footer .our-logo {
   display: block;
-  width: 65%;
+  width: 70%;
   padding-top: 10px;
   padding-bottom: 5%;
   margin-bottom: 0.5rem;
@@ -2400,6 +2400,8 @@ footer .our-logo {
 footer .share-btn-kit {
   /* margin-top: 10%; */
   width: 100%;
+  position: absolute;
+  bottom: 5%;
 }
 footer .fab, footer .fas {
   font-size: 1.5rem;
@@ -2430,15 +2432,14 @@ footer .left {
   margin-right: 15%;
 }
 footer .share-btn-kit-wrap {
-  text-align: right;
+  position: relative;
+  text-align: center;
   font-size: 0.5rem;
 }
 
 footer .copyright{
-  position: absolute;
-  bottom: 1.2rem;
+  margin-top: 10%;
   font-size: .7rem;
-  margin-left: -15px;
 }
 
 footer hr {
