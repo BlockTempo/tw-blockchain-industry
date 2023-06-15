@@ -330,6 +330,14 @@ viewpointPromise.then(data => {
     gridWrap.append(mapping( itemTemp, it ));
   });
 
+  const maxHeight = Array.from(gridWrap.find(".bubble"))
+    .map(o => o.clientHeight)
+    .reduce((a, b) => Math.max(a, b), 0);
+  
+  gridWrap.find(".bubble").each((idx, o) => {
+    $(o).css("height", maxHeight + "px");
+  });
+
   const viewsSwiper = new Swiper('.view-swiper-container', {
     effect: 'coverflow',
     grabCursor: true,
@@ -379,13 +387,24 @@ function handleMapShows() {
 
 var domloaded = false;
 var jsonloaded = false;
+var mapLastMod = "";
 
-var itemsPromise = fetch("json/map.json?t=12").then(res => res.json());
+var itemsPromise = fetch("json/map.json?t=13")
+  .then(res => {
+    var originFormat = res.headers.get('Last-Modified');
+    var originDate = new Date(originFormat);
+    mapLastMod = originDate.toLocaleDateString()
+      .split("/")
+      .map(s => s.length == 1 ? ("0" + s) : s)
+      .join("");
+    return res.json();
+  });
 
 itemsPromise.then(data => {
   const gridWrap = $("#map .grid");
   const groupWrap = $("#map .sidebar-menu ul");
   const itemTemp = $("#map div[layout=list] template[item]").html().trim();
+  const updateDateTemp = $("#map template[updatedate]").html().trim();
   const groups = data.groups;
   const items = data.items;
   
@@ -444,6 +463,8 @@ itemsPromise.then(data => {
       html: true
     });
   });
+
+  $("#map .container").append( mapping( updateDateTemp, { mapLastMod }) );
 
   jsonloaded = true;
 

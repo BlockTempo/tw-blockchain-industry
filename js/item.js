@@ -8,7 +8,7 @@ function mapping(html, pairs) {
 }
 
 var initialTitle = document.querySelector("head > title").textContent;
-var itemsPromise = fetch("json/map.json?t=12").then(res => res.json());
+var itemsPromise = fetch("json/map.json?t=13").then(res => res.json());
 
 itemsPromise.then(data => {
     var params = new URLSearchParams(location.search);

@@ -2897,12 +2897,17 @@ footer .links li {
   /* border-radius: 10px; */
 }
 
+#map .update-date{
+  font-size: .8rem;
+  color: #293C8F;
+}
+
 #viewpoints .comments-avatar{
   display: flex;
 }
 
 #viewpoints .bubble{
-  height: 247px;
+  height: auto;
 }
 
 #viewpoints .swiper-pagination{
