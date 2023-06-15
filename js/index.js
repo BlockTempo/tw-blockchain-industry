@@ -322,10 +322,14 @@ function tuneMap() {
   });
 }
 
-var viewpointPromise = fetch("json/viewpoint.json?t=4").then(res => res.json());
+var viewpointPromise = fetch("json/viewpoint.json?t=5").then(res => res.json());
 viewpointPromise.then(data => {
   const gridWrap = $("#viewpoints .features-block");
   const itemTemp = $("#viewpoints template[item]").html().trim();
+
+  // change ordering
+  data.push(data.shift());
+
   data.forEach(it => {
     gridWrap.append(mapping( itemTemp, it ));
   });
@@ -389,7 +393,7 @@ var domloaded = false;
 var jsonloaded = false;
 var mapLastMod = "";
 
-var itemsPromise = fetch("json/map.json?t=13")
+var itemsPromise = fetch("json/map.json?t=14")
   .then(res => {
     var originFormat = res.headers.get('Last-Modified');
     var originDate = new Date(originFormat);
