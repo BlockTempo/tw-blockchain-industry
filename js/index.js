@@ -380,7 +380,7 @@ function handleMapShows() {
 var domloaded = false;
 var jsonloaded = false;
 
-var itemsPromise = fetch("json/map.json?t=11").then(res => res.json());
+var itemsPromise = fetch("json/map.json?t=12").then(res => res.json());
 
 itemsPromise.then(data => {
   const gridWrap = $("#map .grid");

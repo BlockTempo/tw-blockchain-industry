@@ -295,7 +295,7 @@
             "logo_icon": "https://image.blocktempo.com/2023/05/fansi-c.png",
             "logo_banner": "https://image.blocktempo.com/2023/06/NFT-2.png",
             "briefly": "NFT 交易市場",
-            "description": "Fansi 是一個新型態的亞洲音樂 NFT 發行及實驗平台，透過 NFT 及特有的收藏體驗設計，讓歌手或音樂人能夠透過販售音樂 NFT 獲得營運資金，粉絲也能參與音樂創作者成長。",
+            "description": "Fansi 是一個新型態的亞洲音樂 NFT 發行及聆聽體驗平台，透過 NFT 及特有的收藏體驗設計，讓音樂藝術家們能夠透過音樂 NFT 與粉絲們互動交流，更可以在平台上自由聆聽 Web3 音樂或加入收藏。",
             "website": "https://www.fansi.me/",
             "twitter": "https://twitter.com/metaboom_nft",
             "id": "fansi"
@@ -365,17 +365,6 @@
             "website": "https://captureapp.xyz/",
             "twitter": "https://twitter.com/captureapp_xyz",
             "id": "capture-app"
-        },
-        {
-            "group": "NFT / Metaverse-解決方案",
-            "title": "GUIDOOR",
-            "logo_icon": "https://image.blocktempo.com/2023/06/guidoor-new.jpeg",
-            "logo_banner": "https://image.blocktempo.com/2023/06/Guidoor.png",
-            "briefly": "NFT 名片應用",
-            "description": "Guidoor 是一款製作 NFT 個人商務名片的 app，用戶可透過 NFT 名片賦能（如附加獎勵或折扣），以提升交換名片的動機和價值。",
-            "website": "https://www.linkedin.com/company/guidoor/",
-            "twitter": "",
-            "id": "guidoor"
         },
         {
             "group": "NFT / Metaverse-解決方案",
@@ -511,28 +500,6 @@
         },
         {
             "group": "NFT / Metaverse-發行項目",
-            "title": "Lion Heart",
-            "logo_icon": "https://image.blocktempo.com/2023/06/LION-HEART.jpg",
-            "logo_banner": "https://image.blocktempo.com/2023/06/lion-heart.png",
-            "briefly": "歌手羅志祥背書項目",
-            "description": "由藝人羅志祥親自擔任藝術總監的 LION HEART。官方表示該項目的第一階段是推出包含鞋子、精品、潮流玩物的特定稀有品項的 NFT 以及實體產品的合作、發行與販售；第二階段是推出 DeFi 的 P2P 質押複利商品；第三階段將規劃 GameFi、IP 投資包含影視音等。",
-            "website": "https://lionheart.vip/",
-            "twitter": "https://twitter.com/NFTlionheart",
-            "id": "lion-heart"
-        },
-        {
-            "group": "NFT / Metaverse-發行項目",
-            "title": "Innocent Cats",
-            "logo_icon": "https://image.blocktempo.com/2023/06/Innocent-Cats.jpg",
-            "logo_banner": "https://image.blocktempo.com/2023/06/innocent-cats.png",
-            "briefly": "歌手潘瑋柏背書項目",
-            "description": "該項目獲歌手潘瑋柏背書。官方表示無辜貓系列 NFT 可作俱樂部會員卡，未來可以解鎖和激活更多福利，並有機會獲得免費演唱會門票空投。",
-            "website": "https://www.innocentcats.io/",
-            "twitter": "",
-            "id": "innocent-cats"
-        },
-        {
-            "group": "NFT / Metaverse-發行項目",
             "title": "GalaXY Kats",
             "logo_icon": "https://image.blocktempo.com/2023/06/GalaXY-Kats-.jpg",
             "logo_banner": "https://image.blocktempo.com/2023/06/galaxy-cats.png",
@@ -620,6 +587,28 @@
             "id": "八仙-8immortals"
         },
         {
+            "group": "NFT / Metaverse-發行項目",
+            "title": "Innocent Cats（久未更新）",
+            "logo_icon": "https://image.blocktempo.com/2023/06/Innocent-Cats.jpg",
+            "logo_banner": "https://image.blocktempo.com/2023/06/innocent-cats.png",
+            "briefly": "歌手潘瑋柏背書項目",
+            "description": "該項目獲歌手潘瑋柏背書。官方表示無辜貓系列 NFT 可作俱樂部會員卡，未來可以解鎖和激活更多福利，並有機會獲得免費演唱會門票空投。",
+            "website": "https://www.innocentcats.io/",
+            "twitter": "",
+            "id": "innocent-cats（久未更新）"
+        },
+        {
+            "group": "NFT / Metaverse-發行項目",
+            "title": "Lion Heart（久未更新）",
+            "logo_icon": "https://image.blocktempo.com/2023/06/LION-HEART.jpg",
+            "logo_banner": "https://image.blocktempo.com/2023/06/lion-heart.png",
+            "briefly": "歌手羅志祥背書項目",
+            "description": "由藝人羅志祥親自擔任藝術總監的 LION HEART。官方表示該項目的第一階段是推出包含鞋子、精品、潮流玩物的特定稀有品項的 NFT 以及實體產品的合作、發行與販售；第二階段是推出 DeFi 的 P2P 質押複利商品；第三階段將規劃 GameFi、IP 投資包含影視音等。",
+            "website": "https://lionheart.vip/",
+            "twitter": "https://twitter.com/NFTlionheart",
+            "id": "lion-heart（久未更新）"
+        },
+        {
             "group": "策略顧問 / 策展公司",
             "title": "Echox",
             "logo_icon": "https://image.blocktempo.com/2023/05/echox-c.png",
@@ -665,14 +654,14 @@
         },
         {
             "group": "策略顧問 / 策展公司",
-            "title": "ReBorno",
-            "logo_icon": "https://image.blocktempo.com/2023/06/NFT-ReBorno-c.png",
-            "logo_banner": "https://image.blocktempo.com/2023/06/reborno-h-1.png",
-            "briefly": "Web3 策略顧問",
-            "description": "ReBorno 提供Web3 、區塊鏈、NFT、元宇宙相關項目服務，協助企業轉型邁向商務新藍海！",
-            "website": "https://reborno.co/",
-            "twitter": "",
-            "id": "reborno"
+            "title": "OneOffs",
+            "logo_icon": "https://image.blocktempo.com/2023/05/oneoffs-c.jpeg",
+            "logo_banner": "https://image.blocktempo.com/2023/06/consultant-2.png",
+            "briefly": "NFT 策展團隊",
+            "description": "Oneoffs 是國際型的策展團隊，連續兩年於台北 W Hotel 舉辦橫跨藝術、區塊鏈、 VR 的 OneOffs NFT 國際藝術博覽會，締造了近十萬人次觀展熱潮。",
+            "website": "https://nft.oneoffs.art/",
+            "twitter": "https://twitter.com/oneoffsnft",
+            "id": "oneoffs"
         },
         {
             "group": "策略顧問 / 策展公司",
@@ -731,14 +720,25 @@
         },
         {
             "group": "策略顧問 / 策展公司",
-            "title": "OneOffs",
-            "logo_icon": "https://image.blocktempo.com/2023/05/oneoffs-c.jpeg",
-            "logo_banner": "https://image.blocktempo.com/2023/06/consultant-2.png",
-            "briefly": "NFT 策展團隊",
-            "description": "Oneoffs 是國際型的策展團隊，連續兩年於台北 W Hotel 舉辦橫跨藝術、區塊鏈、 VR 的 OneOffs NFT 國際藝術博覽會，締造了近十萬人次觀展熱潮。",
-            "website": "https://nft.oneoffs.art/",
-            "twitter": "https://twitter.com/oneoffsnft",
-            "id": "oneoffs"
+            "title": "ReBorno",
+            "logo_icon": "https://image.blocktempo.com/2023/06/NFT-ReBorno-c.png",
+            "logo_banner": "https://image.blocktempo.com/2023/06/reborno-h-1.png",
+            "briefly": "Web3 策略顧問",
+            "description": "ReBorno 提供Web3 、區塊鏈、NFT、元宇宙相關項目服務，協助企業轉型邁向商務新藍海！",
+            "website": "https://reborno.co/",
+            "twitter": "",
+            "id": "reborno"
+        },
+        {
+            "group": "策略顧問 / 策展公司",
+            "title": "Grenade 手榴彈",
+            "logo_icon": "https://image.blocktempo.com/2023/06/E27Y_ZnX_400x400.jpeg",
+            "logo_banner": "https://image.blocktempo.com/2023/06/community-5.png",
+            "briefly": "區塊鏈整合行銷",
+            "description": "手榴彈成立於 2019 年初，立志成為區塊鏈產業最活躍的公關行銷公司，提供區塊鏈相關一站式服務。",
+            "website": "https://www.grenade.tw/",
+            "twitter": "https://twitter.com/GrenadeTw",
+            "id": "grenade-手榴彈"
         },
         {
             "group": "策略顧問 / 策展公司",
@@ -844,7 +844,7 @@
             "title": "BTQ",
             "logo_icon": "https://image.blocktempo.com/2023/05/BTQ-c.png",
             "logo_banner": "https://image.blocktempo.com/2023/06/Wallet-5.png",
-            "briefly": "數位資產安全公司",
+            "briefly": "打造量子基礎設施",
             "description": "BTQ 是由一群後量子密碼學家所組成的團隊。我們的使命是持續提供先進的量子安全科技，保障數位資產的長期安全性。",
             "website": "https://www.btq.com/",
             "twitter": "",
@@ -973,17 +973,6 @@
         },
         {
             "group": "區塊鏈應用-生活應用",
-            "title": "SELF TOKEN（久未更新）",
-            "logo_icon": "https://image.blocktempo.com/2023/05/selftoken-c.jpeg",
-            "logo_banner": "https://image.blocktempo.com/2023/06/application-5.png",
-            "briefly": "區塊鏈娛樂應用",
-            "description": "SELF TOKEN 結合 SELF ENTERTAINMENT 的娛樂實業，透過「故事」創造入口、「區塊鏈科技」作為協作工具，建立起可以共創價值與故事的沉浸式娛樂社群，並在現實的都市中留下屬於我們的「實景娛樂基地」，形成一個可以鏈接虛擬與現實的次世代娛樂生活型態。",
-            "website": "https://selftoken.co/",
-            "twitter": "",
-            "id": "self-token（久未更新）"
-        },
-        {
-            "group": "區塊鏈應用-生活應用",
             "title": "度度客",
             "logo_icon": "https://image.blocktempo.com/2023/05/dodoker-c.png",
             "logo_banner": "https://image.blocktempo.com/2023/06/application-6.png",
@@ -992,6 +981,28 @@
             "website": "https://dodoker.com/",
             "twitter": "",
             "id": "度度客"
+        },
+        {
+            "group": "區塊鏈應用-生活應用",
+            "title": "GUIDOOR",
+            "logo_icon": "https://image.blocktempo.com/2023/06/guidoor-new.jpeg",
+            "logo_banner": "https://image.blocktempo.com/2023/06/Guidoor.png",
+            "briefly": "區塊鏈商務社群",
+            "description": "Guidoor 是款 Professional Network Manager 的應用程式，協助你管理工作中關鍵的人脈，聚集四散在其他 social/messaging apps 的 contact list，更加掌握自己的人脈資料，並透過 Web3 技術促進用戶之間的互助交流，最終達成「去中心化 LinkedIn」的願景。",
+            "website": "https://www.linkedin.com/company/guidoor/",
+            "twitter": "",
+            "id": "guidoor"
+        },
+        {
+            "group": "區塊鏈應用-生活應用",
+            "title": "SELF TOKEN（久未更新）",
+            "logo_icon": "https://image.blocktempo.com/2023/05/selftoken-c.jpeg",
+            "logo_banner": "https://image.blocktempo.com/2023/06/application-5.png",
+            "briefly": "區塊鏈娛樂應用",
+            "description": "SELF TOKEN 結合 SELF ENTERTAINMENT 的娛樂實業，透過「故事」創造入口、「區塊鏈科技」作為協作工具，建立起可以共創價值與故事的沉浸式娛樂社群，並在現實的都市中留下屬於我們的「實景娛樂基地」，形成一個可以鏈接虛擬與現實的次世代娛樂生活型態。",
+            "website": "https://selftoken.co/",
+            "twitter": "",
+            "id": "self-token（久未更新）"
         },
         {
             "group": "區塊鏈應用-解決方案",
@@ -1091,28 +1102,6 @@
             "website": "https://www.owlting.com/obs",
             "twitter": "",
             "id": "奧丁丁區塊鏈"
-        },
-        {
-            "group": "區塊鏈應用-解決方案",
-            "title": "BiiLabs（久未更新）",
-            "logo_icon": "https://image.blocktempo.com/2023/05/biilabs-c.png",
-            "logo_banner": "https://image.blocktempo.com/2023/05/billabs-h.png",
-            "briefly": "區塊鏈解決方案",
-            "description": "BiiLabs 致力於使用分散式帳本技術解決物聯網帶來的挑戰，涵蓋智慧城市與能源管理等領域，其核心技術協助各產業之數位轉型，進而解決在客戶應用中的信任，安全，成長，效率等關鍵問題。",
-            "website": "https://biilabs.io/",
-            "twitter": "",
-            "id": "biilabs（久未更新）"
-        },
-        {
-            "group": "區塊鏈應用-解決方案",
-            "title": "秘銀（暫停營運)",
-            "logo_icon": "https://image.blocktempo.com/2023/06/mith.jpeg",
-            "logo_banner": "https://image.blocktempo.com/2023/06/application-11.png",
-            "briefly": "社交挖礦",
-            "description": "秘銀（MITH）旨在建立一個新的 Web3 生態系，用戶可以透過在社群軟體上的互動而獲得一定數量的秘銀幣，並將之用於投資或消費。",
-            "website": "https://www.facebook.com/MITdaoOfficial/",
-            "twitter": "",
-            "id": "秘銀（暫停營運)"
         },
         {
             "group": "區塊鏈應用-解決方案",
@@ -1225,6 +1214,39 @@
             "id": "supraoracles"
         },
         {
+            "group": "區塊鏈應用-解決方案",
+            "title": "KryptoGo",
+            "logo_icon": "https://image.blocktempo.com/2023/05/284189417_1155796935219753_7869182493210639764_n.jpeg",
+            "logo_banner": "https://image.blocktempo.com/2023/06/Wallet-13.png",
+            "briefly": "數位資產管理平台",
+            "description": "KryptoGO 是進入 Crypto 世界的最好路徑，兩個主要的服務，『Compliance 反洗錢的合規 KYC 系統』、『Wallet as a Service 替企業打造最方便安全加密錢包』",
+            "website": "https://www.kryptogo.com/tw",
+            "twitter": "https://twitter.com/kryptogo_",
+            "id": "kryptogo"
+        },
+        {
+            "group": "區塊鏈應用-解決方案",
+            "title": "BiiLabs（久未更新）",
+            "logo_icon": "https://image.blocktempo.com/2023/05/biilabs-c.png",
+            "logo_banner": "https://image.blocktempo.com/2023/06/billabs-h.png",
+            "briefly": "區塊鏈解決方案",
+            "description": "BiiLabs 致力於使用分散式帳本技術解決物聯網帶來的挑戰，涵蓋智慧城市與能源管理等領域，其核心技術協助各產業之數位轉型，進而解決在客戶應用中的信任，安全，成長，效率等關鍵問題。",
+            "website": "https://biilabs.io/",
+            "twitter": "",
+            "id": "biilabs（久未更新）"
+        },
+        {
+            "group": "區塊鏈應用-解決方案",
+            "title": "秘銀（暫停營運)",
+            "logo_icon": "https://image.blocktempo.com/2023/06/mith.jpeg",
+            "logo_banner": "https://image.blocktempo.com/2023/06/application-11.png",
+            "briefly": "社交挖礦",
+            "description": "秘銀（MITH）旨在建立一個新的 Web3 生態系，用戶可以透過在社群軟體上的互動而獲得一定數量的秘銀幣，並將之用於投資或消費。",
+            "website": "https://www.facebook.com/MITdaoOfficial/",
+            "twitter": "",
+            "id": "秘銀（暫停營運)"
+        },
+        {
             "group": "DeFi",
             "title": "Furucombo",
             "logo_icon": "https://image.blocktempo.com/2023/05/furucombo-c.png",
@@ -1327,9 +1349,9 @@
             "group": "DeFi",
             "title": "bucket protocol",
             "logo_icon": "https://image.blocktempo.com/2023/06/bucket.jpg",
-            "logo_banner": "https://image.blocktempo.com/2023/06/logo-blue-h.webp",
+            "logo_banner": "https://image.blocktempo.com/2023/06/logo-blue-h.png",
             "briefly": "去中心化借貸平台",
-            "description": "Bucket Protocol是 Sui上的借貸協議，提供 0%利率貸款，並可以通過多種資產（例如$SUI、$BTC、$ETH 以及未來的LSD）超額抵押原生穩定幣（$BUCK）。",
+            "description": "Bucket Protocol 是 Sui 生態系上的抵押債務倉位(CDP)協議，透過抵押多種資產(如$SUI, $BTC, $ETH, staked SUI等等)以零息借出原生穩定幣($BUCK)。\n\n除了以超額抵押與即時清算機制優化生態上的資金利用率，Bucket Protocol 也提供閃電貸服務讓其使用者維護市場平衡。多樣化的收益池以及公開的元件接口更提高了協議的組合性、擴充性。",
             "website": "https://bucketprotocol.io/",
             "twitter": "https://twitter.com/bucket_protocol",
             "id": "bucket-protocol"
@@ -1646,7 +1668,7 @@
             "group": "CeFi-資產管理平台",
             "title": "優利理財(久未更新)",
             "logo_icon": "https://image.blocktempo.com/2023/05/348235029_270270535494348_7019613905307627188_n.png",
-            "logo_banner": "https://image.blocktempo.com/2023/05/logo-white.png",
+            "logo_banner": "https://image.blocktempo.com/2023/06/nicelend.png",
             "briefly": "數位資產管理平台",
             "description": "提供新時代投資人，有趣好懂的理財思維+佛系理財規劃工具，協助理財新手達到短中長期的財務目標，過上理想生活。",
             "website": "https://nicelend.tw/",
@@ -1828,17 +1850,6 @@
             "website": "https://portaly.cc/tonkey",
             "twitter": "https://twitter.com/TonkeyApp",
             "id": "tonkey"
-        },
-        {
-            "group": "錢包 / 安全方案-加密貨幣錢包",
-            "title": "KryptoGo",
-            "logo_icon": "https://image.blocktempo.com/2023/05/284189417_1155796935219753_7869182493210639764_n.jpeg",
-            "logo_banner": "https://image.blocktempo.com/2023/06/Wallet-13.png",
-            "briefly": "數位資產管理平台",
-            "description": "KryptoGO 是進入 Crypto 世界的最好路徑，兩個主要的服務，『Compliance 反洗錢的合規 KYC 系統』、『Wallet as a Service 替企業打造最方便安全加密錢包』",
-            "website": "https://www.kryptogo.com/tw",
-            "twitter": "https://twitter.com/kryptogo_",
-            "id": "kryptogo"
         },
         {
             "group": "VC / 加速器-加速器",
@@ -2062,17 +2073,6 @@
         },
         {
             "group": "DAO / 社群生態-社群",
-            "title": "Grenade 手榴彈",
-            "logo_icon": "https://image.blocktempo.com/2023/06/E27Y_ZnX_400x400.jpeg",
-            "logo_banner": "https://image.blocktempo.com/2023/06/community-5.png",
-            "briefly": "區塊鏈整合行銷",
-            "description": "手榴彈成立於 2019 年初，立志成為區塊鏈產業最活躍的公關行銷公司，提供區塊鏈相關一站式服務。",
-            "website": "https://www.grenade.tw/",
-            "twitter": "https://twitter.com/GrenadeTw",
-            "id": "grenade-手榴彈"
-        },
-        {
-            "group": "DAO / 社群生態-社群",
             "title": "Buckchaf",
             "logo_icon": "https://image.blocktempo.com/2023/06/buckchaf.jpeg",
             "logo_banner": "https://image.blocktempo.com/2023/06/community-1.png",
@@ -2165,7 +2165,7 @@
             "logo_icon": "https://image.blocktempo.com/2023/06/DA-交易者聯盟正方.jpeg",
             "logo_banner": "https://image.blocktempo.com/2023/06/DA-交易者聯盟橫式.png",
             "briefly": "區塊鏈社群",
-            "description": "DA 交易者聯盟（DATA）為 DA Capital 旗下品牌，由職業交易員、美國頂尖商學院畢業生、全球百大收益員所創立，提供給對投資/交易、區塊鏈/加密貨幣有興趣的朋友一個能系統化、簡單學習的環境。",
+            "description": "Do Alpha Trade Again！DA 交易者聯盟（DATA）是 DA Capital 旗下一品牌，由一群經驗豐富的職業交易員、美國頂尖商學院畢業生以及全球百大收益員共同創立。致力於為對投資、交易、區塊鏈及加密貨幣感興趣的人士提供一個系統化且易於理解的學習環境，並通過專業的指導和資源分享，DA 交易者聯盟幫助用戶提高投資視野，並在金融市場中取得豐碩的成果。",
             "website": "https://datatw.io/",
             "twitter": "",
             "id": "da-交易者聯盟"
@@ -2447,14 +2447,14 @@
         },
         {
             "group": "GameFi",
-            "title": "World of Slaves",
-            "logo_icon": "https://image.blocktempo.com/2023/06/World-of-Slavesc.jpeg",
-            "logo_banner": "https://image.blocktempo.com/2023/06/Gamefi-2.png",
-            "briefly": "NFT 遊戲",
-            "description": "《奴隸世界》以古羅馬時代的奴隸社會為背景，讓玩家透過配置與管理自己的奴隸莊園，來獲取最大的代幣收益。每一張美女奴隸的卡片，都可鑄造為 NFT 在二級市場上進行交易。",
-            "website": "https://worldofslaves.io/",
-            "twitter": "https://twitter.com/worldofslaves",
-            "id": "world-of-slaves"
+            "title": "Metatheory",
+            "logo_icon": "https://image.blocktempo.com/2023/06/metatheory-c.png",
+            "logo_banner": "https://image.blocktempo.com/2023/06/metatheory.png",
+            "briefly": "Web 3 遊戲開發",
+            "description": "Metatheory 是一家互動技術和娛樂公司，致力於構建 Web3 遊戲、互動內容、社交體驗和其他社區驅動的冒險活動。Metatheory 的使命是通過建立在跨代 IP 上的沉浸式世界將世界各地的人們聯繫起來，從而激發想像力。",
+            "website": "https://metatheory.gg/",
+            "twitter": "https://twitter.com/MetatheoryInc",
+            "id": "metatheory"
         },
         {
             "group": "GameFi",
