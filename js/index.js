@@ -322,7 +322,7 @@ function tuneMap() {
   });
 }
 
-var viewpointPromise = fetch("json/viewpoint.json?t=3").then(res => res.json());
+var viewpointPromise = fetch("json/viewpoint.json?t=4").then(res => res.json());
 viewpointPromise.then(data => {
   const gridWrap = $("#viewpoints .features-block");
   const itemTemp = $("#viewpoints template[item]").html().trim();
