@@ -393,18 +393,26 @@ var domloaded = false;
 var jsonloaded = false;
 var mapLastMod = "";
 
-var itemsPromise = fetch("json/map.json?t=14")
-  .then(res => {
-    var originFormat = res.headers.get('Last-Modified');
-    var originDate = new Date(originFormat);
-    mapLastMod = originDate.toLocaleDateString()
+var itemsPromise = Promise.all([
+  fetch("json/map-group.json"),
+  fetch("json/map-item.json")
+]).then(results => {
+  const dates = results.map(res => {
+    return new Date(res.headers.get('Last-Modified'));
+  });
+  dates.sort((a, b) => a.getTime() > b.getTime() ? -1 : 1);
+  mapLastMod = dates[0].toLocaleDateString()
       .split("/")
       .map(s => s.length == 1 ? ("0" + s) : s)
       .join("");
-    return res.json();
-  });
+  return Promise.all(results.map(res => res.json()))
+});
 
-itemsPromise.then(data => {
+itemsPromise.then(results => {
+  const data = {
+    groups: results[0],
+    items: results[1]
+  };
   const gridWrap = $("#map .grid");
   const groupWrap = $("#map .sidebar-menu ul");
   const itemTemp = $("#map div[layout=list] template[item]").html().trim();
