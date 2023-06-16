@@ -1424,17 +1424,6 @@
         },
         {
             "group": "DeFi",
-            "title": "Term Structure Labs",
-            "logo_icon": "https://image.blocktempo.com/2023/06/term.jpeg",
-            "logo_banner": "https://image.blocktempo.com/2023/06/defi12.png",
-            "briefly": "去中心化借貸協議",
-            "description": "Term Structure Labs 於 2022 年 9 月創立，是一家專門從事去中心化金融的區塊鏈技術公司，旨在提供基礎設施並彙集社區力量以促進數位資產的增長和發展。",
-            "website": "https://termstructure.com/",
-            "twitter": "https://twitter.com/TermStructLabs",
-            "id": "term-structure-labs"
-        },
-        {
-            "group": "DeFi",
             "title": "Cream Finance",
             "logo_icon": "https://image.blocktempo.com/2023/05/cream-c.png",
             "logo_banner": "https://image.blocktempo.com/2023/06/defi.png",
