@@ -420,6 +420,16 @@ itemsPromise.then(results => {
   const groups = data.groups;
   const items = data.items;
   
+  // for integrate tools
+  groups.forEach(g => {
+    g.order && (g.order = parseInt(g.order));
+    if ( g.children && g.children.length ) {
+      g.children.forEach(gc => {
+        gc.order && (gc.order = parseInt(gc.order));
+      });
+    }
+  });
+
   // loadTreemapChart( groups, items );
   // loadAmTreemapChart( groups, items );
   loadMap( groups, items );
