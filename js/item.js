@@ -10,12 +10,17 @@ function mapping(html, pairs) {
 var initialTitle = document.querySelector("head > title").textContent;
 var itemsPromise = fetch("json/map.json?t=14").then(res => res.json());
 
-itemsPromise.then(data => {
+var itemsPromise = Promise.all([
+    fetch("json/map-group.json"),
+    fetch("json/map-item.json")
+]).then(results => Promise.all(results.map(res => res.json())))
+
+itemsPromise.then(results => {
     var params = new URLSearchParams(location.search);
     var id = params.get("id");
 
-    const groups = data.groups;
-    const items = data.items;
+    const groups = results[0];
+    const items = results[1];
 
     let target;
     if ( id && (target = items.find(t => t.id === id)) ) {
