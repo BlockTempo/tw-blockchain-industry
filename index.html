@@ -77,27 +77,27 @@
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
               <a class="nav-link" href="#map">
-                台灣區塊鏈產業地圖
+                {%台灣區塊鏈產業地圖nav%}
                 <span class="highlight"></span>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#news-slider">
-                台灣產業消息
+                {%台灣產業消息%}
                 <span class="highlight"></span>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#viewpoints">
-                產業名人觀點
+                {%產業名人觀點%}
                 <span class="highlight"></span>
               </a>
             </li>
             <li class="nav-item">
-              <a href="https://www.blocktempo.com" class="btn btn-info bt-website" target="_blank">動區新聞</a>
+              <a href="https://www.blocktempo.com" class="btn btn-info bt-website" target="_blank">{%動區新聞%}</a>
             </li>
             <li class="nav-item">
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSfAHdzxU_TaJB1vRP1YUNdUSBQl7i4zG4DF4puPAgbxduwCRA/viewform?usp=sf_link" class="btn btn-info register" target="_blank">申請上架</a>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSfAHdzxU_TaJB1vRP1YUNdUSBQl7i4zG4DF4puPAgbxduwCRA/viewform?usp=sf_link" class="btn btn-info register" target="_blank">{%申請上架%}</a>
             </li>
           </ul>
         </div>
@@ -116,16 +116,16 @@
             <div class="taiwan-2023">
               <span clas="mark mark0">2023</span>
             </div>
-            <h1 class="main-topic">台灣區塊鏈產業地圖</h1>
+            <h1 class="main-topic">{%台灣區塊鏈產業地圖header%}</h1>
             <h4 class="main-topic-en">Taiwan Blockchain Ecosystem Map 2023</h4>
             <hr class="guide-bar" />
-            <h4 class="topic-en-m">掌握台灣區塊鏈產業 11 大分類、200+ 企業現況</h4>
+            <h4 class="topic-en-m">{%掌握台灣區塊鏈產業 11 大分類、200+ 企業現況%}</h4>
             
             <div id="mc_embed_signup">
                 <form class="validate" id="mc-embedded-subscribe-form" action="https://blocktempo.us17.list-manage.com/subscribe/post?u=44335b7ae345e1314b08b86d1&id=06bdb29c0a"
                   method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate="novalidate">
                   <div class="row form-row">
-                    <input class="email col-9" id="mce-EMAIL" type="email" value="" name="EMAIL" placeholder="輸入E-mail 領取產業地圖" required="required" />
+                    <input class="email col-9" id="mce-EMAIL" type="email" value="" name="EMAIL" placeholder="{%輸入E-mail 領取產業地圖%}" required="required" />
                     <div class="div" style="position: absolute; left: -5000px;" aria-hidden="true">
                       <input type="text" name="b_44335b7ae345e1314b08b86d1_06bdb29c0a" tabindex="-1" value="" />
                     </div>
@@ -137,7 +137,7 @@
         </div>
       </div>
       <div class="powerby pt-2 pb-2 mb-4">
-        <p class="mb-2" style="color: white;font-size: 0.85rem;">本地圖由以下單位共同製作：</p>
+        <p class="mb-2" style="color: white;font-size: 0.85rem;">{%本地圖由以下單位共同製作：%}</p>
         <a href="https://www.blocktempo.com" target="_blank"><img src="img/logo.png" alt="" /></a>
         <span>&nbsp;</span>
         <img src="img/appworks_logo.png" alt="" />
@@ -153,18 +153,18 @@
           <div class="headline col-xs-12 col-md-12">
             <div class="order"></div>
             <div class="title">
-              <h2 class="title-tw">台灣區塊鏈產業地圖</h2>
+              <h2 class="title-tw">{%台灣區塊鏈產業地圖title%}</h2>
               <h6 class="title-en">Taiwan Blockchain Ecosystem Map</h6>
             </div>
           </div>
           <div class="col-xs-2 col-md-3">
             <div class="btn-group switcher-wrap mr-4" role="group" aria-label="layout group">
-              <button type="button" data-layout="map" class="btn btn-light switcher">地圖</button>
-              <button type="button" data-layout="list" class="btn btn-light switcher">清單</button>
+              <button type="button" data-layout="map" class="btn btn-light switcher">{%地圖%}</button>
+              <button type="button" data-layout="list" class="btn btn-light switcher">{%清單%}</button>
             </div>
             <div class="btn-group download-btn mr-2" role="group" aria-label="layout group">
               <a download="" href="https://image.blocktempo.com/2023/06/taiwan-blockchain-ecosystem-map-2023-scaled.jpeg" class="btn btn-light download" target="_blank">
-                下載地圖
+                {%下載地圖%}
                 <i class="fas fa-download"></i>
               </a>
             </div>
@@ -204,7 +204,7 @@
                     </div>
                   </div> 
                 </a>
-                <a href="{{website}}" target="_blank" rel="external nofollow" title="" class="togo text-center text-muted is-views" data-toggle="tooltip" data-placement="right" data-original-title="直達">
+                <a href="{{website}}" target="_blank" rel="external nofollow" title="" class="togo text-center text-muted is-views" data-toggle="tooltip" data-placement="right" data-original-title="{%直達%}">
                   <i class="iconfont icon-goto"></i>
                 </a>
               </div>
@@ -243,9 +243,7 @@
             <div class="col col-12 bt-col bt-col-{{cols}}">
               <div class="subcategory-split">
                 <div class="subcategory-header opacity-0">
-                  <h6>無
-                    <span class="subcategory-header-en">No</span>
-                  </h6>
+                  <h6>無</h6>
                 </div>
                 <div class="row subcategory-block"></div>
               </div>
@@ -266,7 +264,7 @@
         </div>
         <template updatedate>
           <div class="row">
-            <span class="update-date">更新日期：{{mapLastMod}}</span>
+            <span class="update-date">{%更新日期：%}{{mapLastMod}}</span>
           </div>
         </template>
       </div>
@@ -281,7 +279,7 @@
       <div class="news-slider">
         <div class="headline">
           <div class="title">
-            <h2 class="title-tw">台灣產業消息</h2>
+            <h2 class="title-tw">{%台灣產業消息%}</h2>
             <h6 class="title-en">Industry News</h6>
           </div>
         </div>
@@ -289,22 +287,22 @@
         <div class="tab">
           <ul class="nav nav-tabs">
             <li class="nav-item">
-              <a class="nav-link" data-feed="0" href="#">法規</a>
+              <a class="nav-link" data-feed="0" href="#">{%法規%}</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-feed="1" href="#">區塊鏈商業應用</a>
+              <a class="nav-link" data-feed="1" href="#">{%區塊鏈商業應用%}</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-feed="2" href="#">加密貨幣市場</a>
+              <a class="nav-link" data-feed="2" href="#">{%加密貨幣市場%}</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-feed="3" href="#">人物專訪</a>
+              <a class="nav-link" data-feed="3" href="#">{%人物專訪%}</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-feed="4" href="#">獨立觀點</a>
+              <a class="nav-link" data-feed="4" href="#">{%獨立觀點%}</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-feed="5" href="#">區塊鏈新手教學</a>
+              <a class="nav-link" data-feed="5" href="#">{%區塊鏈新手教學%}</a>
             </li>
           </ul>
         </div>
@@ -372,7 +370,7 @@
             <div class="headline col-xs-12 col-md-12">
               <div class="order"></div>
               <div class="title">
-                <h2 class="title-tw">產業名人觀點</h2>
+                <h2 class="title-tw">{%產業名人觀點%}</h2>
                 <h6 class="title-en">Viewpoint from Industry Celebrities</h6>
               </div>
             </div>
@@ -418,10 +416,10 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <span class="prefix">為您整理一週國內外焦點動態</span>
+            <span class="prefix">{%為您整理一週國內外焦點動態%}</span>
             <h5 class="header">
               <i class="fas fa-rss"></i>
-              動區週報
+              {%動區週報%}
             </h5>
           </div>
           <div class="col-md-8">
@@ -433,7 +431,7 @@
                   <div class="div" style="position: absolute; left: -5000px;" aria-hidden="true">
                     <input type="text" name="b_44335b7ae345e1314b08b86d1_e244acf46a" tabindex="-1" value="" />
                   </div>
-                  <input class="button from-bottom col-4 col-md-3" id="mc-embedded-subscribe" type="submit" value="立即訂閱" name="subscribe" />
+                  <input class="button from-bottom col-4 col-md-3" id="mc-embedded-subscribe" type="submit" value="{%立即訂閱%}" name="subscribe" />
                 </div>
               </form>
             </div>
@@ -454,9 +452,9 @@
                 <img class="our-logo" src="img/logo.png" alt="" />
               </a>
             
-              <span>台灣最具影響力的區塊鏈媒體<br/>最即時最全面的區塊鏈產業新聞站</span>
+              <span>{%台灣最具影響力的區塊鏈媒體%}<br/>{%最即時最全面的區塊鏈產業新聞站%}</span>
             
-              <span class="copyright mr-auto">動區動趨 BlockTempo © All Rights Reserved.</span>
+              <span class="copyright mr-auto">{%動區動趨%} BlockTempo © All Rights Reserved.</span>
               <!-- <a class="about" href="https://www.blocktempo.com/about-blocktempo/" target="_blank">關於BlockTempo</a> -->
             </div>
             
@@ -465,34 +463,34 @@
           <div class="category col col-12 col-md-3">
             <div class="row">
               <h6 class="title">
-                <i class="fas fa-user-plus"></i>動區社群
+                <i class="fas fa-user-plus"></i>{%動區社群%}
               </h6>
             </div>
             <div class="row links">
               <ul>
-                <li><a href="https://line.me/ti/g2/htySqS7SoKOuGGFx4Gn9dg" target="_blank"><i class="fab fa-line"></i>幣圈大戶內線情報－動森(動區森林)</a></li>
-                <li><a href="https://bit.ly/dogemoon2" target="_blank"><i class="fab fa-line"></i>動區大戶情報2群</a></li>
-                <li><a href="https://t.me/blocktempo" target="_blank"><i class="fab fa-telegram"></i>BlockTempo 官方討論群</a></li>
-                <li><a href="https://t.me/BlockTempo_Metaverse" target="_blank"><i class="fab fa-telegram"></i>動區 元宇宙 🚀</a></li>
-                <li><a href="https://www.facebook.com/groups/1763749533660518" target="_blank"><i class="fab fa-facebook"></i>台灣區塊鏈/比特幣/加密貨幣社群</a></li>
-                <li><a href="https://www.facebook.com/groups/221248235406367" target="_blank"><i class="fab fa-facebook"></i>區塊鏈技術與智能合約研究社群</a></li>
+                <li><a href="https://line.me/ti/g2/htySqS7SoKOuGGFx4Gn9dg" target="_blank"><i class="fab fa-line"></i>{%幣圈大戶內線情報－動森(動區森林)%}</a></li>
+                <li><a href="https://bit.ly/dogemoon2" target="_blank"><i class="fab fa-line"></i>{%動區大戶情報2群%}</a></li>
+                <li><a href="https://t.me/blocktempo" target="_blank"><i class="fab fa-telegram"></i>{%BlockTempo 官方討論群%}</a></li>
+                <li><a href="https://t.me/BlockTempo_Metaverse" target="_blank"><i class="fab fa-telegram"></i>{%動區 元宇宙 🚀%}</a></li>
+                <li><a href="https://www.facebook.com/groups/1763749533660518" target="_blank"><i class="fab fa-facebook"></i>{%台灣區塊鏈/比特幣/加密貨幣社群%}</a></li>
+                <li><a href="https://www.facebook.com/groups/221248235406367" target="_blank"><i class="fab fa-facebook"></i>{%區塊鏈技術與智能合約研究社群%}</a></li>
               </ul>
             </div>
           </div>
           <div class="banner col col-12 col-md-3">
             <div class="row">
               <h6 class="title">
-                <i class="fas fa-search"></i>精選專題
+                <i class="fas fa-search"></i>{%精選專題%}
               </h6>
             </div> 
             <div class="row links">
               <ul>
-                <li><a href="https://www.blocktempo.com" target="_blank">動區動趨 BLOCKTEMPO 新聞站</a></li>
-                <li><a href="https://abasummit.io" target="_blank">亞洲區塊鏈高峰會</a></li>
-                <li><a href="https://www.facebook.com/BlockMeet/?locale=zh_TW" target="_blank">動區塊聚 BLOCKMEET</a></li>
-                <li><a href="https://www.blocktempo.com/category/crypto-guide/" target="_blank">動區新手村</a></li>
-                <li><a href="https://www.blocktempo.com/taiwanese-blockchain-influencers-predictions-for-2023/" target="_blank">2022 台灣區塊鏈影響力人物</a></li>
-                <li><a href="https://top21.blocktempo.com" target="_blank">2021 台灣區塊鏈影響力人物</a></li>
+                <li><a href="https://www.blocktempo.com" target="_blank">{%動區動趨 BLOCKTEMPO 新聞站%}</a></li>
+                <li><a href="https://abasummit.io" target="_blank">{%亞洲區塊鏈高峰會%}</a></li>
+                <li><a href="https://www.facebook.com/BlockMeet/?locale=zh_TW" target="_blank">{%動區塊聚 BLOCKMEET%}</a></li>
+                <li><a href="https://www.blocktempo.com/category/crypto-guide/" target="_blank">{%動區新手村%}</a></li>
+                <li><a href="https://www.blocktempo.com/taiwanese-blockchain-influencers-predictions-for-2023/" target="_blank">{%2022 台灣區塊鏈影響力人物%}</a></li>
+                <li><a href="https://top21.blocktempo.com" target="_blank">{%2021 台灣區塊鏈影響力人物%}</a></li>
               </ul>
             </div>
           </div>
@@ -519,6 +517,7 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js'></script>
 
+  <script src="js/locale.js"></script>
   <script src="js/index.js?t=1686554275000"></script>
 </body>
 
