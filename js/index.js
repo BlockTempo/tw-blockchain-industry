@@ -512,19 +512,23 @@ $(document).ready(function() {
       $(`#map div[layout=${layoutType}]`).show();
       $(this).addClass("active");
 
-      if ( widthOver800 && layoutType == "map" && !mapHasTuned ) {
-        var ratio = 35 / 135;
-        $("#map .mapwrap img").each((idx, o) => {
-          o.height = o.width * ratio;
-        });
-        tuneMap();
-        mapHasTuned = true;
+      function doScreenActions() {
+        if ( widthOver800 && layoutType == "map" && !mapHasTuned ) {
+          var ratio = 35 / 135;
+          $("#map .mapwrap img").each((idx, o) => {
+            o.height = o.width * ratio;
+          });
+          tuneMap();
+          mapHasTuned = true;
+        }
+        if ( layoutType == "list" && !haveClicked ) {
+          const groupWrap = $("#map .sidebar-menu ul");
+          groupWrap.find(".sidebar-item").first().trigger('click');
+          haveClicked = true;
+        }
       }
-      if ( layoutType == "list" && !haveClicked ) {
-        const groupWrap = $("#map .sidebar-menu ul");
-        groupWrap.find(".sidebar-item").first().trigger('click');
-        haveClicked = true;
-      }
+
+      setTimeout(doScreenActions, 0);
     }
   });
 
