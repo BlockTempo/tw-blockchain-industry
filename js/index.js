@@ -395,7 +395,8 @@ var mapLastMod = "";
 
 var itemsPromise = Promise.all([
   fetch("json/map-group.json"),
-  fetch("json/map-item.json")
+  fetch("json/map-item.json"),
+  fetch("json/map-link.json")
 ]).then(results => {
   const dates = results.map(res => {
     return new Date(res.headers.get('Last-Modified'));
@@ -411,7 +412,8 @@ var itemsPromise = Promise.all([
 itemsPromise.then(results => {
   const data = {
     groups: results[0],
-    items: results[1]
+    items: results[1],
+    link: results[2]
   };
   const gridWrap = $("#map .grid");
   const groupWrap = $("#map .sidebar-menu ul");
@@ -486,6 +488,10 @@ itemsPromise.then(results => {
     });
   });
 
+  if ( data.link && data.link.length ) {
+    $("#map a.download").attr("href", data.link[0]);
+  }
+  
   $("#map .container").append( mapping( updateDateTemp, { mapLastMod }) );
 
   jsonloaded = true;
