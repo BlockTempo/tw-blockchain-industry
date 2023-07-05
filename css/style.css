@@ -2280,8 +2280,10 @@ ul{
   padding: 100px 30px;
   background-image: url(../img/edm-background.png);
   background-size: cover; */
-  background-color: #5369B5;
+  /* background-color: #5369B5; */
   color: #fff;
+  margin-top: 1.5%;
+  margin-bottom: 2%;
 }
 
 #edm .container{
@@ -2295,21 +2297,30 @@ ul{
   background-color: #C53029;
   margin-bottom: 50px; */
 }
-#edm h2{
-  color: #fff;
-  letter-spacing: 2px;
-  line-height: 45px;
+h2.edm-header{
+  /* max-width: 800px; */
+  color: #FDFDFD;
+  font-size: 2.5rem;
+  font-family: Noto Sans TC;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 4.8px;
   text-align: center;
-  font-weight: 400;
-  max-width: 600px;
+  /* margin: 0 auto; */
 }
 #edm #mc_embed_signup{
-  margin: 1.2%;
+  margin: 1.2%
 }
 #edm #mce-EMAIL {
   /* border-bottom: solid 1px #fff; */
-  background-color: #fff;
-  border-radius: 15px;
+  /* background-color: #fff;
+  border-radius: 15px; */
+  color: #C2C2C2;
+  border-radius: 5px;
+  border: 1px solid #696969;
+  background: rgba(17, 24, 52, 0.50) !important;
+  backdrop-filter: blur(2.5px);
 }
 
 #edm .prefix {
@@ -2325,10 +2336,11 @@ ul{
 }
 
 #edm .form-row {
-  width: 100%;
-  padding: 4px;
+  width: 40%;
+  /* padding: 4px;
   border-radius: 15px;
-  background-color: white;
+  background-color: white; */
+  margin: 0 auto;
 }
 
 #edm ::-webkit-input-placeholder { 
@@ -2342,20 +2354,22 @@ ul{
 }
 
 #edm #mc-embedded-subscribe {
-  background-color: #45c9ee;
-  color: #110340;
   border: none;
-  padding: 5px 25px;
-  border-radius: 15px;
-  font-size: 18px;
-  box-shadow: rgba(0, 0, 0, 0.12) 0px 20px 40px 0px;
-  transition: all 0.3s ease-in-out 0s; 
+  padding: 5px 10px;
+  font-size: 1rem;
   cursor: pointer;
+  border-radius: 5px;
+  background: #1959FF;
+  color: #F6F6F6;
+  text-align: center;
+  font-family: Noto Sans TC;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.6px;
+  margin-left: 10px;
 }
 #edm #mc-embedded-subscribe:hover{
-  box-shadow: rgba(0, 0, 0, 0) 0px 20px 40px 0px;
-  color: #00A2EA;
-  background-color: rgb(248, 248, 249);
+  background: #1050F6;
 }
 
 @media screen and (max-width: 768px){
@@ -2434,10 +2448,10 @@ footer .our-logo {
   margin-bottom: 0.5rem;
 }
 footer .share-btn-kit {
-  /* margin-top: 10%; */
+  margin-top: 10%;
   width: 100%;
-  position: absolute;
-  bottom: 6%;
+  /* position: absolute; */
+  /* bottom: 6%; */
 }
 footer .fab, footer .fas {
   font-size: 1.5rem;
@@ -2479,9 +2493,9 @@ footer .copyright{
 }
 
 footer hr {
-  opacity: 0;
-  background-color: #fdfdfd;
-  margin: 1%;
+  opacity: 1;
+  background-color: #f3f5f8;
+  margin: 1.5%;
   width: 100%;
 }
 footer h6 {
@@ -2501,7 +2515,7 @@ footer .meet {
 }
 
 footer .links .fab{
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 footer .links li {
