@@ -2911,6 +2911,10 @@ footer .links li {
   color: #293C8F;
 }
 
+#viewpoints .container{
+  overflow: initial;
+}
+
 #viewpoints .comments-avatar{
   display: flex;
 }
