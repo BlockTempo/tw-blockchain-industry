@@ -1968,9 +1968,27 @@ ul{
   color: #fff;
   margin-bottom: 15px;
 }
+
 #news-slider .tab .nav-tabs{
-  margin-bottom: 10px;
+  margin: 0 auto 10px;
   justify-content: inherit;
+  max-width: 800px;
+}
+
+@media screen and (max-width: 767px){
+  #news-slider .tab{
+    overflow: auto;
+  }
+  #news-slider .tab .nav-tabs{
+    max-width: initial;
+    min-width: 900px;
+  }
+  #news-slider .tab::-webkit-scrollbar {
+    display: none;
+  }
+  #news-slider .nav-tabs .nav-item{
+    width: initial;
+  }
 }
 
 #news-slider .tab .nav-link{
