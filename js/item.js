@@ -1,10 +1,100 @@
 
+const feedUrlBase = "https://www.blocktempo.com/search/tag/{id}/feed/";
+
 function mapping(html, pairs) {
     for (const [key, value] of Object.entries(pairs)) {
         var reg = new RegExp("{{" + key + "}}", "ig");
         html = html.replace(reg, value);
     }
     return html;
+}
+
+let swiper;
+
+function refreshSlider() {
+    swiper = new Swiper('.news-slider', {
+        effect: 'coverflow',
+        grabCursor: true,
+        loop: true,
+        centeredSlides: false,
+        keyboard: true,
+        spaceBetween: 0,
+        slidesPerView: 'auto',
+        speed: 300,
+        coverflowEffect: {
+            rotate: 0,
+            stretch: 0,
+            depth: 0,
+            modifier: 3,
+            slideShadows: false
+        },
+        simulateTouch: true,
+        pagination: {
+            el: '.news-slider__pagination',
+            clickable: true
+        },
+        on: {
+            init: function () {
+                var activeItem = document.querySelector('.swiper-slide-active');
+        
+                var sliderItem = activeItem.querySelector('.news__item');
+        
+                $('.swiper-slide-active .news__item').addClass('active');
+        
+                var x = sliderItem.getBoundingClientRect().left;
+                var y = sliderItem.getBoundingClientRect().top;
+                var width = sliderItem.getBoundingClientRect().width;
+                var height = sliderItem.getBoundingClientRect().height;
+            }
+        }
+    });
+  
+    swiper.on('touchEnd', function () {
+      $('.news__item').removeClass('active');
+      $('.swiper-slide-active .news__item').addClass('active');
+    });
+  
+    swiper.on('slideChange', function () {
+      $('.news__item').removeClass('active');
+    });
+  
+    swiper.on('slideChangeTransitionEnd', function () {
+        $('.news__item').removeClass('active');
+        var activeItem = document.querySelector('.swiper-slide-active');
+
+        var sliderItem = activeItem.querySelector('.news__item');
+
+        $('.swiper-slide-active .news__item').addClass('active');
+
+        var x = sliderItem.getBoundingClientRect().left;
+        var y = sliderItem.getBoundingClientRect().top;
+        var width = sliderItem.getBoundingClientRect().width;
+        var height = sliderItem.getBoundingClientRect().height;
+    });
+}
+
+function clearSlider() {
+    swiper && swiper.destroy();
+    $("#news-slider .swiper-wrapper").empty();
+    $("#news-slider .news-slider__pagination").empty();
+}
+
+
+function loadingSlider() {
+    clearSlider();
+    const sliderWrap = $("#news-slider .swiper-wrapper");
+    const newsLoadingTemp = $("template[newloading]").html().trim();
+    const newsLoadingItemTemp = $("template[newloading-item]").html().trim();
+
+    const items = [ newsLoadingItemTemp ];
+
+    [1,2,3].forEach(n => {
+        const newsLoadingWrap = $(newsLoadingTemp);
+        newsLoadingWrap.append( items );
+        sliderWrap.append( newsLoadingWrap );
+    });
+
+    refreshSlider();
 }
 
 var initialTitle = document.querySelector("head > title").textContent;
@@ -66,6 +156,64 @@ itemsPromise.then(results => {
         
         $(document.body).append(detailDom);
         
+        /*
+         * load news start 
+        */
+        loadingSlider();
+
+        const minInterval = 850;        
+        const startStamp = (new Date()).getTime();
+        const feedUrl = feedUrlBase.replace("{id}", id);
+        fetch(feedUrl).then(response => response.text())
+            .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
+            .then(res => {
+                const nowStamp = (new Date()).getTime();
+                const returnInterval = nowStamp - startStamp;
+                if ( returnInterval < minInterval ) {
+                    return new Promise((rs, rj) => {
+                    setTimeout(() => { rs(res); }, minInterval - returnInterval);
+                    });
+                } else return res;
+            })
+            .then(res => {
+                clearSlider();
+                const sliderWrap = $("#news-slider .swiper-wrapper");
+                const newsTemp = $("template[newspost]").html().trim();
+                const newsItemTemp = $("template[newspost-item]").html().trim();
+                const items = res.querySelectorAll("item");
+                const allObjects = [];
+                Array.from(items).forEach(dom => {
+                    const $dom = $(dom);
+                    let applyObj = {
+                        link: $dom.find('link').text(),
+                        title: $dom.find('title').text(),
+                        description: $($dom.find('description').text()).first().text()
+                    };
+                    
+                    Array.from(dom.children)
+                        .forEach(a => {
+                            if ( a.tagName === "dc:creator" ) {
+                            applyObj.author = a.textContent;
+                            } else if ( a.tagName === "media:content" ) {
+                            applyObj.imgurl = a.getAttribute('url');
+                            }
+                        });
+
+                    allObjects.push(applyObj);
+                });
+
+                allObjects.forEach(o => {
+                    const newsWrap = $(newsTemp);
+                    newsWrap.append( mapping( newsItemTemp, o ) );
+                    sliderWrap.append(newsWrap);
+                });
+
+                refreshSlider();
+            });
+        /*
+         * load news end
+        */
+
         const itemsWrap = $("main div[related-items]");
 
         relatedItems.forEach(item => {
