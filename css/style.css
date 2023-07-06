@@ -1989,6 +1989,10 @@ ul{
   #news-slider .nav-tabs .nav-item{
     width: initial;
   }
+
+  #news-slider .news-slider__arrows{
+    opacity: 0;
+  }
 }
 
 #news-slider .tab .nav-link{
