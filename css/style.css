@@ -2441,6 +2441,15 @@ footer {
   background-position: 55% 58%;
 }
 
+footer .footer-logo .img-fluid {
+  height: 2.3rem;
+  width: auto;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+  margin-right: 0;
+}
+
 footer .container{
   max-width: 90vw !important;
 }
