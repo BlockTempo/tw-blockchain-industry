@@ -290,7 +290,7 @@ function tuneMap() {
         .reduce((a,b) => Math.max(a,b), 0);
         
       theRow.forEach(el => {
-        const diff = maxh - el.firstElementChild.clientHeight;
+        let diff = maxh - el.firstElementChild.clientHeight;
         // find last bt-col
         let subHeightTick = 0;
         let tuneItems = [];
@@ -301,19 +301,26 @@ function tuneMap() {
           subHeightTick += subMaxHeight;
           tuneItems.push(item);
           if ( 100 - subHeightTick < 0.1 ) {
-            break;
+            const tuneItemMax = tuneItems
+              .map(el => el.firstElementChild.clientHeight)
+              .reduce((a,b) => Math.max(a,b), 0);
+            
+            tuneItems.forEach(el => {
+              const toHeight = diff + ( tuneItemMax - el.firstElementChild.clientHeight );
+              toHeight && $(el).find(".row")
+                .append(
+                  mapping( fillItemTemp, { height: toHeight } )
+                );
+            });
+
+            // still have subitems then reset 
+            if ( subitems.length ) {
+              diff = 0;
+              subHeightTick = 0;
+              tuneItems = [];
+            }
           }
         }
-        const tuneItemMax = tuneItems
-          .map(el => el.firstElementChild.clientHeight)
-          .reduce((a,b) => Math.max(a,b), 0);
-        
-        tuneItems.forEach(el => {
-          $(el).find(".row")
-            .append(
-              mapping( fillItemTemp, { height: diff + ( tuneItemMax - el.firstElementChild.clientHeight ) } )
-            );
-        });
       });
       // reset
       theRow = [];
