@@ -553,7 +553,7 @@ img.bull{
 }
 
 .powerby img {
-  max-height: 2.5rem;
+  max-height: 1.6rem;
   margin-right: 2rem;
 }
 
@@ -1854,7 +1854,7 @@ img.bull{
   background: transparent;
   color: #7ac7ff;
   border-color: #7ac7ff;
-  margin-left: 6px;
+  margin-left: 8px;
   margin-right: 6px;
   max-width: 160px;
 }
@@ -1864,6 +1864,11 @@ img.bull{
   border-color: inherit;  
 }
 
+@media (max-width: 576px){
+  .nav-item .bt-website{
+    margin-bottom: 8px;
+  }
+}
 
 hr{
   width: 100%;
@@ -3016,6 +3021,12 @@ footer .links li {
 #map .update-date{
   font-size: .8rem;
   color: #293C8F;
+}
+
+@media (max-width: 576px){
+  #map .update-date{
+    margin-left: 1.5rem;
+  }
 }
 
 #viewpoints .container{
