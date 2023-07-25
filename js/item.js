@@ -193,9 +193,14 @@ itemsPromise.then(results => {
                     Array.from(dom.children)
                         .forEach(a => {
                             if ( a.tagName === "dc:creator" ) {
-                            applyObj.author = a.textContent;
+                                applyObj.author = a.textContent;
                             } else if ( a.tagName === "media:content" ) {
-                            applyObj.imgurl = a.getAttribute('url');
+                                applyObj.imgurl = a.getAttribute('url');
+                            } else if ( a.tagName === "image" ) {
+                                const imgUrlEl = a.querySelector("url");
+                                if ( imgUrlEl ) {
+                                    applyObj.imgurl = imgUrlEl.textContent;
+                                }
                             }
                         });
 
