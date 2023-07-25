@@ -600,6 +600,11 @@ sliderLinks.on('click', function(e){
               applyObj.author = a.textContent;
             } else if ( a.tagName === "media:content" ) {
               applyObj.imgurl = a.getAttribute('url');
+            } else if ( a.tagName === "image" ) {
+              const imgUrlEl = a.querySelector("url");
+              if ( imgUrlEl ) {
+                applyObj.imgurl = imgUrlEl.textContent;
+              }
             }
           });
 
