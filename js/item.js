@@ -226,7 +226,8 @@ itemsPromise.then(results => {
         });
 
         itemsWrap.find('[data-toggle="tooltip"]').tooltip({
-            trigger: "hover"
+            trigger: "hover",
+            html: true
         });
     }
 });
