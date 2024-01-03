@@ -3039,6 +3039,8 @@ footer .links li {
 
 #viewpoints .bubble{
   height: auto;
+  font-style: normal;
+  font-family: inherit;
 }
 
 #viewpoints .swiper-pagination{
