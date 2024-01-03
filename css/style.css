@@ -296,10 +296,8 @@ nav.navbar {
   padding: 15px 0;
   height: 70px;
 }
-.navbar-top{
-  /* background-color: rgba(24, 33, 70, 0.70) !important;
-  backdrop-filter: blur(4px); */
-  background-image: linear-gradient(90deg, rgb(41 63 150) 0%, rgb(61 88 180) 100%);
+nav.navbar-top{
+  background-color: #45474B;
 }
 .navbar-top .nav-link{
   /* color: inherit; */
@@ -1843,17 +1841,17 @@ img.bull{
 }
 
 .nav-item .register{
-  background-color: #1959ff;
-  color: #f6f6f6;
-  border-color: #1959ff;
+  background-color: #F4CE14;
+  color: #252F2C;
+  border-color: #F4CE14;
   margin-left: 8px;
   max-width: 160px;
 }
 
 .nav-item .bt-website{
   background: transparent;
-  color: #7ac7ff;
-  border-color: #7ac7ff;
+  color: #F4CE14; 
+  border-color: #F4CE14;
   margin-left: 8px;
   margin-right: 6px;
   max-width: 160px;
@@ -2450,7 +2448,7 @@ h2.edm-header{
   margin-left: 10px;
 }
 #edm #mc-embedded-subscribe:hover{
-  background: #1050F6;
+  background: #E4BE14;
 }
 
 @media screen and (max-width: 768px){
