@@ -3017,11 +3017,12 @@ footer .links li {
 #map .update-date{
   font-size: .8rem;
   color: #293C8F;
+  margin-left: auto;
 }
 
 @media (max-width: 576px){
   #map .update-date{
-    margin-left: 1.5rem;
+    margin-right: 1.5rem;
   }
 }
 
