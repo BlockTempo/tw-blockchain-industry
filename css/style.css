@@ -876,6 +876,17 @@ img.bull{
     margin-top: 30%;
   }
 }
+
+@media screen and (max-width: 377px){
+  h1.main-topic{
+    font-size: 2em;
+  }
+
+  .main-topic-en{
+    font-size: 0.9rem;
+  }
+}
+
 @media (min-width: 992px) and (max-width: 1199px){
   #theme .topic {
     padding-left: 78px;
@@ -1830,9 +1841,6 @@ img.bull{
     flex-direction: column;
     margin-bottom: 5%;
   }
-  .category {
-    padding: 30px;
-  }
 }
 
 /* quote */
@@ -2388,6 +2396,16 @@ h2.edm-header{
   text-align: center;
   /* margin: 0 auto; */
 }
+h2.edm-header span{
+  line-height: inherit;
+  letter-spacing: inherit;
+}
+@media screen and (max-width: 576px) {
+  h2.edm-header span{
+    display: block;
+  }
+}
+
 #edm #mc_embed_signup{
   margin: 1.2%
 }
@@ -2600,6 +2618,10 @@ footer img {
 }
 footer .meet {
   margin-top: 10%;
+}
+
+footer .links {
+  padding: 0 4px;
 }
 
 footer .links .fab{
@@ -3017,11 +3039,12 @@ footer .links li {
 #map .update-date{
   font-size: .8rem;
   color: #293C8F;
+  margin-left: auto;
 }
 
 @media (max-width: 576px){
   #map .update-date{
-    margin-left: 1.5rem;
+    margin-right: 1.5rem;
   }
 }
 
