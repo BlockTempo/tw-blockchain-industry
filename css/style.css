@@ -876,6 +876,17 @@ img.bull{
     margin-top: 30%;
   }
 }
+
+@media screen and (max-width: 377px){
+  h1.main-topic{
+    font-size: 2em;
+  }
+
+  .main-topic-en{
+    font-size: 0.9rem;
+  }
+}
+
 @media (min-width: 992px) and (max-width: 1199px){
   #theme .topic {
     padding-left: 78px;
