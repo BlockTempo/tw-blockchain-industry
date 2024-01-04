@@ -566,31 +566,37 @@ sliderLinks.on('click', function(e){
   loadingSlider();
 
   const startStamp = (new Date()).getTime();
-  const feedUrl = rssFeeds[ parseInt($(this).data("feed")) ];
-  
-  fetch(feedUrl).then(response => response.text())
-    .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
-    .then(res => {
-      const nowStamp = (new Date()).getTime();
-      const returnInterval = nowStamp - startStamp;
-      if ( returnInterval < minInterval ) {
-        return new Promise((rs, rj) => {
-          setTimeout(() => { rs(res); }, minInterval - returnInterval);
-        });
-      } else return res;
-    })
-    .then(res => {
-      clearSlider();
-      const sliderWrap = $("#news-slider .swiper-wrapper");
-      const newsTemp = $("#news-slider template[newspost]").html().trim();
-      const newsItemTemp = $("#news-slider template[newspost-item]").html().trim();
+
+  // get urls
+  const feedUrls = $(this).data("feed")
+    .toString()
+    .split(",")
+    .map(stridx => rssFeeds[parseInt(stridx)]);
+
+  Promise.all(
+    feedUrls.map(feedUrl => 
+      fetch(feedUrl).then(response => response.text())
+        .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
+        .then(res => {
+          const nowStamp = (new Date()).getTime();
+          const returnInterval = nowStamp - startStamp;
+          if ( returnInterval < minInterval ) {
+            return new Promise((rs, rj) => {
+              setTimeout(() => { rs(res); }, minInterval - returnInterval);
+            });
+          } else return res;
+        })
+    )
+  ).then(results => results.map(res => {
+      const partObjects = [];
       const items = res.querySelectorAll("item");
-      const allObjects = [];
+
       Array.from(items).forEach(dom => {
         const $dom = $(dom);
         let applyObj = {
           link: $dom.find('link').text(),
           title: $dom.find('title').text(),
+          timestamp: (new Date($dom.find('pubDate').text())).getTime(),
           description: $($dom.find('description').text()).first().text()
         };
         
@@ -608,32 +614,47 @@ sliderLinks.on('click', function(e){
             }
           });
 
-        allObjects.push(applyObj);
+        partObjects.push(applyObj);
       });
 
-      if ( widthOver800 ) {
-        while (allObjects.length) {
-          const applyEls = [];
-          if ( allObjects.length >= 2 ) {
-            applyEls.push( mapping( newsItemTemp, allObjects.shift() ) );
-            applyEls.push( mapping( newsItemTemp, allObjects.shift() ) );
-          } else {
-            applyEls.push( mapping( newsItemTemp, allObjects.shift() ) );
-          }
-          const newsWrap = $(newsTemp);
-          newsWrap.append( applyEls );
-          sliderWrap.append(newsWrap);
-        }
-      } else {
-        allObjects.forEach(o => {
-          const newsWrap = $(newsTemp);
-          newsWrap.append( mapping( newsItemTemp, o ) );
-          sliderWrap.append(newsWrap);
-        });
-      }
+      return partObjects;
+    }).reduce((acc, cur) => {
+      return acc.concat(cur)
+    }, []).sort((a,b) => {
+      return a.timestamp > b.timestamp ? -1 : 1;
+    })
+  ).then(allObjects => {
+    clearSlider();
+    const sliderWrap = $("#news-slider .swiper-wrapper");
+    const newsTemp = $("#news-slider template[newspost]").html().trim();
+    const newsItemTemp = $("#news-slider template[newspost-item]").html().trim();
 
-      refreshSlider();
-    });
+    if ( widthOver800 ) {
+      allObjects.push( allObjects.shift() );
+      allObjects.push( allObjects.shift() );
+      while (allObjects.length) {
+        const applyEls = [];
+        if ( allObjects.length >= 2 ) {
+          applyEls.push( mapping( newsItemTemp, allObjects.shift() ) );
+          applyEls.push( mapping( newsItemTemp, allObjects.shift() ) );
+        } else {
+          applyEls.push( mapping( newsItemTemp, allObjects.shift() ) );
+        }
+        const newsWrap = $(newsTemp);
+        newsWrap.append( applyEls );
+        sliderWrap.append(newsWrap);
+      }
+    } else {
+      allObjects.push( allObjects.shift() );
+      allObjects.forEach(o => {
+        const newsWrap = $(newsTemp);
+        newsWrap.append( mapping( newsItemTemp, o ) );
+        sliderWrap.append(newsWrap);
+      });
+    }
+
+    refreshSlider();
+  });
 });
 
 sliderLinks.first().trigger('click');
