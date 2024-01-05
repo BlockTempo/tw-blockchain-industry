@@ -11,11 +11,11 @@ function mapping(html, pairs) {
 
 let swiper;
 
-function refreshSlider() {
+function refreshSlider( itemSize ) {
     swiper = new Swiper('.news-slider', {
         effect: 'coverflow',
         grabCursor: true,
-        loop: true,
+        loop: (itemSize || 0) > 3,
         centeredSlides: false,
         keyboard: true,
         spaceBetween: 0,
@@ -213,7 +213,7 @@ itemsPromise.then(results => {
                     sliderWrap.append(newsWrap);
                 });
 
-                refreshSlider();
+                refreshSlider( allObjects.length );
             });
         /*
          * load news end

@@ -1645,6 +1645,11 @@ img.bull{
   padding-bottom: 15px;
   padding-top: 15px;
 }
+
+.content-wrap{
+  width:100%;
+}
+
 .content span{
   font-size: 14px;
   padding: 10px 20px 10px 20px;
@@ -2340,23 +2345,24 @@ ul{
 .news__img {
   border-radius: 10px;
   box-shadow: 0 6px 26px 6px rgba(0, 0, 0, 0.25);
-  height: 180px;
   margin-top: 20px;
   width: 100%;
   transition: all .3s;
   transform-origin: 0% 0%;
+  aspect-ratio: 2 / 1.15;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 @media screen and (max-width: 576px) {
   .news__img {
-    height: 180px;
     margin-top: 20px;
   }
 }
 .news__img img {
   max-width: 100%;
+  max-height: 100%;
   border-radius: 10px;
-  height: 100%;
-  width: 100%;
 }
 /* edm */
 #edm{
