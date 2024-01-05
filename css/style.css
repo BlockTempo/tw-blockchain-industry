@@ -1645,6 +1645,11 @@ img.bull{
   padding-bottom: 15px;
   padding-top: 15px;
 }
+
+.content-wrap{
+  width:100%;
+}
+
 .content span{
   font-size: 14px;
   padding: 10px 20px 10px 20px;
