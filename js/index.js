@@ -624,6 +624,13 @@ sliderLinks.on('click', function(e){
       return a.timestamp > b.timestamp ? -1 : 1;
     })
   ).then(allObjects => {
+    // remove duplicate
+    allObjects = [
+      ...new Map(
+        allObjects.map(item => [item.link, item])
+      ).values()
+    ];
+
     clearSlider();
     const sliderWrap = $("#news-slider .swiper-wrapper");
     const newsTemp = $("#news-slider template[newspost]").html().trim();
