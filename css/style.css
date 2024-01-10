@@ -2815,7 +2815,9 @@ footer .links li {
 }
 
 #map .headline {
+  display: block;
   padding-left: 20px;
+  padding-right: 20px;
   padding-bottom: 20px;
 }
 
@@ -3068,6 +3070,11 @@ footer .links li {
   #map .update-date{
     margin-right: 1.5rem;
   }
+
+  #map .switcher-wrap {
+    margin-left: 0.8rem;
+  }
+
 }
 
 #viewpoints .yellow-section{
