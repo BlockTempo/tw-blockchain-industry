@@ -877,9 +877,9 @@ img.bull{
   }
 }
 
-@media screen and (max-width: 377px){
+@media screen and (max-width: 390px){
   h1.main-topic{
-    font-size: 2em;
+    font-size: 1.9rem;
   }
 
   .main-topic-en{
