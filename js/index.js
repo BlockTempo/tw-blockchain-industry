@@ -631,6 +631,11 @@ sliderLinks.on('click', function(e){
       ).values()
     ];
 
+    if ( allObjects.length % 2 === 1 ) {
+      const addition = allObjects[Math.floor(allObjects.length / 2)];
+      allObjects.push(addition);
+    }
+
     clearSlider();
     const sliderWrap = $("#news-slider .swiper-wrapper");
     const newsTemp = $("#news-slider template[newspost]").html().trim();
