@@ -65,3 +65,12 @@
 .news-slider__pagination .swiper-pagination-bullet-active{
     background: rgba(136,136,136,.5);
 }
+
+@media screen and (max-width: 576px) {
+    .content {
+        padding-top: 0;
+    }
+    .content .site-content{
+        margin-bottom: 1.8rem;
+    }
+}
