@@ -2365,7 +2365,7 @@ ul{
   width: 100%;
   transition: all .3s;
   transform-origin: 0% 0%;
-  aspect-ratio: 2 / 1.15;
+  /* aspect-ratio: 2 / 1.15; */
   display: flex;
   align-items: center;
   justify-content: center;

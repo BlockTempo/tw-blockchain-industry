@@ -79,6 +79,8 @@ function clearSlider() {
     $("#news-slider .news-slider__pagination").empty();
 }
 
+let sliderRenderHeight = 200;
+const aspectRatio = 2 / 1.15;
 
 function loadingSlider() {
     clearSlider();
@@ -95,6 +97,11 @@ function loadingSlider() {
     });
 
     refreshSlider();
+    
+    // calculate height
+    sliderRenderHeight = sliderWrap.find(".news__img").width() / aspectRatio;
+
+    sliderWrap.find(".news__img").height(sliderRenderHeight);
 }
 
 var initialTitle = document.querySelector("head > title").textContent;
@@ -187,7 +194,8 @@ itemsPromise.then(results => {
                     let applyObj = {
                         link: $dom.find('link').text(),
                         title: $dom.find('title').text(),
-                        description: $($dom.find('description').text()).first().text()
+                        description: $($dom.find('description').text()).first().text(),
+                        height: sliderRenderHeight
                     };
                     
                     Array.from(dom.children)
