@@ -2,3 +2,7 @@
 	path = dev
 	url = https://github.com/BlockTempo/tw-blockchain-industry.git
 	branch = dev
+[submodule "dev2"]
+	path = dev2
+	url = https://github.com/BlockTempo/tw-blockchain-industry.git
+	branch = dev
