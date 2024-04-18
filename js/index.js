@@ -447,6 +447,19 @@ itemsPromise.then(results => {
     }
   });
 
+  // generate banner url
+  items.forEach(it => {
+    const dir = it.group
+      .split('-')
+      .map(p => {
+        return p.replaceAll(new RegExp("[ / ]+", "g"), "-");
+      })
+      .join("/");
+    const trimId = it.id.replaceAll(":", "-");
+    const fileUrl = ["https://image.blocktempo.com/ecomap", dir, `${trimId}.png`].join("/");
+    it.logo_banner_dark = fileUrl;
+  });
+
   // loadTreemapChart( groups, items );
   // loadAmTreemapChart( groups, items );
   loadMap( groups, items );
