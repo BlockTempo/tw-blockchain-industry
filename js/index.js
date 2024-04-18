@@ -542,10 +542,10 @@ $(document).ready(function() {
 
       function doScreenActions() {
         if ( widthOver800 && layoutType == "map" && !mapHasTuned ) {
-          var ratio = 35 / 135;
-          $("#map .mapwrap img").each((idx, o) => {
-            o.height = o.width * ratio;
-          });
+          // var ratio = 35 / 135;
+          // $("#map .mapwrap img").each((idx, o) => {
+          //   o.height = o.width * ratio;
+          // });
           tuneMap();
           mapHasTuned = true;
         }
