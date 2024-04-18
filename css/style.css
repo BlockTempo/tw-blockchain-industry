@@ -3047,8 +3047,13 @@ footer .links li {
  white-space:pre-wrap;
 }
 
+.map-item-link {
+  aspect-ratio: 27 / 7;
+}
+
 .map-item-link img{
-  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 #map div[layout="map"] .category-header{
