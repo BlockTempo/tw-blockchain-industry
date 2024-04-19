@@ -3232,6 +3232,27 @@ footer .links li {
   transition-delay: 0s;
 }
 
+/* bubble override  */
+#viewpoints .bubble:after {
+  display: none !important;
+}
+#viewpoints .bubble:before {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 0 14px 15px;
+  border-color: #FFFFFF transparent;
+  display: block;
+  width: 0;
+  z-index: 1;
+  top: -15px;
+  left: 30px;
+}
+
+#viewpoints .swiper-wrapper.features-block {
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
 
 /* bt custom ratio */
 @media (min-width: 768px) {
