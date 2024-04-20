@@ -101,8 +101,8 @@ html, body {
 }
 
 #theme #mc-embedded-subscribe {
-  background-color: #D65729;
-  color: #f6f6f6;
+  background-color: #FFE03F;
+  color: #000;
   border: none;
   padding: 8px 12px;
   border-radius: 5px;
@@ -1884,16 +1884,16 @@ img.bull{
 }
 
 .nav-item .register{
-  background-color: #E95622;
-  color: #f6f6f6;
-  border-color: #E95622;
+  background-color: #FFE03F;
+  color: #000;
+  border-color: #FFE03F;
   max-width: 160px;
   border-radius: 5px;
 
   font-family: "Noto Sans TC";
   font-size: 16px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 800;
   line-height: normal;
   letter-spacing: 1.6px;
 
@@ -2121,10 +2121,11 @@ ul{
 
 #news-slider .tab .nav-link:hover span,
 #news-slider .tab .nav-link.active span{
-  background-color: #E95622;
-  font-weight: 500;
+  background-color: #FFE03F;
+  font-weight: 800;
   border-radius: 5px;
   opacity: 1;
+  color: #000;
 }
 
 .icon {
@@ -2210,7 +2211,7 @@ ul{
   z-index: 12;
 }
 .news-slider__arrow {
-  background: #F05624;
+  background: #FFE03F;
   border: none;
   display: inline-flex;
   width: 36px;
@@ -2257,7 +2258,7 @@ ul{
 }
 .news-slider__pagination .swiper-pagination-bullet-active {
   opacity: 1;
-  background: #F05624;
+  background: #FFE03F;
   width: 80px;
   transition-delay: 0s;
 }
@@ -2477,7 +2478,7 @@ ul{
 }
 h2.edm-header{
   /* max-width: 800px; */
-  color: #FDFDFD;
+  color: #000;
   font-size: 2.5rem;
   font-family: Noto Sans TC;
   font-style: normal;
@@ -2600,22 +2601,33 @@ h2.edm-header span{
 }
 
 #subscribe {
-  background-color: #F05624;
+  background-color: #FFE03F;
   padding: 50px 0 40px;
 }
 
 footer {
   padding: 30px;
   background-color: #C5C8C7;
-  color: #071B1C;
+  color: #000;
+}
+
+footer .intro{
+  font-size: 12px;
+}
+
+footer .footer-logo {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  justify-content: flex-end;
 }
 
 footer .footer-logo .img-fluid {
   height: 2.3rem;
   width: auto;
-  display: flex;
-  justify-content: flex-end;
-  margin-left: auto;
+  /* display: flex;
+  justify-content: flex-end; */
+  margin-left: 30px;
   margin-right: 0;
 }
 
@@ -2628,7 +2640,7 @@ footer span {
   line-height: 20px;
 }
 footer a {
-  color: #f8f8f8;
+  color: #000;
   text-decoration: initial;
   transition: 0.01s;
   font-size: 0.85rem;
@@ -2640,7 +2652,7 @@ footer a.about {
 }
 
 footer a:hover {
-  color: #63C5FC;
+  color: #444;
   text-decoration: none;
 }
 footer .our-logo {
@@ -2651,7 +2663,7 @@ footer .our-logo {
   margin-bottom: 0.5rem;
 }
 footer .share-btn-kit {
-  margin-top: 10%;
+  margin-top: 16%;
   width: 100%;
   /* position: absolute; */
   /* bottom: 6%; */
@@ -2697,7 +2709,7 @@ footer .copyright{
 
 footer hr {
   opacity: 1;
-  background-color: #f3f5f8;
+  background-color: #000;
   margin: 1.5%;
   width: 100%;
 }
@@ -2932,9 +2944,10 @@ footer .links li {
 
 #map .switcher.active {
   border-radius: 5px;
-  color: #fff;
-  background: #E95622;
+  color: #000;
+  background: #FFE03F;
   box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.20);
+  font-weight: 800;
 }
 
 .fa-circle{
@@ -2949,11 +2962,12 @@ footer .links li {
 }
 
 #map .download {
-  background-color: #E95622;
-  color: #fff;
+  background-color: #FFE03F;
+  color: #000;
   /* border: 2px solid #495E57; */
   border: none;
   border-radius: 25px; 
+  font-weight: 400;
 }
 
 /* override onenav */
@@ -3086,7 +3100,7 @@ footer .links li {
   transition-duration: 0.3s;
   transition-timing-function: ease;
   border-radius: 8px;
-  background: #E95622;
+  background: #657979;
   box-shadow: 0px 4px 18px 0px rgba(47, 83, 123, 0.50);
 }
 
@@ -3228,10 +3242,31 @@ footer .links li {
   transition-delay: .2s;
 }
 #viewpoints .swiper-pagination-bullet-active {
-  background: #F05624;
+  background: #FFE03F;
   transition-delay: 0s;
 }
 
+/* bubble override  */
+#viewpoints .bubble:after {
+  display: none !important;
+}
+#viewpoints .bubble:before {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 0 14px 15px;
+  border-color: #FFFFFF transparent;
+  display: block;
+  width: 0;
+  z-index: 1;
+  top: -15px;
+  left: 30px;
+}
+
+#viewpoints .swiper-wrapper.features-block {
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
 
 /* bt custom ratio */
 @media (min-width: 768px) {
@@ -3304,3 +3339,5 @@ footer .links li {
 .opacity-0 {
   opacity: 0;
 }
+
+
