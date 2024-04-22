@@ -9,7 +9,13 @@ document.body.insertAdjacentHTML(
         })
         .join("")
 );
-  
+
+// lang item
+$(".lang-switch a[lang-item]").click(e => {
+    _changeLang($(e.target).attr('lang-item'));
+    location.reload(true);
+});
+    
 const feedUrlBase = "https://www.blocktempo.com/search/tag/{id}/feed/";
 
 function mapping(html, pairs) {
@@ -174,6 +180,9 @@ itemsPromise.then(results => {
         
         $(document.body).append(detailDom);
         
+        // update lang state  
+        $(".lang-switch a[lang-item=" + langCode + "]").addClass('active');
+
         /*
          * load news start 
         */
