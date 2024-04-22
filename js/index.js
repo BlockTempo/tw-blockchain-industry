@@ -5,7 +5,7 @@ document.body.insertAdjacentHTML(
       .map(el => {
         const res = el.innerHTML.trim();
         el.remove();
-        return res;
+        return _tApply(res);
       })
       .join("")
 );
