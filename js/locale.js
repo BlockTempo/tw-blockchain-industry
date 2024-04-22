@@ -103,8 +103,8 @@ const i18nMapping = {
     }
 };
 
-const userLang = navigator.language || navigator.userLanguage; 
-const langCode = userLang.substr(0, 2);
+const userLang = localStorage.getItem('_lang') || navigator.language || navigator.userLanguage; 
+let langCode = userLang.substr(0, 2);
 
 if ( !i18nMapping[langCode] ) {
     langCode = "zh";
@@ -120,4 +120,8 @@ const _tApply = html => {
         res = res.replaceAll("{%" + key + "%}", value);
     }
     return res;
+};
+
+const _changeLang = code => {
+    localStorage.setItem('_lang', code);
 };

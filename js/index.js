@@ -10,6 +10,14 @@ document.body.insertAdjacentHTML(
       .join("")
 );
 
+// lang item
+$(".lang-switch a[lang-item]").click(e => {
+  _changeLang($(e.target).attr('lang-item'));
+  location.reload(true);
+});
+
+$(".lang-switch a[lang-item=" + langCode + "]").addClass('active');
+
 $(window).scroll(function(evt){
   if ($(window).scrollTop()>0)
     $(".navbar").addClass("navbar-top");

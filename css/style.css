@@ -324,6 +324,34 @@ nav.navbar-top{
   opacity: 0.8;
   padding: 12px 5px 15px 5px !important;
 }
+
+.lang-switch{
+  color: #B5B5B5;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-weight: 300;
+  margin-left: 10px !important;
+}
+
+.lang-switch > a {
+  padding: 0 10px !important;
+  cursor: pointer;
+}
+
+.lang-switch > a.active{
+  color: #C5C8C7;
+  font-weight: 800;
+}
+
+.lang-swith-light{
+  color: #000;
+}
+
+.lang-swith-light > a.active {
+  color: #071B1C;
+}
+
 @media (min-width: 768px) {
   .navbar-expand-md .navbar-nav .nav-link {
     padding-bottom: 2px;
