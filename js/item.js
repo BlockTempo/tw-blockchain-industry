@@ -1,4 +1,15 @@
-
+// init
+document.body.insertAdjacentHTML(
+    "afterbegin", 
+    Array.from(document.querySelectorAll("body > template"))
+        .map(el => {
+            const res = el.innerHTML.trim();
+            el.remove();
+            return res;
+        })
+        .join("")
+);
+  
 const feedUrlBase = "https://www.blocktempo.com/search/tag/{id}/feed/";
 
 function mapping(html, pairs) {

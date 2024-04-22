@@ -1,3 +1,15 @@
+// init
+document.body.insertAdjacentHTML(
+  "afterbegin", 
+  Array.from(document.querySelectorAll("body > template"))
+      .map(el => {
+        const res = el.innerHTML.trim();
+        el.remove();
+        return res;
+      })
+      .join("")
+);
+
 $(window).scroll(function(evt){
   if ($(window).scrollTop()>0)
     $(".navbar").addClass("navbar-top");
