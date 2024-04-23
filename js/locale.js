@@ -24,11 +24,11 @@ const i18nMapping = {
         "container-news-slider-type-view": "獨立觀點",
         "container-news-slider-type-guide": "區塊鏈新手教學",
         "container-viewpoints-title": "產業名人觀點",
-        "container-edm-title": "為您整理一週國內外焦點動態",
+        "container-edm-title": "為您整理一週國內外<span>焦點動態</span>",
         "container-edm-subscribe-placeholder": "Your work email",
-        "container-edm-subscribe": "立即訂閱",
+        "container-edm-subscribe": "訂閱週報",
         "footer-intro-one": "台灣最具影響力的區塊鏈媒體",
-        "footer-intro-two": "最即時最全面的區塊鏈產業新聞站",
+        "footer-intro-two": "最即時全面的區塊鏈產業新聞站",
         "footer-about": "關於BlockTempo",
         "footer-channel-title": "動區頻道",
         "footer-channel-twitter": "動區 Twitter",
@@ -48,7 +48,9 @@ const i18nMapping = {
         "footer-social-bt-tg": "BlockTempo 官方討論群",
         "footer-social-contract": "區塊鏈技術與智能合約研究社群",
         "footer-social-blockchain": "台灣區塊鏈/比特幣/加密貨幣社群",
-        "footer-copyright": "動區動趨 BlockTempo © All Rights Reserved."
+        "footer-copyright": "動區動趨 BlockTempo © All Rights Reserved.",
+        "item-detail-news": "新聞彙整",
+        "item-detail-industry": "相關產業"
     },
     en: {
         "nav-item-map": "Taiwan Blockchain Industry Map",
@@ -75,11 +77,11 @@ const i18nMapping = {
         "container-news-slider-type-view": "Independent Views",
         "container-news-slider-type-guide": "Blockchain Beginner's Guide",
         "container-viewpoints-title": "Industry Experts' Insights",
-        "container-edm-title": "Weekly Highlights from Around the World",
+        "container-edm-title": "Curating weekly highlights<span> from global news</span>",
         "container-edm-subscribe-placeholder": "Your work email",
         "container-edm-subscribe": "Subscribe Now",
         "footer-intro-one": "Taiwan's Most Influential Blockchain Media",
-        "footer-intro-two": "The Most Timely and Comprehensive Blockchain Industry News Site",
+        "footer-intro-two": "The most up-to-date and comprehensive blockchain industry news site",
         "footer-about": "About BlockTempo",
         "footer-channel-title": "BlockTempo Channels",
         "footer-channel-twitter": "BlockTempo Twitter",
@@ -99,7 +101,9 @@ const i18nMapping = {
         "footer-social-bt-tg": "BlockTempo Official Discussion Group",
         "footer-social-contract": "Blockchain Technology and Smart Contract Research Community",
         "footer-social-blockchain": "Taiwan Blockchain/Bitcoin/Cryptocurrency Community",
-        "footer-copyright": "BlockTempo © All Rights Reserved."
+        "footer-copyright": "BlockTempo © All Rights Reserved.",
+        "item-detail-news": "News Digest",
+        "item-detail-industry": "Related Industries"
     }
 };
 

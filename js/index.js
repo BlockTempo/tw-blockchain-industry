@@ -244,6 +244,9 @@ function loadMap(groups, items) {
   });
 
   groupsClone.forEach(g => {
+    if (langCode != 'zh') {
+      g.title = g.title_en || g.title;
+    }
     const cateWrap = $( mapping( cateTemp, g ) );
     const cateItemWrap = cateWrap.find(".category-block");
 
@@ -275,6 +278,9 @@ function loadMap(groups, items) {
       });
 
       gChildClone.forEach(gc => {
+        if (langCode != 'zh') {
+          gc.title = gc.title_en || gc.title;
+        }
         const nestedGroup = [g.id, gc.id].join('-');
         const subcateWrap = $( mapping( subcateTemp, gc ) );
         const subcateItemWrap = subcateWrap.find(".row");
