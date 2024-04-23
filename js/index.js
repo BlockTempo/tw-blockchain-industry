@@ -1,3 +1,23 @@
+// init
+document.body.insertAdjacentHTML(
+  "afterbegin", 
+  Array.from(document.querySelectorAll("body > template"))
+      .map(el => {
+        const res = el.innerHTML.trim();
+        el.remove();
+        return _tApply(res);
+      })
+      .join("")
+);
+
+// lang item
+$(".lang-switch a[lang-item]").click(e => {
+  _changeLang($(e.target).attr('lang-item'));
+  location.reload(true);
+});
+
+$(".lang-switch a[lang-item=" + langCode + "]").addClass('active');
+
 $(window).scroll(function(evt){
   if ($(window).scrollTop()>0)
     $(".navbar").addClass("navbar-top");
@@ -224,6 +244,9 @@ function loadMap(groups, items) {
   });
 
   groupsClone.forEach(g => {
+    if (langCode != 'zh') {
+      g.title = g.title_en || g.title;
+    }
     const cateWrap = $( mapping( cateTemp, g ) );
     const cateItemWrap = cateWrap.find(".category-block");
 
@@ -255,6 +278,9 @@ function loadMap(groups, items) {
       });
 
       gChildClone.forEach(gc => {
+        if (langCode != 'zh') {
+          gc.title = gc.title_en || gc.title;
+        }
         const nestedGroup = [g.id, gc.id].join('-');
         const subcateWrap = $( mapping( subcateTemp, gc ) );
         const subcateItemWrap = subcateWrap.find(".row");
@@ -334,6 +360,28 @@ function tuneMap() {
       theRow = [];
       heightTick = 0;
     }
+  });
+}
+
+function applyImageTitle() {
+  function imageOnLoad(e) {
+    const o = e.target;
+    if ( !o._applied && o.width < o.parentNode.clientWidth / 3 ) {
+      const titleJQ = $(o.nextElementSibling);
+      titleJQ.css("font-size", 
+        Math.min(
+          14,
+          Math.max(8, 
+            ((o.parentNode.clientWidth - o.width) / titleJQ.text().length)
+          )
+        )
+      + "px");
+      $(o.parentNode).addClass('show-imply-title');
+      o._applied = true;
+    }
+  }
+  $("#map .mapwrap img").each((idx, o) => {
+    o.onload = imageOnLoad;
   });
 }
 
@@ -547,6 +595,7 @@ $(document).ready(function() {
           //   o.height = o.width * ratio;
           // });
           tuneMap();
+          applyImageTitle();
           mapHasTuned = true;
         }
         if ( layoutType == "list" && !haveClicked ) {
