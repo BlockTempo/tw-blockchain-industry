@@ -3019,6 +3019,16 @@ footer .links li {
   color: inherit;
 }
 
+.imply-title{
+  display: none;
+  margin-left: 5px;
+  color: #fff;
+}
+
+.show-imply-title .imply-title{
+  display: inherit;
+}
+
 /**
  * Loading Animation Snippet
  */

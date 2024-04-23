@@ -363,6 +363,28 @@ function tuneMap() {
   });
 }
 
+function applyImageTitle() {
+  function imageOnLoad(e) {
+    const o = e.target;
+    if ( !o._applied && o.width < o.parentNode.clientWidth / 3 ) {
+      const titleJQ = $(o.nextElementSibling);
+      titleJQ.css("font-size", 
+        Math.min(
+          14,
+          Math.max(8, 
+            ((o.parentNode.clientWidth - o.width) / titleJQ.text().length)
+          )
+        )
+      + "px");
+      $(o.parentNode).addClass('show-imply-title');
+      o._applied = true;
+    }
+  }
+  $("#map .mapwrap img").each((idx, o) => {
+    o.onload = imageOnLoad;
+  });
+}
+
 var viewpointPromise = fetch("json/viewpoint.json?t=5").then(res => res.json());
 viewpointPromise.then(data => {
   const gridWrap = $("#viewpoints .features-block");
@@ -573,6 +595,7 @@ $(document).ready(function() {
           //   o.height = o.width * ratio;
           // });
           tuneMap();
+          applyImageTitle();
           mapHasTuned = true;
         }
         if ( layoutType == "list" && !haveClicked ) {
