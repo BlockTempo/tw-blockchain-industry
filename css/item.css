@@ -7,6 +7,10 @@ p {
     color: #fff;
 }
 
+.intro p{
+    color: #000;
+}
+
 /* news-slider */
 #news-slider{
     background-color: initial;

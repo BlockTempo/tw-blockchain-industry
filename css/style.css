@@ -1933,7 +1933,7 @@ img.bull{
   color: #C5C8C7; 
   border: 2px solid #C5C8C7;
   border-radius: 5px;
-  max-width: 160px;
+  max-width: 175px;
 
   font-family: "Noto Sans TC";
   font-size: 16px;
@@ -3378,4 +3378,23 @@ footer .links li {
   opacity: 0;
 }
 
+/* specialize English layout */
+html[lang='en'] #theme #mc-embedded-subscribe,
+html[lang='en'] #edm #mc-embedded-subscribe,
+html[lang='en'] .nav-link,
+html[lang='en'] .bt-website,
+html[lang='en'] .register{
+  letter-spacing: 0.8px;
+}
 
+html[lang='en'] h2.edm-header{
+  letter-spacing: 2px;
+}
+
+html[lang='en'] #news-slider .tab .nav-tabs{
+  max-width: 950px;
+}
+
+html[lang='en'] #edm .form-row{
+  width: 45%;
+}
