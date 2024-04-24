@@ -3398,3 +3398,9 @@ html[lang='en'] #news-slider .tab .nav-tabs{
 html[lang='en'] #edm .form-row{
   width: 45%;
 }
+
+html[lang='en'] h1.main-topic{
+  font-size: 2.6rem;
+  letter-spacing: 3px;  
+}
+
