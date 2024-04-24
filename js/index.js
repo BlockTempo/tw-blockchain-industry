@@ -384,6 +384,8 @@ function applyImageTitle() {
   }
   $("#map .mapwrap img").each((idx, o) => {
     o.onload = imageOnLoad;
+    // force calculate because it would call onload event when browser use cache image
+    o.width && imageOnLoad({ target: o });
   });
 }
 
