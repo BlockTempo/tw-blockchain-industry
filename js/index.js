@@ -10,6 +10,8 @@ document.body.insertAdjacentHTML(
       .join("")
 );
 
+document.querySelector('html').lang = langCode;
+
 // lang item
 $(".lang-switch a[lang-item]").click(e => {
   _changeLang($(e.target).attr('lang-item'));
