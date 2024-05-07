@@ -2925,6 +2925,24 @@ footer .links li {
   overflow-y: scroll;
 }
 
+#map div[layout="list"] a.card{
+  background: #2F3A3A;
+  box-shadow: none;
+}
+
+#map div[layout="list"] a.togo{
+  color: rgba(255,255,255,0.4);
+  opacity: 1;
+}
+
+#map div[layout="list"] div.overflowClip_1 strong{
+  color: #FFFFFF;
+}
+
+#map div[layout="list"] p.overflowClip_1{
+  color: rgba(255,255,255,0.4);
+}
+
 #map .headerwrap{
   margin-bottom: 30px;
 }
@@ -3015,8 +3033,18 @@ footer .links li {
   color: inherit;
 }
 
+#map .sidebar-item{
+  color: rgba(255,255,255,0.4);
+}
+
 #map .sidebar-item > a:hover {
-  color: inherit;
+  color: #fff;
+  background-color: #2F3A3A;
+}
+
+#map .sidebar-item .btn-light{
+  color: #fff;
+  background-color: #2F3A3A;
 }
 
 .imply-title{
