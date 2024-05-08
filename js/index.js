@@ -262,6 +262,10 @@ function loadMap(groups, items) {
     items.filter(it => it.group === g.id)
       .forEach(it => {
         const itClone = { ...it, itemCols: g.itemCols };
+        if ( langCode != 'zh' && itClone.description_en ) {
+          itClone.description = itClone.description_en || itClone.description;
+        }
+        itClone.description = itClone.description.replaceAll('"', '');
         emptySubcateItemWrap.append(
           mapping( itemTemp, itClone )
         )
@@ -294,6 +298,10 @@ function loadMap(groups, items) {
         items.filter(it => it.group === nestedGroup)
           .forEach(it => {
             const itClone = { ...it, itemCols: gc.itemCols };
+            if ( langCode != 'zh' && itClone.description_en ) {
+              itClone.description = itClone.description_en || itClone.description;
+            }
+            itClone.description = itClone.description.replaceAll('"', '');
             subcateItemWrap.append(
               mapping( itemTemp, itClone )
             );

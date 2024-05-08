@@ -15,6 +15,7 @@ const i18nMapping = {
         "container-map-switcher-list": "清單",
         "container-map-download": "下載地圖",
         "container-map-update": "更新日期：",
+        "container-map-see-more": "點擊查看更多...",
         "container-news-slider-title": "台灣產業消息",
         "container-news-slider-type-all": "全部",
         "container-news-slider-type-law": "法規",
@@ -49,6 +50,8 @@ const i18nMapping = {
         "footer-social-contract": "區塊鏈技術與智能合約研究社群",
         "footer-social-blockchain": "台灣區塊鏈/比特幣/加密貨幣社群",
         "footer-copyright": "動區動趨 BlockTempo © All Rights Reserved.",
+        "item-link-goto": "直達",
+        "item-link-website": "官網",
         "item-detail-news": "新聞彙整",
         "item-detail-industry": "相關產業"
     },
@@ -68,6 +71,7 @@ const i18nMapping = {
         "container-map-switcher-list": "List",
         "container-map-download": "Download Map",
         "container-map-update": "Last Updated:",
+        "container-map-see-more": "See More...",
         "container-news-slider-title": "Industry News",
         "container-news-slider-type-all": "All",
         "container-news-slider-type-law": "Regulations",
@@ -102,6 +106,8 @@ const i18nMapping = {
         "footer-social-contract": "Blockchain Technology and Smart Contract Research Community",
         "footer-social-blockchain": "Taiwan Blockchain/Bitcoin/Cryptocurrency Community",
         "footer-copyright": "BlockTempo © All Rights Reserved.",
+        "item-link-goto": "Goto",
+        "item-link-website": "Website",
         "item-detail-news": "News Digest",
         "item-detail-industry": "Related Industries"
     }
