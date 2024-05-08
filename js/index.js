@@ -627,12 +627,21 @@ $(document).ready(function() {
 });
 
 // rss feeds
+// **** old version
+// const rssFeeds = [
+//   "https://www.blocktempo.com/search/tag/%E5%8F%B0%E7%81%A3%E5%8A%A0%E5%AF%86%E8%B2%A8%E5%B9%A3%E6%B3%95%E8%A6%8F/feed/",
+//   "https://www.blocktempo.com/category/business/feed/",
+//   "https://www.blocktempo.com/category/cryptocurrency-market/feed/",
+//   "https://www.blocktempo.com/category/exclusive-interview/feed/",
+//   "https://www.blocktempo.com/category/insight/feed/",
+//   "https://www.blocktempo.com/category/crypto-guide/feed/"
+// ];
+
 const rssFeeds = [
-  "https://www.blocktempo.com/search/tag/%E5%8F%B0%E7%81%A3%E5%8A%A0%E5%AF%86%E8%B2%A8%E5%B9%A3%E6%B3%95%E8%A6%8F/feed/",
-  "https://www.blocktempo.com/category/business/feed/",
-  "https://www.blocktempo.com/category/cryptocurrency-market/feed/",
-  "https://www.blocktempo.com/category/exclusive-interview/feed/",
-  "https://www.blocktempo.com/category/insight/feed/",
+  "https://www.blocktempo.com/search/tag/%E5%8F%B0%E7%81%A3%E6%B3%95%E8%A6%8F/feed/",
+  "https://www.blocktempo.com/search/tag/%E5%8F%B0%E7%81%A3%E5%8D%80%E5%A1%8A%E9%8F%88%E5%95%86%E6%A5%AD%E6%87%89%E7%94%A8/feed/",
+  "https://www.blocktempo.com/search/tag/%E5%8F%B0%E7%81%A3%E5%8A%A0%E5%AF%86%E8%B2%A8%E5%B9%A3%E5%B8%82%E5%A0%B4/feed/",
+  "https://www.blocktempo.com/search/tag/%E5%8F%B0%E7%81%A3%E7%8D%A8%E7%AB%8B%E8%A7%80%E9%BB%9E/feed/",
   "https://www.blocktempo.com/category/crypto-guide/feed/"
 ];
 
