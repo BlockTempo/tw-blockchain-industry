@@ -446,17 +446,17 @@ img.bear{
 }
 
 img.falling{
-  /* width: 35%;
+  width: 35%;
   max-width: 700px;
   position: absolute;
   bottom: 10%;
-  right: 14%; */
+  right: 14%;
 
-  width: 30%;
+  /* width: 30%;
   max-width: 700px;
   position: absolute;
   bottom: 15%;
-  right: 14%;
+  right: 14%; */
 }
 
 img.bull{
@@ -2486,11 +2486,11 @@ ul{
 #edm input:-webkit-autofill:hover, 
 #edm input:-webkit-autofill:focus, 
 #edm input:-webkit-autofill:active{
-    -webkit-box-shadow: 0 0 0 50px #fff inset !important;
+    -webkit-box-shadow: 0 0 0 50px #968d46 inset !important;
 }
 
 #edm input:-webkit-autofill{
-  -webkit-text-fill-color: #071B1C !important;
+  -webkit-text-fill-color: #fff !important;
 }
 
 #edm .container{
@@ -2533,10 +2533,10 @@ h2.edm-header span{
   /* border-bottom: solid 1px #fff; */
   /* background-color: #fff;
   border-radius: 15px; */
-  color: #071B1C;
+  color: #fff;
   border-radius: 5px;
   border: 1px solid #696969;
-  background-color: #fff !important;
+  background-color: #2f3a3a80 !important;
   backdrop-filter: blur(2.5px);
 }
 
@@ -2563,7 +2563,7 @@ h2.edm-header span{
 #edm ::-webkit-input-placeholder { 
   /* color: #fff; */
   font-weight: 200;
-  color: #071B1C;
+  color: #fff;
   opacity: .8;
 }
 
@@ -2925,6 +2925,24 @@ footer .links li {
   overflow-y: scroll;
 }
 
+#map div[layout="list"] a.card{
+  background: #2F3A3A;
+  box-shadow: none;
+}
+
+#map div[layout="list"] a.togo{
+  color: rgba(255,255,255,0.4);
+  opacity: 1;
+}
+
+#map div[layout="list"] div.overflowClip_1 strong{
+  color: #FFFFFF;
+}
+
+#map div[layout="list"] p.overflowClip_1{
+  color: rgba(255,255,255,0.4);
+}
+
 #map .headerwrap{
   margin-bottom: 30px;
 }
@@ -3015,8 +3033,18 @@ footer .links li {
   color: inherit;
 }
 
+#map .sidebar-item{
+  color: rgba(255,255,255,0.4);
+}
+
 #map .sidebar-item > a:hover {
-  color: inherit;
+  color: #fff;
+  background-color: #2F3A3A;
+}
+
+#map .sidebar-item .btn-light{
+  color: #fff;
+  background-color: #2F3A3A;
 }
 
 .imply-title{
@@ -3168,9 +3196,9 @@ footer .links li {
 
 #map div[layout="map"] .subcategory-header h6{
   border-radius: 0px 0px 50px 50px;
-  background: #2F3A3A;
+  background: #1E2828;
   margin-left: auto;
-  color: #fff;
+  color: rgba(255,255,255,0.8);
   margin-right: auto;
   padding: 2px 40px 4px 40px;
   font-size: 14px;
@@ -3244,6 +3272,8 @@ footer .links li {
   height: auto;
   font-style: normal;
   font-family: inherit;
+  background-color: #2F3A3A;
+  color: #fff;
 }
 
 #viewpoints .swiper-pagination{
@@ -3293,7 +3323,7 @@ footer .links li {
   position: absolute;
   border-style: solid;
   border-width: 0 14px 15px;
-  border-color: #FFFFFF transparent;
+  border-color: #2F3A3A transparent;
   display: block;
   width: 0;
   z-index: 1;

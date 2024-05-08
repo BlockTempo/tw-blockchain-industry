@@ -141,17 +141,22 @@ itemsPromise.then(results => {
         const title = target.title;
         const gs = target.group.split('-');
         const groupMajorId = gs[0];
+        const isEn = langCode != 'zh';
         
+        if ( isEn ) {
+            target.description = target.description_en || target.description;
+        }
+            
         // set title
         document.querySelector("head > title").textContent = title + "｜" + initialTitle;
 
         groups.find(g => {
             if ( g.id === groupMajorId ) {
-                target.group_major = g.title;
+                target.group_major = (isEn ? g.title_en : "") || g.title;
                 target.group_major_id = g.id;
                 if ( gs.length > 1 ) {
                     const minor = g.children.find(gc => gc.id === gs[1]);
-                    target.group_minor = minor.title;
+                    target.group_minor = (isEn ? minor.title_en : "") || minor.title;
                 }
                 return true;
             }
@@ -250,6 +255,11 @@ itemsPromise.then(results => {
         const itemsWrap = $("main div[related-items]");
 
         relatedItems.forEach(item => {
+            if ( langCode != 'zh' && item.description_en ) {
+                item.description = item.description_en || item.description;
+            }
+            item.description = item.description.replaceAll('"', '');
+
             itemsWrap.append( mapping(itemTemp, item) );
         });
 

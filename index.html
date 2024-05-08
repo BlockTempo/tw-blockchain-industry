@@ -41,7 +41,7 @@
 
   <link rel="stylesheet" href="vendors/onenav/css/iconfont.css">
   <link rel="stylesheet" href="vendors/onenav/css/style.min.css">
-  <link rel="stylesheet" href="css/style.css?t=1686554275013">
+  <link rel="stylesheet" href="css/style.css?t=1686554275014">
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110951572-1"></script>
   <script>
@@ -126,8 +126,7 @@
       <div class="topic-en">
         <span>2019</br>TAIWAN</br>BLOCKCHAIN</br>GUIDE</span>
       </div> -->
-      <!-- <img class="falling" src="img/falling-taiwan-base.gif" alt=""> -->
-      <img class="falling" src="img/yellow-taiwan.png" alt="">
+      <img class="falling" src="img/falling-taiwan-base.gif" alt="">
       <div class="container">
         <div class="row">
           <div class="col-md-8 col-lg-8 col-xs-12 topic">
@@ -210,7 +209,7 @@
           <template item>
             <div class="url-card col-sm-6 col-md-4">
               <div class="url-body default">
-                <a href="./item.html?id={{id}}" class="card no-c mt-2 mb-3" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="{{description}}<br/>點擊查看更多..." target="_blank">
+                <a href="./item.html?id={{id}}" class="card no-c mt-2 mb-3" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="{{description}}<br/>👉 <span style='font-weight: 800; color: #FFE03F;'>{%container-map-see-more%}</span>" target="_blank">
                   <div class="card-body url-content d-flex align-items-center"> 
                     <div class="url-img rounded-circle mr-2 d-flex align-items-center justify-content-center">
                       <img class="lazy unfancybox loaded" src="{{logo_icon}}" data-src="{{logo_icon}}" height="auto" width="auto" alt="{{title}}" data-was-processed="true"> 
@@ -219,11 +218,11 @@
                       <div class="text-sm overflowClip_1">
                         <strong>{{title}}</strong>
                       </div>
-                      <p class="overflowClip_1 m-0 text-muted text-xs">{{briefly}}</p>
+                      <p class="overflowClip_1 m-0 text-xs">{{briefly}}</p>
                     </div>
                   </div> 
                 </a>
-                <a href="{{website}}" target="_blank" rel="external nofollow" title="" class="togo text-center text-muted is-views" data-toggle="tooltip" data-placement="right" data-original-title="直達">
+                <a href="{{website}}" target="_blank" rel="external nofollow" title="" class="togo text-center is-views" data-toggle="tooltip" data-placement="right" data-original-title="{%item-link-goto%}">
                   <i class="iconfont icon-goto"></i>
                 </a>
               </div>
@@ -281,7 +280,7 @@
   
           <template item>
             <div class="col col-4 col-md-{{itemCols}} mt-1 mb-2">
-              <a href="./item.html?id={{id}}" class="d-flex align-items-center justify-content-center map-item-link" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="{{description}}<br/>點擊查看更多..." target="_blank">
+              <a href="./item.html?id={{id}}" class="d-flex align-items-center justify-content-center map-item-link" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="{{description}}<br/>👉 <span style='font-weight: 800; color: #FFE03F;'>{%container-map-see-more%}</span>" target="_blank">
                 <img class="lazy unfancybox loaded" src="{{logo_banner_dark}}" data-src="{{logo_banner_dark}}" alt="{{title}}" data-was-processed="true"> 
                 <span class="imply-title">{{title}}</span>
               </a>
@@ -314,7 +313,7 @@
       <div class="tab">
         <ul class="nav nav-tabs nav-fill">
           <li class="nav-item">
-            <a class="nav-link" data-feed="0,1,2,3,4,5" href="#">
+            <a class="nav-link" data-feed="0,1,2,3,4" href="#">
               <span>{%container-news-slider-type-all%}</span>
             </a>
           </li>
@@ -334,12 +333,12 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" data-feed="3,4" href="#">
+            <a class="nav-link" data-feed="3" href="#">
               <span>{%container-news-slider-type-view%}</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" data-feed="5" href="#">
+            <a class="nav-link" data-feed="4" href="#">
               <span>{%container-news-slider-type-guide%}</span>
             </a>
           </li>
@@ -579,8 +578,8 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js'></script>
 
-  <script src="js/locale.js?t=1686554275009"></script>
-  <script src="js/index.js?t=1686554275010"></script>
+  <script src="js/locale.js?t=1686554275010"></script>
+  <script src="js/index.js?t=1686554275011"></script>
 </body>
 
 </html>

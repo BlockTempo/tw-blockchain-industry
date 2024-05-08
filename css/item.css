@@ -103,6 +103,11 @@ p {
     background-color: rgba(138, 138, 138, .15);
 }
 
+.site-go {
+    position: absolute;
+    bottom: 0;
+}
+
 a.togo {
     color: #fff;
 }
