@@ -1,3 +1,6 @@
+const filepathBase = "https://storage.googleapis.com/image.blocktempo.com/ecomap";
+// const filepathBase = "https://image.blocktempo.com/ecomap";
+
 // init
 document.body.insertAdjacentHTML(
   "afterbegin", 
@@ -516,7 +519,7 @@ itemsPromise.then(results => {
       })
       .join("/");
     const trimId = it.id.replaceAll(":", "-");
-    const fileUrl = ["https://image.blocktempo.com/ecomap", dir, `${trimId}.png`].join("/");
+    const fileUrl = [filepathBase, dir, `${trimId}.png`].join("/");
     it.logo_banner_dark = fileUrl;
   });
 
