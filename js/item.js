@@ -1,4 +1,21 @@
+// init
+document.body.insertAdjacentHTML(
+    "afterbegin", 
+    Array.from(document.querySelectorAll("body > template"))
+        .map(el => {
+            const res = el.innerHTML.trim();
+            el.remove();
+            return _tApply(res);
+        })
+        .join("")
+);
 
+// lang item
+$(".lang-switch a[lang-item]").click(e => {
+    _changeLang($(e.target).attr('lang-item'));
+    location.reload(true);
+});
+    
 const feedUrlBase = "https://www.blocktempo.com/search/tag/{id}/feed/";
 
 function mapping(html, pairs) {
@@ -11,11 +28,11 @@ function mapping(html, pairs) {
 
 let swiper;
 
-function refreshSlider() {
+function refreshSlider( itemSize ) {
     swiper = new Swiper('.news-slider', {
         effect: 'coverflow',
         grabCursor: true,
-        loop: true,
+        loop: (itemSize || 0) > 3,
         centeredSlides: false,
         keyboard: true,
         spaceBetween: 0,
@@ -79,6 +96,8 @@ function clearSlider() {
     $("#news-slider .news-slider__pagination").empty();
 }
 
+let sliderRenderHeight = 200;
+const aspectRatio = 2 / 1.15;
 
 function loadingSlider() {
     clearSlider();
@@ -95,6 +114,11 @@ function loadingSlider() {
     });
 
     refreshSlider();
+    
+    // calculate height
+    sliderRenderHeight = sliderWrap.find(".news__img").width() / aspectRatio;
+
+    sliderWrap.find(".news__img").height(sliderRenderHeight);
 }
 
 var initialTitle = document.querySelector("head > title").textContent;
@@ -117,17 +141,22 @@ itemsPromise.then(results => {
         const title = target.title;
         const gs = target.group.split('-');
         const groupMajorId = gs[0];
+        const isEn = langCode != 'zh';
         
+        if ( isEn ) {
+            target.description = target.description_en || target.description;
+        }
+            
         // set title
         document.querySelector("head > title").textContent = title + "｜" + initialTitle;
 
         groups.find(g => {
             if ( g.id === groupMajorId ) {
-                target.group_major = g.title;
+                target.group_major = (isEn ? g.title_en : "") || g.title;
                 target.group_major_id = g.id;
                 if ( gs.length > 1 ) {
                     const minor = g.children.find(gc => gc.id === gs[1]);
-                    target.group_minor = minor.title;
+                    target.group_minor = (isEn ? minor.title_en : "") || minor.title;
                 }
                 return true;
             }
@@ -156,6 +185,9 @@ itemsPromise.then(results => {
         
         $(document.body).append(detailDom);
         
+        // update lang state  
+        $(".lang-switch a[lang-item=" + langCode + "]").addClass('active');
+
         /*
          * load news start 
         */
@@ -187,7 +219,8 @@ itemsPromise.then(results => {
                     let applyObj = {
                         link: $dom.find('link').text(),
                         title: $dom.find('title').text(),
-                        description: $($dom.find('description').text()).first().text()
+                        description: $($dom.find('description').text()).first().text(),
+                        height: sliderRenderHeight
                     };
                     
                     Array.from(dom.children)
@@ -213,7 +246,7 @@ itemsPromise.then(results => {
                     sliderWrap.append(newsWrap);
                 });
 
-                refreshSlider();
+                refreshSlider( allObjects.length );
             });
         /*
          * load news end
@@ -222,11 +255,17 @@ itemsPromise.then(results => {
         const itemsWrap = $("main div[related-items]");
 
         relatedItems.forEach(item => {
+            if ( langCode != 'zh' && item.description_en ) {
+                item.description = item.description_en || item.description;
+            }
+            item.description = item.description.replaceAll('"', '');
+
             itemsWrap.append( mapping(itemTemp, item) );
         });
 
         itemsWrap.find('[data-toggle="tooltip"]').tooltip({
-            trigger: "hover"
+            trigger: "hover",
+            html: true
         });
     }
 });

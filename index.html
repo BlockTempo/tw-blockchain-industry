@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
   <meta charset="UTF-8">
@@ -41,7 +41,7 @@
 
   <link rel="stylesheet" href="vendors/onenav/css/iconfont.css">
   <link rel="stylesheet" href="vendors/onenav/css/style.min.css">
-  <link rel="stylesheet" href="css/style.css?t=1686554275005">
+  <link rel="stylesheet" href="css/style.css?t=1686554275014">
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110951572-1"></script>
   <script>
@@ -63,490 +63,523 @@
 </head>
 
 <body>
-  <!-- Navbar   -->
-  <nav id="navigation" class="navbar navbar-expand-md fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-        <img class="img-fluid" src="img/logo-map.png" alt>
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-        <i class="fas fa-grip-lines menu-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#map">
-              台灣區塊鏈產業地圖
-              <span class="highlight"></span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#news-slider">
-              台灣產業消息
-              <span class="highlight"></span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#viewpoints">
-              產業名人觀點
-              <span class="highlight"></span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="https://www.blocktempo.com" class="btn btn-info bt-website" target="_blank">動區新聞</a>
-          </li>
-          <li class="nav-item">
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfAHdzxU_TaJB1vRP1YUNdUSBQl7i4zG4DF4puPAgbxduwCRA/viewform?usp=sf_link" class="btn btn-info register" target="_blank">申請上架</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Header -->
-  <header id="theme">
-    <div class="mask"></div>
-    <!-- <img class="big19" src="img/header-2019.png" alt="">
-    <img class="purple-moon" src="img/header-purple-moon@2x.svg" alt="">
-    <img class="bear" src="img/header-bear.svg" alt="">
-    <img class="bull" src="img/header-bull.svg" alt="">
-    <img class="chains" src="img/header-chain-all.svg" alt="">
-    <img class="chains-m" src="img/header-chains-m.svg" alt="">
-    <div class="topic-en">
-      <span>2019</br>TAIWAN</br>BLOCKCHAIN</br>GUIDE</span>
-    </div> -->
-    <img class="falling" src="img/falling-taiwan-base.gif" alt="">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 col-lg-8 col-xs-12 topic">
-          <div class="taiwan-2023">
-            <span clas="mark mark0">2023</span>
-            <span class="main-topic-en topic-under-mark">Taiwan Blockchain Ecosystem Map 2023</span>
-          </div>
-          <h1 class="main-topic">
-            台灣區塊鏈產業地圖
-          </h1>
-          <span class="main-topic-en topic-under-main">Taiwan Blockchain Ecosystem Map 2023</span>
-          <h4 class="topic-en-m mt-2">一站式掌握台灣區塊鏈產業 200+ 企業現況</h4>
-          
-          <div id="mc_embed_signup">
-            <form class="validate" id="mc-embedded-subscribe-form" action="https://blocktempo.us17.list-manage.com/subscribe/post?u=44335b7ae345e1314b08b86d1&id=06bdb29c0a"
-              method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate="novalidate">
-              <div class="row form-row">
-                <input class="email col-8" id="mce-EMAIL" type="email" value="" name="EMAIL" placeholder="輸入Email，掌握產業脈動" required="required" />
-                <div class="div" style="position: absolute; left: -5000px;" aria-hidden="true">
-                  <input type="text" name="b_44335b7ae345e1314b08b86d1_06bdb29c0a" tabindex="-1" value="" />
-                </div>
-                <input class="button from-bottom col-3" id="mc-embedded-subscribe" type="submit" value="立即訂閱" name="subscribe" />
-              </div>
-            </form>
-          </div>
-        </div>  
-      </div>
-    </div>
-    <div class="powerby pt-2 pb-2 mb-4">
-      <p class="mb-2" style="color: white;font-size: 0.85rem;">本地圖由以下單位共同製作：</p>
-      <a href="https://www.blocktempo.com" target="_blank"><img src="img/logo.png" alt="" /></a>
-      <span>&nbsp;</span>
-      <img src="img/appworks_logo.png" alt="" />
-    </div>
-  </header>
-
-  <div id="map">
-    <div class="container">
-      <div class="row headerwrap">
-        <div class="headline col-xs-12 col-md-12">
-          <div class="order"></div>
-          <div class="title">
-            <h2 class="title-tw">台灣區塊鏈產業地圖</h2>
-            <h6 class="title-en">Taiwan Blockchain Ecosystem Map</h6>
-          </div>
-        </div>
-        <div class="col-xs-2 col-md-3">
-          <div class="btn-group switcher-wrap mr-4" role="group" aria-label="layout group">
-            <button type="button" data-layout="map" class="btn btn-light switcher">地圖</button>
-            <button type="button" data-layout="list" class="btn btn-light switcher">清單</button>
-          </div>
-          <div class="btn-group download-btn mr-2" role="group" aria-label="layout group">
-            <a download="" href="" class="btn btn-light download" target="_blank">
-              下載地圖
-              <i class="fas fa-download"></i>
-            </a>
-          </div>
+  <template navbar>
+    <!-- Navbar   -->
+    <nav id="navigation" class="navbar navbar-expand-md fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img class="img-fluid" src="img/logo-map.png" alt>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <i class="fas fa-grip-lines menu-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#map">
+                {%nav-item-map%}
+                <span class="highlight"></span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#news-slider">
+                {%nav-item-news-slider%}
+                <span class="highlight"></span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#viewpoints">
+                {%nav-item-viewpoints%}
+                <span class="highlight"></span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="https://www.blocktempo.com" class="btn btn-info bt-website" target="_blank">{%nav-item-website%}</a>
+            </li>
+            <li class="nav-item">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSfAHdzxU_TaJB1vRP1YUNdUSBQl7i4zG4DF4puPAgbxduwCRA/viewform?usp=sf_link" class="btn btn-info register" target="_blank">{%nav-item-register%}</a>
+            </li>
+            <li class="nav-item lang-switch">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="#C5C8C7">
+                <path d="M1.12558 6.475C1.33295 4.10295 2.93218 2.12988 5.10186 1.3772C4.94712 1.63372 4.80716 1.91763 4.682 2.22159C4.2169 3.3511 3.92218 4.8405 3.86991 6.475H1.12558ZM7.05273 0C3.18673 0 0.0527344 3.13401 0.0527344 7C0.0527344 10.866 3.18673 14 7.05273 14C10.9187 14 14.0527 10.866 14.0527 7C14.0527 3.13401 10.9187 0 7.05273 0ZM7.05273 1.05C7.23568 1.05 7.45907 1.13783 7.71435 1.40005C7.97124 1.66394 8.22677 2.07308 8.45254 2.62138C8.85713 3.60395 9.13294 4.95241 9.18498 6.475H4.92048C4.97251 4.95241 5.24832 3.60395 5.65291 2.62138C5.87868 2.07308 6.13421 1.66394 6.39111 1.40005C6.64639 1.13783 6.86978 1.05 7.05273 1.05ZM10.2355 6.475C10.1833 4.8405 9.88855 3.3511 9.42346 2.22159C9.2983 1.91763 9.15833 1.63372 9.00359 1.3772C11.1733 2.12988 12.7725 4.10295 12.9799 6.475H10.2355ZM9.18498 7.525C9.13294 9.04759 8.85713 10.3961 8.45254 11.3786C8.22677 11.9269 7.97124 12.3361 7.71435 12.5999C7.45907 12.8622 7.23568 12.95 7.05273 12.95C6.86978 12.95 6.64639 12.8622 6.39111 12.5999C6.13421 12.3361 5.87868 11.9269 5.65291 11.3786C5.24832 10.3961 4.97251 9.04759 4.92048 7.525H9.18498ZM9.00359 12.6228C9.15834 12.3663 9.2983 12.0824 9.42346 11.7784C9.88855 10.6489 10.1833 9.1595 10.2355 7.525H12.9799C12.7725 9.89705 11.1733 11.8701 9.00359 12.6228ZM5.10186 12.6228C2.93218 11.8701 1.33295 9.89705 1.12558 7.525H3.86991C3.92218 9.1595 4.2169 10.6489 4.682 11.7784C4.80716 12.0824 4.94712 12.3663 5.10186 12.6228Z" fill="#C5C8C7"/>
+              </svg>
+              <a lang-item="zh">中文</a>
+              <span>|</span>
+              <a lang-item="en">EN</a>
+            </li>
+          </ul>
         </div>
       </div>
-
-      <div layout="list">
-        <div class="row">
-          <div class="col-md-3">
-            <!-- <h3>Menu</h3> -->
-            <div class="sidebar-menu flex-fill">
-              <div class="sidebar-scroll">
-                  <div class="sidebar-menu-inner">
-                    <ul></ul>
-                  </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-9">
-            <!-- <h3>Grid List</h3> -->
-            <div class="row mb-n4 grid">
-            </div>
-          </div>
-        </div>
+    </nav>
+  </template>
   
-        <template item>
-          <div class="url-card col-sm-6 col-md-4">
-            <div class="url-body default">
-              <a href="/item.html?id={{id}}" class="card no-c mt-2 mb-3" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="{{description}}" target="_blank">
-                <div class="card-body url-content d-flex align-items-center"> 
-                  <div class="url-img rounded-circle mr-2 d-flex align-items-center justify-content-center">
-                    <img class="lazy unfancybox loaded" src="{{logo_icon}}" data-src="{{logo_icon}}" height="auto" width="auto" alt="{{title}}" data-was-processed="true"> 
-                  </div>
-                  <div class="url-info flex-fill">
-                    <div class="text-sm overflowClip_1">
-                      <strong>{{title}}</strong>
-                    </div>
-                    <p class="overflowClip_1 m-0 text-muted text-xs">{{briefly}}</p>
-                  </div>
-                </div> 
-              </a>
-              <a href="{{website}}" target="_blank" rel="external nofollow" title="" class="togo text-center text-muted is-views" data-toggle="tooltip" data-placement="right" data-original-title="直達">
-                <i class="iconfont icon-goto"></i>
-              </a>
-            </div>
-          </div>
-        </template>  
-      </div>
-
-      <div layout="map">        
-        <!-- <figure class="highcharts-figure">
-          <div id="map-container"></div>
-          <p class="highcharts-description">
-              This chart shows a tree map with a hierarchy, where the
-              groups are labelled with a different text style from the
-              child nodes, and the nodes are grouped together by color.
-          </p>
-
-          <div id="map-container-am" style="height: 600px;"></div>
-        </figure> -->
-        <div class="row mapwrap">
-          
-        </div>
-
-        <template category>
-          <div class="col col-12 bt-col bt-col-{{cols}} p-2">
-            <div class="category-wrap">
-              <h4 class="category-header">{{title}}
-                <span class="category-header-en opacity-0">{{title_en}}</span>
-              </h4>
-              <div class="row category-block"></div>
-            </div>
-          </div>
-        </template>
-
-        <template subcategory>
-          <div class="col col-12 bt-col bt-col-{{cols}}">
-            <div class="subcategory-split">
-              <div class="subcategory-header">
-                <h6>{{title}}</h6>
-              </div>
-              <div class="row subcategory-block"></div>
-            </div>
-          </div>
-        </template>
-
-        <template emptycategory>
-          <div class="col col-12 bt-col bt-col-{{cols}}">
-            <div class="subcategory-split">
-              <div class="subcategory-header opacity-0">
-                <h6>無</h6>
-              </div>
-              <div class="row subcategory-block"></div>
-            </div>
-          </div>
-        </template>
-
-        <template item>
-          <div class="col col-4 col-md-{{itemCols}} mt-1 mb-2">
-            <a href="/item.html?id={{id}}" class="d-flex align-items-center justify-content-center map-item-link" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="{{description}}" target="_blank">
-              <img class="lazy unfancybox loaded" src="{{logo_banner}}" data-src="{{logo_banner}}" height="auto" width="auto" alt="{{title}}" data-was-processed="true"> 
-            </a>
-          </div>
-        </template>
-
-        <template fillitem>
-          <div class="col-md-12"><div style="height: {{height}}px;"></div></div>
-        </template>
-      </div>
-      <template updatedate>
+  <template header>
+    <!-- Header -->
+    <header id="theme">
+      <div class="mask"></div>
+      <!-- <img class="big19" src="img/header-2019.png" alt="">
+      <img class="purple-moon" src="img/header-purple-moon@2x.svg" alt="">
+      <img class="bear" src="img/header-bear.svg" alt="">
+      <img class="bull" src="img/header-bull.svg" alt="">
+      <img class="chains" src="img/header-chain-all.svg" alt="">
+      <img class="chains-m" src="img/header-chains-m.svg" alt="">
+      <div class="topic-en">
+        <span>2019</br>TAIWAN</br>BLOCKCHAIN</br>GUIDE</span>
+      </div> -->
+      <img class="falling" src="img/falling-taiwan-base.gif" alt="">
+      <div class="container">
         <div class="row">
-          <span class="update-date">更新日期：{{mapLastMod}}</span>
+          <div class="col-md-8 col-lg-8 col-xs-12 topic">
+            <div class="taiwan-2023">
+              <span clas="mark mark0">2024</span>
+            </div>
+            <h1 class="main-topic">
+              {%header-title%}
+            </h1>
+            <h4 class="topic-en-m mt-2">{%header-desc%}</h4>
+            
+            <div id="mc_embed_signup">
+              <form class="validate" id="mc-embedded-subscribe-form" action="https://blocktempo.us17.list-manage.com/subscribe/post?u=44335b7ae345e1314b08b86d1&amp;id=06bdb29c0a" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate="novalidate">
+                <div class="row form-row">
+                  <input class="email col-8" id="mce-EMAIL" type="email" value="" name="EMAIL" placeholder="{%header-signup-placeholder%}" required="required">
+                  <div class="div" style="position: absolute; left: -5000px;" aria-hidden="true">
+                    <input type="text" name="b_44335b7ae345e1314b08b86d1_06bdb29c0a" tabindex="-1" value="" />
+                  </div>
+                  <input class="button from-bottom col-3" id="mc-embedded-subscribe" type="submit" value="{%header-signup-button%}" name="subscribe">
+                </div>
+              </form>
+            </div>
+          </div>  
         </div>
-      </template>
-    </div>
-  </div>
-
-  <!-- News Slider -->
-  <div id="news-slider" class="wrapper">
-    <div class="background">
-    </div>
-    <div class="headline">
-      <div class="title">
-        <h2 class="title-tw">台灣產業消息</h2>
-        <h6 class="title-en">Industry News</h6>
       </div>
-    </div>
-    <div class="tab">
-      <ul class="nav nav-tabs nav-fill">
-        <li class="nav-item">
-          <a class="nav-link" data-feed="0" href="#">法規</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" data-feed="1" href="#">區塊鏈商業應用</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" data-feed="2" href="#">加密貨幣市場</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" data-feed="3" href="#">人物專訪</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" data-feed="4" href="#">獨立觀點</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" data-feed="5" href="#">區塊鏈新手教學</a>
-        </li>
-      </ul>
-    </div>
-    <div class="news-slider">
-      <div class="news-slider__wrp swiper-wrapper">
+      <div class="powerby pt-2 pb-2 mb-4">
+        <p class="mb-2" style="color: white;font-size: 0.85rem;">{%header-intro%}</p>
+        <a href="https://www.blocktempo.com" target="_blank"><img src="img/logo.png" alt="" /></a>
+        <span>&nbsp;</span>
+        <img src="img/appworks_logo.png" alt="" />
+        <span>&nbsp;</span>
+        <img src="img/tempox-logo.png" alt="" />
       </div>
-      <div class="news-slider__ctr">
-        <div class="news-slider__arrows">
-          <button class="news-slider__arrow news-slider-prev">
-            <span class="icon-font">
-              <svg class="icon icon-arrow-left">
-                <use xlink:href="#icon-arrow-left"></use>
-              </svg>
-            </span>
-          </button>
-          <button class="news-slider__arrow news-slider-next">
-            <span class="icon-font">
-              <svg class="icon icon-arrow-right">
-                <use xlink:href="#icon-arrow-right"></use>
-              </svg>
-            </span>
-          </button>
-        </div>
-
-        <div class="news-slider__pagination"></div>
-
-      </div>
-    </div>
-
-    <template newspost>
-      <div class="news-slider__item swiper-slide"></div>
-    </template>
-    <template newspost-item>
-      <a href="{{link}}" class="news__item" target="_blank" title="{{title}}">
-        <div class="news__img">
-          <img src="{{imgurl}}" alt="news">
-        </div>
-        <div class="news__title">
-          {{title}}
-        </div>
-      </a>
-    </template>
-
-    <template newloading>
-      <div class="news-slider__item swiper-slide swiper-loading"></div>
-    </template>
-    <template newloading-item>
-      <a href="" class="news__item">
-        <div class="news__img loading"></div>
-        <div class="news__title">
-          <span class="ghost-title loading"></span>
-          <span class="ghost-title loading"></span>
-          <span class="ghost-title-last loading"></span>
-        </div>
-      </a>
-    </template>
-  </div>
-
-  <!-- Viewpoints  -->
-  <div id="viewpoints" class="landing-page">
-    <section class="comments gray-section" style="margin-top: 0">
-      <div class="container view-swiper-container">
+    </header>
+  </template>
+  
+  <template map>
+    <div id="map">
+      <div class="container">
+        <div class="row headerwrap">
           <div class="headline col-xs-12 col-md-12">
             <div class="order"></div>
             <div class="title">
-              <h2 class="title-tw">產業名人觀點</h2>
-              <h6 class="title-en">Viewpoint from Industry Celebrities</h6>
+              <h2 class="title-tw">{%container-map-title%}</h2>
             </div>
           </div>
-          <div class="swiper-wrapper features-block">
-          </div>
-          <!-- If we need pagination -->
-          <div class="swiper-pagination"></div>
-          <!-- If we need navigation buttons -->
-          <!-- <div class="swiper-button-prev">
-            <i class="fas fa-arrow-circle-left"></i>
-          </div>
-          <div class="swiper-button-next">
-            <i class="fas fa-arrow-circle-right"></i>
-          </div> -->
-      </div>
-    </section>  
-    
-    <template item>
-      <div class="swiper-slide col-md-4">
-        <div class="bubble">{{quote}}</div>
-        <div class="comments-avatar">
-            <a class="pull-left">
-                <img alt="image" src="{{icon}}">
-            </a>
-            <div class="media-body">
-                <div class="commens-name">{{name}}</div>
-                <small class="text-muted">{{title}}</small>
+          <div class="col-xs-4 col-md-6">
+            <div class="btn-group switcher-wrap mr-4" role="group" aria-label="layout group">
+              <button type="button" data-layout="map" class="btn btn-light switcher">{%container-map-switcher-map%}</button>
+              <button type="button" data-layout="list" class="btn btn-light switcher">{%container-map-switcher-list%}</button>
             </div>
-        </div>
-      </div>
-    </template>
-  </div>
-  
-  <svg hidden="hidden">
-    <defs>
-      <symbol id="icon-arrow-left" viewBox="0 0 32 32">
-        <title>arrow-left</title>
-        <path d="M0.704 17.696l9.856 9.856c0.896 0.896 2.432 0.896 3.328 0s0.896-2.432 0-3.328l-5.792-5.856h21.568c1.312 0 2.368-1.056 2.368-2.368s-1.056-2.368-2.368-2.368h-21.568l5.824-5.824c0.896-0.896 0.896-2.432 0-3.328-0.48-0.48-1.088-0.704-1.696-0.704s-1.216 0.224-1.696 0.704l-9.824 9.824c-0.448 0.448-0.704 1.056-0.704 1.696s0.224 1.248 0.704 1.696z"></path>
-      </symbol>
-      <symbol id="icon-arrow-right" viewBox="0 0 32 32">
-        <title>arrow-right</title>
-        <path d="M31.296 14.336l-9.888-9.888c-0.896-0.896-2.432-0.896-3.328 0s-0.896 2.432 0 3.328l5.824 5.856h-21.536c-1.312 0-2.368 1.056-2.368 2.368s1.056 2.368 2.368 2.368h21.568l-5.856 5.824c-0.896 0.896-0.896 2.432 0 3.328 0.48 0.48 1.088 0.704 1.696 0.704s1.216-0.224 1.696-0.704l9.824-9.824c0.448-0.448 0.704-1.056 0.704-1.696s-0.224-1.248-0.704-1.664z"></path>
-      </symbol>
-    </defs>
-  </svg>
-
-  <!-- footer -->
-  <footer>
-    <div class="container">
-      <div class="row" id="edm">
-        <div class="col-md-12">
-          <h2 class="edm-header">為您整理一週國內外焦點動態</h2>
-        </div>
-        <div class="col-md-12">
-          <div id="mc_embed_signup">
-            <form class="validate" id="mc-embedded-subscribe-form" action="https://blocktempo.us17.list-manage.com/subscribe/post?u=44335b7ae345e1314b08b86d1&amp;id=c455034c10"
-              method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate="novalidate">
-              <div class="row form-row">
-                <input class="email col-8 col-md-8" id="mce-EMAIL" type="email" value="" name="EMAIL" placeholder="Your work email" required="required" />
-                <div class="div" style="position: absolute; left: -5000px;" aria-hidden="true">
-                  <input type="text" name="b_44335b7ae345e1314b08b86d1_e244acf46a" tabindex="-1" value="" />
-                </div>
-                <input class="button from-bottom col-3 col-md-3" id="mc-embedded-subscribe" type="submit" value="立即訂閱" name="subscribe" />
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <hr />
-      </div>
-      <div class="row">
-        <div class="blocktempo col col-12 col-md-3">
-          <div>
-            <a href="https://www.blocktempo.com/" target="_blank">
-              <img class="our-logo" src="img/logo.png" alt="" />
-            </a>
-          
-            <span>台灣最具影響力的區塊鏈媒體<br/>最即時最全面的區塊鏈產業新聞站</span>
-
-            <div class="share-btn-kit">
-              <a href="https://www.facebook.com/BlockTempo/" target="_blank"><i class="fab fa-facebook-square"></i></a>
-              <a href="https://page.line.me/kgx9780p?openQrModal=true" target="_blank"><i class="fab fa-line"></i></a>
-              <a href="https://www.youtube.com/@blocktempotv4256" target="_blank"><i class="fab fa-youtube"></i></a>
-              <a href="https://www.instagram.com/blocktemponews/" target="_blank"><i class="fab fa-instagram"></i></a>
-              <a href="https://twitter.com/BlockTempo" target="_blank"><i class="fab fa-twitter"></i></a>
-              <a href="https://t.me/blocktemponews" target="_blank"><i class="fab fa-telegram"></i></a>
-              <a href="https://linktr.ee/blocktempomedia" target="_blank" class="fa-linktr">
-                <img src="img/linktree.png">
+            <div class="btn-group download-btn mr-2" role="group" aria-label="layout group">
+              <a download="" href="" class="btn btn-light download" target="_blank">
+                {%container-map-download%}
+                <i class="fas fa-download"></i>
               </a>
             </div>
-
-            <a class="about" href="https://www.blocktempo.com/about-blocktempo/" target="_blank">關於BlockTempo</a>
-          </div>
-          
-        </div>
-
-        <div class="category col col-12 col-md-3">
-          <div>
-            <h6 class="title">
-              <i class="fas fa-star"></i>動區頻道
-            </h6>
-          </div>
-          <div class="links">
-            <ul>
-              <li><a href="https://twitter.com/BlockTempo" target="_blank"><i class="fab fa-twitter"></i>動區 Twitter</a></li>
-              <li><a href="https://t.me/blocktemponews" target="_blank"><i class="fab fa-telegram"></i>動區 Telegram</a></li>  
-              <li><a href="https://page.line.me/kgx9780p?openQrModal=true" target="_blank"><i class="fab fa-line"></i>動區 LINE 帳號</a></li>
-              <li><a href="https://www.instagram.com/blocktemponews/" target="_blank"><i class="fab fa-instagram"></i>動區 Instagram</a></li>
-              <li><a href="https://www.facebook.com/BlockTempo/" target="_blank"><i class="fab fa-facebook"></i>動區 FB 粉絲專頁</a></li>
-              <li><a href="https://www.youtube.com/@blocktempotv4256" target="_blank"><i class="fab fa-youtube"></i>動區 YouTube 頻道</a></li>
-            </ul>
           </div>
         </div>
-        <div class="banner col col-12 col-md-3">
-          <div>
-            <h6 class="title">
-              <i class="fas fa-check-circle"></i>精選專題
-            </h6>
-          </div> 
-          <div class="links">
-            <ul>
-              <li><a href="https://abasummit.io" target="_blank">亞洲區塊鏈高峰會(ABS)</a></li>
-              <li><a href="https://www.blocktempo.com/category/crypto-guide/" target="_blank">動區新手村</a></li>
-              <li><a href="https://www.facebook.com/BlockMeet/?locale=zh_TW" target="_blank">動區塊聚 BLOCKMEET</a></li>
-              <li><a href="https://www.blocktempo.com/taiwanese-blockchain-influencers-predictions-for-2023/" target="_blank">2022 台灣區塊鏈影響力人物</a></li>
-              <li><a href="https://top21.blocktempo.com" target="_blank">2021 台灣區塊鏈影響力人物</a></li>
-            </ul>
+  
+        <div layout="list">
+          <div class="row">
+            <div class="col-md-3">
+              <!-- <h3>Menu</h3> -->
+              <div class="sidebar-menu flex-fill">
+                <div class="sidebar-scroll">
+                    <div class="sidebar-menu-inner">
+                      <ul></ul>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-9">
+              <!-- <h3>Grid List</h3> -->
+              <div class="row mb-n4 grid">
+              </div>
+            </div>
           </div>
+    
+          <template item>
+            <div class="url-card col-sm-6 col-md-4">
+              <div class="url-body default">
+                <a href="./item.html?id={{id}}" class="card no-c mt-2 mb-3" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="{{description}}<br/>👉 <span style='font-weight: 800; color: #FFE03F;'>{%container-map-see-more%}</span>" target="_blank">
+                  <div class="card-body url-content d-flex align-items-center"> 
+                    <div class="url-img rounded-circle mr-2 d-flex align-items-center justify-content-center">
+                      <img class="lazy unfancybox loaded" src="{{logo_icon}}" data-src="{{logo_icon}}" height="auto" width="auto" alt="{{title}}" data-was-processed="true"> 
+                    </div>
+                    <div class="url-info flex-fill">
+                      <div class="text-sm overflowClip_1">
+                        <strong>{{title}}</strong>
+                      </div>
+                      <p class="overflowClip_1 m-0 text-xs">{{briefly}}</p>
+                    </div>
+                  </div> 
+                </a>
+                <a href="{{website}}" target="_blank" rel="external nofollow" title="" class="togo text-center is-views" data-toggle="tooltip" data-placement="right" data-original-title="{%item-link-goto%}">
+                  <i class="iconfont icon-goto"></i>
+                </a>
+              </div>
+            </div>
+          </template>  
         </div>
-        <div class="col-12 col-md-3">
-          <div>
-            <h6 class="title">
-              <i class="fas fa-user-plus"></i>動區社群
-            </h6>
+  
+        <div layout="map">        
+          <!-- <figure class="highcharts-figure">
+            <div id="map-container"></div>
+            <p class="highcharts-description">
+                This chart shows a tree map with a hierarchy, where the
+                groups are labelled with a different text style from the
+                child nodes, and the nodes are grouped together by color.
+            </p>
+  
+            <div id="map-container-am" style="height: 600px;"></div>
+          </figure> -->
+          <div class="row mapwrap">
+            
           </div>
-          <div class="links">
-            <ul>
-              <li><a href="https://line.me/ti/g2/htySqS7SoKOuGGFx4Gn9dg" target="_blank">幣圈大戶內線情報</a></li>
-              <li><a href="https://bit.ly/dogemoon2" target="_blank">動區大戶情報2群</a></li>
-              <li><a href="https://t.me/blocktempo" target="_blank">BlockTempo 官方討論群</a></li>
-              <li><a href="https://www.facebook.com/groups/221248235406367" target="_blank">區塊鏈技術與智能合約研究社群</a></li>
-              <li><a href="https://www.facebook.com/groups/1763749533660518" target="_blank">台灣區塊鏈/比特幣/加密貨幣社群</a></li>
-            </ul>
+  
+          <template category>
+            <div class="col col-12 bt-col bt-col-{{cols}} p-2">
+              <div class="category-wrap">
+                <h4 class="category-header">{{title}}
+                  <span class="category-header-en opacity-0">{{title_en}}</span>
+                </h4>
+                <div class="row category-block"></div>
+              </div>
+            </div>
+          </template>
+  
+          <template subcategory>
+            <div class="col col-12 bt-col bt-col-{{cols}}">
+              <div class="subcategory-split">
+                <div class="subcategory-header">
+                  <h6>{{title}}</h6>
+                </div>
+                <div class="row subcategory-block"></div>
+              </div>
+            </div>
+          </template>
+  
+          <template emptycategory>
+            <div class="col col-12 bt-col bt-col-{{cols}}">
+              <div class="subcategory-split">
+                <div class="subcategory-header opacity-0">
+                  <h6>無</h6>
+                </div>
+                <div class="row subcategory-block"></div>
+              </div>
+            </div>
+          </template>
+  
+          <template item>
+            <div class="col col-4 col-md-{{itemCols}} mt-1 mb-2">
+              <a href="./item.html?id={{id}}" class="d-flex align-items-center justify-content-center map-item-link" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="{{description}}<br/>👉 <span style='font-weight: 800; color: #FFE03F;'>{%container-map-see-more%}</span>" target="_blank">
+                <img class="lazy unfancybox loaded" src="{{logo_banner_dark}}" data-src="{{logo_banner_dark}}" alt="{{title}}" data-was-processed="true"> 
+                <span class="imply-title">{{title}}</span>
+              </a>
+            </div>
+          </template>
+  
+          <template fillitem>
+            <div class="col-md-12"><div style="height: {{height}}px;"></div></div>
+          </template>
+        </div>
+        <template updatedate>
+          <div class="row">
+            <span class="update-date">{%container-map-update%}{{mapLastMod}}</span>
           </div>
+        </template>
+      </div>
+    </div>
+  </template>
+  
+  <template news-slider>
+    <!-- News Slider -->
+    <div id="news-slider" class="wrapper">
+      <div class="background">
+      </div>
+      <div class="headline">
+        <div class="title">
+          <h2 class="title-tw">{%container-news-slider-title%}</h2>
         </div>
       </div>
-      <div class="row">
-        <hr />
+      <div class="tab">
+        <ul class="nav nav-tabs nav-fill">
+          <li class="nav-item">
+            <a class="nav-link" data-feed="0,1,2,3,4" href="#">
+              <span>{%container-news-slider-type-all%}</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-feed="0" href="#">
+              <span>{%container-news-slider-type-law%}</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-feed="1" href="#">
+              <span>{%container-news-slider-type-application%}</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-feed="2" href="#">
+              <span>{%container-news-slider-type-market%}</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-feed="3" href="#">
+              <span>{%container-news-slider-type-view%}</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-feed="4" href="#">
+              <span>{%container-news-slider-type-guide%}</span>
+            </a>
+          </li>
+        </ul>
       </div>
-      <div class="row">
-        <div class="copyright col-6 mt-3"><span class="mr-auto">動區動趨 BlockTempo © All Rights Reserved.</span></div>
-        <div class="footer-logo col-6 mt-2">
-          <img class="img-fluid" src="img/logo-map-footer.png" alt>
+      <div class="news-slider">
+        <div class="news-slider__wrp swiper-wrapper">
+        </div>
+        <div class="news-slider__ctr">
+          <div class="news-slider__arrows">
+            <button class="news-slider__arrow news-slider-prev">
+              <span class="icon-font">
+                <svg class="icon icon-arrow-left" xmlns="http://www.w3.org/2000/svg" width="11" height="19" viewBox="0 0 11 19" fill="none">
+                  <path d="M9.47022 1.5L2.00018 9.64307L9.47021 17.5" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                </svg>
+              </span>
+            </button>
+            <button class="news-slider__arrow news-slider-next">
+              <span class="icon-font">
+                <svg class="icon icon-arrow-right" xmlns="http://www.w3.org/2000/svg" width="11" height="19" viewBox="0 0 11 19" fill="none">
+                  <path d="M1.53027 17.5L9.00031 9.35693L1.53027 1.5" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                </svg>
+              </span>
+            </button>
+          </div>
+
+          <div class="news-slider__pagination"></div>
+
+        </div>
+      </div>
+
+      <template newspost>
+        <div class="news-slider__item swiper-slide"></div>
+      </template>
+      <template newspost-item>
+        <a href="{{link}}" class="news__item" target="_blank" title="{{title}}">
+          <div class="news__img" style="height: {{height}}px;">
+            <img src="{{imgurl}}" alt="news">
+          </div>
+          <div class="news__title">
+            {{title}}
+          </div>
+        </a>
+      </template>
+
+      <template newloading>
+        <div class="news-slider__item swiper-slide swiper-loading"></div>
+      </template>
+      <template newloading-item>
+        <a href="" class="news__item">
+          <div class="news__img loading"></div>
+          <div class="news__title">
+            <span class="ghost-title loading"></span>
+            <span class="ghost-title loading"></span>
+            <span class="ghost-title-last loading"></span>
+          </div>
+        </a>
+      </template>
+    </div>
+  </template>
+  
+  <template viewpoints>
+    <!-- Viewpoints  -->
+    <div id="viewpoints" class="landing-page">
+      <section class="comments" style="margin-top: 0">
+        <div class="container view-swiper-container">
+            <div class="headline col-xs-12 col-md-12">
+              <div class="order"></div>
+              <div class="title">
+                <h2 class="title-tw">{%container-viewpoints-title%}</h2>
+              </div>
+            </div>
+            <div class="swiper-wrapper features-block">
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- If we need navigation buttons -->
+            <!-- <div class="swiper-button-prev">
+              <i class="fas fa-arrow-circle-left"></i>
+            </div>
+            <div class="swiper-button-next">
+              <i class="fas fa-arrow-circle-right"></i>
+            </div> -->
+        </div>
+      </section>  
+      
+      <template item>
+        <div class="swiper-slide col-md-4">
+          <div class="comments-avatar">
+              <a class="pull-left">
+                  <img alt="image" src="{{icon}}">
+              </a>
+              <div class="media-body">
+                  <div class="commens-name">{{name}}</div>
+                  <small>{{title}}</small>
+              </div>
+          </div>
+          <div class="bubble">{{quote}}</div>
+        </div>
+      </template>
+    </div>
+  </template>
+  
+  <template subscribe>
+    <!-- subscribe -->
+    <div id="subscribe">
+      <div class="container">
+        <div class="row" id="edm">
+          <div class="col-md-12">
+            <h2 class="edm-header">{%container-edm-title%}</h2>
+          </div>
+          <div class="col-md-12">
+            <div id="mc_embed_signup">
+              <form class="validate" id="mc-embedded-subscribe-form" action="https://blocktempo.us17.list-manage.com/subscribe/post?u=44335b7ae345e1314b08b86d1&amp;id=c455034c10" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate="novalidate">
+                <div class="row form-row">
+                  <input class="email col-8 col-md-8" id="mce-EMAIL" type="email" value="" name="EMAIL" placeholder="{%container-edm-subscribe-placeholder%}" required="required">
+                  <div class="div" style="position: absolute; left: -5000px;" aria-hidden="true">
+                    <input type="text" name="b_44335b7ae345e1314b08b86d1_e244acf46a" tabindex="-1" value="">
+                  </div>
+                  <input class="button from-bottom col-3 col-md-3" id="mc-embedded-subscribe" type="submit" value="{%container-edm-subscribe%}" name="subscribe">
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </footer>
+  </template>
+  
+  <template footer>
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        
+        <div class="row">
+          <div class="blocktempo col col-12 col-md-3">
+            <div>
+              <a href="https://www.blocktempo.com/" target="_blank">
+                <img class="our-logo" src="img/logo-dark.png" alt="">
+              </a>
+            
+              <div class="intro">
+                <p>{%footer-intro-one%}</p>
+                <p>{%footer-intro-two%}</p>
+              </div>
+              
+              <div class="share-btn-kit">
+                <a href="https://www.facebook.com/BlockTempo/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://page.line.me/kgx9780p?openQrModal=true" target="_blank"><i class="fab fa-line"></i></a>
+                <a href="https://www.youtube.com/@blocktempotv4256" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/blocktemponews/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/BlockTempo" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://t.me/blocktemponews" target="_blank"><i class="fab fa-telegram"></i></a>
+                <a href="https://linktr.ee/blocktempomedia" target="_blank" class="fa-linktr">
+                  <img src="img/linktree-dark.png">
+                </a>
+              </div>
+
+              <a class="about" href="https://www.blocktempo.com/about-blocktempo/" target="_blank">{%footer-about%}</a>
+            </div>
+            
+          </div>
+
+          <div class="category link-region col col-12 col-md-3">
+            <div>
+              <h6 class="title">
+                <i class="fas fa-star"></i>{%footer-channel-title%}
+              </h6>
+            </div>
+            <div class="links">
+              <ul>
+                <li><a href="https://twitter.com/BlockTempo" target="_blank"><i class="fab fa-twitter"></i>{%footer-channel-twitter%}</a></li>
+                <li><a href="https://t.me/blocktemponews" target="_blank"><i class="fab fa-telegram"></i>{%footer-channel-telegram%}</a></li>  
+                <li><a href="https://page.line.me/kgx9780p?openQrModal=true" target="_blank"><i class="fab fa-line"></i>{%footer-channel-line%}</a></li>
+                <li><a href="https://www.instagram.com/blocktemponews/" target="_blank"><i class="fab fa-instagram"></i>{%footer-channel-instagram%}</a></li>
+                <li><a href="https://www.facebook.com/BlockTempo/" target="_blank"><i class="fab fa-facebook"></i>{%footer-channel-facebook%}</a></li>
+                <li><a href="https://www.youtube.com/@blocktempotv4256" target="_blank"><i class="fab fa-youtube"></i>{%footer-channel-youtube%}</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="banner link-region col col-12 col-md-3">
+            <div>
+              <h6 class="title">
+                <i class="fas fa-check-circle"></i>{%footer-topic%}
+              </h6>
+            </div> 
+            <div class="links">
+              <ul>
+                <li><a href="https://abasummit.io" target="_blank">{%footer-topic-abs%}</a></li>
+                <li><a href="https://www.blocktempo.com/category/crypto-guide/" target="_blank">{%footer-topic-guide%}</a></li>
+                <li><a href="https://www.facebook.com/BlockMeet/?locale=zh_TW" target="_blank">{%footer-topic-meet%}</a></li>
+                <li><a href="https://www.blocktempo.com/taiwanese-blockchain-influencers-predictions-for-2024/" target="_blank">{%footer-topic-Influence%}</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="link-region col-12 col-md-3">
+            <div>
+              <h6 class="title">
+                <i class="fas fa-user-plus"></i>{%footer-social%}
+              </h6>
+            </div>
+            <div class="links">
+              <ul>
+                <li><a href="https://line.me/ti/g2/htySqS7SoKOuGGFx4Gn9dg" target="_blank">{%footer-social-magnate%}</a></li>
+                <li><a href="https://bit.ly/dogemoon2" target="_blank">{%footer-social-magnate-2%}</a></li>
+                <li><a href="https://t.me/blocktempo" target="_blank">{%footer-social-bt-tg%}</a></li>
+                <li><a href="https://www.facebook.com/groups/221248235406367" target="_blank">{%footer-social-contract%}</a></li>
+                <li><a href="https://www.facebook.com/groups/1763749533660518" target="_blank">{%footer-social-blockchain%}</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <hr>
+        </div>
+        <div class="row">
+          <div class="copyright col-6 mt-3"><span class="mr-auto">{%footer-copyright%}</span></div>
+          <div class="footer-logo col-6 mt-2">
+            <div class="lang-switch lang-swith-light">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="#071B1C">
+                <path d="M1.12558 6.475C1.33295 4.10295 2.93218 2.12988 5.10186 1.3772C4.94712 1.63372 4.80716 1.91763 4.682 2.22159C4.2169 3.3511 3.92218 4.8405 3.86991 6.475H1.12558ZM7.05273 0C3.18673 0 0.0527344 3.13401 0.0527344 7C0.0527344 10.866 3.18673 14 7.05273 14C10.9187 14 14.0527 10.866 14.0527 7C14.0527 3.13401 10.9187 0 7.05273 0ZM7.05273 1.05C7.23568 1.05 7.45907 1.13783 7.71435 1.40005C7.97124 1.66394 8.22677 2.07308 8.45254 2.62138C8.85713 3.60395 9.13294 4.95241 9.18498 6.475H4.92048C4.97251 4.95241 5.24832 3.60395 5.65291 2.62138C5.87868 2.07308 6.13421 1.66394 6.39111 1.40005C6.64639 1.13783 6.86978 1.05 7.05273 1.05ZM10.2355 6.475C10.1833 4.8405 9.88855 3.3511 9.42346 2.22159C9.2983 1.91763 9.15833 1.63372 9.00359 1.3772C11.1733 2.12988 12.7725 4.10295 12.9799 6.475H10.2355ZM9.18498 7.525C9.13294 9.04759 8.85713 10.3961 8.45254 11.3786C8.22677 11.9269 7.97124 12.3361 7.71435 12.5999C7.45907 12.8622 7.23568 12.95 7.05273 12.95C6.86978 12.95 6.64639 12.8622 6.39111 12.5999C6.13421 12.3361 5.87868 11.9269 5.65291 11.3786C5.24832 10.3961 4.97251 9.04759 4.92048 7.525H9.18498ZM9.00359 12.6228C9.15834 12.3663 9.2983 12.0824 9.42346 11.7784C9.88855 10.6489 10.1833 9.1595 10.2355 7.525H12.9799C12.7725 9.89705 11.1733 11.8701 9.00359 12.6228ZM5.10186 12.6228C2.93218 11.8701 1.33295 9.89705 1.12558 7.525H3.86991C3.92218 9.1595 4.2169 10.6489 4.682 11.7784C4.80716 12.0824 4.94712 12.3663 5.10186 12.6228Z" fill="#071B1C"/>
+              </svg>
+              <a lang-item="zh">中文</a>
+              <span>|</span>
+              <a lang-item="en">EN</a>
+            </div>
+            <img class="img-fluid" src="img/logo-tempox-footer-dark.png" alt>
+            <img class="img-fluid" src="img/logo-map-footer-dark.png" alt>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </template>
   
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js'></script>
 
-  <script src="js/index.js?t=1686554275004"></script>
+  <script src="js/locale.js?t=1686554275010"></script>
+  <script src="js/index.js?t=1686554275012"></script>
 </body>
 
 </html>
