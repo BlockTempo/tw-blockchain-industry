@@ -1,3 +1,16 @@
+body {
+    background-color: #091818;
+    color: #fff;
+}
+
+p {
+    color: #fff;
+}
+
+.intro p{
+    color: #000;
+}
+
 /* news-slider */
 #news-slider{
     background-color: initial;
@@ -43,7 +56,7 @@
 
 @media screen and (min-width: 800px) {
     .news__item:hover {
-        color: #555;
+        /* color: #555; */
         transition-delay: .1s;
     }
     .news__item:hover .news-date, .news__item:hover .news__title {
@@ -59,9 +72,63 @@
 
 .news-slider__pagination .swiper-pagination-bullet{
     padding: 8px 10px;
-    background: rgba(136,136,136,.7);
 }
 
-.news-slider__pagination .swiper-pagination-bullet-active{
-    background: rgba(136,136,136,.5);
+.content {
+    border: none;
+}
+
+.content h2{
+    color: #FFE03F;
+    font-family: Roboto;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 21.6px; /* 77.143% */
+    letter-spacing: 2px;
+}
+
+.siteico{
+    background: none;
+}
+
+.btn-cat{
+    color: #000 !important;
+    background: #FFE03F;
+}
+
+.site-body .btn-arrow,
+.site-body .btn-arrow:hover {
+    color: #fff;
+    background-color: rgba(138, 138, 138, .15);
+}
+
+.site-go {
+    position: absolute;
+    bottom: 0;
+}
+
+a.togo {
+    color: #fff;
+}
+
+@media screen and (max-width: 576px) {
+    .content {
+        padding-top: 0;
+    }
+    .content .site-content{
+        margin-bottom: 1.8rem;
+    }
+}
+
+div[related-items] .card{
+    background-color: #2F3A3A;
+}
+
+div[related-items] .card .item-title{
+    color: #fff;
+}
+
+div[related-items] .card .item-type{
+    color: #ccc
 }

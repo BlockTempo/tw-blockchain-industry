@@ -1,3 +1,28 @@
+const filepathBase = "https://storage.googleapis.com/image.blocktempo.com/ecomap";
+// const filepathBase = "https://image.blocktempo.com/ecomap";
+
+// init
+document.body.insertAdjacentHTML(
+  "afterbegin", 
+  Array.from(document.querySelectorAll("body > template"))
+      .map(el => {
+        const res = el.innerHTML.trim();
+        el.remove();
+        return _tApply(res);
+      })
+      .join("")
+);
+
+document.querySelector('html').lang = langCode;
+
+// lang item
+$(".lang-switch a[lang-item]").click(e => {
+  _changeLang($(e.target).attr('lang-item'));
+  location.reload(true);
+});
+
+$(".lang-switch a[lang-item=" + langCode + "]").addClass('active');
+
 $(window).scroll(function(evt){
   if ($(window).scrollTop()>0)
     $(".navbar").addClass("navbar-top");
@@ -174,6 +199,9 @@ function refreshSlider() {
   });
 }
 
+let sliderRenderHeight = 200;
+const aspectRatio = 2 / 1.15;
+
 function loadingSlider() {
   clearSlider();
   const sliderWrap = $("#news-slider .swiper-wrapper");
@@ -191,6 +219,11 @@ function loadingSlider() {
   });
   
   refreshSlider();
+
+  // calculate height
+  sliderRenderHeight = sliderWrap.find(".news__img").width() / aspectRatio;
+
+  sliderWrap.find(".news__img").height(sliderRenderHeight);
 }
 // end: slider
 
@@ -216,6 +249,9 @@ function loadMap(groups, items) {
   });
 
   groupsClone.forEach(g => {
+    if (langCode != 'zh') {
+      g.title = g.title_en || g.title;
+    }
     const cateWrap = $( mapping( cateTemp, g ) );
     const cateItemWrap = cateWrap.find(".category-block");
 
@@ -229,6 +265,10 @@ function loadMap(groups, items) {
     items.filter(it => it.group === g.id)
       .forEach(it => {
         const itClone = { ...it, itemCols: g.itemCols };
+        if ( langCode != 'zh' && itClone.description_en ) {
+          itClone.description = itClone.description_en || itClone.description;
+        }
+        itClone.description = itClone.description.replaceAll('"', '');
         emptySubcateItemWrap.append(
           mapping( itemTemp, itClone )
         )
@@ -247,6 +287,9 @@ function loadMap(groups, items) {
       });
 
       gChildClone.forEach(gc => {
+        if (langCode != 'zh') {
+          gc.title = gc.title_en || gc.title;
+        }
         const nestedGroup = [g.id, gc.id].join('-');
         const subcateWrap = $( mapping( subcateTemp, gc ) );
         const subcateItemWrap = subcateWrap.find(".row");
@@ -258,6 +301,10 @@ function loadMap(groups, items) {
         items.filter(it => it.group === nestedGroup)
           .forEach(it => {
             const itClone = { ...it, itemCols: gc.itemCols };
+            if ( langCode != 'zh' && itClone.description_en ) {
+              itClone.description = itClone.description_en || itClone.description;
+            }
+            itClone.description = itClone.description.replaceAll('"', '');
             subcateItemWrap.append(
               mapping( itemTemp, itClone )
             );
@@ -326,6 +373,30 @@ function tuneMap() {
       theRow = [];
       heightTick = 0;
     }
+  });
+}
+
+function applyImageTitle() {
+  function imageOnLoad(e) {
+    const o = e.target;
+    if ( !o._applied && o.width < o.parentNode.clientWidth / 3 ) {
+      const titleJQ = $(o.nextElementSibling);
+      titleJQ.css("font-size", 
+        Math.min(
+          14,
+          Math.max(8, 
+            ((o.parentNode.clientWidth - o.width) / titleJQ.text().length)
+          )
+        )
+      + "px");
+      $(o.parentNode).addClass('show-imply-title');
+      o._applied = true;
+    }
+  }
+  $("#map .mapwrap img").each((idx, o) => {
+    o.onload = imageOnLoad;
+    // force calculate because it would call onload event when browser use cache image
+    o.width && imageOnLoad({ target: o });
   });
 }
 
@@ -439,6 +510,19 @@ itemsPromise.then(results => {
     }
   });
 
+  // generate banner url
+  items.forEach(it => {
+    const dir = it.group
+      .split('-')
+      .map(p => {
+        return p.replaceAll(new RegExp("[ / ]+", "g"), "-");
+      })
+      .join("/");
+    const trimId = it.id.replaceAll(":", "-");
+    const fileUrl = [filepathBase, dir, `${trimId}.png`].join("/");
+    it.logo_banner_dark = fileUrl;
+  });
+
   // loadTreemapChart( groups, items );
   // loadAmTreemapChart( groups, items );
   loadMap( groups, items );
@@ -521,11 +605,12 @@ $(document).ready(function() {
 
       function doScreenActions() {
         if ( widthOver800 && layoutType == "map" && !mapHasTuned ) {
-          var ratio = 35 / 135;
-          $("#map .mapwrap img").each((idx, o) => {
-            o.height = o.width * ratio;
-          });
+          // var ratio = 35 / 135;
+          // $("#map .mapwrap img").each((idx, o) => {
+          //   o.height = o.width * ratio;
+          // });
           tuneMap();
+          applyImageTitle();
           mapHasTuned = true;
         }
         if ( layoutType == "list" && !haveClicked ) {
@@ -545,12 +630,21 @@ $(document).ready(function() {
 });
 
 // rss feeds
+// **** old version
+// const rssFeeds = [
+//   "https://www.blocktempo.com/search/tag/%E5%8F%B0%E7%81%A3%E5%8A%A0%E5%AF%86%E8%B2%A8%E5%B9%A3%E6%B3%95%E8%A6%8F/feed/",
+//   "https://www.blocktempo.com/category/business/feed/",
+//   "https://www.blocktempo.com/category/cryptocurrency-market/feed/",
+//   "https://www.blocktempo.com/category/exclusive-interview/feed/",
+//   "https://www.blocktempo.com/category/insight/feed/",
+//   "https://www.blocktempo.com/category/crypto-guide/feed/"
+// ];
+
 const rssFeeds = [
-  "https://www.blocktempo.com/search/tag/%E5%8F%B0%E7%81%A3%E5%8A%A0%E5%AF%86%E8%B2%A8%E5%B9%A3%E6%B3%95%E8%A6%8F/feed/",
-  "https://www.blocktempo.com/category/business/feed/",
-  "https://www.blocktempo.com/category/cryptocurrency-market/feed/",
-  "https://www.blocktempo.com/category/exclusive-interview/feed/",
-  "https://www.blocktempo.com/category/insight/feed/",
+  "https://www.blocktempo.com/search/tag/%E5%8F%B0%E7%81%A3%E6%B3%95%E8%A6%8F/feed/",
+  "https://www.blocktempo.com/search/tag/%E5%8F%B0%E7%81%A3%E5%8D%80%E5%A1%8A%E9%8F%88%E5%95%86%E6%A5%AD%E6%87%89%E7%94%A8/feed/",
+  "https://www.blocktempo.com/search/tag/%E5%8F%B0%E7%81%A3%E5%8A%A0%E5%AF%86%E8%B2%A8%E5%B9%A3%E5%B8%82%E5%A0%B4/feed/",
+  "https://www.blocktempo.com/search/tag/%E5%8F%B0%E7%81%A3%E7%8D%A8%E7%AB%8B%E8%A7%80%E9%BB%9E/feed/",
   "https://www.blocktempo.com/category/crypto-guide/feed/"
 ];
 
@@ -566,32 +660,39 @@ sliderLinks.on('click', function(e){
   loadingSlider();
 
   const startStamp = (new Date()).getTime();
-  const feedUrl = rssFeeds[ parseInt($(this).data("feed")) ];
-  
-  fetch(feedUrl).then(response => response.text())
-    .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
-    .then(res => {
-      const nowStamp = (new Date()).getTime();
-      const returnInterval = nowStamp - startStamp;
-      if ( returnInterval < minInterval ) {
-        return new Promise((rs, rj) => {
-          setTimeout(() => { rs(res); }, minInterval - returnInterval);
-        });
-      } else return res;
-    })
-    .then(res => {
-      clearSlider();
-      const sliderWrap = $("#news-slider .swiper-wrapper");
-      const newsTemp = $("#news-slider template[newspost]").html().trim();
-      const newsItemTemp = $("#news-slider template[newspost-item]").html().trim();
+
+  // get urls
+  const feedUrls = $(this).data("feed")
+    .toString()
+    .split(",")
+    .map(stridx => rssFeeds[parseInt(stridx)]);
+
+  Promise.all(
+    feedUrls.map(feedUrl => 
+      fetch(feedUrl).then(response => response.text())
+        .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
+        .then(res => {
+          const nowStamp = (new Date()).getTime();
+          const returnInterval = nowStamp - startStamp;
+          if ( returnInterval < minInterval ) {
+            return new Promise((rs, rj) => {
+              setTimeout(() => { rs(res); }, minInterval - returnInterval);
+            });
+          } else return res;
+        })
+    )
+  ).then(results => results.map(res => {
+      const partObjects = [];
       const items = res.querySelectorAll("item");
-      const allObjects = [];
+
       Array.from(items).forEach(dom => {
         const $dom = $(dom);
         let applyObj = {
           link: $dom.find('link').text(),
           title: $dom.find('title').text(),
-          description: $($dom.find('description').text()).first().text()
+          timestamp: (new Date($dom.find('pubDate').text())).getTime(),
+          description: $($dom.find('description').text()).first().text(),
+          height: sliderRenderHeight
         };
         
         Array.from(dom.children)
@@ -608,32 +709,59 @@ sliderLinks.on('click', function(e){
             }
           });
 
-        allObjects.push(applyObj);
+        partObjects.push(applyObj);
       });
 
-      if ( widthOver800 ) {
-        while (allObjects.length) {
-          const applyEls = [];
-          if ( allObjects.length >= 2 ) {
-            applyEls.push( mapping( newsItemTemp, allObjects.shift() ) );
-            applyEls.push( mapping( newsItemTemp, allObjects.shift() ) );
-          } else {
-            applyEls.push( mapping( newsItemTemp, allObjects.shift() ) );
-          }
-          const newsWrap = $(newsTemp);
-          newsWrap.append( applyEls );
-          sliderWrap.append(newsWrap);
-        }
-      } else {
-        allObjects.forEach(o => {
-          const newsWrap = $(newsTemp);
-          newsWrap.append( mapping( newsItemTemp, o ) );
-          sliderWrap.append(newsWrap);
-        });
-      }
+      return partObjects;
+    }).reduce((acc, cur) => {
+      return acc.concat(cur)
+    }, []).sort((a,b) => {
+      return a.timestamp > b.timestamp ? -1 : 1;
+    })
+  ).then(allObjects => {
+    // remove duplicate
+    allObjects = [
+      ...new Map(
+        allObjects.map(item => [item.link, item])
+      ).values()
+    ];
 
-      refreshSlider();
-    });
+    if ( allObjects.length % 2 === 1 ) {
+      const addition = allObjects[Math.floor(allObjects.length / 2)];
+      allObjects.push(addition);
+    }
+
+    clearSlider();
+    const sliderWrap = $("#news-slider .swiper-wrapper");
+    const newsTemp = $("#news-slider template[newspost]").html().trim();
+    const newsItemTemp = $("#news-slider template[newspost-item]").html().trim();
+
+    if ( widthOver800 ) {
+      allObjects.push( allObjects.shift() );
+      allObjects.push( allObjects.shift() );
+      while (allObjects.length) {
+        const applyEls = [];
+        if ( allObjects.length >= 2 ) {
+          applyEls.push( mapping( newsItemTemp, allObjects.shift() ) );
+          applyEls.push( mapping( newsItemTemp, allObjects.shift() ) );
+        } else {
+          applyEls.push( mapping( newsItemTemp, allObjects.shift() ) );
+        }
+        const newsWrap = $(newsTemp);
+        newsWrap.append( applyEls );
+        sliderWrap.append(newsWrap);
+      }
+    } else {
+      allObjects.push( allObjects.shift() );
+      allObjects.forEach(o => {
+        const newsWrap = $(newsTemp);
+        newsWrap.append( mapping( newsItemTemp, o ) );
+        sliderWrap.append(newsWrap);
+      });
+    }
+
+    refreshSlider();
+  });
 });
 
 sliderLinks.first().trigger('click');
