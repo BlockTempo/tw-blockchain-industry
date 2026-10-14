@@ -1,5 +1,5 @@
-const filepathBase = "https://storage.googleapis.com/image.blocktempo.com/ecomap";
-// const filepathBase = "https://image.blocktempo.com/ecomap";
+const filepathBase = "https://image.blocktempo.com/ecomap";
+// 2026-10-14: image host moved from Google Cloud Storage to S3/CloudFront (old base was the Google Cloud Storage bucket)
 
 // init
 document.body.insertAdjacentHTML(
